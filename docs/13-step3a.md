@@ -55,8 +55,8 @@ This touches only host C++ under `lib/rt64/`. No patch changed, so no `make`, no
 the PATH line is not optional.
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 cmake --build build --target GoldenRecomp --config Release --parallel
 ```
 
@@ -66,7 +66,7 @@ widely included, so most of RT64 recompiles.
 ## The gate
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 build\Release\GoldenRecomp.exe
 ```
 
@@ -87,7 +87,7 @@ is new work on frames that used to do none.
 ## Reverting
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp\lib\rt64\src
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp\lib\rt64\src
 copy /Y render\rt64_projection_processor.h.bak3a   render\rt64_projection_processor.h
 copy /Y render\rt64_projection_processor.cpp.bak3a render\rt64_projection_processor.cpp
 copy /Y hle\rt64_workload_queue.h.bak3a            hle\rt64_workload_queue.h

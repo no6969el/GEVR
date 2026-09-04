@@ -82,4 +82,4 @@ error in the ray. **They behave oppositely, so one wall answers it.**
 ## Folder layout
 
 `local-only` and `repo` are siblings under `GoldenEyeVR`. The live build tree is a
-**separate** directory: `C:\Users\pdbar\Desktop\GoldenEye64Recomp`.
+**separate** directory: `C:\Users\<USER>\Desktop\GoldenEye64Recomp`.

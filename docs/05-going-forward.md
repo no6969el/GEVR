@@ -22,7 +22,7 @@ the rig**; see `08-where-everything-comes-from.md` and the bundle in
 `goldeneye-native/`.
 
 Two repos, one sentence, no path qualifier. A session reading that line would
-search `C:\Users\pdbar\Desktop\GoldenEye64Recomp` for a file that is not there and
+search `C:\Users\<USER>\Desktop\GoldenEye64Recomp` for a file that is not there and
 conclude it had been lost. Always name the repo.
 
 The projection maths for the recomp tree has now been written separately — in the

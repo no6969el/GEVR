@@ -203,7 +203,7 @@ tempting to skip once the game appears in the headset.
 ## Command
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 $env:GE_VR_XR="1"; $env:GE_VR_SBS="1"; $env:GE_VR_FRUSTUM="1"
 $env:GE_VR_FIT_ASPECT="0"; $env:GE_VR_TEST_OFFSET="3.175"
 build\Release\GoldenRecomp.exe

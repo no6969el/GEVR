@@ -143,8 +143,8 @@ baselines stay — with the ordering trap now recorded.
 ## Build and gate
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 cmake --build build --target GoldenRecomp --config Release --parallel
 
 $env:GE_VR_FRUSTUM="1" ; $env:GE_VR_SBS="1" ; $env:GE_VR_EYE=""

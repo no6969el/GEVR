@@ -2,7 +2,7 @@
 
 Upstream supports macOS/Linux only. The Windows paths in CMake are intact (inherited from
 goldenrecomp) but untested, so these all had to be found the hard way. Rig: `simrig`,
-Windows x64, NVIDIA. Repo at `C:\Users\pdbar\Desktop\GoldenEye64Recomp`.
+Windows x64, NVIDIA. Repo at `C:\Users\<USER>\Desktop\GoldenEye64Recomp`.
 
 **Status 2026-08-22: configure succeeds; recompiler, patch assembly and RT64 all build.
 Nine Windows-only breakages found and fixed. Awaiting the `GoldenRecomp` link.**

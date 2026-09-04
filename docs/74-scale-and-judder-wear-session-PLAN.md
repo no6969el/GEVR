@@ -28,7 +28,7 @@ is**, so the only way to align what you felt with what it recorded is to agree
 the timeline in advance and stick to it.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\vr.ps1
 ```
 

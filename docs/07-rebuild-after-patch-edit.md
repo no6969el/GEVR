@@ -7,8 +7,8 @@ working end to end on `simrig`.
 ## The one-liner
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 cmake --build build --target GoldenRecomp --config Release --parallel
 ```
 
@@ -171,7 +171,7 @@ function is dead code and your patch will never run.
 Faster than a build when you only want to know whether it parses:
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp\patches
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp\patches
 & 'C:\Program Files\LLVM\bin\clang.exe' -target mips -mips2 -mabi=32 -O2 -G0 `
   -mno-abicalls -mno-odd-spreg -mno-check-zero-division -fomit-frame-pointer `
   -ffast-math -fno-unsafe-math-optimizations -fno-builtin-memset `
@@ -197,7 +197,7 @@ Found 2026-08-22, after half an hour spent suspecting the patch code.
 working directory is not the repo root.** Correct:
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 build\Release\GoldenRecomp.exe
 ```
 

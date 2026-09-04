@@ -76,7 +76,7 @@ ENTRY, ALWAYS** — 104 hits in `run_slot.log`, 33 in `run_rp.log`.
 Add-Content "$env:APPDATA\Goldeneye-Native\Goldeneye-Native\goldeneye.cfg" `
   "`nGETV_SLOTFREE = 0   # docs 242: 234's fix is UNPROVEN for props/weapons"
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"
 .\goldeneye.exe *> run_off.log 2>&1
 ```

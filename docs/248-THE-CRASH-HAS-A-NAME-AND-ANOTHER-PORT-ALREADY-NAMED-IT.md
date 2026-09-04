@@ -151,7 +151,7 @@ at the crash site, gated on `GETV_WATCHDBG=1`, and never run.**
 
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"
 $env:GETV_WATCHDBG = "1"
 .\goldeneye.exe *> run_watch.log 2>&1

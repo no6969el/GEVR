@@ -110,7 +110,7 @@ never reached, so the instrument had nothing to print.**
 **A — the inventory crash, cleanly, with the watch instrument still on:**
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"
 $env:GETV_WATCHDBG = "1"
 .\goldeneye.exe *> run_watch2.log 2>&1

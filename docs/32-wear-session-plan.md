@@ -158,7 +158,7 @@ steps are the ones that localise a fault before there is anything interesting to
 blame it on.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 ```
 
 ### Part 1 — regressions

@@ -635,7 +635,7 @@ still on the human.
 > ## BUILD — **ONCE IS ENOUGH.** Host-side only; no new `RECOMP_PATCH` symbols
 > (`136` does not apply), no `115` header, zero game symbols.
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+> cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 > .\build.ps1
 > ```
 >
@@ -788,7 +788,7 @@ still on the human.
 >
 > ## BUILD — **TWICE.** One new `RECOMP_PATCH` symbol (`136`). No `115` header.
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+> cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 > .\build.ps1
 > .\build.ps1
 > ```
@@ -850,7 +850,7 @@ still on the human.
 >
 > ## BUILD — ONCE IS ENOUGH THIS TIME
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+> cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 > .\build.ps1
 > ```
 > **TWO `.c` FILES, NO HEADER CHANGED — `115` does not apply and a PARTIAL build
@@ -896,7 +896,7 @@ still on the human.
 ---
 
 **Rewritten 2026-08-25 as a SEQUENCE. Work top to bottom.**
-Working dir for every command: `C:\Users\pdbar\Desktop\GoldenEye64Recomp`
+Working dir for every command: `C:\Users\<USER>\Desktop\GoldenEye64Recomp`
 
 > ## HOW THIS FILE WORKS, AND WHY THE ORDER IS NOT ARBITRARY
 >
@@ -915,7 +915,7 @@ Working dir for every command: `C:\Users\pdbar\Desktop\GoldenEye64Recomp`
 ## BUILD FIRST — ONCE
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 .\build.ps1
 ```
@@ -1325,9 +1325,9 @@ ends up in it.
 **Neither repo has a remote of ours. All of this work exists on one disk.**
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 git status --ignore-submodules=all
-cd C:\Users\pdbar\Desktop\GoldenEyeVR
+cd C:\Users\<USER>\Desktop\GoldenEyeVR
 .\commit-session.ps1 -Message "<your message>"
 ```
 

@@ -810,7 +810,7 @@
 >   (`SegfaultEvan`), **gitignored by the parent at `.gitignore:46`**, and
 >   `commit-session.ps1` does not touch it. Separate, manual commit.
 >
-> ### ►► **THE PATH IS `Z:\Desktop`, NOT `C:\Users\pdbar\Desktop`** (owner,
+> ### ►► **THE PATH IS `Z:\Desktop`, NOT `C:\Users\<USER>\Desktop`** (owner,
 > ### 2026-08-29). Both reach the same folders and older docs use the `C:` form.
 > ### **`commit-session.ps1` HAD THE `C:` FORM HARDCODED** — it would have
 > ### printed "NOT FOUND" and committed **nothing**. Both scripts now resolve
@@ -937,7 +937,7 @@
 > ### **2. RUN 1 — `GETV_SAVE_DEBUG=1`. NO BUILD NEEDED. DO IT FIRST.**
 > ```powershell
 > Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-> cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+> cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 > $env:GETV_SAVE_DEBUG = "1"
 > .\goldeneye.exe *> run_save.log 2>&1
 > ```
@@ -946,7 +946,7 @@
 >
 > ### **3. BUILD ONCE, THEN RUNS 2 AND 3.** `256` §5.
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+> cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 > & getv\build_windows.ps1 -Target all *> build.log 2>&1
 > ```
 > **Run 2 — `GETV_ALIGNPTR=0`, nothing else.** All four folders selectable →
@@ -1044,7 +1044,7 @@
 > ### **1. COMMIT.** `247`-`255`, three fixes and both handover docs are
 > ### untracked. **At the main PC, NOT through the bridge** (`48`, `148` item 11).
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEyeVR
+> cd C:\Users\<USER>\Desktop\GoldenEyeVR
 > .\commit-session.ps1 -MessageFile .\COMMIT-MESSAGE-2026-08-29c.txt
 > ```
 > **Phase 1 must not be layered on an uncommitted tree.** If a stereo experiment
@@ -1054,7 +1054,7 @@
 > ### **2. ONE LAUNCH, NO CODE — `GETV_MTXTRACE`.** `255` §4 step 1.
 > ```powershell
 > Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-> cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+> cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 > $env:GETV_MTXTRACE = "1"
 > .\goldeneye.exe *> run_mtx.log 2>&1
 > ```
@@ -1126,7 +1126,7 @@
 > ## ►► **DO NEXT: `G-251` — BUILD, THEN THE STANDING GATE.** `251` §5. ◄◄
 > ```powershell
 > Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-> cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+> cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 > & getv\build_windows.ps1 -Target all *> build.log 2>&1
 > cd getv\build-windows
 > $env:GETV_STAGE = "9"

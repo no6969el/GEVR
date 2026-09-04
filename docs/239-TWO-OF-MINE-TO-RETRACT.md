@@ -95,7 +95,7 @@ Comment the line out; do not delete it, so it stays on file:
 Then a completely plain run, **no `GETV_*` at all**:
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 .\goldeneye.exe
 ```
 **Run around. Judge LOOK and LATENCY separately.**

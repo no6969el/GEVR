@@ -94,7 +94,7 @@ sufficient; the numbers arbitrate. The logging is now permanent in `xr_stereo.cp
 ## Running it
 
 ```
-cd C:\Users\pdbar\Desktop\ge-vr-xrprobe
+cd C:\Users\<USER>\Desktop\ge-vr-xrprobe
 xr_stereo.exe          # normal
 xr_stereo.exe tint     # left eye red, right eye blue — the stereo proof
 ```

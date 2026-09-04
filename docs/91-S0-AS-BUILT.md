@@ -134,7 +134,7 @@ one name duplicated (`select_ramrom_to_play`, under opposing `#if`).
 **Build — SHORT path, no new patch name:**
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 ```
 

@@ -261,9 +261,9 @@ means anything.
 work exists on one disk.**
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 git status --ignore-submodules=all
-cd C:\Users\pdbar\Desktop\GoldenEyeVR
+cd C:\Users\<USER>\Desktop\GoldenEyeVR
 .\commit-session.ps1 -Message "<message>"     # -Message is MANDATORY, docs\120
 ```
 

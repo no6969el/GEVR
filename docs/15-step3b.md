@@ -80,7 +80,7 @@ nobody has established. A real IPD in metres arrives with the head pose.
 Build, then run three times from the repo root:
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 
 $env:GE_VR_TEST_OFFSET=""     ; build\Release\GoldenRecomp.exe   # control
 $env:GE_VR_TEST_OFFSET="120"  ; build\Release\GoldenRecomp.exe   # eye 0
@@ -128,8 +128,8 @@ go upstream.
 Host C++ and RT64 only. No patch change, so no `make`, no `N64Recomp`.
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 cmake --build build --target GoldenRecomp --config Release --parallel
 ```
 

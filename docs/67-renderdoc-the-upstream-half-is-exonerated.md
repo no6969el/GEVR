@@ -180,9 +180,9 @@ project that genuinely wants a human at the screen.**
 ```powershell
 # set the -Flat env exactly as vr.ps1 does, then:
 & "C:\Program Files\RenderDoc\renderdoccmd.exe" capture `
-    -d C:\Users\pdbar\Desktop\GoldenEye64Recomp `
+    -d C:\Users\<USER>\Desktop\GoldenEye64Recomp `
     -c <output-prefix> `
-    C:\Users\pdbar\Desktop\GoldenEye64Recomp\build\Release\GoldenRecomp.exe
+    C:\Users\<USER>\Desktop\GoldenEye64Recomp\build\Release\GoldenRecomp.exe
 # F12 in a level to capture, then:
 & "C:\Program Files\RenderDoc\renderdoccmd.exe" convert -f <x>.rdc -c zip.xml -o <x>.zip.xml
 ```

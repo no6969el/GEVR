@@ -51,7 +51,7 @@ Assets are loaded by **relative path**, so the working directory must be the rep
 root — MSBuild puts the exe in `build\Release\` which breaks that. Launch by path:
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build\Release\GoldenRecomp.exe
 ```
 

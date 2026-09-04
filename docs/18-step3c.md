@@ -102,8 +102,8 @@ re-run, and the order matters because it filters against what N64Recomp actually
 emitted (`07`, "When you must do more than the one-liner"):
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 
 cd patches; make CC=clang LD=ld.lld; cd ..
 .\N64Recomp.exe patches.toml
@@ -122,7 +122,7 @@ The renamed list in `01-state-of-play.md` gains `viSetFovY`.
 Run in this order. Each step has one job.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 
 # 1 - control: everything unset
 build\Release\GoldenRecomp.exe

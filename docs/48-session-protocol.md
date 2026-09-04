@@ -27,8 +27,8 @@ recoverable.
 ### 1. Commit both repos, clean
 
 ```powershell
-git -C C:\Users\pdbar\Desktop\GoldenEye64Recomp status --short
-git -C C:\Users\pdbar\Desktop\GoldenEyeVR status --short
+git -C C:\Users\<USER>\Desktop\GoldenEye64Recomp status --short
+git -C C:\Users\<USER>\Desktop\GoldenEyeVR status --short
 ```
 
 Both empty. Remove scratch `.bat` / `.tmp` files. **~2 minutes.**
@@ -127,7 +127,7 @@ worn.** Three launches. It costs less than one wrong diagnosis.
 ### Verify the environment (3 min — the best-value minutes here)
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 dir /T:W gevr.log build\Release\GoldenRecomp.exe
 ```
 

@@ -202,7 +202,7 @@ its harness returned `jdm` 40.9% and hardware returned 14.5%.**
 **PLUS `[getv][slot] GETV_SLOTFREE resolved to 1 (env=1)`.** `GETV_SLOTFREE=1` is in every block and
 is not optional: every block opens with `Remove-Item Env:GETV_*`, the per-user cfg then wins on
 config search path 4, and `287` 4C died at the intro cast with `NO SLOT: required=155 free=0` ->
-`0xc0000005`. `288` measured no SLOTFREE line in the `pdbar` cfg — **the rule is not retired**
+`0xc0000005`. `288` measured no SLOTFREE line in the `<USER>` cfg — **the rule is not retired**
 (`00-STATE` §0: the cfg is per-user and the same human runs under different logins).
 
 ### THREE THINGS THAT WILL LOOK LIKE REGRESSIONS IN EVERY ARM AND ARE NOT

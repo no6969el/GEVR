@@ -112,7 +112,7 @@ text exist at all?"**
 
 `[MEASURED]` `run_slot.log:351`:
 ```
-[getv][save] loaded 512/512 bytes from C:\Users\pdbar\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\/eeprom.bin
+[getv][save] loaded 512/512 bytes from C:\Users\<USER>\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\/eeprom.bin
 ```
 
 **A 512-byte EEPROM image EXISTS on disk and loads clean.** MGB64 was run for the

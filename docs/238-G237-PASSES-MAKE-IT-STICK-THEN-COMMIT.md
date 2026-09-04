@@ -43,7 +43,7 @@ correct and we inherit it.**
 **So do not edit the default. Put it in the port's own config file**, which
 `ge_config.c` supports for **any** raw gate:
 
-**`C:\Users\pdbar\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\goldeneye.cfg`**
+**`C:\Users\<USER>\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\goldeneye.cfg`**
 ```ini
 # --- raw escape hatch ---
 GETV_RGBA16BE = 1   # docs 237: fixes the magenta/sparkly explosion flare
@@ -90,7 +90,7 @@ next subject."*
 
 **1. Regenerate the third-party patch — Git Bash or MSYS2, NOT PowerShell:**
 ```bash
-cd /c/Users/pdbar/Desktop/GoldenEyeVR/goldeneye-native
+cd /c/Users/<USER>/Desktop/GoldenEyeVR/goldeneye-native
 tools/fetch-thirdparty.sh regen
 ```
 **Then confirm `getv/patches/thirdparty/0001-getv-port-layer.patch` actually
@@ -99,7 +99,7 @@ changed.** If it did not, the probe is not in the commit and re-running
 
 **2. Then the commit itself, owner-only, at the main PC, not through the bridge:**
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR
+cd C:\Users\<USER>\Desktop\GoldenEyeVR
 .\commit-session.ps1
 ```
 

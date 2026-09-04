@@ -105,7 +105,7 @@ they are held CONSTANT ACROSS BOTH ARMS and are not what is being judged.
 **ARM A — baseline, confirm the fault with the harness in place:**
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"      # Bunker 1 -- the level upstream measured on
 $env:GETV_GIVE  = "25"     # rocket launcher; GETV_GIVE_AMMO defaults to 400
 .\goldeneye.exe

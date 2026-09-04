@@ -383,13 +383,13 @@ section, which named the wrong two:**
 Z:\Desktop for both folders."*
 
 `[READ]` `commit-session.ps1` had **both repo paths hardcoded to
-`C:\Users\pdbar\Desktop\...`**. Its own loop prints `NOT FOUND` and `continue`s
+`C:\Users\<USER>\Desktop\...`**. Its own loop prints `NOT FOUND` and `continue`s
 on a missing path — **so on the `Z:` form it would have reported cleanly and
 committed NOTHING, in both repos, with a zero exit.** `49`'s shape in a script
 rather than an instrument: **a failure that prints something reasonable.**
 
 > **The first `commit-now.ps1` I wrote was worse — it hard-guarded on
-> `Test-Path 'C:\Users\pdbar\Desktop\GoldenEyeVR'` and would have refused to run
+> `Test-Path 'C:\Users\<USER>\Desktop\GoldenEyeVR'` and would have refused to run
 > outright.** I wrote a location check into a wrapper whose entire purpose was
 > removing a procedural trap, and put a second one in.
 

@@ -9,7 +9,7 @@ is an exact identity.**
 ## STEP 0 — BUILD
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 ```
 

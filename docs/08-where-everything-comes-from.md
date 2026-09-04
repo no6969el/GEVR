@@ -11,7 +11,7 @@ error, so be precise.
 | | `GoldenEye64Recomp` | `goldeneye-native` |
 |---|---|---|
 | Source | `github.com/cblock85/GoldenEye64Recomp` | `github.com/no6969el/goldeneye-native` |
-| On disk | `C:\Users\pdbar\Desktop\GoldenEye64Recomp` | **not on the rig** — see §2 |
+| On disk | `C:\Users\<USER>\Desktop\GoldenEye64Recomp` | **not on the rig** — see §2 |
 | Licence | mixed; links GPL-3.0 `N64ModernRuntime` | MIT |
 | Role | the thing that builds and runs | the design/spec repo + host-agnostic harness |
 | Holds | `patches/ge_vr_bindtest.c`, `patches/interpolation.c` | `VR-PLAN.md`, `PRIOR-ART.md`, `VENDORING.md`, `phase0/`, `include/ge_vr/`, `src/ge_vr_bridge.cpp` |

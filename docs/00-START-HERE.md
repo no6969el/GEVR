@@ -2752,7 +2752,7 @@ THE NEXT PHASE IS 6DoF, AND `161` IS THE PLAN (`148` superseded).**
 > # ►► S0 IS BUILT AND NOT YET WORN. `91`. BUILD, THEN WEAR IT. ◄◄
 >
 > ```powershell
-> cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+> cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 > .\build.ps1                                          # SHORT path - NO new patch name
 > .\vr.ps1 -UnitsPerMetre 50 -SeamNoRot -HandPosZ 1     # then F9 WHILE WEARING IT
 > taskkill /F /IM GoldenRecomp.exe                      # NEVER the X - B3/B4
@@ -3529,7 +3529,7 @@ judging anything else.** Then H1.
 ### 0. WEAR IT. It works now.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\vr.ps1                      # SBS is the default now - docs\65
 ```
 
@@ -3558,7 +3558,7 @@ single most useful thing `49` added, and every measurement since has come from
 it. `vr.ps1` and `build.ps1` live in the recomp repo root.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 ```
 
 ### 1. The regression check
@@ -3815,7 +3815,7 @@ what is open.**
 ## How to run
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\vr.ps1                    # head tracking, live FOV
 .\vr.ps1 -UnitsPerMetre 50   # THE MEASURED WORLD SCALE (`77`). The default of
                             # 100 is `16`'s derivation and reads ~2x too small.
@@ -3991,8 +3991,8 @@ That distinction separated a render bug from a pose bug twice in one session.
 ## Build
 
 ```powershell
-$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\pdbar\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+$env:PATH = "C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Users\<USER>\AppData\Local\Microsoft\WinGet\Links;" + $env:PATH
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 cmake --build build --target GoldenRecomp --config Release --parallel
 ```
 
@@ -4051,7 +4051,7 @@ repositories and pointed at a `goldeneye-native` that has since moved.**
 > ### **THE DESKTOP IS REACHABLE BY TWO PATHS AND BOTH ARE LIVE.**
 > **`Z:\Desktop\...` is the current one** (owner, 2026-08-29). Older documents —
 > including `147`'s launch command and every banner before `29e` — say
-> `C:\Users\pdbar\Desktop\...`. **They refer to the same folders.**
+> `C:\Users\<USER>\Desktop\...`. **They refer to the same folders.**
 > **DO NOT HARDCODE EITHER ONE IN A SCRIPT.** `commit-session.ps1` did, on the
 > `C:` form, and would have silently reported "NOT FOUND" and committed nothing.
 > Both it and `commit-now.ps1` now resolve from `$PSScriptRoot`. `257` §7.1.

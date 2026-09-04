@@ -115,7 +115,7 @@ gate is untouched by construction.
 
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 & getv\build_windows.ps1 -Target all *> build.log 2>&1
 cd getv\build-windows
 $env:GETV_MPCHR = "1"

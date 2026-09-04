@@ -87,7 +87,7 @@ from a PowerShell window with the mingw PATH in scope.
 
 1. **Re-run the build**, capturing the log, from `goldeneye-native/`:
    ```powershell
-   cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+   cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
    & getv\build_windows.ps1 -Target all *> build.log 2>&1
    ```
 2. Paste nothing huge — just say "done"; the assistant reads `build.log` over
@@ -222,15 +222,15 @@ All inputs are MIT (goldeneye-native, PD VR © Ryan Dwyer, Fast3D).
 
 Request these at session start (the whole GoldenEyeVR desktop folder covers all
 of it; listed granularly in case access is scoped):
-- `C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\` — the native port
+- `C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\` — the native port
   (build script, `getv/port/**`, `vendor/ge-decomp/**`, `build.log`,
   `build-windows/obj/**`). **This is the active work tree.**
-- `C:\Users\pdbar\Desktop\GoldenEyeVR\repo\docs\` — all handover/design docs
+- `C:\Users\<USER>\Desktop\GoldenEyeVR\repo\docs\` — all handover/design docs
   (this file, `225`–`228`, `00-START-HERE`, `HANDOVER`).
-- `C:\Users\pdbar\Desktop\GoldenEyeVR\local-only\perfect_dark_VR\` — the PD VR
+- `C:\Users\<USER>\Desktop\GoldenEyeVR\local-only\perfect_dark_VR\` — the PD VR
   source to port the VR layer from (Phases 1–5).
 - Read-only reference (recomp fallback, DELETE NOTHING):
-  `C:\Users\pdbar\Desktop\GoldenEyeVR\repo\` build/patches.
+  `C:\Users\<USER>\Desktop\GoldenEyeVR\repo\` build/patches.
 
 **Cannot run from the bridge:** the Windows PowerShell + mingw build itself —
 the owner runs `build_windows.ps1`; the assistant reads `build.log`.
@@ -335,7 +335,7 @@ which is consistent with the `files` pass never having been reached.
 ### NEXT ACTION — OWNER, IN **GIT BASH** (not PowerShell), from `vendor/ge-decomp`
 
 ```bash
-cd /c/Users/pdbar/Desktop/GoldenEyeVR/goldeneye-native/vendor/ge-decomp
+cd /c/Users/<USER>/Desktop/GoldenEyeVR/goldeneye-native/vendor/ge-decomp
 make -C tools/extractor                 # builds the extractor (mingw gcc)
 bash scripts/extract_baserom.u.sh files  # the half that never ran; ~10 min
 python3 ../../tools/gen_obseg_blobs.py   # now finds its 759 inputs
@@ -452,7 +452,7 @@ in this build's undefined list**, so they are left alone deliberately —
 ### NEXT ACTION — OWNER: JUST REBUILD (PowerShell)
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 & getv\build_windows.ps1 -Target all *> build.log 2>&1
 ```
 
@@ -532,7 +532,7 @@ the entire tree** (`u_UsetuplenZ_credits_data_0`), and it now resolves. **No oth
 ### NEXT ACTION — OWNER: REBUILD (PowerShell)
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 & getv\build_windows.ps1 -Target all *> build.log 2>&1
 ```
 
@@ -588,7 +588,7 @@ not reach the PAL text banks, as §9 assumed. **No stub was needed; do not add o
 **Run it with the owner's ROM. This is the gate `227` set and it has never been met.**
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 .\goldeneye.exe
 ```
 
@@ -657,7 +657,7 @@ and Phase 1 (stereo, `228`) begins. **`§5`'s phase list is unchanged.**
 
 **CAPTURE COMMAND (PowerShell) — play until an explosion, then quit:**
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 .\goldeneye.exe *> run.log 2>&1
 ```
 
@@ -803,7 +803,7 @@ missing textures or missing text.
 ### NEXT ACTION — REBUILD, THEN CAPTURE
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 & getv\build_windows.ps1 -Target all *> build.log 2>&1
 cd getv\build-windows
 .\goldeneye.exe *> run.log 2>&1
@@ -910,7 +910,7 @@ vars nothing above changes."* **Verified against `bondconstants.h:1939-1966`:**
 
 **A) Get in-game, and judge the explosion AND the gunshot audio:**
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_LOGFLUSH="1"; $env:GETV_MENU="10"; $env:GETV_MENUSTAGE="33"
 .\goldeneye.exe *> run_dam.log 2>&1
 ```
@@ -983,7 +983,7 @@ is what reads them, and it has not been on yet.**
 ### NEXT RUN — INTO THE LEVEL, WITH THE AUDIO COUNTERS ON
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_LOGFLUSH="1"; $env:GETV_AUDIO_DEBUG="1"
 $env:GETV_MENU="11"; $env:GETV_MENUSTAGE="33"
 .\goldeneye.exe *> run_lvl.log 2>&1
@@ -1149,7 +1149,7 @@ once alongside the audio probe.
 ### THE DISCRIMINATOR — 60 SECONDS, NO REBUILD, AND IT DECIDES EVERYTHING
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 Remove-Item Env:GETV_MENU, Env:GETV_MENUSTAGE -ErrorAction SilentlyContinue
 $env:GETV_LOGFLUSH="1"; $env:GETV_AUDIO_DEBUG="1"
 .\goldeneye.exe *> run_front.log 2>&1

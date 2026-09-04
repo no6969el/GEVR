@@ -35,7 +35,7 @@ thing, do TEST 1.**
 ## FIRST, EVERY TIME
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 ```
 
@@ -179,7 +179,7 @@ needs the headset.
 whole Route B argument before a line of it is built.**
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 .\vr.ps1 -NoXr
 ```
@@ -347,11 +347,11 @@ line already reports it; it needs a longer window, not new code.
 documents**.
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 Get-ChildItem .git -Recurse -Filter *.lock | Remove-Item -Force
-cd C:\Users\pdbar\Desktop\GoldenEyeVR
+cd C:\Users\<USER>\Desktop\GoldenEyeVR
 Get-ChildItem .git -Recurse -Filter *.lock | Remove-Item -Force
-.\commit-session.ps1 -Message (Get-Content C:\Users\pdbar\Desktop\GoldenEyeVR\COMMIT-MESSAGE-2026-08-24.txt -Raw)
+.\commit-session.ps1 -Message (Get-Content C:\Users\<USER>\Desktop\GoldenEyeVR\COMMIT-MESSAGE-2026-08-24.txt -Raw)
 ```
 
 **`-Message` IS NOW MANDATORY — `120` §1.** The old script staged a hardcoded

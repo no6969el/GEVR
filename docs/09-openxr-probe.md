@@ -125,7 +125,7 @@ Extract; headers in `include/openxr/`, import lib and DLL in
 
 ## Building and running the probe
 
-Working copy lives at `C:\Users\pdbar\Desktop\ge-vr-xrprobe\`. From a VS developer
+Working copy lives at `C:\Users\<USER>\Desktop\ge-vr-xrprobe\`. From a VS developer
 shell in that directory:
 
 ```

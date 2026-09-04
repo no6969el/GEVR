@@ -12,7 +12,7 @@ intro has been raised before and not acted on. Both are addressed here.**
 ### `[MEASURED]` — `run_blank.log` (2026-08-29 04:37), line for line:
 ```
 [getv][save] loaded 512/512 bytes from
-  C:\Users\pdbar\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\/eeprom.bin
+  C:\Users\<USER>\AppData\Roaming\Goldeneye-Native\Goldeneye-Native\/eeprom.bin
 ```
 **512 of 512 bytes loaded. THE BOOT WAS NOT BLANK.** `run_align0.log` (04:36) and
 `run_clock_60.log` (today, 14:56) load the identical file.

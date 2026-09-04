@@ -90,7 +90,7 @@ an exact identity, so an unset build is unchanged.
 User Input: "We did these tests but I am willing to test again"
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1                                                       # SHORT path, no new patch name
 .\vr.ps1 -UnitsPerMetre 50 -SeamNoRot -HandPosZ 1                 # A: today
 .\vr.ps1 -UnitsPerMetre 50 -SeamNoRot -HandPosZ 1 -PoseLag 4      # B: made worse on purpose

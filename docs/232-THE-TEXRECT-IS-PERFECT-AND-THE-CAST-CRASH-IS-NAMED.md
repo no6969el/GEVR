@@ -157,7 +157,7 @@ one run — unlike `GETV_NOFILLRECT`, which does not travel with them.**
 
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_MPCHR    = "1"
 $env:GETV_RECTTRACE = "1"
 .\goldeneye.exe *> run_mp.log 2>&1

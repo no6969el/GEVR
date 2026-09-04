@@ -97,7 +97,7 @@ the session's one-change-per-run budget.
 
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native
 & getv\build_windows.ps1 -Target all *> build.log 2>&1
 cd getv\build-windows
 dir goldeneye.map          # must exist, and be newer than goldeneye.exe is old

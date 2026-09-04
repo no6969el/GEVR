@@ -1,7 +1,7 @@
 # 160 — THE FULL PERFECT DARK SCAN. WHY IT IS NOT COPY-PASTE, AND THE FIVE THINGS THAT ARE.
 
 **2026-08-25. Source is now LOCAL and stays local:**
-`C:\Users\pdbar\Desktop\GoldenEyeVR\local-only\prior-art\perfect_dark_VR`
+`C:\Users\<USER>\Desktop\GoldenEyeVR\local-only\prior-art\perfect_dark_VR`
 **branch `port`, commit `67ea20c86986c6bc85687f26a27418b266af309c` (2026-08-19),
 MIT.** Same commit `102` was read at, so every line number in `102` still
 resolves. **It was NOT on disk before today** — `102` and `82` were written from

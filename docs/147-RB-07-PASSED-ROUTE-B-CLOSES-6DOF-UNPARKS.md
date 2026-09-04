@@ -8,7 +8,7 @@
 BUILD THE OWNER CALLED *"SO MUCH better... totally playable and enjoyable."***
 
 ```powershell
-cd C:\Users\pdbar\Desktop\GoldenEye64Recomp
+cd C:\Users\<USER>\Desktop\GoldenEye64Recomp
 .\build.ps1
 .\vr.ps1 -UnitsPerMetre 50 -SeamNoRot -HandPosZ 1 -ViRate 90
 ```

@@ -108,7 +108,7 @@ without an A/B.
 
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"
 .\goldeneye.exe *> run_ak.log 2>&1
 ```
@@ -178,7 +178,7 @@ and then ignored.**
 **Same binary. One variable. No build.**
 ```powershell
 Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\pdbar\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
+cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
 $env:GETV_STAGE = "9"
 $env:GETV_SLOTFREE = "0"
 .\goldeneye.exe
