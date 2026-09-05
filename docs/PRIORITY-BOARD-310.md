@@ -1,12 +1,41 @@
-> # ►►►► SUPERSEDED 2026-09-04 BY `PRIORITY-BOARD-310`. KEPT IN FULL, RULE `2`. ◄◄◄◄
-> **`H20` IS CLOSED NEGATIVE THERE** (`310` §1-§3): the renderer's frustum and the logged tangents
-> are the same four floats, and the 4:3 term is `bondview2.c:8657`'s stock `0.75 * 16/9`.
-> **This board's `H20` row and its §E item 0 are spent.**
+# PRIORITY BOARD — `310`. **LAST UPDATED 2026-09-04, AFTER `H20` CLOSED AND THE FLAT WALL WAS WORN.**
 
-# PRIORITY BOARD — `309`. **LAST UPDATED 2026-09-04, AFTER `RUN-SHEET-308` §2a WAS WORN.**
+> **►►►►►►►► SUPERSEDED 2026-09-04 BY `PRIORITY-BOARD-311`.** `RUN-SHEET-311` §2 and §3 are worn,
+> **candidate `A` is RETRACTED** — the separation is applied in full — and `H19` is restated as a
+> horizontal NDC -> pixel response. **Read `PRIORITY-BOARD-311`; this one is kept in full because
+> rule `2` deletes nothing.**
 
-> **CURRENT BOARD. Supersedes `PRIORITY-BOARD-308`, `PRIORITY-BOARD-307` (which `307` itself never
+> **CURRENT BOARD. Supersedes `PRIORITY-BOARD-309`, `PRIORITY-BOARD-308`, `PRIORITY-BOARD-307` (which `307` itself never
 > re-numbered), `PRIORITY-BOARD-306` and `PRIORITY-BOARD-299`.**
+>
+> **►►►►►►►► AND THEN THE FLAT WALL RAN, AND IT KILLED THE OTHER TWO CANDIDATES IN ONE SITTING.**
+> `[MEASURED]` `310` §7-§9: six admissible grabs over a **6.7-fold** depth range read
+> **`0.6921`-`0.7184`, mean `0.7051`, spread `0.026`** — **the correlator is accurate to ~2% and
+> CANDIDATE `C` IS DEAD**; and 28 pairs of that run's own probe lines give
+> `-dD / (camera displacement along look)` = median **`1.0053`**, so **`D` tracks the camera one
+> for one and CANDIDATE `B` IS DEAD TOO** (an additive offset dies separately — it would make the
+> ratio swing with depth, and the ratio is flat). **`0.750` AND `0.6667` ARE NOW EXCLUDED BY THE
+> DATA AS WELL AS BY THE ALGEBRA.** **►►►► WHAT IS LEFT IS `A`, AND IT IS ONE SENTENCE: THE
+> SEPARATION THAT REACHES THE DRAWN IMAGE IS `~22.6` GAME UNITS, NOT `32`.** Not filed, not
+> patched, count stays at five. **AND `V3` CANNOT CLOSE UNTIL IT IS FOUND** — `310` §9.1: a
+> constant `0.705` lets the `±5 px` gate pass only where `|predicted| <= 17` px, which is exactly
+> and only `S3b_5400`. **ONE DEFECT IN THIS SESSION'S OWN SHEET IS FILED (`00-STATE` §4):
+> `RUN-SHEET-310` §3 carried no admissibility gate, so an unmeasurable grab was scored rather than
+> refused — and it cleared the confidence floor while doing it. `RUN-SHEET-311` §0 carries the
+> gate.**
+>
+> **►►►►►►►► WHAT CHANGED FROM `309`: `H20` IS CLOSED, NEGATIVE, AND IT COST ONE SOURCE READ.**
+> **The renderer's horizontal frustum and the tangents `geStereoPredict()` logs are THE SAME FOUR
+> FLOATS** — `geStereoBuildFrustumF()` writes the projection `fr.c:776` installs and stashes those
+> floats in the statics the prediction reads (`310` §1). **And the 4:3 term is fully accounted for:
+> it is `bondview2.c:8657`'s stock `* 0.75f * WIDESCREEN_ASPECT`** (`310` §2). **Stronger still: an
+> error in `tR` of ANY size cannot produce the `~0.69` ratio, because `tR` cancels between the
+> drawn image and the prediction** (`310` §0 item 5) — so the whole `H20` family is dead, not just
+> the comparison that was asked for. `309` §6.2's "a 4:3 term is UNACCOUNTED FOR" is RETRACTED in
+> `00-STATE` §4. **`H19` IS UNCHANGED AND HAS ONE FEWER PLACE TO LIVE**; the three surviving
+> candidates are `310` §4 and NONE is filed. **`RUN-SHEET-310` §2 (the flat-wall grab, formerly
+> `RUN-SHEET-308` §2b) IS NOW THE PRIMARY INSTRUMENT FOR `H19`, not a tie-breaker, and it is the
+> only person-cost step on this board.**
 >
 > **►►►►►►►► WHAT CHANGED FROM `308`: `RUN-SHEET-308` §2a IS WORN AND ITS DIAGNOSIS IS
 > FALSIFIED. `H19` SURVIVES, NARROWED — the under-read is a near-constant ratio of ~`0.69`, not a
@@ -185,10 +214,10 @@ every instrument on this board would call that frame perfect.
 
 ---
 
-# §D — HOLES. **13 OF 20 CLOSED** — `H19` survives `RUN-SHEET-308` §2a, NARROWED; `H20` is new.
+# §D — HOLES. **14 OF 20 CLOSED** — `H20` CLOSED NEGATIVE by `310`; `H19` survives, narrowed and cornered.
 
-**CLOSED:** `H1` `H2` `H3` `H5` `H6` `H7` `H9` `H10` `H13` `H18` `N1` `N2` — the account is `301` §1,
-`303` §6, `305` §1.6, `308` §6. **`H7` was closed once and re-opened by `306` §1: it is closed for the C
+**CLOSED:** `H1` `H2` `H3` `H5` `H6` `H7` `H9` `H10` `H13` `H18` `H20` `N1` `N2` — the account is `301` §1,
+`303` §6, `305` §1.6, `308` §6, `310` §3. **`H7` was closed once and re-opened by `306` §1: it is closed for the C
 toolchain and it was NEVER closed for the Python one.**
 
 **►►►►►►►► `H1` AND `H18` — CLOSED 2026-09-04, `RUN-SHEET-308` §1, AND THE FIX IS ONE RELATIVE
@@ -213,26 +242,33 @@ spurious peak is what the contrast floor catches.
 | **H15** | `dlgrab_eyecensus.py` compares DL call targets as a **SET**, so a pure reorder reads PERFECT | **LOW** — closed by a sibling tool; the open part is whether it belongs inside the census | `305` §1.3. **`304` §1.2 is the precedent for editing an instrument; `H8` is the argument for keeping two.** `RUN-SHEET-305` §6 |
 | **►► H16 (NEW, `306`)** | **AN INSTRUMENT THAT PRINTS OUTSIDE ASCII CAN DIE ON THE OWNER'S MACHINE AND NOT ON THE BRIDGE — AND IT DIES AT THE FINDING, BECAUSE THAT IS WHERE THE EMPHASIS ARROWS ARE** | **LOW** — the five sites are fixed; the RULE is the open part | `[MEASURED]` `order_sweep_305.txt` 23:45:07Z: `UnicodeEncodeError: 'charmap' codec` on `►` at `dlgrab_dlorder.py:93`, **the `PERMUTATION` verdict line**, on the first permuted frame in the corpus. `--selftest`'s check `B` header and **`stereo_disparity.py`'s `H1` peg alarm** are the same shape: **the alarm `H1` was opened to make fire is a line that could not print.** ►► **THE RULE: instrument OUTPUT is ASCII. The docs can have arrows; the tools cannot.** A gate's expected TEXT is part of the gate, so the check count stayed at 7 |
 | **►► H17 (NEW, `307`)** | **`ZERO-REBUILD FRAMES` COUNTS A FRAME WITH AN EMPTY PROP LIST AS A FRAME WHERE THE SECOND EYE GOT NOTHING** | **LOW** — the split; **a DIAGNOSIS, not a patch** | `[MEASURED]` `run_306_S3_separation.log`: **2,220 of 7,636**, contiguous frames 1810–4029, **every one `zsnap=0`** (the owner stood still facing a wall with nothing on screen), `eyes-rebuilt=1`, `skipped=0`, `pass-never-ran=0` — **and the gate's own words are "it must be 0", so as written it FAILS A HEALTHY ARM.** `H2`'s instrument with an `H3` defect. **The shape: `zero-rebuild(zsnap>0)` beside `zero-rebuild(zsnap==0)`, the way `N1` split the near line. `301` §0 — the count is five** |
-| **►► H19 (`308`, NARROWED BY `309`)** | **`S3b` READS A NEAR-CONSTANT ~`0.69` OF THE PREDICTED DISPARITY AND NOTHING ON THE BOARD KNOWS WHY** | **LOW** offline; **MEDIUM** with the §2b run | `[MEASURED]` `309` §1.1/§5.1/§7 under `py`: median proportional error **`30.76%`** (not `10-13%` — RETRACTED, `00-STATE` §4), and the `measured/predicted` RATIO is **`0.652`-`0.799` over ten mid-band grabs, median `0.692`**. **THE `--patch` LADDER FALSIFIES `RUN-SHEET-308` §2a's DIAGNOSIS: `1.00 / 0.50 / 0.25 / 0.10` give `0.692 / 0.696 / 0.696 / 0.697` — a fifteen-fold narrowing moves it by `0.005`.** Patch averaging over depth is NOT the cause. **What the ladder DID do is eat both outliers** (`10177` `1.129 -> 0.750`, `5400` `1.449 -> 0.634`); at `FRAC 0.25` all twelve lie in `0.634`-`0.814`. **Two candidates killed offline by reading: the eye-width conversion (log `910.34`-`913.45`, `stereo.c` `912.67`, tool `912` — they AGREE) and the log's 1/D law (`frac*D` = `-23.376`-`-23.384` over 687 lines — exact). WHATEVER IS WRONG IS A CONSTANT — see `H20`** |
-| **►►►► H20 (NEW, `309`)** | **THE LOGGED FRUSTUM CARRIES A 4:3 TERM THE EYE'S OWN ASPECT DOES NOT ACCOUNT FOR, AND NOBODY HAS CHECKED WHETHER THE RENDERER AGREES WITH IT** | **LOW** — it is a source read, OFFLINE | `[MEASURED]` `309` §6.2 from `run_307_S3b_sep32.log`: eye viewport **`160x180`** n64 units (full width `320`), tangents **`L/R = ∓0.684267`**, **`D/U = ∓0.577350`**, `tanw = 1.368534`. **`0.577350 * (160/180) * (4/3) = 0.684267` EXACTLY** — the horizontal tangent is the vertical times the eye aspect times an extra `4/3`. `geStereoPredict()` (`vendor/ge-decomp/src/game/stereo.c:512`) computes `frac = -sep / (D * tanw)` from it. **A dropped or added 4:3 gives ratios `0.750` or `0.667`; the measurement is `0.692`-`0.697` and BRACKETED BY BOTH, so this is `[HYPOTHESIS]`, NOT a fix (`301` §0 — the count is five).** **THE STEP: read the eye loop's OWN projection and compare it against these logged tangents. If they agree, the constant is elsewhere.** Deciding `0.667` from `0.750` needs the correlator's error bar, which is what `RUN-SHEET-308` §2b measures |
+| **►►►►►►►► H19 (`308`, NARROWED BY `309`, CORNERED BY `310`)** | **THE SEPARATION THAT REACHES THE DRAWN IMAGE IS `~0.705` OF THE ONE REQUESTED — `~22.6` GAME UNITS INSTEAD OF `32` — AND NOTHING ON THE BOARD KNOWS WHY** | **LOW** — two runs, no build (`RUN-SHEET-311` §2, §3) | `[MEASURED]` `310` §7: six admissible flat-wall grabs across a **6.7-fold** depth range read **`0.6921`-`0.7184`, mean `0.7051`, spread `0.026`**, and most of that spread is `dx` being an integer — **so the correlator is good to ~2% and it is reporting a REAL under-read.** **FOUR CANDIDATES ARE NOW DEAD, ALL BY MEASUREMENT: the eye-width conversion** (`309` §6.1, and again from `gfx_pc.c` and from the image's own detected play area — `310` §0 item 6, §8.1); **the frustum / 4:3** (`310` §1-§2, and `tR` cancels structurally — §0 item 5); **the correlator** (§7, candidate `C`); **the measured depth** (§8, candidate `B` — 28 probe-line pairs give `-dD/along` median `1.0053`, and an additive offset would make the ratio swing with depth while it is FLAT). **WHAT IS LEFT IS `A`: the applied separation itself.** `geStereoOffsetCameraPos()` (`stereo.c:333-423`) is called once, from `bondview2.c:8958`, on `cam_pos` only, and the pose is identity in-game (`posespine.c:76`, and `GETV_POSETEST`/`GETV_POSE_SELFTEST` were unset), **so on the source alone the offset should be exactly `±sep/2` along a unit right vector. It is not what the image shows.** **NEXT: `RUN-SHEET-311` §2 (the `32/64/128` sweep — is it a pure scale?) then §3 (the `MODE=2` discriminator — is the loss in the VIEW path specifically?). NEITHER PATCHES ANYTHING** (`301` §0, the count is five) |
+| ~~**H20**~~ **CLOSED NEGATIVE 2026-09-04, `310`** | **THE LOGGED FRUSTUM'S 4:3 TERM — IS IT UNACCOUNTED FOR, AND DOES THE RENDERER AGREE WITH THE LOGGED TANGENTS?** | **LOW** — it was a source read, OFFLINE, and it cost nothing | **THEY AGREE BY CONSTRUCTION AND THE 4:3 IS RETAIL.** `[MEASURED]` `310` §1: `geStereoBuildFrustumF()` (`stereo.c:255-311`) computes `tL/tR/tD/tU`, writes the matrix `fr.c:776` installs and `fr.c:788` loads as `G_MTX_PROJECTION`, **and stashes those same floats into `ge_st_tL…ge_st_tU` (`stereo.c:310`), which is exactly what `geStereoPredict()` reads at `:487`.** There is no second projection. `[ARITHMETIC, exact]` `310` §2: `(320/180) * 0.75 * (16/9) = 2.370370` is `bondview2.c:8657`'s STOCK 16:9 branch (`WIDESCREEN_ASPECT`, `fr.h:8`), halved once by `geStereoEyeAspect()` (`stereo.c:197`) to `1.185185`, times `tU = 0.577350` = **`0.684267`**, the logged tangent to six decimals. **`0.75 * 16/9` IS the `4/3`.** **►►►► AND THE KILL IS WIDER THAN THE QUESTION: `mf[0][0] = 1/tR` and the prediction divides by `tanw = 2*tR`, so ANY error in `tR` cancels out of `measured/predicted` exactly** (`310` §0 item 5). Neither `0.750` nor `0.667` was applied to anything; **the count of wrong filed fixes stays at five** |
 | ~~**H18**~~ **CLOSED** | **THE DISPARITY GATE HAS NO AMPLITUDE CHECK — A PREDICTION CAN BE CORRECT AND UNMEASURABLE** | **LOW** as a run-sheet step (`RUN-SHEET-307` §2.0); **MEDIUM** as the durable form | `[MEASURED]` `307` §1: **−7,024 px predicted on a 912 px eye**, on all seven `S3` grabs and all 109 probe windows, because disparity goes as **1/D** and `separation=500` met `D≈47`. The bound is the **IMAGE EDGE**, not `--search` (`301` §2 selftest C). **The durable form is the game refusing to print a `PREDICTION` it knows is unreachable, or `stereo_disparity.py` refusing a `--predicted-frac` outside its own range** — the same shape as its existing `\|dx\| >= 8` refusal |
 
 ---
 
 # §E — WHAT THE NEXT SESSION SHOULD TAKE
 
-**UPDATED 2026-09-04 — `RUN-SHEET-308` §2a IS WORN AND ITS DIAGNOSIS IS FALSIFIED.** `309`.
+**UPDATED 2026-09-04 — `H20` CLOSED, THE FLAT WALL WORN, `B` AND `C` DEAD, `A` CORNERED.** `310`.
 
-0. **►►►►►►►► `H20` — READ THE EYE LOOP'S OWN PROJECTION AND COMPARE IT AGAINST THE TANGENTS
-   `geStereoPredict()` LOGS. OFFLINE, NO RUN, NO BUILD.** It is the cheapest remaining question and
-   it is decisive in one direction: **if the renderer's horizontal frustum differs from the logged
-   `tanw = 1.368534`, the prediction has been wrong by that ratio the whole time and `V3` has been
-   grading the game against a bad number; if they agree, the constant is somewhere else and the
-   candidate dies the way the eye-width one did** (`309` §6.1 — one `grep` closed it).
-0a. **`RUN-SHEET-308` §2b — the flat-wall single-depth run. NOW MORE NECESSARY, NOT LESS.** It is
-   the only step that measures **the correlator's own error bar**, and without one `0.667` and
-   `0.750` cannot be told apart (`309` §6.2). Stand point-blank facing a FLAT textured wall filling
-   the whole view, `GETV_STEREO_OFFSET=32`, F9 four or five times. **The only person-cost step.**
+0. ~~**`H20` — read the eye loop's own projection**~~ — **DONE 2026-09-04, `310` §1-§3. CLOSED
+   NEGATIVE.** They agree by construction and the 4:3 is retail. **The candidate died the way the
+   eye-width one did, and it cost one source read and no owner time.**
+0a. ~~**`RUN-SHEET-310` §2 — the flat-wall single-depth run**~~ — **WORN 2026-09-04, `310` §7-§9.**
+   **It did more than it was asked to: it killed candidate `C` AND, from its own log, candidate
+   `B`.** The correlator has an error bar for the first time (~2%), and `V3`'s failure is now
+   quantified rather than described.
+0b. **►►►►►►►► `RUN-SHEET-311` §2 — THE SEPARATION SWEEP, `32 / 64 / 128`. `LOW`, ~5 MINUTES, NO
+   BUILD, AND IT IS THE FIRST JOB.** `A` says the ratio is the SAME at every separation. **If it
+   moves with `sep`, it is not a scale factor and that outranks everything on this board.** It also
+   cuts the quantization error 4x, which sharpens the constant itself.
+0c. **`RUN-SHEET-311` §3 — the `MODE=2` discriminator at `D ~= 1000`. `LOW`, ~5 MINUTES, NO BUILD.**
+   `MODE=2` never touches the view matrix. **`~1.00` puts the loss in the VIEW path and confirms
+   `A`; `~0.705` puts it somewhere common to both paths and reopens what `310` §8.1 closed.**
+   **A falsifier, not a fix.**
+0d. **The instrumented print of the applied `|eye_pos - centre_pos|` needs a BUILD — `MEDIUM`. Do
+   `0b` and `0c` first; they may name the factor without one.**
 0b. **AND IF `V3` EVER CLOSES, `V4` (`S4`, the mode-2 falsifier) RUNS IN THE SAME SITTING** — a
    pass with no negative arm is a claim, not a result (`49`).
 

@@ -1,3 +1,7 @@
+> # ►►►► SUPERSEDED 2026-09-04 BY `PRIORITY-BOARD-309`, AND NOW BY `PRIORITY-BOARD-310`. KEPT IN FULL, RULE `2`. ◄◄◄◄
+> **BANNERED LATE, BY `310`.** `NEXT-SESSION-PROMPT-310` stated this board was already bannered and
+> it was not — the banner is the one thing that stops a stale board being quoted forward.
+
 # PRIORITY BOARD — `308`. **LAST UPDATED 2026-09-04, AFTER `RUN-SHEET-308` §1 WAS WORN.**
 
 > **CURRENT BOARD. Supersedes `PRIORITY-BOARD-307` (which `307` itself never re-numbered),
