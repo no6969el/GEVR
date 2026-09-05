@@ -1,0 +1,41 @@
+---- D-X3-KILL, IN goldeneye.exe. `PLAN-329-FRAMELOOP`, FORKS A2 / B1 / C2. ----
+This does NOT arm the pacing interlock and does NOT touch sync_framerate_with_timer().
+[getv][xrkill] pumping xrPollEvent for READY, budget 200 x 25 ms = 5000 ms.
+[getv][xrkill]   UNKNOWN -> IDLE
+[getv][xrkill]   IDLE -> READY
+[getv][xrkill] SESSION BEGUN in the game process, PRIMARY_STEREO committed, after 2 transition(s).
+[getv][xrkill] ARM A: 300 frames of xrWaitFrame -> xrBeginFrame -> xrEndFrame(layerCount 0).
+[getv][xrkill] NO acquire, NO draw, NO layer, NO SWAPCHAIN (FORK B1). The game is frozen inside one gePortRenderDisplayList() call for the duration.
+[getv][xrkill] state READY -> SYNCHRONIZED at frame 1
+[getv][xrkill] state SYNCHRONIZED -> VISIBLE at frame 1
+[getv][xrkill] ARM A completed 300 frames, 2 state transition(s) during the loop.
+
+---- D-X3-KILL ARM A, IN THE GAME PROCESS, 270 frames scored (30 discarded as warm-up) ----
+N DEVIATION   300 frames requested, NOT arm A's 600 (FORK A2, `PLAN-329` section 4). The per-iteration body is arm A's, unchanged; only the sample count differs, and it differs to keep the run under the ~5 s window-ghosting threshold.
+SWAPCHAINS    NONE (FORK B1). All four prior measurements had two, created and untouched. That is the one axis on which this arm differs from them.
+interval ms   mean 11.1320   min 10.6435   max 14.6934
+interval ms   p50 11.1120   p95 11.1373   p99 11.5787
+period   ms   min 11.1111   max 11.1111   spread 0.0000%   => 90.0001 Hz
+shouldRender  270 of 270 frames true
+discarded     0 frames of 300 reported XR_FRAME_DISCARDED by xrBeginFrame
+wall clock    3005.64 ms measured over the scored frames, 3000.00 ms if every frame had cost exactly one period
+
+K-3 LANDS. mean interval 11.1320 ms is inside 10% of the runtime's own
+    period (11.1111 .. 11.1111 ms). xrWaitFrame BLOCKS IN THE GAME PROCESS, where
+    the GL context, the SDL pump and the swap belong to someone else.
+    D-X3 SURVIVES. IT IS NOT BUILT.
+K-3b predictedDisplayPeriod spread 0.0000% across the run. A one-shot read of
+     it is safe ON THIS RUN.
+K-3c shouldRender was TRUE on every scored frame, with no layer ever
+     submitted. Recorded. It says the runtime expected frames it never got.
+K-3d the runtime's rate is 90.0001 Hz. THE INTERLOCK IS NOT ARMED BY THIS LOOP --
+     geVrXrPaceArm() is NOT called, geVrXrPacingOwned() is NOT read, and
+     sync_framerate_with_timer() KEEPS THE CLOCK. The handover is I-3/D-X3
+     proper and it is gated on this run having an answer.
+
+CONDITIONS ARE NOT IN THIS FILE. `325` section 2: VISIBLE NO LONGER IMPLIES
+WORN. This run is unlabelled until a sidecar says desk or worn.
+[getv][xrkill] xrRequestExitSession -> XR_SUCCESS (0)
+[getv][xrkill] state VISIBLE -> SYNCHRONIZED at frame 300
+[getv][xrkill] state SYNCHRONIZED -> STOPPING at frame 300
+[getv][xrkill] xrEndSession -> XR_SUCCESS (0)   (state at the call: STOPPING)

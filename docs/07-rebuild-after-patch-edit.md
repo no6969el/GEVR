@@ -1,4 +1,8 @@
-# Rebuilding after editing a file in `patches/` — verified 2026-08-22
+﻿> **Build-phase note (2026-09-05):** This doc is part of the *ideas trail*.
+> The playable GETV VR workshop (gevr_*, working XR frame loop in the game
+> process, drop-in patch series) is **not** published yet — see
+> `docs/RELEASE-POLICY.md`. Use this to re-derive, not to clone a finished VR build.
+# Rebuilding after editing a file in `patches/` â€” verified 2026-08-22
 
 The full build order in `02-windows-build-notes.md` is for a cold start. This is
 the inner loop: you changed a `.c` in `patches/` and want a new exe. Verified
@@ -16,7 +20,7 @@ That is all. CMake's `PatchesBin` target runs `make` in `patches/`, the
 `patches.elf` byproduct triggers `./N64Recomp patches.toml`, and the regenerated
 `RecompiledPatches/` feeds the link. Roughly a minute when only the patch changed.
 
-## GOTCHA 1 — the PATH line is not optional
+## GOTCHA 1 â€” the PATH line is not optional
 
 `clang`, `cmake` and `make` are all installed but **none of them are on the PATH
 that a tool-driven or long-lived shell inherits.** LLVM and CMake were added to
@@ -35,7 +39,7 @@ It is the single most misleading error in this build and it costs half an hour i
 you read it literally. A freshly opened interactive terminal usually has the right
 PATH; anything automated usually does not. Just set it explicitly.
 
-## GOTCHA 2 — bare `make` links with the wrong linker
+## GOTCHA 2 â€” bare `make` links with the wrong linker
 
 If you run `make` in `patches/` by hand rather than through CMake, it links with
 `ld`, not `ld.lld`, and fails:
@@ -46,18 +50,18 @@ make (e=2): The system cannot find the file specified.
 ```
 
 Reads like a linker crash. It is a missing binary. **`LD` is a GNU make built-in
-variable**, preset to `ld`, so the Makefile's `LD ?= ld.lld` never takes effect —
+variable**, preset to `ld`, so the Makefile's `LD ?= ld.lld` never takes effect â€”
 `?=` only assigns when the variable is unset, and make has already set it. CMake's
 `PatchesBin` passes `LD=` through `cmake -E env`, which overrides the built-in, so
 the CMake path is fine and only the hand-run path breaks.
 
 Always: `make CC=clang LD=ld.lld`.
 
-## GOTCHA 3 — `tools_weaken_patched.py` had never actually run its filter
+## GOTCHA 3 â€” `tools_weaken_patched.py` had never actually run its filter
 
 Fixed 2026-08-22; the corrected copy is in this folder. The script used
 `WEAK_SUPPORTED` sixteen lines before defining it, so every run on Windows died
-with `NameError: name 'WEAK_SUPPORTED' is not defined` — before touching a single
+with `NameError: name 'WEAK_SUPPORTED' is not defined` â€” before touching a single
 file. The `#if 0` filtering block that flag guards had therefore never executed,
 and the rename state on disk came from an older version of the script.
 
@@ -72,14 +76,14 @@ weakened 29 patched functions across N files
 Note the doc set says *fourteen* `#if 0` patches; the filter now reports
 **thirteen**. The old count predates the filter ever running. Trust the script.
 
-## RESOLVED — `./N64Recomp patches.toml` works on Windows
+## RESOLVED â€” `./N64Recomp patches.toml` works on Windows
 
 `02-windows-build-notes.md` listed as unproven risk #3 that CMake invokes
 `./N64Recomp patches.toml` with a Unix-style path that might not resolve. **It
 resolves.** PowerShell accepts `./N64Recomp` and finds `N64Recomp.exe`. No manual
 workaround is needed. Delete that risk.
 
-## GOTCHA 4 — `--target` skips CMake regeneration, silently
+## GOTCHA 4 â€” `--target` skips CMake regeneration, silently
 
 **Added a source file, or edited `CMakeLists.txt`?** The one-liner will build
 happily and ignore your change completely.
@@ -124,12 +128,12 @@ cmake --build build --target GoldenRecomp --config Release --parallel
 Re-running the script is safe and idempotent: it rewrites
 `RECOMP_FUNC void NAME(` to `RECOMP_FUNC void NAME__recomp_orig(`, which no longer
 matches once renamed. Interpolation slice 6 changed exactly one file for that
-reason — the other 28 names were already done.
+reason â€” the other 28 names were already done.
 
-It does **not** create the `.bakweak` backups — those were made by hand — so there
+It does **not** create the `.bakweak` backups â€” those were made by hand â€” so there
 is nothing to clobber.
 
-**First build in a clean tree:** the ordering trap in `06-replicate.md` applies —
+**First build in a clean tree:** the ordering trap in `06-replicate.md` applies â€”
 the script filters against `RecompiledPatches/patches.c`, which does not exist
 yet. Run the script, build once, run it again.
 
@@ -142,7 +146,7 @@ patches.toml  -> Function count: 347   (before Phase 1 step 1)
 ```
 
 If the count does not move after you edited a patch, `make` failed and you are
-recompiling a stale `patches.elf` — check for GOTCHA 2. `N64Recomp` will happily
+recompiling a stale `patches.elf` â€” check for GOTCHA 2. `N64Recomp` will happily
 succeed against the old elf and report the old count. This is how a broken build
 disguises itself as a working one.
 
@@ -184,12 +188,12 @@ cd C:\Users\<USER>\Desktop\GoldenEye64Recomp\patches
   -I ../lib/rt64/include yourfile.c -c -o yourfile.o
 ```
 
-**Three warnings are expected and pre-existing** — a `-Wvisibility` on
+**Three warnings are expected and pre-existing** â€” a `-Wvisibility` on
 `sndPlaySfx` in `externs.h:245`, and `MIN`/`MAX` redefined between
 `lib/ge/include/math.h` and `PR/gbi.h`. They come from the headers, not from your
 file. Anything else is yours.
 
-## GOTCHA 4 — how you LAUNCH it decides whether it runs at all
+## GOTCHA 4 â€” how you LAUNCH it decides whether it runs at all
 
 Found 2026-08-22, after half an hour spent suspecting the patch code.
 
@@ -206,13 +210,13 @@ working directory to the exe's own folder.
 
 The cause is `gamecontrollerdb.txt`. `CMakeLists.txt:162` downloads it to the
 **repo root**, not next to the exe, and SDL resolves it relative to the working
-directory. When it is missing you get one line on stderr —
+directory. When it is missing you get one line on stderr â€”
 
 ```
 Failed to load controller mappings: Invalid RWops
 ```
 
-— and then, shortly after, a null dereference. A missing *optional* controller
+â€” and then, shortly after, a null dereference. A missing *optional* controller
 database should be a warning, not a crash; it is an upstream bug, and worth fixing
 properly if input ever misbehaves. For now, just launch from the right directory.
 
@@ -221,7 +225,7 @@ properly if input ever misbehaves. For now, just launch from the right directory
 The failure mode is maximally misleading. The exe dies in under ten seconds with
 no window, the Application event log names the faulting module as
 `GoldenRecomp.exe` itself (not a DLL), and the fault offset is stable across runs
-— all of which reads like freshly broken recompiled code. It is not. If you have
+â€” all of which reads like freshly broken recompiled code. It is not. If you have
 just changed a patch and the exe starts crashing, **check the working directory
 before you bisect your patch.**
 
@@ -232,7 +236,7 @@ build `--config RelWithDebInfo` and reproduce there.
 ### Bisecting patches: make sure you actually disabled the thing
 
 A cautionary note from the same session. Disabling interpolation slice 6 via
-`GE_INTERP_BULLET_IMPACTS=0` does **not** remove the patch — the `#else` branch
+`GE_INTERP_BULLET_IMPACTS=0` does **not** remove the patch â€” the `#else` branch
 still replaces `explosionCallRenderBulletImpactOnProp` and still calls across into
 game code. Likewise `GE_VR_MODE_OFF` still patches both projection setters; it
 only skips the maths.

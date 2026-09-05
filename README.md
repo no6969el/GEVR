@@ -21,6 +21,13 @@ recompilation, **not** emulation. You supply your own ROM for assets.
 | `tools/` | Offline stereo / screenshot measurement helpers |
 | `historical/recomp/` | Early MIT patches that dropped into GoldenEye64Recomp only |
 
+
+## Build-phase publishing
+
+GEVR publishes the **textbook** (docs, measured results, architecture) so others
+can start from scratch. The **workshop** — the playable native VR layer currently
+landing in a private GETV tree — stays unpublished until release. Details:
+`docs/RELEASE-POLICY.md`.
 ## Status (honest)
 
 Active engineering is on the **native** eye-model / stereo instruments, documented

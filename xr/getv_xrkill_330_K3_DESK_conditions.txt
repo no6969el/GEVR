@@ -1,0 +1,17 @@
+run           K-3 (PLAN-330-CHAIR section 4), 330
+condition     DESK
+time_local    2026-09-05 18:59:45
+exe_md5       70BF2580239CD6B7C402C063D89B976F
+exe_len       18101808
+exe_label     goldeneye.exe.vr329 staged as goldeneye.exe
+knobs         GETV_VR=1  GETV_XR_KILL=1  GETV_XR_KILL_AT unset (default 120)
+forks         A2 N=300 warmup 30, B1 no swapchains, C2 stdout and report file
+steamvr       RUNNING (vrmonitor, vrserver, vrcompositor present at launch)
+headset       AWAKE, ON THE DESK, NOT WORN (fork D1)
+dashboard     DISMISSED
+other_openxr  NONE running at launch
+scene         Dam gameplay through level end (Bond jump-off sequence); lockup on return to menu
+killed        yes -- closed with X after menu lockup (process would not quit normally)
+stdout_log    repo\xr\k3_330_stdout.log
+report        F:\Projects\GEVR\GoldenEyeVR\repo\xr\getv_xrkill_report_330_DESK.txt
+notes         K-3 first exercise of the report path. Window freeze: menu lockup after Dam end (Bond jump-off) when returning to menu; closed with X (not normal quit). Gameplay itself played fine through level end. HMD awake on desk not worn.

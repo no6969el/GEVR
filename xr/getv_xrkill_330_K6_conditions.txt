@@ -1,0 +1,11 @@
+run           K-6 (PLAN-330-CHAIR section 3), 330
+condition     DESK
+time_local    2026-09-05 18:47:31
+exe_md5       70BF2580239CD6B7C402C063D89B976F
+exe_len       18101808
+exe_label     goldeneye.exe.vr329 staged as goldeneye.exe
+knobs         ALL GETV_ UNSET
+steamvr       CLOSED (vrmonitor, vrserver, vrcompositor all absent at launch)
+headset       not required for this run
+stdout_log    repo\xr\k6_330_stdout.log
+notes         K-6 baseline: all GETV_ knobs unset, SteamVR closed, played to gameplay and quit normally.
