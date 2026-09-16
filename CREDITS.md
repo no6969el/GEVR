@@ -2,13 +2,18 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
+Play the Beta: [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439). Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
+
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
 ---
 
 ## Not ours (please do not credit us for these)
 
-| |---|---| **GoldenEye 007** | Nintendo / Rareware. The game, ROM, and assets are theirs. GEVR does **not** ship a ROM or game assets. You bring a USA `.z64` you own. | **GEVR workshop binary** | Our OpenXR / VR delta on top of the native port. Separate from the game data and from upstream licences below. |
+| What | Whose |
+|------|--------|
+| **GoldenEye 007** | Nintendo / Rareware. The game, ROM, and assets are theirs. GEVR does **not** ship a ROM or game assets. You bring a USA `.z64` you own. |
+| **GEVR workshop binary** | Our OpenXR / VR delta on top of the native port. Separate from the game data and from upstream licences below. |
 
 ---
 
@@ -64,7 +69,12 @@ We credit only real influence or reuse. Survey-only reads and projects we did **
 
 These showed up in prior-art surveys. They are **not** credited as sources of GEVR code or knobs unless a later note says otherwise.
 
-| Project | Why listed | Used in GEVR? |---|---|---| StarFox64-VR | Licence unclear; rule was do not read source | **No** | GoldenEye64Recomp / N64ModernRuntime | GPL host stack; kept external on purpose | **Not vendored** | Xbox 360 GoldenEye recomps | Different game build / assets | **No** | MGB64 (akratch) | Sibling native-port survey / control read | **Reference only** |
+| Project | Why listed | Used in GEVR? |
+|---------|------------|---------------|
+| StarFox64-VR | Licence unclear; rule was do not read source | **No** |
+| GoldenEye64Recomp / N64ModernRuntime | GPL host stack; kept external on purpose | **Not vendored** |
+| Xbox 360 GoldenEye recomps | Different game build / assets | **No** |
+| MGB64 (akratch) | Sibling native-port survey / control read | **Reference only** |
 
 ---
 
@@ -81,7 +91,9 @@ If you spot a missing credit for something we really used, open an Issue titled 
 
 ## Quick links
 
+- [Play vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)
+- [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
 - [docs/ORIGIN.md](docs/ORIGIN.md) - ours vs upstream tags
 - [LICENSE](LICENSE) - this public docs/tools tree
-- [Roadmap](docs/ROADMAP.md)  | [Coming soon](docs/COMING-SOON.md)
+- [Roadmap](docs/ROADMAP.md) · [Coming soon](docs/COMING-SOON.md)

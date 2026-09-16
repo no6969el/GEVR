@@ -1,4 +1,6 @@
-# Feature snapshot (public) — 2026-09-13
+# Feature snapshot (public) - 2026-09-13
+
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439). This file is an older wear trail. Native PimaxXR and Quest 3 + Virtual Desktop OpenXR are verified on vr439.
 
 High-level status of the **private** playable wear. This is an ideas / honesty trail, **not** a download.
 
@@ -14,7 +16,6 @@ High-level status of the **private** playable wear. This is an ideas / honesty t
 - Crashes under investigation (report with steps)
 - Hallway / behind-you visibility: guards or props sometimes invisible until you turn to face them
 - Full colocated body + hands unfinished
-- Quest + Virtual Desktop attach not a supported Beta path yet
 - Cosmetic wants (reticle size, surface snap) parked behind stability
 
 ## Refused / not shipping as crutches
@@ -25,6 +26,5 @@ Update this file when wear PASSes change; keep it short and non-recipe.
 
 ## Headset / runtime (2026-09-15)
 
-- **PASS / verified:** Pimax Crystal Super + **SteamVR OpenXR**
-- **OPEN attach digs:** native PimaxXR; Quest 3 + Virtual Desktop (VDXR) flat attach
+- **PASS / verified on vr439:** Pimax Crystal Super + SteamVR OpenXR; native PimaxXR; Quest 3 + Virtual Desktop OpenXR
 

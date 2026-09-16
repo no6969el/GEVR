@@ -1,28 +1,28 @@
 # Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) - full zip (exe, `glew32.dll`, other runtime DLLs, `Start-GEVR.bat` for headset / `Play-on-monitor.bat` for flat, notes). Bring your own USA GoldenEye `.z64`; images are file-backed from your ROM.
+**Play now:** [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) (GitHub Latest). Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`.
 
-First launch prepares those images (can take a bit). A new Beta zip does that **once** automatically on first `Start-GEVR.bat` - you do not delete the cache folder yourself. Later launches with the same zip and same ROM are fast.
+This is the cut to grab. Older tags stay for history. Their zips were removed.
 
-**vr438 had a broken VR boot stub** - grab vr439, not another vr438 zip.
+- **vr434** was pulled (baked ROM images).
+- **vr438** was BYO-ROM with a stub VR boot. It looked like an old build.
+- **vr439** restores the vr434 KEEP picture on BYO-ROM.
 
-**vr434 is not live** - we pulled it on 2026-09-16 because that build linked image data into `goldeneye.exe` and could boot without a ROM. Do not use an old vr434 download.
+**Star** the repo and **Watch -> Releases** so the next cut shows up without you refreshing every day.
 
-**Star** the repo and **Watch → Releases** so the next cut shows up without you refreshing every day.
+## On this cut
 
-## VR that works on this cut
+- Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
+- **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR), **native PimaxXR**, **Quest 3 + Virtual Desktop OpenXR**.
+- 72 / 80 / **90** Hz should work (headset default 90). Over 90 is still beta-test territory.
+- Local split-screen works on a monitor.
 
-- **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) - primary wear path
-- **Native PimaxXR** - verified
-- **Quest 3 + Virtual Desktop OpenXR** - verified
+## Later (not this zip)
 
-72 / 80 / **90** Hz should work (zip defaults to 90). Above 90 is still beta-test territory - please report Issues.
+- A **LAN / same-network multiplayer add-on**
+- Online play after that
+- Fewer Dam / glass quirks, fewer crashes
 
-Full recipe + controls: [CONTROLS.md](CONTROLS.md). Attract sheet: [FEATURES.md](../FEATURES.md). Pack gates: [packaging/README.md](../packaging/README.md).
+How to play: [README](../README.md). Tester notes: [BETA.md](BETA.md). Hands: [CONTROLS.md](CONTROLS.md). Roadmap: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). Credits: [CREDITS.md](../CREDITS.md).
 
-Also useful:
-1. [README](../README.md) (play steps + roadmap)
-2. [Credits](../CREDITS.md)
-3. [Bug / crash forms](https://github.com/no6969el/GEVR/issues/new/choose)
-
-Crashes are expected in Beta - please file [Issues](https://github.com/no6969el/GEVR/issues) with **headset + OpenXR runtime + SteamVR on/off + HMD vs monitor + Start-GEVR.bat yes/no**.
+Crashes are expected in Beta. Please file [Issues](https://github.com/no6969el/GEVR/issues/new/choose) with **headset + OpenXR runtime + SteamVR on/off + HMD vs monitor + Start-GEVR.bat yes/no**. Do not upload your ROM.

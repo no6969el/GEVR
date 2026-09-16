@@ -6,81 +6,63 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You bring a **USA GoldenEye ROM you legally own**, run **`Start-GEVR.bat`**, wait once while it prepares, and go.
+The N64 classic you can finally *stand inside*. Not an emulator overlay. Not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* for real OpenXR. You supply a **USA GoldenEye ROM you legally own**. We never ship the cart.
 
-**Latest playable cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) - public Beta (BYO-ROM, file-backed images from your cart). Download it, unzip, play.
+**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (GitHub Latest). It is the only tag with a zip. Download it, unzip, play.
 
-**vr438 had a broken VR boot stub** (old stereo, wrong SrcFbo name). Grab **vr439**, not another vr438 zip.
+Star the repo if this brings you back. Watch -> Releases if you want a ping when the next cut ships.
 
-**vr434 was pulled** on 2026-09-16 because that build still had ROM-derived image data linked into `goldeneye.exe` and could boot without you dropping a ROM. Do not use an old vr434 download.
-
-If this brings you back, **Star** the repo so you can catch the next drops. **Watch → Releases** if you want a ping when we ship.
-
-[Releases](https://github.com/no6969el/GEVR/releases) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Features](FEATURES.md)
+[Releases](https://github.com/no6969el/GEVR/releases) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md) · [Roadmap](docs/ROADMAP.md) · [Features](FEATURES.md) · [Credits](CREDITS.md)
 
 ---
 
-## Play
+## Play (vr439)
 
-1. Download the **[vr439 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr439)**. **No ROM inside the zip.**
-2. Unzip anywhere.
-3. **Headset:** run **`Start-GEVR.bat`** (same picture as the vr434 quality KEEP). **Monitor / no headset:** run **`Play-on-monitor.bat`**.
-4. Point it at your **USA `.z64`**.
-5. Recenter with **both thumbstick clicks**.
+1. Download the **[vr439 zip](https://github.com/no6969el/GEVR/releases/tag/vr439)**. **No ROM in the zip.**
+2. Unzip anywhere. Leave the files together.
+3. Pick a launcher:
+   - **Headset:** `Start-GEVR.bat` (KEEP picture: XR stereo source, SrcFbo sharpness, supersample 3, sky / playspace).
+   - **Monitor / no headset:** `Play-on-monitor.bat` (VR off, no stereo eyes).
+4. Point it at your **USA GoldenEye `.z64`** when asked.
+5. In VR, recenter with **both thumbstick clicks**. Enjoy.
+
+Please use those bats. They lock in the settings this cut was worn with. Do not double-click `goldeneye.exe`.
 
 ### First time
 
-The first launch waits once while images prepare into `%LOCALAPPDATA%\GEVR\cache`, then you play.
+The first launch waits once while images prepare into `%LOCALAPPDATA%\GEVR\cache`. Then you play.
 
 ### Updating from an older Beta
 
-Keep the same `.z64`. Each cut carries a **ship stamp**, so the first launch after an update rebuilds that cache once automatically. You do not need to delete the cache folder by hand.
+Keep the same `.z64`. Each cut carries a **ship stamp**, so the first launch after an update rebuilds that cache once. You do not wipe anything by hand for a normal update.
 
-If the picture still looks wrong: delete `%LOCALAPPDATA%\GEVR` and run the bat again.
-
-**Headset:** `Start-GEVR.bat`. **Monitor / no headset:** `Play-on-monitor.bat` (flat 2D, no OpenXR).
-
-No ROM in the download. You bring yours.
+Troubleshooting only: if the picture still looks wrong after that, delete `%LOCALAPPDATA%\GEVR\cache` and run the bat again.
 
 ---
 
-## What went wrong with vr438 and vr434 (honest)
+## Older tags (history, not play)
 
-- **vr438** shipped a broken VR boot stub, so headset play looked like an old build (blue, messed-up right eye, flicker). Use **[vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)**.
-- **vr434** could boot **without** you dropping a ROM because `combined.bin` was still embedded in `goldeneye.exe`. That zip was pulled.
+[vr420](https://github.com/no6969el/GEVR/releases/tag/vr420), [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434), and [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) stay up as history. Their zip assets were removed. Play **[vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)**.
 
----
-
-## What is new in vr439
-
-- **BYO-ROM enforced** - `Start-GEVR.bat` launches **GevrRomStarter**; you must supply a USA GoldenEye `.z64` you own.
-- **File-backed images** - in-game textures and UI art come from your ROM on disk; the zip does not ship Nintendo cart data.
-- **Cache rebuilds itself on a new tag** - first launch after you update waits once; you do not wipe `%LOCALAPPDATA%\GEVR` by hand.
-- **Full runtime in the zip** - includes `glew32.dll` and the other Windows DLLs the build needs.
-- **Same headset KEEP as vr434** - `Start-GEVR.bat` applies that quality boot (XR stereo src, SrcFbo, skymesh, playspace). Only the ROM / file-backed image path is new.
-- **Sharper VR** (carried forward) - supersample 3 with the SrcFbo path we chaired and kept.
-- **Boot that actually hands over** - the bat sets FPS + stereo / view-restore so eyes fuse.
-- **Movement feel** locked to the 90 Hz loco reference we preferred in the chair.
-- **Smaller popup / instruction text** so the big lines are easier to read in the headset.
-- Same playspace / aiming keepers from earlier Beta.
-
-Full player notes ship inside the zip as `RELEASE-NOTES.txt`.
+- **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
+- **vr438** was BYO-ROM, but the VR boot file was a stub. It looked like an old build. Do not use it.
+- **vr439** restores the vr434 KEEP picture on BYO-ROM. That is why this is the cut.
 
 ---
 
 ## What we tested
 
-These paths are what this Beta was built and stared on:
+These paths are what this Beta was built and worn on:
 
 | Path | Notes |
 |------|--------|
-| **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) | Primary wear path - we do not maintain that driver; we *do* support this experience |
+| **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) | Primary wear path. We do not maintain that driver. We do support this experience. |
 | **Native PimaxXR** | Verified attach / play |
 | **Meta Quest 3 + Virtual Desktop OpenXR** | Verified attach / play |
 
-**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. This zip defaults to **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory - try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
+**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. Headset default is **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory. Try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
 
-When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**.
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**. Do not upload your ROM.
 
 ---
 
@@ -88,70 +70,50 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 We would rather tell you than surprise you:
 
-- Mid-range **crates / props on Dam** can still pop in and out - measured hard; not fixed in this zip yet.
-- **Dam water** can look flat or murky - researched; not locked on for this cut.
+- Expect occasional **crashes**. That is why it is Beta.
+- Mid-range **crates / props on Dam** can still pop in and out.
+- **Dam water** can look murky.
 - **Glass bullet holes** can still show in one eye in places.
-- Expect occasional **crashes** while we keep optimizing.
 
-Still worth playing - absolutely. Especially if you miss levels like Facility and want to get brushed up for when we eventually ship the multiplayer add-on. Dam, Facility, that first-person Bond feeling: we are shipping updates as fast as we can.
+Still worth playing. Facility at 6DOF is the whole point.
 
-On a **flat / monitor** setup, classic **local multiplayer** is still there - split-screen couch chaos, same as you remember. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.
+**Multiplayer:** local split-screen still works on a monitor. A **LAN / same-network add-on** is later. Online play is later than that. We are calling it an **add-on**, not a mod.
 
 ---
 
 ## Why this exists
 
-GoldenEye is one of the most-wanted "I wish I could stand inside it" games on Earth. GEVR's north star:
+GoldenEye is one of the most-wanted "I wish I could stand inside it" games on Earth. GEVR is a fan port for that feeling:
 
-- **Native / from-source** - full ownership of the game loop for proper VR
-- **OpenXR** - Crystal, Quest via PC, SteamVR-class HMDs
-- **Your ROM** - legal ownership stays with you
-- **Feel first** - 6DOF, aiming, presence; then polish; then extras
+- **Native / from-source** so VR can be real stereo, not a stretch
+- **OpenXR** so Crystal, Quest via PC, and SteamVR-class headsets can attach
+- **Your ROM** so legal ownership stays with you
+- **Feel first** - 6DOF, aiming, presence. Then polish. Then extras.
 
-More pitch and cover energy: [FEATURES.md](FEATURES.md).
-
----
-
-## Roadmap (honest, not a calendar promise)
-
-**Now - enjoy the Beta**
-- Solo VR campaign feel
-- Comfort, aim, and picture quality
-- "It boots, it shoots, it sometimes crashes" honesty
-
-**Next**
-- Fewer freezes and softer landings
-- Clearer first-run (ROM drop-in, saves that survive updates)
-- More visual / HUD comfort for long sits
-- Those Dam crates / water / glass quirks above
-
-**Later - the fun extras**
-- **Multiplayer add-on** - first goal is **LAN / same-network** play; full online is further after that (calling it early so you know where this is pointed)
-- More levels / modes once the base stays stable
-- Optional quality knobs without breaking the classic feel
-
-Fuller list: [`docs/ROADMAP.md`](docs/ROADMAP.md). Star + Watch if you want multiplayer and Beta drops without refreshing every day.
+More of that pitch: [FEATURES.md](FEATURES.md). Who we thank: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). We do not claim Nintendo's game data, Rare's assets, or third-party engines we did not write.
 
 ---
 
-## For press / curious readers
+## Roadmap (honest, not a calendar)
 
-**One-liner:** Native from-source GoldenEye VR for PC OpenXR - bring your own ROM.
+**Now:** solo VR, monitor fallback, local split-screen on a couch.
 
-**Longer:** GEVR rebuilds GoldenEye on PC so VR can be done properly (stereo, 6DOF, controller aim), instead of stretching an emulator. Beta means playable and imperfect on purpose while we clear crashes and comfort. Multiplayer and bigger social features sit on the roadmap after the solo VR base is something we are proud to hand strangers.
+**Next:** fewer crashes, those Dam / glass quirks, comfort for long sits.
 
-Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). We do not claim Nintendo's game data, Rare's assets, or third-party engines we did not write.
+**Later:** LAN add-on, then online, then extra modes once the base stays up.
 
----
-
-## Docs (secondary)
-
-Deep technical trail: [`docs/00-START-HERE.md`](docs/00-START-HERE.md)  
-Controls: [`docs/CONTROLS.md`](docs/CONTROLS.md)  
-Beta snapshot: [`docs/BETA.md`](docs/BETA.md) · [`docs/FEATURES-CURRENT.md`](docs/FEATURES-CURRENT.md)  
-Coming soon / release policy: [`docs/COMING-SOON.md`](docs/COMING-SOON.md) · [`docs/RELEASE-POLICY.md`](docs/RELEASE-POLICY.md)  
-Pack / smoke (vr439): [`packaging/README.md`](packaging/README.md)
+Fuller list: [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ---
+
+## Player docs
+
+- [Start here](docs/00-START-HERE.md) - short door for players and testers
+- [Beta testing](docs/BETA.md)
+- [Controls](docs/CONTROLS.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Features](FEATURES.md)
+- [Coming soon](docs/COMING-SOON.md)
+- [Credits](CREDITS.md)
 
 Jump in and enjoy finally being Bond in GoldenEye VR.
