@@ -18,27 +18,27 @@ If this brings you back, **Star** the repo so you can catch the next drops. **Wa
 
 ---
 
-## Play (vr438 - the one to grab)
+## Play
 
-1. Download the **[vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438)** (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
+1. Download the **[vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438)**. **No ROM inside the zip.**
 2. Unzip anywhere.
-3. Run **`Start-GEVR.bat`** (please use the bat - it locks in the good VR settings, marks this Beta cut, and starts **GevrRomStarter.exe**, not bare `goldeneye.exe`).
-4. Point at your **USA GoldenEye `.z64`** when asked.
-5. First time, wait while GEVR prepares images from your ROM. Then put the headset on. Recenter with **both thumbstick clicks**. Enjoy.
+3. Run **`Start-GEVR.bat`** (not `goldeneye.exe` alone).
+4. Point it at your **USA `.z64`**.
+5. Recenter with **both thumbstick clicks**.
+
+### First time
+
+The first launch waits once while images prepare into `%LOCALAPPDATA%\GEVR\cache`, then you play.
+
+### Updating from an older Beta
+
+Keep the same `.z64`. Each cut carries a **ship stamp**, so the first launch after an update rebuilds that cache once automatically. You do not need to delete the cache folder by hand.
+
+If the picture still looks wrong: delete `%LOCALAPPDATA%\GEVR` and run the bat again.
 
 Default is **VR**. Flat / monitor works too if you just want a look.
 
 No ROM in the download. You bring yours.
-
----
-
-## First run vs updating
-
-- New install: run Start-GEVR.bat, pick your USA GoldenEye .z64, wait once while images prepare into `%LOCALAPPDATA%\GEVR\cache`, then play.
-- Returning after a Beta update: keep the same .z64. Each cut carries a ship stamp so the first launch rebuilds that cache once automatically. You should not need to delete the cache folder by hand for a normal update.
-- Only if something still looks wrong: delete `%LOCALAPPDATA%\GEVR` and re-run the bat.
-
-Do not use an old **vr434** folder - that cut was pulled because it could boot without a ROM.
 
 ---
 

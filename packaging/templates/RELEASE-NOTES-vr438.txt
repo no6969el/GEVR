@@ -1,47 +1,52 @@
-GEVR Beta vr438 (BYO-ROM, file-backed images)
-==============================================
+GEVR Beta vr438
+===============
 
-Thank you for trying GEVR. This cut is fan-honest about what is in the zip and what you must supply.
+From-source GoldenEye 007 in real OpenXR VR. Bring your own USA ROM.
 
-What you need
--------------
-- A PC VR setup with OpenXR (SteamVR, Virtual Desktop OpenXR, PimaxXR, etc.).
-- A **USA GoldenEye 007 .z64 ROM you legally own**. We do **not** ship Nintendo game data in this download.
+This zip has no ROM. You supply a USA GoldenEye .z64 you legally own.
 
-What this zip contains
-----------------------
-- goldeneye.exe built with **file-backed images** (no ROM-derived combined.bin linked into the exe).
-- Runtime DLLs (including glew32.dll, SDL2, OpenXR loader, MinGW runtimes).
-- GevrRomStarter.exe and gevr_prepare.exe to pick your ROM and prepare the local image cache.
-- Start-GEVR.bat (launches the ROM starter, not bare goldeneye.exe).
-
-How to run
-----------
+Play
+----
 1. Unzip anywhere.
-2. Always run Start-GEVR.bat (not goldeneye.exe alone).
-3. Put the headset on. Recenter with both thumbstick clicks.
+2. Run Start-GEVR.bat (not goldeneye.exe alone).
+3. Point it at your USA .z64.
+4. Recenter with both thumbstick clicks.
 
-No ROM file is included in this archive.
+First time
+  The first launch waits once while images prepare into
+  %LOCALAPPDATA%\GEVR\cache, then you play.
 
-First run vs updating
----------------------
-- New install: run Start-GEVR.bat, pick your USA GoldenEye .z64, wait once while images prepare into %LOCALAPPDATA%\GEVR\cache, then play.
-- Returning after a Beta update: keep the same .z64. Each cut carries a ship stamp so the first launch rebuilds that cache once automatically. You should not need to delete the cache folder by hand for a normal update.
-- Only if something still looks wrong: delete %LOCALAPPDATA%\GEVR and re-run the bat.
+Updating from an older Beta
+  Keep the same .z64. Each cut carries a ship stamp, so the first
+  launch after an update rebuilds that cache once automatically.
+  You do not need to delete the cache folder by hand.
 
-Changes in vr438 (vs pulled vr434)
-------------------------------------
-- **Ship model fix:** vr434 accidentally shipped with ROM images embedded in goldeneye.exe. That release was **pulled**. vr438 requires your ROM and uses a file-backed image cache instead.
-- Picture / boot settings from the chair (sharper VR, stereo view-restore via Start-GEVR.bat) still apply.
+If the picture still looks wrong: delete %LOCALAPPDATA%\GEVR and
+run the bat again.
 
-Known Beta quirks
+Why vr434 is gone
 -----------------
-- Crashes still happen; please file Issues with headset + OpenXR runtime + whether you used Start-GEVR.bat + whether this was first launch after a new zip.
-- Dam crate pop-in, murky Dam water, and one-eye glass bullet holes are still open.
-- Multiplayer: local split-screen on a monitor still works; a **LAN / same-network multiplayer add-on** is on the roadmap later.
+That zip had ROM images baked into goldeneye.exe and could boot
+without a ROM. It was pulled. This cut loads images from your cart.
 
-Support
--------
+Headset notes
+-------------
+Pimax Crystal Super + SteamVR OpenXR, native PimaxXR, Quest 3 +
+Virtual Desktop OpenXR.
+
+72 / 80 / 90 Hz should work (default 90). Over 90 is still
+beta-test territory. Please report issues.
+
+Still rough
+-----------
+- Occasional crashes (file an Issue: headset, OpenXR runtime,
+  SteamVR on/off, HMD vs monitor, Start-GEVR.bat yes/no)
+- Dam crates can still pop in
+- Dam water can look murky
+- Glass bullet holes can be one-eye
+- Local split-screen MP works. A LAN / same-network multiplayer
+  add-on is later.
+
 https://github.com/no6969el/GEVR/issues/new/choose
 
-Do not upload your ROM to Issues or Discord. We only need your setup details.
+Do not upload your ROM.
