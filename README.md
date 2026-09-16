@@ -24,6 +24,8 @@ If this brings you back, **Star** the repo so you can catch the next drops. **Wa
 4. Run **`Start-GEVR.bat`** (please use the bat - it locks in the good VR settings).
 5. Put the headset on. Recenter with **both thumbstick clicks**. Enjoy.
 
+**Already grabbed vr434 early?** The first upload was missing `glew32.dll`, so Windows may report: "The code execution cannot proceed because glew32.dll was not found." We replaced the zip on the release page (same tag, same URL) - please **re-download the [vr434 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr434)** and unzip again.
+
 Default is **VR**. Flat / monitor works too if you just want a look.
 
 No ROM in the download. You bring yours.
