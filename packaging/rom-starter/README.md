@@ -1,8 +1,11 @@
 # ROM starter (sources + binaries)
 
-## Runtime flow (Start)
+## Runtime flow
 
-Always launch via **`Start-GEVR.bat`**. That bat calls `gevr-vr439-boot.cmd` (sets `GEVR_SHIP_TAG=vr439` and VR KEEP knobs), then **`GevrRomStarter.exe`**.
+Always launch via a zip bat, not bare `goldeneye.exe`.
+
+- **Headset:** `Start-GEVR.bat` calls `gevr-vr439-boot.cmd` (sets `GEVR_SHIP_TAG=vr439` and VR KEEP knobs), then **`GevrRomStarter.exe`**.
+- **Monitor / no headset:** `Play-on-monitor.bat` sets `GEVR_SHIP_TAG=vr439` itself, turns XR/stereo off, then **`GevrRomStarter.exe`**. It does not call the KEEP boot cmd.
 
 On Start, GevrRomStarter:
 
@@ -13,6 +16,8 @@ On Start, GevrRomStarter:
 5. Then launches `goldeneye.exe`.
 
 Returning testers who unzip a new Beta get **one** prepare wait on first launch. They do not delete the cache folder by hand (once stamped tools are in the zip).
+
+These tools must **not** embed ROM data - only read the player-supplied file at runtime. Do not put a `.z64` in this folder or in the zip.
 
 Product merge steps: [`packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`](../RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md).
 
@@ -33,5 +38,3 @@ Git ignores `*.exe` here. Before running `_pack-vr439.ps1`, copy from the produc
 - `gevr_prepare.exe` (must honor `GEVR_SHIP_TAG` / `ship.txt`)
 
 `EXPECTED-ROM.txt` ships in the zip and documents the USA `.z64` the player must provide.
-
-These tools must **not** embed ROM data - only read the player-supplied file at runtime.

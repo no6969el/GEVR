@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Sorry it crashed — reports like this help a lot. **Please do not attach ROM files.**
+        Sorry it crashed - reports like this help a lot. Current Latest zip is **vr439**.
+
+        **Do not upload ROM files** (no `.z64` / `.n64` / `.v64`, no dumps, no paste of ROM bytes).
 
   - type: input
     id: headset_model
@@ -55,24 +57,29 @@ body:
       required: true
 
   - type: dropdown
-    id: start_gevr_bat
+    id: launcher
     attributes:
-      label: Did you start with Start-GEVR.bat?
+      label: Which launcher did you use?
+      description: From the vr439 zip. Headset KEEP is Start-GEVR.bat. Flat monitor is Play-on-monitor.bat.
       options:
-        - Yes
-        - No
+        - Start-GEVR.bat (headset KEEP)
+        - Play-on-monitor.bat (flat / no headset)
+        - Neither (ran goldeneye.exe or something else)
         - Not sure
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: build_tag
     attributes:
-      label: Build or Release tag
-      description: Optional (e.g. vr420).
-      placeholder: vr420
+      label: Which Beta zip?
+      description: Current Latest is vr439. Older GitHub tags may still exist; those zips were removed.
+      options:
+        - vr439 (current Latest)
+        - Older tag (name it in the notes)
+        - Not sure
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: repro_steps
@@ -114,6 +121,6 @@ body:
     id: extra
     attributes:
       label: On-screen message, Windows error, or log lines
-      description: Optional — no ROM files.
+      description: Optional - no ROM files.
     validations:
       required: false

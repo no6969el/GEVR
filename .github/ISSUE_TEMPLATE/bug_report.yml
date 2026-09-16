@@ -6,15 +6,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve GEVR Beta. **Please do not attach ROM files** to this issue.
+        Thanks for helping improve GEVR Beta. Current Latest zip is **vr439**.
 
-        Crashes are common in Beta — if the game closed on you, use the **Crash report** template instead.
+        **Do not upload ROM files** (no `.z64` / `.n64` / `.v64`, no dumps, no paste of ROM bytes).
+
+        Crashes are common in Beta - if the game closed on you, use the **Crash report** template instead.
 
   - type: input
     id: headset_model
     attributes:
       label: Headset model
-      description: Which headset are you using? (e.g. Pimax Crystal Super, Quest 3, none — monitor only)
+      description: Which headset are you using? (e.g. Pimax Crystal Super, Quest 3, or none - monitor only)
       placeholder: Pimax Crystal Super
     validations:
       required: true
@@ -37,7 +39,7 @@ body:
     id: steamvr_running
     attributes:
       label: Is SteamVR running?
-      description: SteamVR can be installed but off — pick what matches your session.
+      description: SteamVR can be installed but off - pick what matches your session.
       options:
         - Yes
         - No
@@ -60,31 +62,35 @@ body:
       required: true
 
   - type: dropdown
-    id: start_gevr_bat
+    id: launcher
     attributes:
-      label: Did you start with Start-GEVR.bat?
-      description: The recommended launcher in the Release zip — not a download from this repo alone.
+      label: Which launcher did you use?
+      description: From the vr439 zip. Headset KEEP is Start-GEVR.bat. Flat monitor is Play-on-monitor.bat.
       options:
-        - Yes
-        - No
+        - Start-GEVR.bat (headset KEEP)
+        - Play-on-monitor.bat (flat / no headset)
+        - Neither (ran goldeneye.exe or something else)
         - Not sure
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: build_tag
     attributes:
-      label: Build or Release tag
-      description: Optional but helpful (e.g. vr420 from Releases).
-      placeholder: vr420
+      label: Which Beta zip?
+      description: Current Latest is vr439. Older GitHub tags may still exist; those zips were removed.
+      options:
+        - vr439 (current Latest)
+        - Older tag (name it in the notes)
+        - Not sure
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: repro_steps
     attributes:
       label: Short steps to reproduce
-      description: What were you doing? Keep it brief — a few steps is enough.
+      description: What were you doing? Keep it brief - a few steps is enough.
       placeholder: |
         1. Launched with Start-GEVR.bat
         2. Loaded Facility
@@ -112,6 +118,6 @@ body:
     id: extra
     attributes:
       label: Screenshots, clip, or log lines
-      description: Optional — a short clip or the first few `[getv]` / OpenXR log lines can help. No ROM files.
+      description: Optional - a short clip or the first few `[getv]` / OpenXR log lines can help. No ROM files.
     validations:
       required: false
