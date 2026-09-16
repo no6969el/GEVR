@@ -32,23 +32,13 @@ No ROM in the download. You bring yours.
 
 ---
 
-## First run vs returning
+## First run vs updating
 
-**New here?** Download the zip, unzip, run **`Start-GEVR.bat`**, pick your own USA `.z64`. The first prepare can take a bit. Then you play.
-
-**Coming back for a new zip?** Redownload the current Beta, unzip it, use the **same ROM**, run **`Start-GEVR.bat`**. The first launch after a tag change rebuilds the local cache once from that ROM - one wait, then back to normal. You do **not** need to delete the cache folder yourself.
-
-**Same zip, same ROM, later launches:** fast. The cache is already ready.
-
-### What happens when you update
-
-Unzip the new Beta (vr438 now; later tags work the same way). Keep your own `.z64`. First launch after the tag changes: one automatic re-prepare. After that, launches are fast again.
+- New install: run Start-GEVR.bat, pick your USA GoldenEye .z64, wait once while images prepare into `%LOCALAPPDATA%\GEVR\cache`, then play.
+- Returning after a Beta update: keep the same .z64. Each cut carries a ship stamp so the first launch rebuilds that cache once automatically. You should not need to delete the cache folder by hand for a normal update.
+- Only if something still looks wrong: delete `%LOCALAPPDATA%\GEVR` and re-run the bat.
 
 Do not use an old **vr434** folder - that cut was pulled because it could boot without a ROM.
-
-### If something looks wrong
-
-Wrong textures, a stuck prepare, leftover junk from a pulled zip: you can delete `%LOCALAPPDATA%\GEVR` and run **`Start-GEVR.bat`** again with the same ROM. That is troubleshooting only, not a required update step.
 
 ---
 

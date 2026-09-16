@@ -30,12 +30,11 @@ Always use **`Start-GEVR.bat`** from the zip (launches **GevrRomStarter**, not b
 4. The zip ships **`glew32.dll`** and the other runtime DLLs - keep them next to the exe when you unzip.
 5. VR is default; flat/desktop works too.
 
-## First run vs returning
+## First run vs updating
 
-- **Brand new:** zip, `Start-GEVR.bat`, your `.z64`, one prepare wait, play.
-- **Same zip later:** same ROM, fast start.
-- **New Beta zip (vr438, then later tags):** unzip the new download, same ROM, `Start-GEVR.bat`. Expect **one** prepare wait on the first launch after the tag changes. You do **not** need to delete `%LOCALAPPDATA%\GEVR` yourself.
-- **Troubleshooting only:** if pictures look wrong after an update, delete `%LOCALAPPDATA%\GEVR` and launch again with the same ROM.
+- New install: run Start-GEVR.bat, pick your USA GoldenEye .z64, wait once while images prepare into `%LOCALAPPDATA%\GEVR\cache`, then play.
+- Returning after a Beta update: keep the same .z64. Each cut carries a ship stamp so the first launch rebuilds that cache once automatically. You should not need to delete the cache folder by hand for a normal update.
+- Only if something still looks wrong: delete `%LOCALAPPDATA%\GEVR` and re-run the bat.
 
 ## How to report
 

@@ -15,31 +15,19 @@ What this zip contains
 - GevrRomStarter.exe and gevr_prepare.exe to pick your ROM and prepare the local image cache.
 - Start-GEVR.bat (launches the ROM starter, not bare goldeneye.exe).
 
-First run
----------
+How to run
+----------
 1. Unzip anywhere.
-2. Always run **Start-GEVR.bat** (not goldeneye.exe alone).
-3. When prompted, point at your **USA .z64**.
-4. First prepare can take a bit while images land in:
-   %LOCALAPPDATA%\GEVR\cache\<your-ROM-hash>\
-5. Put the headset on. Recenter with **both thumbstick clicks**.
+2. Always run Start-GEVR.bat (not goldeneye.exe alone).
+3. Put the headset on. Recenter with both thumbstick clicks.
 
-No ROM file is included in this archive. Later launches with this same zip and
-the same ROM skip that wait.
+No ROM file is included in this archive.
 
-Cache updates (vr438 and later tags)
-------------------------------------
-Each zip carries a **ship stamp** (this one is vr438). After you unzip a new
-Beta and run Start-GEVR.bat, GEVR checks ship.txt in your cache folder. If that
-stamp is missing or does not match, it rebuilds the cache once from your same
-.z64. Expect **one** wait on that first launch - not every launch.
-
-You do **not** need to delete the cache folder yourself when you update.
-
-If pictures look wrong after an update, you can delete %LOCALAPPDATA%\GEVR and
-run Start-GEVR.bat again with the same ROM. That is troubleshooting only.
-
-Always use Start-GEVR.bat so the current tag and VR settings are applied.
+First run vs updating
+---------------------
+- New install: run Start-GEVR.bat, pick your USA GoldenEye .z64, wait once while images prepare into %LOCALAPPDATA%\GEVR\cache, then play.
+- Returning after a Beta update: keep the same .z64. Each cut carries a ship stamp so the first launch rebuilds that cache once automatically. You should not need to delete the cache folder by hand for a normal update.
+- Only if something still looks wrong: delete %LOCALAPPDATA%\GEVR and re-run the bat.
 
 Changes in vr438 (vs pulled vr434)
 ------------------------------------
