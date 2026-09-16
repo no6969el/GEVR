@@ -18,6 +18,8 @@ The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`
 
 Headset KEEP is the same quality stack as vr434. vr438 shipped a broken boot stub; vr439 replaces it.
 
+`gevr-vr439-boot.cmd` sets `GETV_XR_BUTTONS=1` and `GETV_XR_BTN_B=start` so B/Y opens Start/pause in headset (use `GETV_XR_BTN_B=weapon` to put weapon back on B).
+
 Use `_pack-vr439.ps1`. `_pack-vr438.ps1` is retired and will throw.
 
 ### Cache ship stamp (every public tag)

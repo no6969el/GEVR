@@ -41,6 +41,8 @@ file-backed image path is new.
 
 Headset notes
 -------------
+In headset, B/Y opens pause and options; Tab on keyboard/monitor also works.
+
 Pimax Crystal Super + SteamVR OpenXR, native PimaxXR, Quest 3 +
 Virtual Desktop OpenXR.
 

@@ -33,6 +33,11 @@ set GETV_XR_RECENTER_CHORD=1
 set GETV_XR_HEAD_TRANSLATE=1
 set GETV_XR_ACTIONS=1
 set GETV_XR_HANDS=1
+set GETV_XR_BUTTONS=1
+rem B/Y = Start/pause so in-game options work in headset. GETV_XR_BTN_B=weapon restores weapon-on-B.
+set GETV_XR_BTN_B=start
+rem Auto-Aim OFF once goldeneye.exe honors GETV_AUTOAIM (next product rebuild). Harmless if unset in current exe.
+set GETV_AUTOAIM=0
 
 set GETV_VR_SKYMESH=1
 set GETV_VR_SKYSCISSOR=1
