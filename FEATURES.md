@@ -8,9 +8,9 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Latest playable cut:** **vr438 incoming** - [vr434 was pulled](https://github.com/no6969el/GEVR/releases/tag/vr434) (linked ROM images). Next zip is BYO-ROM with file-backed images. **Watch → Releases.**
+**Latest playable cut:** [**GEVR Beta vr438**](https://github.com/no6969el/GEVR/releases/tag/vr438) - public Beta (BYO-ROM, file-backed images from your cart).
 
-[Releases](https://github.com/no6969el/GEVR/releases) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
+[Play the Beta](https://github.com/no6969el/GEVR/releases/tag/vr438) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
 
 ---
 
@@ -36,9 +36,9 @@ Facility and friends, OpenXR on PC. Mission Report / NEXT actually takes input a
 
 ---
 
-## What we tested (recent Beta cuts)
+## What we tested (vr438)
 
-These paths are what recent Betas were built and stared on:
+These paths are what this Beta was built and stared on:
 
 | Path | Notes |
 |------|--------|
@@ -55,17 +55,19 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 ## Honest Beta notes
 
 - Crashes and rough edges are expected. That is why it is Beta.
-- You bring a **USA GoldenEye `.z64` you own**. No ROM in the download.
+- You bring a **USA GoldenEye `.z64` you own**. No ROM in the download. Run **`Start-GEVR.bat`** so **GevrRomStarter** can bind your ROM (not bare `goldeneye.exe`).
+- **vr434 was pulled** on 2026-09-16 - that build linked image data into `goldeneye.exe` and could boot without a ROM. Use **[vr438](https://github.com/no6969el/GEVR/releases/tag/vr438)**.
+- The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
 - On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.
 - Full colocated Bond body and a fancier hub room are later - see the [roadmap](docs/ROADMAP.md).
 
 ---
 
-## Start (when vr438 is on Releases)
+## Start
 
-1. Download the **vr438 Release zip** (no ROM in the archive).
-2. Unzip. Run **`Start-GEVR.bat`** (ROM starter + VR boot knobs - not bare `goldeneye.exe`).
+1. Grab the [vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438) (no ROM in the archive).
+2. Unzip. Run **`Start-GEVR.bat`** (**GevrRomStarter** - point at your USA `.z64`; the bat also locks in sharper VR with supersample 3 and the SrcFbo path, plus stereo / view-restore knobs that help eyes fuse).
 3. Drop in your **USA `.z64`** when the starter asks.
 4. Headset on. Recenter (both sticks). Enjoy.
 
