@@ -1,6 +1,8 @@
 # Beta testing guide
 
-GEVR’s public label is **Beta**. Expect crashes and unfinished corners - file them on Issues. The current public play zip is **[vr434](https://github.com/no6969el/GEVR/releases/tag/vr434)**.
+GEVR’s public label is **Beta**. Expect crashes and unfinished corners - file them on Issues.
+
+**vr434 was pulled** (ROM images were linked into `goldeneye.exe`). The next supported zip is **vr438** (BYO-ROM, file-backed images) after owner smoke - watch [Releases](https://github.com/no6969el/GEVR/releases).
 
 ## Before you start
 
@@ -22,9 +24,9 @@ Use `Start-GEVR.bat` from the zip. Details: [CONTROLS.md](CONTROLS.md).
 
 ## Install and run
 
-1. Download and unzip **vr434** (or newer).
-2. Point the starter at your ROM.
-3. Run **`Start-GEVR.bat`**. VR is default; flat/desktop works too.
+1. Download and unzip the current **Release zip** when available (starts with **vr438**).
+2. Run **`Start-GEVR.bat`** (launches **GevrRomStarter**, not bare `goldeneye.exe`). Point at your **USA `.z64`** when asked.
+3. VR is default; flat/desktop works too.
 4. Play. If it crashes or looks wrong, [open an Issue](https://github.com/no6969el/GEVR/issues/new/choose).
 
 ## What to test first

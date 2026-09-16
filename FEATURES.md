@@ -8,9 +8,9 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Latest playable cut:** [**GEVR Beta vr434**](https://github.com/no6969el/GEVR/releases/tag/vr434) - sharper VR picture, better boot knobs, smaller popup text.
+**Latest playable cut:** **vr438 incoming** - [vr434 was pulled](https://github.com/no6969el/GEVR/releases/tag/vr434) (linked ROM images). Next zip is BYO-ROM with file-backed images. **Watch → Releases.**
 
-[Play the Beta](https://github.com/no6969el/GEVR/releases/tag/vr434) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
+[Releases](https://github.com/no6969el/GEVR/releases) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
 
 ---
 
@@ -36,9 +36,9 @@ Facility and friends, OpenXR on PC. Mission Report / NEXT actually takes input a
 
 ---
 
-## What we tested (vr434)
+## What we tested (recent Beta cuts)
 
-These paths are what this Beta was built and stared on:
+These paths are what recent Betas were built and stared on:
 
 | Path | Notes |
 |------|--------|
@@ -62,11 +62,11 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 ---
 
-## Start
+## Start (when vr438 is on Releases)
 
-1. Grab the [vr434 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr434)
-2. Unzip. Run **`Start-GEVR.bat`** (please use the bat - it locks in sharper VR with supersample 3 and the SrcFbo path, plus the stereo / view-restore knobs that help eyes fuse)
-3. Drop in your ROM when asked
-4. Headset on. Recenter (both sticks). Enjoy
+1. Download the **vr438 Release zip** (no ROM in the archive).
+2. Unzip. Run **`Start-GEVR.bat`** (ROM starter + VR boot knobs - not bare `goldeneye.exe`).
+3. Drop in your **USA `.z64`** when the starter asks.
+4. Headset on. Recenter (both sticks). Enjoy.
 
 [How to play / recenter](docs/CONTROLS.md) - [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) - [Who we credit](CREDITS.md)

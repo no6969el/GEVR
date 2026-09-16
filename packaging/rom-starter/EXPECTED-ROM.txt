@@ -1,0 +1,26 @@
+GEVR Beta - expected USA GoldenEye ROM (BYO-ROM)
+================================================
+
+You must supply a **USA** GoldenEye 007 cartridge dump you legally own.
+
+Typical GoodN64 name:
+  GoldenEye (U) [!].z64
+
+This zip does **not** contain:
+  - any .z64 / .n64 / .v64 file
+  - EEPROM saves from the cartridge
+
+The ROM starter validates your file, then extracts image data into:
+  %LOCALAPPDATA%\GEVR_CACHE
+
+After a successful prepare step, goldeneye.exe loads textures from that cache (file-backed images).
+
+If prepare fails, check that:
+  - the ROM is the USA release (not EU/JP)
+  - the file is a clean dump (not truncated)
+  - antivirus is not blocking GevrRomStarter.exe or gevr_prepare.exe
+
+Owner: refresh SHA-256 and byte size here after verifying on SimRig (do not commit ROM bytes).
+
+Expected size (USA [!] .z64): 12582912 bytes (12 MiB)
+Expected SHA-256: (fill on SimRig before public upload)

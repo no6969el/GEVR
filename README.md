@@ -6,47 +6,43 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. Drop in a **USA GoldenEye ROM you legally own**, run `Start-GEVR.bat`, and go.
+The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-**Latest playable cut:** [**GEVR Beta vr434**](https://github.com/no6969el/GEVR/releases/tag/vr434) - sharper picture, better boot knobs, smaller popup text. Download it, unzip, play.
+**Latest public release:** [**GEVR Beta vr434**](https://github.com/no6969el/GEVR/releases/tag/vr434) was **pulled** on 2026-09-16 because that build still had ROM-derived image data linked into `goldeneye.exe`. Do not use an old vr434 download.
 
-If this brings you back, **Star** the repo so you can catch the next drops. **Watch → Releases** if you want a ping when we ship.
+**Next cut:** **vr438** (file-backed images + ROM drop-in) is being packed and owner-tested before upload. **Watch → Releases** for the tag when it lands.
+
+If this brings you back, **Star** the repo so you can catch the next drops.
 
 [Releases](https://github.com/no6969el/GEVR/releases) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Features](FEATURES.md)
 
 ---
 
-## Play (vr434 - the one to grab)
+## Play (when vr438 ships)
 
-1. Download the **[vr434 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr434)** (full build - exe + deps + launcher + notes).
+1. Download the **vr438 Release zip** (exe + DLLs + ROM starter + launcher + notes). **No ROM inside the zip.**
 2. Unzip anywhere.
-3. Put your **USA GoldenEye `.z64` ROM** where the starter asks (or drop it on the app).
-4. Run **`Start-GEVR.bat`** (please use the bat - it locks in the good VR settings).
+3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
+4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR_CACHE`.
 5. Put the headset on. Recenter with **both thumbstick clicks**. Enjoy.
-
-**Already grabbed vr434 early?** The first upload was missing `glew32.dll`, so Windows may report: "The code execution cannot proceed because glew32.dll was not found." We replaced the zip on the release page (same tag, same URL) - please **re-download the [vr434 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr434)** and unzip again.
 
 Default is **VR**. Flat / monitor works too if you just want a look.
 
-No ROM in the download. You bring yours.
+Until vr438 is public, there is no supported all-in-one download on Releases. Fan builds from source are your own responsibility.
 
 ---
 
-## What is new in vr434
+## What went wrong with vr434 (honest)
 
-- **Sharper VR** - supersample 3 with the SrcFbo path we chaired and kept (the picture that made us say “wonderful”).
-- **Boot that actually hands over** - `Start-GEVR.bat` sets FPS + stereo / view-restore so eyes fuse (fixes the old zip bat problem).
-- **Movement feel** locked to the 90 Hz loco reference we preferred in the chair.
-- **Smaller popup / instruction text** so the big lines are easier to read in the headset.
-- Same playspace / aiming keepers from earlier Beta.
-
-Full player notes ship inside the zip as `RELEASE-NOTES.txt`.
+- The first vr434 zip could boot **without** you dropping a ROM because `combined.bin` was still embedded in `goldeneye.exe`.
+- That release asset was removed; the tag page explains why.
+- The replacement is **vr438**: file-backed images, ROM starter, and automated pack smoke gates under [`packaging/`](packaging/README.md).
 
 ---
 
 ## What we tested
 
-These paths are what this Beta was built and stared on:
+These paths are what recent Betas were built and stared on:
 
 | Path | Notes |
 |------|--------|
@@ -54,7 +50,7 @@ These paths are what this Beta was built and stared on:
 | **Native PimaxXR** | Verified attach / play |
 | **Meta Quest 3 + Virtual Desktop OpenXR** | Verified attach / play |
 
-**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. This zip defaults to **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory - try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
+**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. New zips default to **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory - try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
 
 When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**.
 
@@ -125,7 +121,8 @@ Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LI
 Deep technical trail: [`docs/00-START-HERE.md`](docs/00-START-HERE.md)  
 Controls: [`docs/CONTROLS.md`](docs/CONTROLS.md)  
 Beta snapshot: [`docs/BETA.md`](docs/BETA.md) · [`docs/FEATURES-CURRENT.md`](docs/FEATURES-CURRENT.md)  
-Coming soon / release policy: [`docs/COMING-SOON.md`](docs/COMING-SOON.md) · [`docs/RELEASE-POLICY.md`](docs/RELEASE-POLICY.md)
+Coming soon / release policy: [`docs/COMING-SOON.md`](docs/COMING-SOON.md) · [`docs/RELEASE-POLICY.md`](docs/RELEASE-POLICY.md)  
+Pack / smoke (vr438): [`packaging/README.md`](packaging/README.md)
 
 ---
 

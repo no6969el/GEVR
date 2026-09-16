@@ -1,0 +1,43 @@
+GEVR Beta vr438 (BYO-ROM, file-backed images)
+==============================================
+
+Thank you for trying GEVR. This cut is fan-honest about what is in the zip and what you must supply.
+
+What you need
+-------------
+- A PC VR setup with OpenXR (SteamVR, Virtual Desktop OpenXR, PimaxXR, etc.).
+- A **USA GoldenEye 007 .z64 ROM you legally own**. We do **not** ship Nintendo game data in this download.
+
+What this zip contains
+----------------------
+- goldeneye.exe built with **file-backed images** (no ROM-derived combined.bin linked into the exe).
+- Runtime DLLs (including glew32.dll, SDL2, OpenXR loader, MinGW runtimes).
+- GevrRomStarter.exe and gevr_prepare.exe to pick your ROM and prepare the local image cache.
+- Start-GEVR.bat (launches the ROM starter, not bare goldeneye.exe).
+
+First run
+---------
+1. Unzip anywhere.
+2. Run **Start-GEVR.bat** (not goldeneye.exe alone).
+3. When prompted, point at your **USA .z64**. The starter extracts image data into:
+   %LOCALAPPDATA%\GEVR_CACHE
+4. Put the headset on. Recenter with **both thumbstick clicks**.
+
+No ROM file is included in this archive. If you already have a GEVR cache from an older build, you may still need to re-prepare when we change image layout.
+
+Changes in vr438 (vs pulled vr434)
+------------------------------------
+- **Ship model fix:** vr434 accidentally shipped with ROM images embedded in goldeneye.exe. That release was **pulled**. vr438 requires your ROM and uses a file-backed image cache instead.
+- **vr437 water keep** plus **MSGSCALE 434** and the vr434 picture / boot knobs (supersample 3, SrcFbo, stereo view-restore via Start-GEVR.bat).
+
+Known Beta quirks
+-----------------
+- Crashes still happen; please file Issues with headset + OpenXR runtime + whether you used Start-GEVR.bat.
+- Dam crate pop-in, murky Dam water, and one-eye glass bullet holes are still open.
+- Multiplayer: local split-screen on a monitor still works; a **LAN / same-network multiplayer add-on** is on the roadmap later.
+
+Support
+-------
+https://github.com/no6969el/GEVR/issues/new/choose
+
+Do not upload your ROM to Issues or Discord. We only need your setup details.
