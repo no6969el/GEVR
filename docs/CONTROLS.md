@@ -2,7 +2,7 @@
 
 How to move, aim, and reset your position in [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
 
-Play steps: [README](../README.md). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md).
+Play steps: [README Play](../README.md#play). Download: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
@@ -50,7 +50,7 @@ While the flat cinema or frontend menus are up, you are in a small hub room look
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Which runtime Windows hands us matters.
+GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play) / [Releases/latest](https://github.com/no6969el/GEVR/releases/latest).
 
 **Verified on vr439:**
 
@@ -60,7 +60,9 @@ GEVR uses **OpenXR**. Which runtime Windows hands us matters.
 
 **Hz:** 72 / 80 / **90** should work. The headset bat defaults to **90**. Over 90 is still beta-test territory. Try it and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if it feels off.
 
-**Practical recipe:** unzip vr439, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
+**Headset recipe:** unzip vr439, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
+
+**No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
 
 Native Quest (standalone APK) is a later port, not this PC zip.
 
@@ -69,6 +71,6 @@ Native Quest (standalone APK) is a later port, not this PC zip.
 1. Launch with **`Start-GEVR.bat`** (headset) or **`Play-on-monitor.bat`** (flat), not bare `goldeneye.exe`
 2. Recenter with **both** stick clicks
 3. Confirm Windows is handing GEVR the OpenXR runtime you think it is
-4. File an Issue with **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **Start-GEVR.bat yes/no**
+4. File an Issue with **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **Start-GEVR.bat yes/no** (Play-on-monitor.bat if no headset). [CONTRIBUTING](../CONTRIBUTING.md).
 
 Do not upload your ROM.

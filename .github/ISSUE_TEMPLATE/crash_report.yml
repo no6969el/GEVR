@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Sorry it crashed - reports like this help a lot. Current Latest zip is **vr439**.
+        Sorry it crashed - reports like this help a lot. Current zip is **vr439**.
+
+        Play steps: [README Play](https://github.com/no6969el/GEVR/blob/main/README.md#play). Download: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). How to report: [CONTRIBUTING](https://github.com/no6969el/GEVR/blob/main/CONTRIBUTING.md).
 
         **Do not upload ROM files** (no `.z64` / `.n64` / `.v64`, no dumps, no paste of ROM bytes).
 
@@ -14,7 +16,7 @@ body:
     id: headset_model
     attributes:
       label: Headset model
-      description: Which headset were you using? (or "none" if monitor only)
+      description: Which headset were you using? (or "none" if monitor only - use Play-on-monitor.bat when you have no headset)
       placeholder: Pimax Crystal Super
     validations:
       required: true
@@ -23,6 +25,7 @@ body:
     id: openxr_runtime
     attributes:
       label: OpenXR runtime
+      description: Which OpenXR runtime was active for GEVR?
       options:
         - SteamVR
         - PimaxXR (native Pimax)
@@ -36,6 +39,7 @@ body:
     id: steamvr_running
     attributes:
       label: Is SteamVR running?
+      description: SteamVR can be installed but off - pick what matches your session.
       options:
         - Yes
         - No
@@ -48,6 +52,7 @@ body:
     id: display_target
     attributes:
       label: Where was the picture right before the crash?
+      description: Headset (HMD) vs flat monitor. If you had no headset, Play-on-monitor.bat is the flat launcher.
       options:
         - In the headset (HMD)
         - Flat on the monitor only
@@ -57,14 +62,14 @@ body:
       required: true
 
   - type: dropdown
-    id: launcher
+    id: start_gevr_bat
     attributes:
-      label: Which launcher did you use?
-      description: From the vr439 zip. Headset KEEP is Start-GEVR.bat. Flat monitor is Play-on-monitor.bat.
+      label: Did you start with Start-GEVR.bat?
+      description: Headset KEEP launcher in the vr439 zip. If you have no headset, use Play-on-monitor.bat from the same zip, then pick No (used Play-on-monitor.bat).
       options:
-        - Start-GEVR.bat (headset KEEP)
-        - Play-on-monitor.bat (flat / no headset)
-        - Neither (ran goldeneye.exe or something else)
+        - Yes
+        - No (used Play-on-monitor.bat)
+        - No (something else)
         - Not sure
     validations:
       required: true
@@ -73,7 +78,7 @@ body:
     id: build_tag
     attributes:
       label: Which Beta zip?
-      description: Current Latest is vr439. Older GitHub tags may still exist; those zips were removed.
+      description: Current Latest is vr439. See README Play and Releases/latest. Older GitHub tags may still exist; those zips were removed.
       options:
         - vr439 (current Latest)
         - Older tag (name it in the notes)

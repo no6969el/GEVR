@@ -2,7 +2,7 @@
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (GitHub Latest). It is the only tag with a zip.
+**Play this cut:** [**vr439**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). It is the only tag with a zip. Play steps: [README Play](../README.md#play).
 
 Older tags [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) stay for history. Their zips were removed.
 
@@ -10,14 +10,14 @@ Older tags [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434
 - **vr438** was BYO-ROM, but VR boot was a stub. It looked like an old build.
 - **vr439** restores the vr434 KEEP picture on BYO-ROM. Grab that.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README Play](../README.md#play). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)
+- Download: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest) (**vr439**) - play steps in [README Play](../README.md#play)
 
 ## Launchers
 
@@ -40,7 +40,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## First run vs updating
 
-- **New install:** run the bat, pick your USA `.z64`, wait once, play.
+- **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. You do not delete the cache for a normal update.
 - **Troubleshooting only:** delete `%LOCALAPPDATA%\GEVR\cache` and run the bat again.
 
@@ -52,11 +52,11 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 - OpenXR runtime
 - SteamVR on/off
 - HMD vs monitor
-- Whether you used **`Start-GEVR.bat`**
+- **`Start-GEVR.bat` yes/no** (if no headset, use **`Play-on-monitor.bat`** and pick No)
 
 Map / action if it crashed. First install vs first launch after a new zip vs a later launch also helps.
 
-Do **not** upload your ROM. We do not need it and we do not want it.
+Do **not** upload your ROM. We do not need it and we do not want it. Forms: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## What to test first
 

@@ -2,7 +2,9 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Play the Beta: [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439). Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
+Current play zip is **vr439**. [README Play](README.md#play) - [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+
+Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
 
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
@@ -85,13 +87,15 @@ These showed up in prior-art surveys. They are **not** credited as sources of GE
 3. **Map vs vendor** - Perfect Dark VR is **prior-art map** unless a future commit says code was brought in (then MIT notice + this sheet update).
 4. **Game data stays with the player** - ROM and assets are never in the download.
 
-If you spot a missing credit for something we really used, open an Issue titled `Credits: ...` and point at the borrow. We will add a specific line, not a blanket shout-out.
+If you spot a missing credit for something we really used, open an Issue titled `Credits: ...` and point at the borrow. We will add a specific line, not a blanket shout-out. Do not upload ROM files.
 
 ---
 
 ## Quick links
 
-- [Play vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)
+- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr439 and file bugs
+- [LICENSE-MAP.md](LICENSE-MAP.md) - whose license is whose
+- [README Play](README.md#play) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
 - [docs/ORIGIN.md](docs/ORIGIN.md) - ours vs upstream tags

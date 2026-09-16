@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Current zip (vr439 Latest)
+    url: https://github.com/no6969el/GEVR/releases/latest
+    about: Play steps live in the README Play section. Do not upload ROM files.
+  - name: How to report (CONTRIBUTING)
+    url: https://github.com/no6969el/GEVR/blob/main/CONTRIBUTING.md
+    about: Required bug/crash fields, both bats, no ROM uploads.
+  - name: Credits and license map
+    url: https://github.com/no6969el/GEVR/blob/main/LICENSE-MAP.md
+    about: Whose code and game data this is (and is not).

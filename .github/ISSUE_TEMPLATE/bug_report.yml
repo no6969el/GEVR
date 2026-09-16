@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve GEVR Beta. Current Latest zip is **vr439**.
+        Thanks for helping improve GEVR Beta. Current zip is **vr439**.
+
+        Play steps: [README Play](https://github.com/no6969el/GEVR/blob/main/README.md#play). Download: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). How to report: [CONTRIBUTING](https://github.com/no6969el/GEVR/blob/main/CONTRIBUTING.md).
 
         **Do not upload ROM files** (no `.z64` / `.n64` / `.v64`, no dumps, no paste of ROM bytes).
 
@@ -62,14 +64,14 @@ body:
       required: true
 
   - type: dropdown
-    id: launcher
+    id: start_gevr_bat
     attributes:
-      label: Which launcher did you use?
-      description: From the vr439 zip. Headset KEEP is Start-GEVR.bat. Flat monitor is Play-on-monitor.bat.
+      label: Did you start with Start-GEVR.bat?
+      description: Headset KEEP launcher in the vr439 zip. If you have no headset, use Play-on-monitor.bat from the same zip, then pick No (used Play-on-monitor.bat).
       options:
-        - Start-GEVR.bat (headset KEEP)
-        - Play-on-monitor.bat (flat / no headset)
-        - Neither (ran goldeneye.exe or something else)
+        - Yes
+        - No (used Play-on-monitor.bat)
+        - No (something else)
         - Not sure
     validations:
       required: true
@@ -78,7 +80,7 @@ body:
     id: build_tag
     attributes:
       label: Which Beta zip?
-      description: Current Latest is vr439. Older GitHub tags may still exist; those zips were removed.
+      description: Current Latest is vr439. See README Play and Releases/latest. Older GitHub tags may still exist; those zips were removed.
       options:
         - vr439 (current Latest)
         - Older tag (name it in the notes)

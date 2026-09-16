@@ -8,9 +8,9 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (GitHub Latest). Only this tag has a zip.
+**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Only this tag has a zip. Play steps: [README Play](README.md#play).
 
-[README](README.md) | [Beta notes](docs/BETA.md) | [Controls](docs/CONTROLS.md) | [Roadmap](docs/ROADMAP.md) | [Credits](CREDITS.md)
+[README](README.md) | [Beta notes](docs/BETA.md) | [Controls](docs/CONTROLS.md) | [Roadmap](docs/ROADMAP.md) | [Credits](CREDITS.md) | [CONTRIBUTING](CONTRIBUTING.md)
 
 ---
 
@@ -48,7 +48,7 @@ These paths are what this Beta was built and worn on:
 
 **Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. Headset default is **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory. Try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
 
-When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**. Do not upload your ROM.
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **`Start-GEVR.bat` yes/no**. If you have no headset, use **`Play-on-monitor.bat`** and say so. [Issue forms](https://github.com/no6969el/GEVR/issues/new/choose) - [CONTRIBUTING](CONTRIBUTING.md). Do not upload ROM files.
 
 ---
 
@@ -68,9 +68,9 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 ## Start
 
-1. Grab the [vr439 zip](https://github.com/no6969el/GEVR/releases/tag/vr439). No ROM in the archive.
+1. Grab the [Latest Release zip](https://github.com/no6969el/GEVR/releases/latest) (**vr439**). Play steps: [README Play](README.md#play). No ROM in the archive.
 2. Unzip. **Headset:** `Start-GEVR.bat`. **Monitor / no headset:** `Play-on-monitor.bat`.
 3. Point at your **USA `.z64`**. First prepare can take a bit. Later launches with the same zip are fast.
 4. Headset on. Recenter (both sticks). Enjoy.
 
-[How to play / recenter](docs/CONTROLS.md) - [Beta testing](docs/BETA.md) - [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) - [Who we credit](CREDITS.md)
+[How to play / recenter](docs/CONTROLS.md) - [Beta testing](docs/BETA.md) - [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) - [CONTRIBUTING](CONTRIBUTING.md) - [Who we credit](CREDITS.md)
