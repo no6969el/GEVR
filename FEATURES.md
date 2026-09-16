@@ -8,7 +8,9 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-[Play the Beta](https://github.com/no6969el/GEVR/releases/tag/vr420) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
+**Latest playable cut:** [**GEVR Beta vr434**](https://github.com/no6969el/GEVR/releases/tag/vr434) - sharper VR picture, better boot knobs, smaller popup text.
+
+[Play the Beta](https://github.com/no6969el/GEVR/releases/tag/vr434) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md)
 
 ---
 
@@ -34,20 +36,36 @@ Facility and friends, OpenXR on PC. Mission Report / NEXT actually takes input a
 
 ---
 
+## What we tested (vr434)
+
+These paths are what this Beta was built and stared on:
+
+| Path | Notes |
+|------|--------|
+| **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) | Primary wear path - we do not maintain that driver; we *do* support this experience |
+| **Native PimaxXR** | Verified attach / play |
+| **Meta Quest 3 + Virtual Desktop OpenXR** | Verified attach / play |
+
+**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. This zip defaults to **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory - try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
+
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**.
+
+---
+
 ## Honest Beta notes
 
-- **Works today:** Pimax Crystal Super (Micro OLED) with **SteamVR as OpenXR** (including Pimax-as-SteamVR bridges). See [CONTROLS.md](docs/CONTROLS.md).
-- **Not working yet (fixing):** native **PimaxXR**, and **Quest 3 + Virtual Desktop (VDXR)** (often attaches flat on the monitor). Please report those with runtime + HMD vs monitor.
 - Crashes and rough edges are expected. That is why it is Beta.
 - You bring a **USA GoldenEye `.z64` you own**. No ROM in the download.
-- Full colocated Bond body, multiplayer, and a fancier hub room are later - see the [roadmap](docs/ROADMAP.md).
+- **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
+- On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.
+- Full colocated Bond body and a fancier hub room are later - see the [roadmap](docs/ROADMAP.md).
 
 ---
 
 ## Start
 
-1. Grab the [vr420 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr420)
-2. Unzip. Use **`Start-GEVR.bat`**
+1. Grab the [vr434 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr434)
+2. Unzip. Run **`Start-GEVR.bat`** (please use the bat - it locks in sharper VR with supersample 3 and the SrcFbo path, plus the stereo / view-restore knobs that help eyes fuse)
 3. Drop in your ROM when asked
 4. Headset on. Recenter (both sticks). Enjoy
 
