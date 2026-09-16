@@ -89,7 +89,8 @@ function Test-ExeGates([string]$exePath, [byte[]]$combinedHead) {
     Pass "goldeneye.exe does not embed combined.bin head"
 
     $ascii = [System.Text.Encoding]::ASCII.GetString($exeBytes)
-    if ($ascii -notlike "*$fileBackedMarker*") {
+    # IndexOf: -like treats [getv] as a character class, so the marker never matches.
+    if ($ascii.IndexOf($fileBackedMarker) -lt 0) {
         Fail "goldeneye.exe missing file-backed marker string: $fileBackedMarker"
     }
     Pass "goldeneye.exe reports file-backed images"
