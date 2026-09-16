@@ -3,7 +3,7 @@ setlocal
 cd /d "%~dp0"
 
 rem GEVR Beta vr438 - always launch through the ROM starter (BYO-ROM).
-rem Do not run the game binary directly; cache and VR boot env are set by the starter.
+rem Do not run the game binary directly; cache, GEVR_SHIP_TAG, and VR boot env are set here.
 
 call "%~dp0gevr-vr438-boot.cmd"
 

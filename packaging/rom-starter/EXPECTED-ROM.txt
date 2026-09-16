@@ -11,7 +11,10 @@ This zip does **not** contain:
   - EEPROM saves from the cartridge
 
 The ROM starter validates your file, then extracts image data into:
-  %LOCALAPPDATA%\GEVR_CACHE
+  %LOCALAPPDATA%\GEVR\cache\<your-ROM-SHA-256>\
+
+That folder holds combined.bin, a ready marker, and ship.txt (matches the Beta tag, e.g. vr438).
+After a public zip update, GEVR rebuilds this cache once from your same ROM if the stamp changed.
 
 After a successful prepare step, goldeneye.exe loads textures from that cache (file-backed images).
 

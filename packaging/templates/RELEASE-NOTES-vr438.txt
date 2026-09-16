@@ -20,10 +20,17 @@ First run
 1. Unzip anywhere.
 2. Run **Start-GEVR.bat** (not goldeneye.exe alone).
 3. When prompted, point at your **USA .z64**. The starter extracts image data into:
-   %LOCALAPPDATA%\GEVR_CACHE
+   %LOCALAPPDATA%\GEVR\cache\<your-ROM-hash>\
 4. Put the headset on. Recenter with **both thumbstick clicks**.
 
-No ROM file is included in this archive. If you already have a GEVR cache from an older build, you may still need to re-prepare when we change image layout.
+No ROM file is included in this archive.
+
+Updating the Beta zip (vr438, vr439, ...)
+-----------------------------------------
+Each release carries a **ship stamp** (vr438 for this zip). On first launch after you update,
+GEVR compares that stamp to ship.txt in your cache folder. If they differ, the old prepared
+cache is discarded and images are re-sliced from your ROM (same .z64 is fine). Expect a one-time
+prepare wait after each public update - not every launch.
 
 Changes in vr438 (vs pulled vr434)
 ------------------------------------

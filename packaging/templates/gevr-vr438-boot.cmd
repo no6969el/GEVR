@@ -1,6 +1,9 @@
 @echo off
 rem VR boot knobs for vr438 (current KEEP). Applied before GevrRomStarter runs goldeneye.exe.
 
+rem Cache generation stamp - bump each public Beta tag so LocalAppData image cache rebuilds once.
+set GEVR_SHIP_TAG=vr438
+
 set GETV_FPS=90
 set GETV_MSGSCALE=434
 set GETV_SRCFBO=1

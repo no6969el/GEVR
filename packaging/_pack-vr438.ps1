@@ -90,8 +90,8 @@ if (-not $SkipSmoke) {
         throw "Smoke requires -CombinedBin pointing at assets/images/combined/combined.bin on SimRig"
     }
     $smoke = Join-Path $PackagingRoot "_smoke-ship-zip.ps1"
-    & $smoke -StagingDir $OutDir -CombinedBin $CombinedBin
-    & $smoke -ZipPath $zipPath -CombinedBin $CombinedBin
+    & $smoke -StagingDir $OutDir -CombinedBin $CombinedBin -ShipTag $Tag
+    & $smoke -ZipPath $zipPath -CombinedBin $CombinedBin -ShipTag $Tag
 }
 
 Write-Host "[pack] PASS pack path for $Tag"

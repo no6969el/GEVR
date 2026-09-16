@@ -4,7 +4,11 @@ Scripts and templates for **Beta ship zips** on the public `no6969el/GEVR` repo.
 
 ## vr438 goal (BYO-ROM, file-backed images)
 
-The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`. Images load from `%LOCALAPPDATA%\\GEVR_CACHE` after the player supplies a **USA GoldenEye `.z64`**. The zip must **not** contain any ROM or EEPROM.
+The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`. Images load from `%LOCALAPPDATA%\\GEVR\\cache\\<rom-sha256>\\` after the player supplies a **USA GoldenEye `.z64`**. The zip must **not** contain any ROM or EEPROM.
+
+### Cache ship stamp (every public tag)
+
+Each Beta tag bumps **`GEVR_SHIP_TAG`** in `gevr-vrNNN-boot.cmd` (for example `vr438`). Prepare writes `ship.txt` beside `ready`. On launch, if the on-disk stamp differs from this build, `ready` and `combined.bin` are removed and images are re-sliced from the player's ROM (same hash is fine). Reference C sources: `packaging/rom-starter/gevr_cache_ship.*` and `gevr_prepare.c`. Product merge steps: `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`.
 
 **Do not** run `gh release create` or upload assets until the owner passes smoke on a clean machine.
 
@@ -67,6 +71,12 @@ Fails the run if any of these are true:
 - Required DLLs missing: `glew32.dll`, `SDL2.dll`, `openxr_loader.dll`, `libwinpthread-1.dll`, `libgcc_s_seh-1.dll`, `libstdc++-6.dll`.
 - `GevrRomStarter.exe` or `Start-GEVR.bat` missing.
 - `Start-GEVR.bat` launches bare `goldeneye.exe` without going through `GevrRomStarter.exe`.
+- `gevr-*-boot.cmd` missing `GEVR_SHIP_TAG` matching the pack `-Tag`.
+- `RELEASE-NOTES.txt` missing ship stamp / cache rebuild documentation.
+
+### Verify force-rebuild (owner)
+
+After merging stamp logic in GoldenEyeVR, run `packaging/_verify-cache-stamp-smoke.ps1` or follow the manual steps in `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md` (stale `ship.txt` + `ready` must not skip prepare).
 
 ## vr434 zip contents (canonical)
 

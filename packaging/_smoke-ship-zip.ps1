@@ -5,7 +5,8 @@ param(
     [string]$ZipPath = "",
     [string]$StagingDir = "",
     [Parameter(Mandatory = $true)]
-    [string]$CombinedBin
+    [string]$CombinedBin,
+    [string]$ShipTag = "vr438"
 )
 
 $ErrorActionPreference = "Stop"
@@ -94,6 +95,30 @@ function Test-ExeGates([string]$exePath, [byte[]]$combinedHead) {
     Pass "goldeneye.exe reports file-backed images"
 }
 
+function Test-BootCmdShipTag([string]$root, [string]$expectedTag) {
+    $boot = Get-ChildItem -LiteralPath $root -Filter "gevr-*-boot.cmd" | Select-Object -First 1
+    if (-not $boot) {
+        Fail "Missing gevr-*-boot.cmd (must set GEVR_SHIP_TAG)"
+    }
+    $text = Get-Content -LiteralPath $boot.FullName -Raw
+    $pattern = '(?im)^\s*set\s+GEVR_SHIP_TAG\s*=\s*' + [regex]::Escape($expectedTag) + '\s*$'
+    if ($text -notmatch $pattern) {
+        Fail "$($boot.Name) must set GEVR_SHIP_TAG=$expectedTag"
+    }
+    Pass "$($boot.Name) sets GEVR_SHIP_TAG=$expectedTag"
+}
+
+function Test-ReleaseNotesShipStamp([string]$notesPath) {
+    if (-not (Test-Path -LiteralPath $notesPath)) {
+        Fail "Missing RELEASE-NOTES.txt"
+    }
+    $text = Get-Content -LiteralPath $notesPath -Raw
+    if ($text -notmatch 'ship stamp') {
+        Fail "RELEASE-NOTES.txt must document ship stamp / cache rebuild on update"
+    }
+    Pass "RELEASE-NOTES.txt documents ship stamp"
+}
+
 function Test-StartBat([string]$batPath) {
     if (-not (Test-Path -LiteralPath $batPath)) {
         Fail "Missing Start-GEVR.bat"
@@ -145,6 +170,8 @@ function Test-Tree([string]$root) {
     $exe = Join-Path $root "goldeneye.exe"
     Test-ExeGates $exe $script:CombinedHead
     Test-StartBat (Join-Path $root "Start-GEVR.bat")
+    Test-BootCmdShipTag $root $ShipTag
+    Test-ReleaseNotesShipStamp (Join-Path $root "RELEASE-NOTES.txt")
 }
 
 $script:CombinedHead = Get-CombinedHead64 $CombinedBin
