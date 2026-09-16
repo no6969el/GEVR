@@ -56,7 +56,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 - Crashes and rough edges are expected. That is why it is Beta.
 - You bring a **USA GoldenEye `.z64` you own**. No ROM in the download. Run **`Start-GEVR.bat`** so **GevrRomStarter** can bind your ROM (not bare `goldeneye.exe`).
-- **vr434 was pulled** on 2026-09-16 - that build linked image data into `goldeneye.exe` and could boot without a ROM. Use **[vr441](https://github.com/no6969el/GEVR/releases/tag/vr441)** (not vr440's picture-only boot).
+- **vr440** (still on Releases, not Latest) booted **picture KEEP only** - chair features were in the exe but the public boot never armed them. Use **[vr441](https://github.com/no6969el/GEVR/releases/tag/vr441)**. **vr434** tag history: pulled build with ROM images baked into `goldeneye.exe`.
 - The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
 - On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.

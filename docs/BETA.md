@@ -2,22 +2,22 @@
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr440**](https://github.com/no6969el/GEVR/releases/tag/vr440) (GitHub Latest). Download **`GEVR-Beta-vr440-win64.zip`** on that page. It is the only tag with a zip. Play steps: [README Play](../README.md#play-vr440).
+**Play this cut:** [**vr441**](https://github.com/no6969el/GEVR/releases/tag/vr441) (GitHub Latest). Download the release zip on that page. Play steps: [README](../README.md#play-vr441---the-one-to-grab).
 
-Older tag **pages** stay for history. **Only vr440 has a zip.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
+Older tag **pages** stay for history. **Latest is vr441.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
-- **vr438** was BYO-ROM, but VR boot was a stub. Do not resurrect it.
+- **vr440** stays published (not Latest) - picture-only boot; see [README - What went wrong in vr440](../README.md#what-went-wrong-in-vr440).
 - **vr439** zip removed when vr440 shipped. Tag page stays for record.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README Play](../README.md#play-vr440). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr441---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [vr440 zip](https://github.com/no6969el/GEVR/releases/tag/vr440) (**vr440**) - play steps in [README Play](../README.md#play-vr440)
+- Download: [vr441 release zip](https://github.com/no6969el/GEVR/releases/tag/vr441) (**vr441**) - play steps in [README](../README.md#play-vr441---the-one-to-grab)
 
 ## Launchers
 
@@ -32,7 +32,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## Install and run
 
-1. Download and unzip **vr440** (`GEVR-Beta-vr440-win64.zip`).
+1. Download and unzip **vr441** from the release page.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\GEVR\cache`. Then play.
@@ -42,9 +42,9 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr440 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). You can delete that folder by hand instead. Optional: delete all **`%LOCALAPPDATA%\GEVR`** if you want cache **and** saves gone - not the default path. Details: [README updating](../README.md#updating-from-an-older-beta-keep-your-saves).
+- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr441 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). You can delete that folder by hand instead. Optional: delete all **`%LOCALAPPDATA%\GEVR`** if you want cache **and** saves gone - not the default path. See `RELEASE-NOTES.txt` in the zip.
 
-## vr440 wear notes
+## vr441 wear notes
 
 - **Auto-Aim defaults OFF** (`GETV_AUTOAIM` in the shipped exe).
 - **Pause watch:** **left stick** moves the highlight in VR.

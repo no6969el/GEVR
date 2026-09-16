@@ -10,7 +10,7 @@ The N64 classic you can finally *stand inside* - not an emulator overlay, not a 
 
 **Latest playable cut:** [**GEVR Beta vr441**](https://github.com/no6969el/GEVR/releases/tag/vr441) - public Beta (BYO-ROM, file-backed images from your cart). Download it, unzip, play.
 
-**vr434 was pulled** on 2026-09-16 because that build still had ROM-derived image data linked into `goldeneye.exe` and could boot without you dropping a ROM. Do not use an old vr434 download.
+**vr440** is still on Releases for comparison, but it is **not** Latest - same `goldeneye.exe` as vr441, picture-only boot. Grab **vr441** unless you are deliberately comparing boots (see **What went wrong in vr440** below).
 
 If this brings you back, **Star** the repo so you can catch the next drops. **Watch → Releases** if you want a ping when we ship.
 
@@ -34,11 +34,13 @@ No ROM in the download. You bring yours.
 
 ---
 
-## What went wrong with vr434 (honest)
+## What went wrong in vr440
 
-- The first vr434 zip could boot **without** you dropping a ROM because `combined.bin` was still embedded in `goldeneye.exe`.
-- That release asset was removed; the tag page explains why.
-- The replacement line is **vr438+**: file-backed images, ROM starter, and automated pack smoke gates under [`packaging/`](packaging/README.md).
+- **vr440** shipped the same `goldeneye.exe` as **vr441**, but **`Start-GEVR.bat`** only ran the **picture KEEP** boot - the visual stack we chaired (stereo, SrcFbo sharpness, supersample, sky / playspace).
+- The **chair features** were already in the binary; the public boot **never turned them on**. Bodies could vanish after kills, explosion textures could look wrong, and aim / the gun arm were not on the tuned **PLAY0** path we wear in the chair.
+- **vr441** is that same binary with the **full PLAY0 KEEP boot** in `gevr-vr441-boot.cmd`. The **vr440** tag stays published so you can compare - it is not Latest.
+
+**Older tag (history):** **vr434** was pulled because ROM-derived images were still linked into `goldeneye.exe` and that zip could boot without your ROM. The tag page stays; do not use an old vr434 download.
 
 ---
 
