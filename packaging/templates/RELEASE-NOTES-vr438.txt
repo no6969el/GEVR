@@ -8,7 +8,8 @@ This zip has no ROM. You supply a USA GoldenEye .z64 you legally own.
 Play
 ----
 1. Unzip anywhere.
-2. Run Start-GEVR.bat (not goldeneye.exe alone).
+2. Headset: run Start-GEVR.bat.
+   Monitor / no headset: run Play-on-monitor.bat.
 3. Point it at your USA .z64.
 4. Recenter with both thumbstick clicks.
 

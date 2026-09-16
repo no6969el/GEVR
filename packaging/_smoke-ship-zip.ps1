@@ -33,6 +33,7 @@ $requiredFiles = @(
     "gevr_prepare.exe",
     "EXPECTED-ROM.txt",
     "Start-GEVR.bat",
+    "Play-on-monitor.bat",
     "RELEASE-NOTES.txt"
 )
 
@@ -138,6 +139,33 @@ function Test-StartBat([string]$batPath) {
     Pass "Start-GEVR.bat routes through GevrRomStarter.exe"
 }
 
+function Test-MonitorBat([string]$batPath) {
+    if (-not (Test-Path -LiteralPath $batPath)) {
+        Fail "Missing Play-on-monitor.bat"
+    }
+    $lines = Get-Content -LiteralPath $batPath
+    $nonRem = @($lines | Where-Object { $_ -notmatch '^\s*rem\b' -and $_.Trim() -ne '' })
+    $text = $nonRem -join "`n"
+    if ($text -notmatch '(?im)^\s*set\s+GE_VR_XR\s*=\s*0\s*$') {
+        Fail "Play-on-monitor.bat must set GE_VR_XR=0"
+    }
+    if ($text -notmatch '(?im)^\s*set\s+GETV_STEREO\s*=\s*0\s*$') {
+        Fail "Play-on-monitor.bat must set GETV_STEREO=0"
+    }
+    if ($text -match '(?i)gevr-vr438-boot\.cmd') {
+        Fail "Play-on-monitor.bat must not call gevr-vr438-boot.cmd"
+    }
+    if ($text -notmatch '(?i)GevrRomStarter\.exe') {
+        Fail "Play-on-monitor.bat must launch GevrRomStarter.exe"
+    }
+    foreach ($line in $nonRem) {
+        if ($line -match '(?i)goldeneye\.exe') {
+            Fail "Play-on-monitor.bat must not invoke goldeneye.exe directly"
+        }
+    }
+    Pass "Play-on-monitor.bat is flat (GE_VR_XR=0, GETV_STEREO=0, no vr438 boot cmd)"
+}
+
 function Test-Tree([string]$root) {
     foreach ($name in $requiredFiles) {
         $p = Join-Path $root $name
@@ -171,6 +199,7 @@ function Test-Tree([string]$root) {
     $exe = Join-Path $root "goldeneye.exe"
     Test-ExeGates $exe $script:CombinedHead
     Test-StartBat (Join-Path $root "Start-GEVR.bat")
+    Test-MonitorBat (Join-Path $root "Play-on-monitor.bat")
     Test-BootCmdShipTag $root $ShipTag
     Test-ReleaseNotesShipStamp (Join-Path $root "RELEASE-NOTES.txt")
 }

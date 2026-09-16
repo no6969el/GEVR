@@ -73,8 +73,9 @@ Fails the run if any of these are true:
 - `goldeneye.exe` does not contain the `[getv] images: file-backed` marker string.
 - Zip or staging tree contains `.z64`, `.n64`, `.v64`, or `eeprom` payloads.
 - Required DLLs missing: `glew32.dll`, `SDL2.dll`, `openxr_loader.dll`, `libwinpthread-1.dll`, `libgcc_s_seh-1.dll`, `libstdc++-6.dll`.
-- `GevrRomStarter.exe` or `Start-GEVR.bat` missing.
+- `GevrRomStarter.exe`, `Start-GEVR.bat`, or `Play-on-monitor.bat` missing.
 - `Start-GEVR.bat` launches bare `goldeneye.exe` without going through `GevrRomStarter.exe`.
+- `Play-on-monitor.bat` does not set `GE_VR_XR=0` and `GETV_STEREO=0`, or it calls `gevr-vr438-boot.cmd`.
 - `gevr-*-boot.cmd` missing `GEVR_SHIP_TAG` matching the pack `-Tag`.
 - `RELEASE-NOTES.txt` missing ship stamp / cache rebuild documentation.
 
@@ -87,5 +88,5 @@ After merging stamp logic in GoldenEyeVR, run `packaging/_verify-cache-stamp-smo
 - `goldeneye.exe` (file-backed images build)
 - Runtime DLLs from `build-windows` (including `glew32.dll`)
 - `GevrRomStarter.exe`, `gevr_prepare.exe`, `EXPECTED-ROM.txt`
-- `Start-GEVR.bat`, `RELEASE-NOTES.txt`
+- `Start-GEVR.bat`, `Play-on-monitor.bat`, `RELEASE-NOTES.txt`
 - No Nintendo ROM in the archive

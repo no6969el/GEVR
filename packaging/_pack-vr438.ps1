@@ -67,6 +67,7 @@ Copy-IfExists (Join-Path $romStarter "gevr_prepare.exe") $OutDir
 Copy-IfExists (Join-Path $romStarter "EXPECTED-ROM.txt") $OutDir
 
 Copy-Item -LiteralPath (Join-Path $templates "Start-GEVR.bat") -Destination (Join-Path $OutDir "Start-GEVR.bat") -Force
+Copy-IfExists (Join-Path $templates "Play-on-monitor.bat") $OutDir
 Copy-Item -LiteralPath (Join-Path $templates "gevr-vr438-boot.cmd") -Destination (Join-Path $OutDir "gevr-vr438-boot.cmd") -Force
 Copy-Item -LiteralPath (Join-Path $templates "RELEASE-NOTES-vr438.txt") -Destination (Join-Path $OutDir "RELEASE-NOTES.txt") -Force
 

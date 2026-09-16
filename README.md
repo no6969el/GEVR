@@ -22,7 +22,7 @@ If this brings you back, **Star** the repo so you can catch the next drops. **Wa
 
 1. Download the **[vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438)**. **No ROM inside the zip.**
 2. Unzip anywhere.
-3. Run **`Start-GEVR.bat`** (not `goldeneye.exe` alone).
+3. **Headset:** run **`Start-GEVR.bat`**. **Monitor / no headset:** run **`Play-on-monitor.bat`**.
 4. Point it at your **USA `.z64`**.
 5. Recenter with **both thumbstick clicks**.
 
@@ -36,7 +36,7 @@ Keep the same `.z64`. Each cut carries a **ship stamp**, so the first launch aft
 
 If the picture still looks wrong: delete `%LOCALAPPDATA%\GEVR` and run the bat again.
 
-Default is **VR**. Flat / monitor works too if you just want a look.
+**Headset:** `Start-GEVR.bat`. **Monitor / no headset:** `Play-on-monitor.bat` (flat 2D, no OpenXR).
 
 No ROM in the download. You bring yours.
 
