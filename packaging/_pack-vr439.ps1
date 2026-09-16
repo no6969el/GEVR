@@ -1,5 +1,7 @@
 # Assemble GEVR Beta vr439 staging folder (BYO-ROM, file-backed images).
 # Owner runs on SimRig after build + rom-starter binaries are present.
+# Copies gevr-vr439-boot.cmd (live KEEP: STEREO_SRC=xr, XR_PLAY_SRCFBO, SS3, sky, playspace)
+# and filelist.gevr-images.csv (gevr_prepare exit 3 without it).
 
 [CmdletBinding()]
 param(
@@ -65,7 +67,15 @@ Get-ChildItem -LiteralPath $BuildDir -Filter "*.dll" | ForEach-Object {
 Copy-IfExists (Join-Path $romStarter "GevrRomStarter.exe") $OutDir
 Copy-IfExists (Join-Path $romStarter "gevr_prepare.exe") $OutDir
 Copy-IfExists (Join-Path $romStarter "EXPECTED-ROM.txt") $OutDir
-Copy-IfExists (Join-Path $BuildDir "filelist.gevr-images.csv") $OutDir
+
+# gevr_prepare exit 3 without this manifest (slice offsets, not ROM bytes).
+$filelistRepo = Join-Path $romStarter "filelist.gevr-images.csv"
+$filelistBuild = Join-Path $BuildDir "filelist.gevr-images.csv"
+if (Test-Path -LiteralPath $filelistRepo) {
+    Copy-IfExists $filelistRepo $OutDir
+} else {
+    Copy-IfExists $filelistBuild $OutDir
+}
 
 Copy-Item -LiteralPath (Join-Path $templates "Start-GEVR.bat") -Destination (Join-Path $OutDir "Start-GEVR.bat") -Force
 Copy-IfExists (Join-Path $templates "Play-on-monitor.bat") $OutDir

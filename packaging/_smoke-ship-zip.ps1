@@ -122,6 +122,21 @@ function Test-BootCmdShipTag([string]$root, [string]$expectedTag) {
     }
     Pass "$($boot.Name) sets GETV_XR_PLAY_SRCFBO=1"
 
+    if ($text -notmatch '(?im)^\s*set\s+GETV_SUPERSAMPLE\s*=\s*3\s*$') {
+        Fail "$($boot.Name) must set GETV_SUPERSAMPLE=3"
+    }
+    Pass "$($boot.Name) sets GETV_SUPERSAMPLE=3"
+
+    if ($text -notmatch '(?im)^\s*set\s+GETV_VR_SKYMESH\s*=\s*1\s*$') {
+        Fail "$($boot.Name) must set GETV_VR_SKYMESH=1"
+    }
+    Pass "$($boot.Name) sets GETV_VR_SKYMESH=1"
+
+    if ($text -notmatch '(?im)^\s*set\s+GETV_VR_PLAYSPACE\s*=\s*1\s*$') {
+        Fail "$($boot.Name) must set GETV_VR_PLAYSPACE=1"
+    }
+    Pass "$($boot.Name) sets GETV_VR_PLAYSPACE=1"
+
     $lines = Get-Content -LiteralPath $boot.FullName
     $nonRem = @($lines | Where-Object { $_ -notmatch '^\s*rem\b' -and $_.Trim() -ne '' })
     foreach ($line in $nonRem) {
@@ -130,6 +145,20 @@ function Test-BootCmdShipTag([string]$root, [string]$expectedTag) {
         }
     }
     Pass "$($boot.Name) does not launch goldeneye.exe"
+}
+
+function Test-FilelistCsv([string]$csvPath) {
+    if (-not (Test-Path -LiteralPath $csvPath)) {
+        Fail "Missing filelist.gevr-images.csv (gevr_prepare exit 3 without it)"
+    }
+    $text = Get-Content -LiteralPath $csvPath -Raw
+    if ([string]::IsNullOrWhiteSpace($text)) {
+        Fail "filelist.gevr-images.csv is empty (gevr_prepare exit 3)"
+    }
+    if ($text -notmatch 'combined\.bin') {
+        Fail "filelist.gevr-images.csv must list images/combined.bin"
+    }
+    Pass "filelist.gevr-images.csv present (combined.bin row)"
 }
 
 function Test-ReleaseNotesShipStamp([string]$notesPath) {
@@ -233,6 +262,7 @@ function Test-Tree([string]$root) {
     Test-MonitorBat (Join-Path $root "Play-on-monitor.bat") $ShipTag
     Test-BootCmdShipTag $root $ShipTag
     Test-ReleaseNotesShipStamp (Join-Path $root "RELEASE-NOTES.txt")
+    Test-FilelistCsv (Join-Path $root "filelist.gevr-images.csv")
 }
 
 $script:CombinedHead = Get-CombinedHead64 $CombinedBin

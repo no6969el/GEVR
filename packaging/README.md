@@ -6,12 +6,13 @@ Binaries are built on the owner SimRig from the private product tree. Here we ke
 
 ## Live cut: vr439
 
-GitHub **Latest** is **vr439**. Pack that zip. Older **tags stay** on GitHub for history; their **zips were removed**. Do not re-upload vr438 or vr434.
+GitHub **Latest** is **vr439**. Pack that zip. Older **tags stay** on GitHub for history; their **zips were removed**. Do not upload a zip to **vr438**, **vr434**, or **vr420**.
 
 - `Start-GEVR.bat` = headset KEEP (calls `gevr-vr439-boot.cmd`, then GevrRomStarter)
+- `gevr-vr439-boot.cmd` = `GEVR_SHIP_TAG=vr439` plus the live KEEP stack (`GETV_STEREO_SRC=xr`, `GETV_XR_PLAY_SRCFBO`, supersample 3, sky, playspace)
 - `Play-on-monitor.bat` = flat monitor (no OpenXR, no stereo KEEP)
 - BYO-ROM: player supplies a USA GoldenEye `.z64` they own
-- Zip also ships `filelist.gevr-images.csv`
+- Zip also ships `filelist.gevr-images.csv` (`gevr_prepare` fails with **exit 3** without it)
 - Both launchers set `GEVR_SHIP_TAG=vr439` (headset via the boot cmd)
 
 The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`. Images load from `%LOCALAPPDATA%\GEVR\cache\<rom-sha256>\` after prepare. The zip must **not** contain any ROM or EEPROM.
@@ -33,10 +34,10 @@ Reference C sources: `packaging/rom-starter/gevr_cache_ship.*` and `gevr_prepare
 ## Owner workflow (SimRig)
 
 1. Build file-backed VR binary (current KEEP + `-ImagesFileBacked`).
-2. Drop ROM-starter tools into `packaging/rom-starter/` (see below).
+2. Drop ROM-starter tools into `packaging/rom-starter/` (see below), including `filelist.gevr-images.csv`.
 3. Run `_pack-vr439.ps1`, then `_smoke-ship-zip.ps1` on the zip.
 4. Test the zip on a PC that has **never** run GEVR and has **no** cache.
-5. Only then tag `vr439` and publish the release (human step).
+5. Only then tag `vr439` and publish the release (human step). Do not attach that zip to vr438 / vr434 / vr420.
 
 ### One-liner build (product tree)
 
@@ -75,6 +76,7 @@ Place built tools here before packing (gitignored `*.exe`):
 |------|------|
 | `GevrRomStarter.exe` | On Start: pick ROM, run `gevr_prepare.exe`, invalidate stale `ship.txt`, launch `goldeneye.exe` |
 | `gevr_prepare.exe` | Extract/prepare into `%LOCALAPPDATA%\GEVR\cache\<rom-sha256>\`; write `ready` + `ship.txt` |
+| `filelist.gevr-images.csv` | Image slice manifest (offsets, not ROM bytes). **Must** be in the zip; prepare **exit 3** without it |
 | `EXPECTED-ROM.txt` | SHA/size hints for USA `GoldenEye (U) [!].z64` (no ROM bytes in repo) |
 
 Player templates live under `packaging/templates/`.
@@ -91,8 +93,9 @@ Fails the run if any of these are true:
 - `Start-GEVR.bat` launches bare `goldeneye.exe` without going through `GevrRomStarter.exe`.
 - `Play-on-monitor.bat` does not set `GEVR_SHIP_TAG` to the pack tag, `GE_VR_XR=0` and `GETV_STEREO=0`, or it calls a `gevr-*-boot.cmd`.
 - `gevr-<tag>-boot.cmd` missing `GEVR_SHIP_TAG` matching the pack `-Tag`.
-- `gevr-<tag>-boot.cmd` missing `GETV_STEREO_SRC=xr` or `GETV_XR_PLAY_SRCFBO=1`, or it launches `goldeneye.exe`.
+- `gevr-<tag>-boot.cmd` missing KEEP knobs: `GETV_STEREO_SRC=xr`, `GETV_XR_PLAY_SRCFBO=1`, `GETV_SUPERSAMPLE=3`, `GETV_VR_SKYMESH=1`, `GETV_VR_PLAYSPACE=1`, or it launches `goldeneye.exe`.
 - `Start-GEVR.bat` does not call `gevr-<tag>-boot.cmd` before `GevrRomStarter.exe`.
+- `filelist.gevr-images.csv` empty or missing a `combined.bin` row (prepare **exit 3**).
 - `RELEASE-NOTES.txt` missing the **ship stamp** phrase / cache rebuild documentation.
 
 ### Verify force-rebuild (owner)

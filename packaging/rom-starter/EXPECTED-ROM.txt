@@ -14,6 +14,9 @@ Launch with Start-GEVR.bat (headset KEEP) or Play-on-monitor.bat (flat).
 The ROM starter validates your file, then extracts image data into:
   %LOCALAPPDATA%\GEVR\cache\<your-ROM-SHA-256>\
 
+This zip also ships filelist.gevr-images.csv (slice offsets, not ROM bytes).
+gevr_prepare.exe needs that file beside it. Without it, prepare fails (exit 3).
+
 That folder holds combined.bin, a ready marker, and ship.txt (matches the
 Beta tag, e.g. vr439). First prepare can take a bit. Later launches with
 the same zip and same ROM skip that wait.

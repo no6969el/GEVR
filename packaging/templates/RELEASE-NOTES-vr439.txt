@@ -8,36 +8,31 @@ This zip has no ROM. You supply a USA GoldenEye .z64 you legally own.
 Play
 ----
 1. Unzip anywhere.
-2. Pick a launcher:
-   - Headset: Start-GEVR.bat (same picture as the vr434 quality KEEP)
-   - Monitor / no headset: Play-on-monitor.bat (flat, no OpenXR)
-3. Point it at a USA GoldenEye .z64 you own.
+2. Headset: run Start-GEVR.bat
+   Monitor / no headset: run Play-on-monitor.bat
+3. Point it at your USA .z64.
 4. In VR, recenter with both thumbstick clicks.
 
+Start-GEVR.bat boots the same quality KEEP as the vr434 picture (stereo from the
+headset, SrcFbo sharpness, sky/eye isolation, playspace). vr438 boot was a stub
+and looked like an old build - use this vr439 zip instead.
+
 First time
-----------
-The first launch waits once while images prepare into
-%LOCALAPPDATA%\GEVR\cache, then you play.
+  The first launch waits once while images prepare into
+  %LOCALAPPDATA%\GEVR\cache, then you play.
 
 Updating from an older Beta
----------------------------
-Keep the same .z64. Each cut carries a ship stamp, so the first
-launch after an update rebuilds that cache once automatically.
-You do not need to delete the cache folder by hand.
+  Keep the same .z64. Each cut carries a ship stamp, so the first
+  launch after an update rebuilds that cache once automatically.
+  You do not need to delete the cache folder by hand.
 
-If the picture still looks wrong, delete %LOCALAPPDATA%\GEVR and
+If the picture still looks wrong: delete %LOCALAPPDATA%\GEVR and
 run the bat again.
 
-Why this zip (not vr438 or vr434)
----------------------------------
-vr438 shipped a broken VR boot stub (old stereo, wrong SrcFbo name).
-Grab this vr439 zip instead.
-
-vr434 was pulled: ROM images were baked into goldeneye.exe so it
-could boot without a ROM.
-
-Headset play uses the same quality KEEP as vr434. Only the ROM /
-file-backed image path is new.
+Why older zips
+--------------
+- vr434 was pulled: ROM images were baked into goldeneye.exe.
+- vr438 required your ROM but shipped a stripped VR boot. Grab vr439.
 
 Headset notes
 -------------
@@ -47,15 +42,15 @@ Virtual Desktop OpenXR.
 72 / 80 / 90 Hz should work (default 90). Over 90 is still
 beta-test territory. Please report issues.
 
-Still rough (honest)
---------------------
-- Occasional crashes. File an Issue with headset, OpenXR runtime,
-  SteamVR on/off, HMD vs monitor, and which bat you used.
-- Dam crates can still pop in.
-- Dam water can look murky.
-- Glass bullet holes can be one-eye.
-- Local split-screen multiplayer works on a monitor. A LAN /
-  same-network multiplayer add-on is later.
+Still rough
+-----------
+- Occasional crashes (file an Issue: headset, OpenXR runtime,
+  SteamVR on/off, HMD vs monitor, Start-GEVR.bat yes/no)
+- Dam crates can still pop in
+- Dam water can look murky
+- Glass bullet holes can be one-eye
+- Local split-screen MP works. A LAN / same-network multiplayer
+  add-on is later.
 
 https://github.com/no6969el/GEVR/issues/new/choose
 

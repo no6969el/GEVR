@@ -5,7 +5,12 @@ Merge the following into **GoldenEyeVR** so BarZ testers never keep a stale `com
 `ready` survived an older cut.
 
 Stamp lives in **product** `gevr_prepare.exe` and the **GevrRomStarter** Start path.
-`GEVR_SHIP_TAG` comes from boot (`Start-GEVR.bat` calls `gevr-vrNNN-boot.cmd` first).
+`GEVR_SHIP_TAG` comes from boot (`Start-GEVR.bat` calls `gevr-vr439-boot.cmd` first;
+`Play-on-monitor.bat` sets the same tag itself and stays flat).
+
+Public pack must also ship `filelist.gevr-images.csv` next to `gevr_prepare.exe`.
+That file is a slice-offset manifest (not ROM bytes). Live prepare looks for it
+beside the exe (`--csv` override exists); missing manifest is **exit 3**.
 
 ## Problem
 
@@ -105,4 +110,7 @@ Automated helper (public repo): `packaging/_verify-cache-stamp-smoke.ps1`.
 - **First-ever install:** pick ROM, one prepare wait, play.
 - **Same zip + same ROM later:** fast path when `ship.txt` matches `GEVR_SHIP_TAG`.
 - **New zip / new tag:** one re-prepare on first `Start-GEVR.bat`. Testers do **not** delete `%LOCALAPPDATA%\GEVR` unless pictures look wrong.
-- Always launch via `Start-GEVR.bat` so boot sets `GEVR_SHIP_TAG` before the starter runs prepare.
+- Headset: always launch via `Start-GEVR.bat` so boot sets `GEVR_SHIP_TAG` before the starter runs prepare.
+- Monitor / no headset: `Play-on-monitor.bat` (flat; same stamp; no KEEP boot cmd).
+- `filelist.gevr-images.csv` must be in the unzipped folder or prepare exits 3.
+- Old GitHub tags (`vr438`, `vr434`, `vr420`) are history only. Their zips were removed. Do not upload a zip to those tags.

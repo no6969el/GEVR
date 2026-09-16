@@ -7,6 +7,9 @@
  * Ship stamp: GEVR_SHIP_TAG (env, set by gevr-vrNNN-boot.cmd) must match ship.txt
  * beside ready. Mismatch removes ready + combined.bin so we never print
  * "READY already prepared" on a stale cache after a public zip update.
+ *
+ * Live gevr_prepare also needs filelist.gevr-images.csv beside the exe
+ * (or --csv). Missing manifest is exit 3. That CSV is offsets, not ROM bytes.
  */
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>

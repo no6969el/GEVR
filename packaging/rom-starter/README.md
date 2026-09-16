@@ -19,6 +19,8 @@ Returning testers who unzip a new Beta get **one** prepare wait on first launch.
 
 These tools must **not** embed ROM data - only read the player-supplied file at runtime. Do not put a `.z64` in this folder or in the zip.
 
+`filelist.gevr-images.csv` is committed here and **must** ship next to `gevr_prepare.exe`. It is a slice-offset manifest (not ROM bytes). Live `gevr_prepare` looks for that filename beside the exe; without it prepare fails with **exit 3**.
+
 Product merge steps: [`packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`](../RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md).
 
 ## Sources (committed)
@@ -27,6 +29,7 @@ Product merge steps: [`packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`](
 |------|------|
 | `gevr_cache_ship.h` / `gevr_cache_ship.c` | Ship stamp read/write and stale-cache invalidation |
 | `gevr_prepare.c` | Reference prepare CLI; merge extract logic from GoldenEyeVR |
+| `filelist.gevr-images.csv` | Image slice manifest for prepare (offsets, not ROM bytes) |
 
 Copy into the **GoldenEyeVR** product tree and build. See the APPLY note above.
 
@@ -37,4 +40,7 @@ Git ignores `*.exe` here. Before running `_pack-vr439.ps1`, copy from the produc
 - `GevrRomStarter.exe` (must call prepare on Start, then launch the game)
 - `gevr_prepare.exe` (must honor `GEVR_SHIP_TAG` / `ship.txt`)
 
-`EXPECTED-ROM.txt` ships in the zip and documents the USA `.z64` the player must provide.
+Committed beside those and copied into the zip:
+
+- `EXPECTED-ROM.txt` - USA `.z64` the player must provide (no ROM bytes)
+- `filelist.gevr-images.csv` - image slice manifest; pack fails closed if this is missing (`gevr_prepare` **exit 3**)
