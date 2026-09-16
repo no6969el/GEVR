@@ -1,0 +1,117 @@
+name: Bug report
+description: Something looks wrong or does not behave the way you expect
+title: "[Bug] "
+labels: ["bug", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve GEVR Beta. **Please do not attach ROM files** to this issue.
+
+        Crashes are common in Beta — if the game closed on you, use the **Crash report** template instead.
+
+  - type: input
+    id: headset_model
+    attributes:
+      label: Headset model
+      description: Which headset are you using? (e.g. Pimax Crystal Super, Quest 3, none — monitor only)
+      placeholder: Pimax Crystal Super
+    validations:
+      required: true
+
+  - type: dropdown
+    id: openxr_runtime
+    attributes:
+      label: OpenXR runtime
+      description: Which OpenXR runtime is active for GEVR?
+      options:
+        - SteamVR
+        - PimaxXR (native Pimax)
+        - Virtual Desktop (VDXR)
+        - Other (say which in repro notes)
+        - Not sure / not using VR
+    validations:
+      required: true
+
+  - type: dropdown
+    id: steamvr_running
+    attributes:
+      label: Is SteamVR running?
+      description: SteamVR can be installed but off — pick what matches your session.
+      options:
+        - Yes
+        - No
+        - Not installed
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: display_target
+    attributes:
+      label: Where did you see the game?
+      description: Headset (HMD) vs flat monitor makes a big difference for VR bugs.
+      options:
+        - In the headset (HMD)
+        - Flat on the monitor only
+        - Black screen / no image
+        - Crash before any picture
+    validations:
+      required: true
+
+  - type: dropdown
+    id: start_gevr_bat
+    attributes:
+      label: Did you start with Start-GEVR.bat?
+      description: The recommended launcher in the Release zip — not a download from this repo alone.
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: build_tag
+    attributes:
+      label: Build or Release tag
+      description: Optional but helpful (e.g. vr420 from Releases).
+      placeholder: vr420
+    validations:
+      required: false
+
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Short steps to reproduce
+      description: What were you doing? Keep it brief — a few steps is enough.
+      placeholder: |
+        1. Launched with Start-GEVR.bat
+        2. Loaded Facility
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: What did you see or feel instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, clip, or log lines
+      description: Optional — a short clip or the first few `[getv]` / OpenXR log lines can help. No ROM files.
+    validations:
+      required: false

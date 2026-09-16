@@ -1,0 +1,119 @@
+name: Crash report
+description: The game closed, froze, or hard-crashed
+title: "[Crash] "
+labels: ["crash", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sorry it crashed — reports like this help a lot. **Please do not attach ROM files.**
+
+  - type: input
+    id: headset_model
+    attributes:
+      label: Headset model
+      description: Which headset were you using? (or "none" if monitor only)
+      placeholder: Pimax Crystal Super
+    validations:
+      required: true
+
+  - type: dropdown
+    id: openxr_runtime
+    attributes:
+      label: OpenXR runtime
+      options:
+        - SteamVR
+        - PimaxXR (native Pimax)
+        - Virtual Desktop (VDXR)
+        - Other (say which below)
+        - Not sure / not using VR
+    validations:
+      required: true
+
+  - type: dropdown
+    id: steamvr_running
+    attributes:
+      label: Is SteamVR running?
+      options:
+        - Yes
+        - No
+        - Not installed
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: display_target
+    attributes:
+      label: Where was the picture right before the crash?
+      options:
+        - In the headset (HMD)
+        - Flat on the monitor only
+        - Black screen / no image
+        - Never got a picture
+    validations:
+      required: true
+
+  - type: dropdown
+    id: start_gevr_bat
+    attributes:
+      label: Did you start with Start-GEVR.bat?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: build_tag
+    attributes:
+      label: Build or Release tag
+      description: Optional (e.g. vr420).
+      placeholder: vr420
+    validations:
+      required: false
+
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: What were you doing right before it crashed?
+      description: Short steps or one paragraph is fine.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: e.g. keep playing, return to menu, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Freeze, instant close, Windows error, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Every time with the same steps
+        - Sometimes
+        - Only happened once
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: On-screen message, Windows error, or log lines
+      description: Optional — no ROM files.
+    validations:
+      required: false
