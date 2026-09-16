@@ -1,22 +1,35 @@
 # GEVR release packaging (public repo)
 
-This folder is for **packers and maintainers**. Player play steps live in the repo README and in the zip as `RELEASE-NOTES.txt`.
+This folder is for **packers and maintainers**. Player play steps live in [`README.md`](../README.md) and in the zip as `RELEASE-NOTES.txt`.
 
 Binaries are built on the owner SimRig from the private product tree. Here we keep the **pack layout**, **smoke gates**, and **launcher templates** only.
 
 ## Live cut: vr439
 
-GitHub **Latest** is **vr439**. Pack that zip. Older **tags stay** on GitHub for history; their **zips were removed**. Do not re-upload vr438 or vr434.
+GitHub **[Latest](https://github.com/no6969el/GEVR/releases/latest)** is **[vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)**. Pack **`GEVR-Beta-vr439-win64.zip`** only. Older **tags stay** on GitHub for history; their **zips were removed**. Do not re-upload vr420, vr434, or vr438.
 
 - `Start-GEVR.bat` = headset KEEP (calls `gevr-vr439-boot.cmd`, then GevrRomStarter)
-- `Play-on-monitor.bat` = flat monitor (no OpenXR, no stereo KEEP)
+- `Play-on-monitor.bat` = flat monitor (`GE_VR_XR=0` / `GETV_STEREO=0`, no KEEP boot cmd)
 - BYO-ROM: player supplies a USA GoldenEye `.z64` they own
-- Zip also ships `filelist.gevr-images.csv`
+- Zip also ships `filelist.gevr-images.csv` (copy from product `build-windows`; do not invent it)
 - Both launchers set `GEVR_SHIP_TAG=vr439` (headset via the boot cmd)
+
+### KEEP boot (`gevr-vr439-boot.cmd`)
+
+Same picture as the happy vr434 quality KEEP. Smoke also checks stereo src + SrcFbo:
+
+- `GETV_STEREO_SRC=xr`
+- `GETV_XR_PLAY_SRCFBO=1` (binary reads this name)
+- SS3 (`GETV_SUPERSAMPLE=3`)
+- skymesh / skyscissor (`GETV_VR_SKYMESH=1`, `GETV_VR_SKYSCISSOR=1`)
+- playspace (`GETV_VR_PLAYSPACE=1`)
+- recenter chord (`GETV_XR_RECENTER_CHORD=1`)
+- `GETV_MSGSCALE=434`
+- `GEVR_SHIP_TAG=vr439`
 
 The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`. Images load from `%LOCALAPPDATA%\GEVR\cache\<rom-sha256>\` after prepare. The zip must **not** contain any ROM or EEPROM.
 
-Headset KEEP is the same quality stack as vr434. vr438 shipped a broken boot stub; vr439 replaces it.
+Headset KEEP is the same quality stack as vr434. vr438 had the ROM starter but a stripped VR boot; vr439 replaces it.
 
 Use `_pack-vr439.ps1`. `_pack-vr438.ps1` is retired and will throw.
 

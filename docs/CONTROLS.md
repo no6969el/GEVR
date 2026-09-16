@@ -1,13 +1,13 @@
 # Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
+How to move, aim, and reset your position in [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) (`GEVR-Beta-vr439-win64.zip`).
 
 Play steps: [README Play](../README.md#play). Download: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
-- **Headset:** `Start-GEVR.bat` - KEEP VR picture (XR stereo source, SrcFbo, supersample 3, sky / playspace) plus recenter / stick-turn.
-- **Monitor / no headset:** `Play-on-monitor.bat` - VR off, no stereo eyes. This is also the path for **local split-screen**.
+- **Headset:** `Start-GEVR.bat` - KEEP VR picture (XR stereo source, SrcFbo, SS3, skymesh / skyscissor, playspace, recenter chord, MSGSCALE 434).
+- **Monitor / no headset:** `Play-on-monitor.bat` - flat (`GE_VR_XR=0` / `GETV_STEREO=0`). This is also the path for **local split-screen**.
 
 Use those bats from the vr439 zip. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
 

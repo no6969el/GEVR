@@ -28,15 +28,20 @@ You do not need to delete the cache folder by hand.
 If the picture still looks wrong, delete %LOCALAPPDATA%\GEVR and
 run the bat again.
 
-Why this zip (not vr438 or vr434)
----------------------------------
-vr438 shipped a broken VR boot stub (old stereo, wrong SrcFbo name).
-Grab this vr439 zip instead.
+Why this zip (not vr420 / vr434 / vr438)
+----------------------------------------
+vr420, vr434, and vr438 stay on GitHub for history. Their zip
+assets were removed.
+
+vr438 had the ROM starter, but the VR boot was stripped and
+looked like an old build. Grab this vr439 zip instead.
 
 vr434 was pulled: ROM images were baked into goldeneye.exe so it
 could boot without a ROM.
 
-Headset play uses the same quality KEEP as vr434. Only the ROM /
+Headset play uses the same quality KEEP as the happy vr434
+picture (XR stereo source, SrcFbo, SS3, skymesh / skyscissor,
+playspace, recenter chord, MSGSCALE 434). Only the ROM /
 file-backed image path is new.
 
 Headset notes

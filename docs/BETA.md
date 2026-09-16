@@ -2,15 +2,15 @@
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr439**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). It is the only tag with a zip. Play steps: [README Play](../README.md#play).
+**Play this cut:** [**vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (`GEVR-Beta-vr439-win64.zip`). Same file via [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). Play steps: [README Play](../README.md#play).
 
 Older tags [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) stay for history. Their zips were removed.
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
-- **vr438** was BYO-ROM, but VR boot was a stub. It looked like an old build.
+- **vr438** had the ROM starter, but VR boot was stripped. It looked like an old build.
 - **vr439** restores the vr434 KEEP picture on BYO-ROM. Grab that.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README Play](../README.md#play). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README Play](../README.md#play). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). Pack: [packaging/README.md](../packaging/README.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
@@ -21,8 +21,8 @@ Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README Play](../
 
 ## Launchers
 
-- **Headset:** `Start-GEVR.bat` (KEEP: XR stereo source, SrcFbo, supersample 3, sky / playspace)
-- **Monitor / no headset:** `Play-on-monitor.bat` (VR off, no stereo eyes)
+- **Headset:** `Start-GEVR.bat` (KEEP: XR stereo source, SrcFbo, SS3, skymesh / skyscissor, playspace, recenter chord, MSGSCALE 434)
+- **Monitor / no headset:** `Play-on-monitor.bat` (`GE_VR_XR=0` / `GETV_STEREO=0`)
 
 Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTROLS.md).
 
@@ -32,7 +32,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## Install and run
 
-1. Download and unzip **vr439**.
+1. Download and unzip **`GEVR-Beta-vr439-win64.zip`**.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\GEVR\cache`. Then play.

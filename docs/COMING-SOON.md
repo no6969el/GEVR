@@ -1,11 +1,11 @@
 # Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play).
+**Play now:** [GEVR Beta vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) (`GEVR-Beta-vr439-win64.zip`). Same file: [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play).
 
 This is the cut to grab. Older tags stay for history. Their zips were removed.
 
 - **vr434** was pulled (baked ROM images).
-- **vr438** was BYO-ROM with a stub VR boot. It looked like an old build.
+- **vr438** had the ROM starter, but the VR boot was stripped. It looked like an old build.
 - **vr439** restores the vr434 KEEP picture on BYO-ROM.
 
 **Star** the repo and **Watch -> Releases** so the next cut shows up without you refreshing every day.
@@ -23,6 +23,6 @@ This is the cut to grab. Older tags stay for history. Their zips were removed.
 - Online play after that
 - Fewer Dam / glass quirks, fewer crashes
 
-How to play: [README Play](../README.md#play). Tester notes: [BETA.md](BETA.md). Hands: [CONTROLS.md](CONTROLS.md). Roadmap: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). Credits: [CREDITS.md](../CREDITS.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+How to play: [README Play](../README.md#play). Tester notes: [BETA.md](BETA.md). Hands: [CONTROLS.md](CONTROLS.md). Roadmap: [ROADMAP.md](ROADMAP.md). Pitch: [FEATURES.md](../FEATURES.md). Credits: [CREDITS.md](../CREDITS.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). Pack: [packaging/README.md](../packaging/README.md).
 
 Crashes are expected in Beta. Please file [Issues](https://github.com/no6969el/GEVR/issues/new/choose) with **headset + OpenXR runtime + SteamVR on/off + HMD vs monitor + Start-GEVR.bat yes/no**. No headset: use **`Play-on-monitor.bat`** and say so. Do not upload your ROM.

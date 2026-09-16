@@ -8,7 +8,7 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Only this tag has a zip. Play steps: [README Play](README.md#play).
+**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (`GEVR-Beta-vr439-win64.zip`). Same file via [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). Play steps: [README Play](README.md#play).
 
 [README](README.md) | [Beta notes](docs/BETA.md) | [Controls](docs/CONTROLS.md) | [Roadmap](docs/ROADMAP.md) | [Credits](CREDITS.md) | [CONTRIBUTING](CONTRIBUTING.md)
 
@@ -56,9 +56,9 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 - Crashes and rough edges are expected. That is why it is Beta.
 - You bring a **USA GoldenEye `.z64` you own**. No ROM in the download.
-- **Headset:** `Start-GEVR.bat` (KEEP picture: XR stereo source, SrcFbo, supersample 3, sky / playspace). **Monitor / no headset:** `Play-on-monitor.bat`.
+- **Headset:** `Start-GEVR.bat` (KEEP picture: XR stereo source, SrcFbo, SS3, skymesh / skyscissor, playspace, recenter chord, MSGSCALE 434). **Monitor / no headset:** `Play-on-monitor.bat`.
 - First launch prepares images once into `%LOCALAPPDATA%\GEVR\cache`. A new zip rebuilds that cache once via a ship stamp. Troubleshooting only: delete that cache folder.
-- **vr438** was BYO-ROM with a stub VR boot. It looked like an old build. Use [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
+- **vr438** had the ROM starter, but the VR boot was stripped. It looked like an old build. Use [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439).
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **Dam crates** can still pop in. **Dam water** can look murky. **Glass bullet holes** can show in one eye.
 - **Local split-screen multiplayer** still works on a monitor. A **LAN / same-network add-on** is later. Online is later than that.
@@ -68,7 +68,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 ## Start
 
-1. Grab the [Latest Release zip](https://github.com/no6969el/GEVR/releases/latest) (**vr439**). Play steps: [README Play](README.md#play). No ROM in the archive.
+1. Grab [`GEVR-Beta-vr439-win64.zip`](https://github.com/no6969el/GEVR/releases/tag/vr439) (also [latest](https://github.com/no6969el/GEVR/releases/latest)). Play steps: [README Play](README.md#play). No ROM in the archive.
 2. Unzip. **Headset:** `Start-GEVR.bat`. **Monitor / no headset:** `Play-on-monitor.bat`.
 3. Point at your **USA `.z64`**. First prepare can take a bit. Later launches with the same zip are fast.
 4. Headset on. Recenter (both sticks). Enjoy.

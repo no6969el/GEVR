@@ -8,31 +8,31 @@
 
 The N64 classic you can finally *stand inside*. Not an emulator overlay. Not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* for real OpenXR. You supply a **USA GoldenEye ROM you legally own**. We never ship the cart.
 
-**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (GitHub Latest). It is the only tag with a zip. Download it, unzip, play.
+**Play this cut:** [**GEVR Beta vr439**](https://github.com/no6969el/GEVR/releases/tag/vr439) (`GEVR-Beta-vr439-win64.zip`). Same file via [Releases/latest](https://github.com/no6969el/GEVR/releases/latest). It is the only tag with a zip. Download it, unzip, play.
 
 Star the repo if this brings you back. Watch -> Releases if you want a ping when the next cut ships.
 
-[Releases](https://github.com/no6969el/GEVR/releases) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md) · [Roadmap](docs/ROADMAP.md) · [Features](FEATURES.md) · [Credits](CREDITS.md)
+[Releases](https://github.com/no6969el/GEVR/releases) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md) · [Roadmap](docs/ROADMAP.md) · [Features](FEATURES.md) · [Credits](CREDITS.md) · [Contributing](CONTRIBUTING.md)
 
 ---
 
 ## Play (vr439)
 
-1. Download the **[vr439 zip](https://github.com/no6969el/GEVR/releases/tag/vr439)**. **No ROM in the zip.**
+1. Download **`GEVR-Beta-vr439-win64.zip`** from the **[vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)** page (or [latest](https://github.com/no6969el/GEVR/releases/latest)). **No ROM in the zip.**
 2. Unzip anywhere. Leave the files together.
 3. Pick a launcher:
-   - **Headset:** `Start-GEVR.bat` (KEEP picture: XR stereo source, SrcFbo sharpness, supersample 3, sky / playspace).
-   - **Monitor / no headset:** `Play-on-monitor.bat` (VR off, no stereo eyes).
+   - **Headset:** `Start-GEVR.bat` (KEEP picture: XR stereo source, SrcFbo, SS3, skymesh / skyscissor, playspace, recenter chord, MSGSCALE 434).
+   - **Monitor / no headset:** `Play-on-monitor.bat` (flat; `GE_VR_XR=0` / `GETV_STEREO=0`).
 4. Point it at your **USA GoldenEye `.z64`** when asked.
 5. In VR, recenter with **both thumbstick clicks**. Enjoy.
 
 Please use those bats. They lock in the settings this cut was worn with. Do not double-click `goldeneye.exe`.
 
-### First time
+### New here
 
 The first launch waits once while images prepare into `%LOCALAPPDATA%\GEVR\cache`. Then you play.
 
-### Updating from an older Beta
+### Returning (older Beta)
 
 Keep the same `.z64`. Each cut carries a **ship stamp**, so the first launch after an update rebuilds that cache once. You do not wipe anything by hand for a normal update.
 
@@ -45,7 +45,7 @@ Troubleshooting only: if the picture still looks wrong after that, delete `%LOCA
 [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420), [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434), and [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) stay up as history. Their zip assets were removed. Play **[vr439](https://github.com/no6969el/GEVR/releases/tag/vr439)**.
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
-- **vr438** was BYO-ROM, but the VR boot file was a stub. It looked like an old build. Do not use it.
+- **vr438** had the ROM starter, but the VR boot was stripped. It looked like an old build. Do not use it.
 - **vr439** restores the vr434 KEEP picture on BYO-ROM. That is why this is the cut.
 
 ---
@@ -62,7 +62,7 @@ These paths are what this Beta was built and worn on:
 
 **Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. Headset default is **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory. Try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
 
-When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and whether you used **`Start-GEVR.bat`**. Do not upload your ROM.
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **which bat** (`Start-GEVR.bat` or `Play-on-monitor.bat`). Do not upload your ROM.
 
 ---
 
@@ -115,5 +115,9 @@ Fuller list: [docs/ROADMAP.md](docs/ROADMAP.md).
 - [Features](FEATURES.md)
 - [Coming soon](docs/COMING-SOON.md)
 - [Credits](CREDITS.md)
+- [Contributing](CONTRIBUTING.md)
+- [Pack / smoke (vr439)](packaging/README.md)
+
+Play zip: [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) · [latest](https://github.com/no6969el/GEVR/releases/latest)
 
 Jump in and enjoy finally being Bond in GoldenEye VR.
