@@ -4,6 +4,9 @@ Public packaging in `no6969el/GEVR` ships reference sources under `packaging/rom
 Merge the following into **GoldenEyeVR** so BarZ testers never keep a stale `combined.bin` when
 `ready` survived an older cut.
 
+Stamp lives in **product** `gevr_prepare.exe` and the **GevrRomStarter** Start path.
+`GEVR_SHIP_TAG` comes from boot (`Start-GEVR.bat` calls `gevr-vrNNN-boot.cmd` first).
+
 ## Problem
 
 `%LOCALAPPDATA%\GEVR\cache\<sha>\ready` makes `gevr_prepare` skip re-extract ("READY already
@@ -96,3 +99,10 @@ On a machine with an old cache:
 4. After prepare: `ship.txt` contains `vr438` and `ready` is fresh.
 
 Automated helper (public repo): `packaging/_verify-cache-stamp-smoke.ps1`.
+
+## Tester expectations (once stamped tools are in the zip)
+
+- **First-ever install:** pick ROM, one prepare wait, play.
+- **Same zip + same ROM later:** fast path when `ship.txt` matches `GEVR_SHIP_TAG`.
+- **New zip / new tag:** one re-prepare on first `Start-GEVR.bat`. Testers do **not** delete `%LOCALAPPDATA%\GEVR` unless pictures look wrong.
+- Always launch via `Start-GEVR.bat` so boot sets `GEVR_SHIP_TAG` before the starter runs prepare.

@@ -6,7 +6,7 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
+The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You bring a **USA GoldenEye ROM you legally own**, run **`Start-GEVR.bat`**, wait once while it prepares, and go.
 
 **Latest playable cut:** [**GEVR Beta vr438**](https://github.com/no6969el/GEVR/releases/tag/vr438) - public Beta (BYO-ROM, file-backed images from your cart). Download it, unzip, play.
 
@@ -22,15 +22,33 @@ If this brings you back, **Star** the repo so you can catch the next drops. **Wa
 
 1. Download the **[vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438)** (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
 2. Unzip anywhere.
-3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
-4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
-5. Put the headset on. Recenter with **both thumbstick clicks**. Enjoy.
-
-**Please use the bat** - it locks in the good VR settings and runs the ROM starter we ship for this cut (not bare `goldeneye.exe`).
+3. Run **`Start-GEVR.bat`** (please use the bat - it locks in the good VR settings, marks this Beta cut, and starts **GevrRomStarter.exe**, not bare `goldeneye.exe`).
+4. Point at your **USA GoldenEye `.z64`** when asked.
+5. First time, wait while GEVR prepares images from your ROM. Then put the headset on. Recenter with **both thumbstick clicks**. Enjoy.
 
 Default is **VR**. Flat / monitor works too if you just want a look.
 
 No ROM in the download. You bring yours.
+
+---
+
+## First run vs returning
+
+**New here?** Download the zip, unzip, run **`Start-GEVR.bat`**, pick your own USA `.z64`. The first prepare can take a bit. Then you play.
+
+**Coming back for a new zip?** Redownload the current Beta, unzip it, use the **same ROM**, run **`Start-GEVR.bat`**. The first launch after a tag change rebuilds the local cache once from that ROM - one wait, then back to normal. You do **not** need to delete the cache folder yourself.
+
+**Same zip, same ROM, later launches:** fast. The cache is already ready.
+
+### What happens when you update
+
+Unzip the new Beta (vr438 now; later tags work the same way). Keep your own `.z64`. First launch after the tag changes: one automatic re-prepare. After that, launches are fast again.
+
+Do not use an old **vr434** folder - that cut was pulled because it could boot without a ROM.
+
+### If something looks wrong
+
+Wrong textures, a stuck prepare, leftover junk from a pulled zip: you can delete `%LOCALAPPDATA%\GEVR` and run **`Start-GEVR.bat`** again with the same ROM. That is troubleshooting only, not a required update step.
 
 ---
 
@@ -44,8 +62,9 @@ No ROM in the download. You bring yours.
 
 ## What is new in vr438
 
-- **BYO-ROM enforced** - `Start-GEVR.bat` → **GevrRomStarter**; you must supply a USA GoldenEye `.z64` you own.
+- **BYO-ROM enforced** - `Start-GEVR.bat` launches **GevrRomStarter**; you must supply a USA GoldenEye `.z64` you own.
 - **File-backed images** - in-game textures and UI art come from your ROM on disk; the zip does not ship Nintendo cart data.
+- **Cache rebuilds itself on a new tag** - first launch after you update waits once; you do not wipe `%LOCALAPPDATA%\GEVR` by hand.
 - **Full runtime in the zip** - includes `glew32.dll` and the other Windows DLLs the build needs.
 - **Sharper VR** (carried forward) - supersample 3 with the SrcFbo path we chaired and kept.
 - **Boot that actually hands over** - the bat sets FPS + stereo / view-restore so eyes fuse.
@@ -90,7 +109,7 @@ On a **flat / monitor** setup, classic **local multiplayer** is still there - sp
 
 ## Why this exists
 
-GoldenEye is one of the most-wanted “I wish I could stand inside it” games on Earth. GEVR’s north star:
+GoldenEye is one of the most-wanted "I wish I could stand inside it" games on Earth. GEVR's north star:
 
 - **Native / from-source** - full ownership of the game loop for proper VR
 - **OpenXR** - Crystal, Quest via PC, SteamVR-class HMDs
@@ -106,7 +125,7 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 **Now - enjoy the Beta**
 - Solo VR campaign feel
 - Comfort, aim, and picture quality
-- “It boots, it shoots, it sometimes crashes” honesty
+- "It boots, it shoots, it sometimes crashes" honesty
 
 **Next**
 - Fewer freezes and softer landings
@@ -129,7 +148,7 @@ Fuller list: [`docs/ROADMAP.md`](docs/ROADMAP.md). Star + Watch if you want mult
 
 **Longer:** GEVR rebuilds GoldenEye on PC so VR can be done properly (stereo, 6DOF, controller aim), instead of stretching an emulator. Beta means playable and imperfect on purpose while we clear crashes and comfort. Multiplayer and bigger social features sit on the roadmap after the solo VR base is something we are proud to hand strangers.
 
-Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). We do not claim Nintendo’s game data, Rare’s assets, or third-party engines we did not write.
+Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). We do not claim Nintendo's game data, Rare's assets, or third-party engines we did not write.
 
 ---
 

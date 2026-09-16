@@ -14,7 +14,10 @@ The ROM starter validates your file, then extracts image data into:
   %LOCALAPPDATA%\GEVR\cache\<your-ROM-SHA-256>\
 
 That folder holds combined.bin, a ready marker, and ship.txt (matches the Beta tag, e.g. vr438).
+First prepare can take a bit. Later launches with the same zip and same ROM skip that wait.
 After a public zip update, GEVR rebuilds this cache once from your same ROM if the stamp changed.
+You do not need to delete the cache folder yourself. Wipe %LOCALAPPDATA%\GEVR only if
+something looks wrong, then run Start-GEVR.bat again.
 
 After a successful prepare step, goldeneye.exe loads textures from that cache (file-backed images).
 

@@ -1,6 +1,8 @@
 # Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) - full zip (exe, `glew32.dll`, other runtime DLLs, `Start-GEVR.bat` → **GevrRomStarter.exe**, notes). Bring your own USA GoldenEye `.z64`; images are file-backed from your ROM.
+**Play now:** [GEVR Beta vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) - full zip (exe, `glew32.dll`, other runtime DLLs, `Start-GEVR.bat` launches **GevrRomStarter.exe**, notes). Bring your own USA GoldenEye `.z64`; images are file-backed from your ROM.
+
+First launch prepares those images (can take a bit). A new Beta zip does that **once** automatically on first `Start-GEVR.bat` - you do not delete the cache folder yourself. Later launches with the same zip and same ROM are fast.
 
 **vr434 is not live** - we pulled it on 2026-09-16 because that build linked image data into `goldeneye.exe` and could boot without a ROM. Do not use an old vr434 download.
 

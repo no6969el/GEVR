@@ -2,7 +2,7 @@
 
 How to move, aim, and **reset your position** in the current GEVR Beta.
 
-Use **`Start-GEVR.bat`** from the Release zip. That bat turns on the VR input knobs this sheet describes. Running `goldeneye.exe` alone may leave recenter / stick-turn off.
+Use **`Start-GEVR.bat`** from the Release zip. That bat turns on the VR input knobs this sheet describes, marks the current Beta tag, and runs the ROM starter. Running `goldeneye.exe` alone may skip prepare / cache updates and leave recenter / stick-turn off.
 
 ## Reset position (recenter)
 

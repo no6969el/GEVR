@@ -8,10 +8,10 @@
 ## In progress
 - Mission-end / menu flow reliability
 - Comfort (playspace, aiming, HUD)
-- First-run ROM starter + save continuity across updates
+- Save continuity across updates (cache already rebuilds once when the Beta tag changes; no manual cache delete)
 
 ## Planned
-- **Multiplayer** - shared Bond world (biggest bookmark feature; not dated)
+- **Multiplayer add-on** - first goal is LAN / same-network play (biggest bookmark feature; not dated)
 - More campaign coverage as the base hardens
 - Optional quality / accessibility without killing the classic feel
 

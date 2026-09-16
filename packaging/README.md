@@ -8,7 +8,11 @@ The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`
 
 ### Cache ship stamp (every public tag)
 
-Each Beta tag bumps **`GEVR_SHIP_TAG`** in `gevr-vrNNN-boot.cmd` (for example `vr438`). Prepare writes `ship.txt` beside `ready`. On launch, if the on-disk stamp differs from this build, `ready` and `combined.bin` are removed and images are re-sliced from the player's ROM (same hash is fine). Reference C sources: `packaging/rom-starter/gevr_cache_ship.*` and `gevr_prepare.c`. Product merge steps: `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`.
+Each Beta tag bumps **`GEVR_SHIP_TAG`** in `gevr-vrNNN-boot.cmd` (for example `vr438`). **`Start-GEVR.bat`** calls that boot cmd first, then **GevrRomStarter**, which runs **`gevr_prepare.exe`** on Start.
+
+After a successful prepare, the cache folder gets `ready` plus **`ship.txt`** (the current tag). If `ready` exists but `ship.txt` is missing or does not match `GEVR_SHIP_TAG`, prepare deletes `ready` and `combined.bin` and forces a full re-prepare from the same `.z64`. Same ROM hash is fine. Testers get **one** wait on first launch after a new zip; they do not wipe `%LOCALAPPDATA%\GEVR` unless troubleshooting.
+
+Reference C sources: `packaging/rom-starter/gevr_cache_ship.*` and `gevr_prepare.c`. Product rebuild / merge steps: `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md`. The stamp must live in **product** `gevr_prepare.exe` and the starter Start path - packing this repo's reference `.c` files is not enough until GoldenEyeVR is rebuilt.
 
 **Do not** run `gh release create` or upload assets until the owner passes smoke on a clean machine.
 
@@ -55,8 +59,8 @@ Place built tools here before packing (gitignored `*.exe`):
 
 | File | Role |
 |------|------|
-| `GevrRomStarter.exe` | First-run ROM pick + cache prep; launches `goldeneye.exe` with VR boot env |
-| `gevr_prepare.exe` | Optional CLI prepare step (starter may call it) |
+| `GevrRomStarter.exe` | On Start: pick ROM, run `gevr_prepare.exe`, invalidate stale `ship.txt`, launch `goldeneye.exe` |
+| `gevr_prepare.exe` | Extract/prepare into `%LOCALAPPDATA%\GEVR\cache\<rom-sha256>\`; write `ready` + `ship.txt` |
 | `EXPECTED-ROM.txt` | SHA/size hints for USA `GoldenEye (U) [!].z64` (no ROM bytes in repo) |
 
 Templates for player files live under `packaging/templates/`.
@@ -78,7 +82,7 @@ Fails the run if any of these are true:
 
 After merging stamp logic in GoldenEyeVR, run `packaging/_verify-cache-stamp-smoke.ps1` or follow the manual steps in `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md` (stale `ship.txt` + `ready` must not skip prepare).
 
-## vr434 zip contents (canonical)
+## vr438 zip contents (canonical)
 
 - `goldeneye.exe` (file-backed images build)
 - Runtime DLLs from `build-windows` (including `glew32.dll`)

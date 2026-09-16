@@ -56,6 +56,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 - Crashes and rough edges are expected. That is why it is Beta.
 - You bring a **USA GoldenEye `.z64` you own**. No ROM in the download. Run **`Start-GEVR.bat`** so **GevrRomStarter** can bind your ROM (not bare `goldeneye.exe`).
+- **First prepare can take a bit.** Updating to a new Beta zip rebuilds that cache **once** on first launch; you do not need to delete `%LOCALAPPDATA%\GEVR` yourself. Wipe that folder only if something looks wrong.
 - **vr434 was pulled** on 2026-09-16 - that build linked image data into `goldeneye.exe` and could boot without a ROM. Use **[vr438](https://github.com/no6969el/GEVR/releases/tag/vr438)**.
 - The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
@@ -67,8 +68,8 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 ## Start
 
 1. Grab the [vr438 Release zip](https://github.com/no6969el/GEVR/releases/tag/vr438) (no ROM in the archive).
-2. Unzip. Run **`Start-GEVR.bat`** (**GevrRomStarter** - point at your USA `.z64`; the bat also locks in sharper VR with supersample 3 and the SrcFbo path, plus stereo / view-restore knobs that help eyes fuse).
-3. Drop in your **USA `.z64`** when the starter asks.
+2. Unzip. Run **`Start-GEVR.bat`** (please use the bat - **GevrRomStarter**, not bare `goldeneye.exe`).
+3. Drop in your **USA `.z64`** when the starter asks. First prepare can take a bit; later launches with the same zip are fast.
 4. Headset on. Recenter (both sticks). Enjoy.
 
 [How to play / recenter](docs/CONTROLS.md) - [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) - [Who we credit](CREDITS.md)
