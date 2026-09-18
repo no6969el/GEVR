@@ -319,6 +319,12 @@ function Test-MonitorBat([string]$batPath) {
     if ($text -notmatch '(?im)^\s*set\s+GETV_STEREO\s*=\s*0\s*$') {
         Fail "Play-on-monitor.bat must set GETV_STEREO=0"
     }
+    if ($text -notmatch '(?im)^\s*set\s+GETV_AUDIO_CLOCK\s*=\s*device\s*$') {
+        Fail "Play-on-monitor.bat must set GETV_AUDIO_CLOCK=device (#48 audio sync)"
+    }
+    if ($text -notmatch '(?im)^\s*set\s+GETV_AUDIO_QUEUE_MS\s*=\s*33\s*$') {
+        Fail "Play-on-monitor.bat must set GETV_AUDIO_QUEUE_MS=33 (#48 audio sync)"
+    }
     if ($text -match '(?i)gevr-vr\d+-boot\.cmd') {
         Fail "Play-on-monitor.bat must not call any gevr-*-boot.cmd"
     }

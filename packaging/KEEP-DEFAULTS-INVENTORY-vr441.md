@@ -36,6 +36,8 @@ tables (dig clears only). They are summarized under **DIG_OFF (wipe)**.
 | `GETV_STEREO` | `0` | No stereo eyes on monitor. |
 | `GETV_STEREO_MODE` | `0` | Flat stereo mode off. |
 | `GETV_FPS` | `60` | Monitor cadence (headset boot uses `90`). |
+| `GETV_AUDIO_CLOCK` | `device` | Same as headset boot; fixes flat audio desync ([#48](https://github.com/no6969el/GEVR/issues/48)). |
+| `GETV_AUDIO_QUEUE_MS` | `33` | Same as headset boot ([#48](https://github.com/no6969el/GEVR/issues/48)). |
 
 Headset KEEP knobs below are **not** run on the monitor bat unless the player
 exports them in the shell.
@@ -363,9 +365,10 @@ Smoke **dead names** (do not assign): `GETV_SRCFBO`, `GETV_MSGSCALE`.
   vr441 boot; monitor path does not run that boot. Wrong-color explosions on
   flat remain a known gap; track as a **new issue** when filing (not closed by
   vr441 headset sit alone).
-- **Intermittent audio desync** - monitor sit gate still references
-  [GitHub #48](https://github.com/no6969el/GEVR/issues/48); `GETV_AUDIO_CLOCK=device`
-  and `GETV_AUDIO_QUEUE_MS=33` are boot seeds only until #48 is resolved.
+- **Flat audio desync** - `Play-on-monitor.bat` now seeds `GETV_AUDIO_CLOCK=device`
+  and `GETV_AUDIO_QUEUE_MS=33` (same as vr441 headset boot). Re-run the monitor
+  sit gate on the next zip cut; close [#48](https://github.com/no6969el/GEVR/issues/48)
+  after wear confirms.
 
 ---
 
@@ -377,7 +380,7 @@ Smoke **dead names** (do not assign): `GETV_SRCFBO`, `GETV_MSGSCALE`.
 | KEEP_SHIP (feature arms) | 73 |
 | PLAYER_PREF (boot tuning) | 25 |
 | DIG_OFF (explicit `=0`) | 19 |
-| FLAT_FORCE (monitor bat only) | 5 |
+| FLAT_FORCE (monitor bat only) | 7 |
 | Wipe-only knobs (C_DEFAULT UNKNOWN) | 56 |
 
 ---
