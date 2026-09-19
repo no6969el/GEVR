@@ -14,23 +14,35 @@ Stay on **vr441** until a new wear-passed cut lands. There is no new tag yet. **
 - Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 - Auto-Aim defaults OFF. Pause watch: left stick moves highlight in VR. **B** reloads. Pause is the Menu / system button (Tab on keyboard / monitor).
 - **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR), **native PimaxXR**, **Quest 3 + Virtual Desktop OpenXR**.
-- 72 / 80 / **90** Hz should work (headset default 90). Over 90 is still beta-test territory.
+- This zip defaults to **90** Hz. Other Hz is in the chair ([#49](https://github.com/no6969el/GEVR/issues/49)) - not in this unzip.
 - Local split-screen works on a monitor.
 
-## What's coming (in the chair, not in the zip)
+## Corrected in the chair (not in your unzip yet)
 
-Working on:
-- **Watch finger + pause menu** - so the watch and pause actually work in VR (confirm, highlight, that stretched finger). Current EXE project.
-- **Ammo HUD picture** - icons can look stretched or fat in the headset. Render first, not clip. Not wear-passed, so not shipped.
+In the tree or chaired PASS today. Parked for a wear-passed pack. **vr441 does not have these yet.**
 
-Looking at (not promising the next drop):
-- **Black flicker** in VR (Facility gas tanks; Bunker after Surface) - [issue #55](https://github.com/no6969el/GEVR/issues/55). Not chaired.
+- **Ship KEEP in the exe** - sharpness / SrcFbo / Dam crate path so testers match without extra bat KEEP lines
+- **Pause navigation** - Quit works; inventory steps once - you can change gadgets / unlock
+- **Watch-as-weapon finger** - interim placement fix, parked for the next pack
+- **Ammo HUD white-speck path** - picture reads correctly. Size and mild cross-eye still tuning
+
+## Actively attempting (not shipped / not PASS)
+
+Working on today. Do not expect these in vr441.
+
+- **Pause watch farther from the face** so the text is readable - still too close in the chair, next dig cooking
+- **Black flicker** in VR ([#55](https://github.com/no6969el/GEVR/issues/55)) - Facility gas tanks / Bunker - chair sit queued, not PASS
+- **Touch-to-use = full action**, including tank mount (frees a face button for pause)
+- **Ammo HUD clean render** ([#34](https://github.com/no6969el/GEVR/issues/34))
+- **Headset Hz / pace from OpenXR** ([#49](https://github.com/no6969el/GEVR/issues/49)) - more than 90, or less
+- **Reload-after-quit corruption** ([#38](https://github.com/no6969el/GEVR/issues/38)) - root dig done, APPLY not in yet
+
+Keep shooting on vr441. Watch GitHub. We will tell you when Latest moves.
 
 ## Later (not this zip, not the next tease)
 
 - LAN / same-network **add-on** (not a mod)
 - Online multiplayer after LAN
-- More polish on Dam crates, water, glass holes
 - Native Quest standalone port
 
 See [ROADMAP.md](ROADMAP.md) for the honest list.

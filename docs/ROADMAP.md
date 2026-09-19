@@ -13,16 +13,26 @@ How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester
 - Headset via `Start-GEVR.bat`, or monitor via `Play-on-monitor.bat`
 - Local split-screen multiplayer on a monitor
 
-## In the chair (not in the zip yet)
+## Corrected in the chair (not in the zip yet)
 
-- **Watch finger + pause menu** - usable watch / confirm in VR. Current EXE project.
-- **Ammo HUD picture** - render first (distortion, not clip). Not wear-passed.
+- Ship KEEP in the exe (sharpness / SrcFbo / Dam crate path)
+- Pause navigation: Quit works; inventory steps once
+- Watch-as-weapon finger - interim, parked for the next pack
+- Ammo HUD white-speck path - picture reads; size / mild cross-eye still tuning
 
-## Looking at
+## Actively attempting (not shipped / not PASS)
 
-- **Black flicker** in VR (Facility gas tanks; Bunker after Surface) - [issue #55](https://github.com/no6969el/GEVR/issues/55). Not chaired. Not a "fixed next" promise.
+- Pause watch farther from the face - still too close in the chair
+- Black flicker in VR ([#55](https://github.com/no6969el/GEVR/issues/55)) - chair sit queued
+- Touch-to-use including tank mount
+- Ammo HUD clean render ([#34](https://github.com/no6969el/GEVR/issues/34))
+- Headset Hz / pace from OpenXR ([#49](https://github.com/no6969el/GEVR/issues/49))
+- Reload-after-quit corruption ([#38](https://github.com/no6969el/GEVR/issues/38)) - dig done, APPLY not in
+
+## Also on the board
+
 - Fewer crashes and softer landings
-- Dam crate pop, murky Dam water, one-eye glass holes
+- Dam crate pop, murky Dam water, one-eye glass holes (vr441 still shows these)
 - Comfort (playspace, aiming, HUD)
 - Saves that survive updates (cache already rebuilds once when the Beta tag changes)
 

@@ -28,7 +28,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 **Verified:** Pimax Crystal Super + SteamVR OpenXR via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR), native **PimaxXR**, **Quest 3 + Virtual Desktop OpenXR**.
 
-**Hz:** 72 / 80 / 90 should work. Headset default is 90. Over 90 is still beta-test territory. Report what you see.
+**Hz:** this zip defaults to **90**. Other Hz is in the chair ([#49](https://github.com/no6969el/GEVR/issues/49)) - not wear-passed. Report what you see.
 
 ## Install and run
 

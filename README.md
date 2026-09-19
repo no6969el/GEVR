@@ -55,12 +55,21 @@ No ROM in the download. You bring yours.
 
 No new zip yet. Keep playing **vr441**. When the next wear-passed cut lands, it will be a GitHub Release. **Watch** this repo (Watch -> Releases) so you get pinged. Star it if you want the next Bond drop without hunting.
 
-**In the chair right now** (working on, not in your unzip):
-- **Watch finger + pause menu** - so the watch and pause actually work in VR: confirm, highlight in both eyes, that stretched finger when you pull the watch. This is the current EXE project. Several open Issues live here.
-- **Ammo HUD picture** - ammo icons can look stretched or fat in the headset. That is **render** distortion, not clip or overlap (placement already moved). Picture first. Not wear-passed, so not shipped.
+Full split: [`docs/COMING-SOON.md`](docs/COMING-SOON.md).
 
-**Known, looking at** (not promising it in the next drop):
-- **Black flicker** in VR at Facility gas tanks and Bunker after Surface ([issue #55](https://github.com/no6969el/GEVR/issues/55)). Dig exists. Not chaired. File more sits if you hit it.
+**Corrected in the chair** (tree / chaired PASS - **not in your unzip**):
+- Ship KEEP in the exe (sharpness / SrcFbo / Dam crate path) so testers match without extra bat KEEP lines
+- Pause navigation: Quit works; inventory steps once - change gadgets / unlock
+- Watch-as-weapon finger - interim fix, parked for the next pack
+- Ammo HUD white-speck path: picture reads correctly (size / mild cross-eye still tuning)
+
+**Actively attempting** (not shipped / not PASS):
+- Pause watch farther from the face - still too close in the chair
+- Black flicker in VR ([issue #55](https://github.com/no6969el/GEVR/issues/55)) - Facility gas tanks / Bunker - chair sit queued
+- Touch-to-use = full action, including tank mount (free a face button for pause)
+- Ammo HUD clean render ([issue #34](https://github.com/no6969el/GEVR/issues/34))
+- Headset Hz / pace from OpenXR ([issue #49](https://github.com/no6969el/GEVR/issues/49))
+- Reload-after-quit corruption ([issue #38](https://github.com/no6969el/GEVR/issues/38)) - root dig done, APPLY not in yet
 
 Keep shooting. Watch GitHub. We will tell you when Latest moves.
 
@@ -92,7 +101,7 @@ These paths are what this Beta was built and stared on:
 | **Meta Quest 3 + Virtual Desktop OpenXR** | Verified attach / play |
 | **RTX 5060 laptop + Quest 3 + Virtual Desktop VDXR** | BarZ wear **vr441**, 2026-09-17; ran surprisingly well (one data point, not a minimum spec) |
 
-**Refresh rates:** 72 Hz, 80 Hz, and **90 Hz** should work. This zip defaults to **90**. Anything **over 90** (120 / 144 and friends) is still beta-test territory - try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
+**Refresh rates:** this zip defaults to **90**. Other Hz is in the chair ([issue #49](https://github.com/no6969el/GEVR/issues/49)) - not wear-passed. Try it, and [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) if something feels off.
 
 When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, and any log next to the zip or in the console. Do **not** upload your ROM. [Open an Issue](https://github.com/no6969el/GEVR/issues/new/choose).
 
@@ -138,8 +147,8 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 - “It boots, it shoots, it sometimes crashes” honesty
 
 **Next (in the chair, not in the zip)**
-- Watch finger + pause menu (usable watch / confirm in VR)
-- Ammo HUD picture (render first; not wear-passed)
+- Chair-PASS parked for next pack: KEEP-in-exe, pause Quit / inventory, watch finger, ammo white-speck
+- Attempting: watch farther, black flicker, tank mount, ammo render, Hz, reload-after-quit
 
 **Also on the board**
 - Fewer freezes and softer landings
