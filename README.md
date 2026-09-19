@@ -12,7 +12,7 @@ The N64 classic you can finally *stand inside* - not an emulator overlay, not a 
 
 **vr440** is still on Releases for comparison, but it is **not** Latest - same `goldeneye.exe` as vr441, picture-only boot. Grab **vr441** unless you are deliberately comparing boots (see **What went wrong in vr440** below).
 
-If this brings you back, **Star** the repo so you can catch the next drops. **Watch → Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
+If this brings you back, **Star** the repo so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Play **vr441** until then. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
 [Releases](https://github.com/no6969el/GEVR/releases) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Features](FEATURES.md) · [Support](https://www.patreon.com/cw/GEVR)
 
@@ -48,6 +48,23 @@ No ROM in the download. You bring yours.
 
 - **Full chair boot** - same `goldeneye.exe` as vr440, but `Start-GEVR.bat` now runs `gevr-vr441-boot.cmd`, which turns on bodies-stay, explosion/fire byte-order fixes, and the tuned aim / ADS path. Those code paths existed in the binary from vr438 onward; **vr440 never armed them in the public boot** (picture KEEP only).
 - **vr440** is still on Releases for comparison but is not Latest.
+
+---
+
+## What's coming (stay on vr441)
+
+No new zip yet. Keep playing **vr441**. When the next wear-passed cut lands, it will be a GitHub Release. **Watch** this repo (Watch -> Releases) so you get pinged. Star it if you want the next Bond drop without hunting.
+
+**In the chair right now** (working on, not in your unzip):
+- **Watch finger + pause menu** - so the watch and pause actually work in VR: confirm, highlight in both eyes, that stretched finger when you pull the watch. This is the current EXE project. Several open Issues live here.
+- **Ammo HUD picture** - ammo icons can look stretched or fat in the headset. That is **render** distortion, not clip or overlap (placement already moved). Picture first. Not wear-passed, so not shipped.
+
+**Known, looking at** (not promising it in the next drop):
+- **Black flicker** in VR at Facility gas tanks and Bunker after Surface ([issue #55](https://github.com/no6969el/GEVR/issues/55)). Dig exists. Not chaired. File more sits if you hit it.
+
+Keep shooting. Watch GitHub. We will tell you when Latest moves.
+
+---
 
 ## What vr438 introduced (still true)
 
@@ -88,12 +105,15 @@ We would rather tell you than surprise you:
 - Mid-range **crates / props on Dam** can still pop in and out - measured hard; not fixed in this zip yet.
 - **Dam water** can look flat or murky - researched; not locked on for this cut.
 - **Glass bullet holes** can still show in one eye in places.
+- **Pause / watch** confirm is still rough; watch highlight can miss an eye; watch finger can stretch when you pull it (in the chair now - see What's coming).
+- **Ammo HUD picture** can look stretched or fat in VR (render, not clip - in the chair, not wear-passed).
+- **Black flicker** in VR (Facility gas tanks; Bunker after Surface) - looking at it, not a shipped fix. [Issue #55](https://github.com/no6969el/GEVR/issues/55).
 - Expect occasional **crashes** while we keep optimizing.
 - After you **finish a level**, sit on the **character / folder screen**, then load again, you can spawn in junk space (glitchy / empty). **Quit the game fully and run `Start-GEVR.bat` again** - loading another mission in the same process often stays broken. Please [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose) with headset, runtime, map, and a log or short clip if you have one. No ROM files.
 
-Still worth playing - absolutely. Especially if you miss levels like Facility and want to get brushed up for when we eventually ship the multiplayer add-on. Dam, Facility, that first-person Bond feeling: we are shipping updates as fast as we can.
+Still worth playing - absolutely. Facility, Dam, that first-person Bond feeling. Stay on **vr441**, Watch GitHub, and we will ping you when Latest moves.
 
-On a **flat / monitor** setup, classic **local multiplayer** is still there - split-screen couch chaos, same as you remember. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.
+On a **flat / monitor** setup, classic **local multiplayer** is still there - split-screen couch chaos, same as you remember. LAN / same-network is later, not the next zip. True online is further after that.
 
 ---
 
@@ -117,18 +137,21 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 - Comfort, aim, and picture quality
 - “It boots, it shoots, it sometimes crashes” honesty
 
-**Next**
+**Next (in the chair, not in the zip)**
+- Watch finger + pause menu (usable watch / confirm in VR)
+- Ammo HUD picture (render first; not wear-passed)
+
+**Also on the board**
 - Fewer freezes and softer landings
 - Clearer first-run (ROM drop-in, saves that survive updates)
-- More visual / HUD comfort for long sits
 - Those Dam crates / water / glass quirks above
 
 **Later - the fun extras**
-- **Multiplayer add-on** - first goal is **LAN / same-network** play; full online is further after that (calling it early so you know where this is pointed)
+- **Multiplayer add-on** - LAN / same-network first, full online further after that (not the next zip)
 - More levels / modes once the base stays stable
 - Optional quality knobs without breaking the classic feel
 
-Fuller list: [`docs/ROADMAP.md`](docs/ROADMAP.md). Star + Watch if you want multiplayer and Beta drops without refreshing every day.
+Fuller list: [`docs/ROADMAP.md`](docs/ROADMAP.md). Star + **Watch -> Releases** if you want the next zip without refreshing every day.
 
 ---
 

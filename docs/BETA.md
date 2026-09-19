@@ -48,7 +48,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 - **Auto-Aim defaults OFF** (`GETV_AUTOAIM` in the shipped exe).
 - **Pause watch:** **left stick** moves the highlight in VR.
-- **B/Y** opens pause in headset. **Tab** on keyboard / monitor still works.
+- **B** reloads. Pause is the **Menu / system button** in headset. **Tab** on keyboard / monitor still works.
 
 ## How to report
 

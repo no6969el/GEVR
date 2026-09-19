@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Current zip (vr440 Latest)
-    url: https://github.com/no6969el/GEVR/releases/tag/vr440
+  -     name: Current zip (vr441 Latest)
+    url: https://github.com/no6969el/GEVR/releases/tag/vr441
     about: Play steps live in the README Play section. Do not upload ROM files.
   - name: How to report (CONTRIBUTING)
     url: https://github.com/no6969el/GEVR/blob/main/CONTRIBUTING.md
