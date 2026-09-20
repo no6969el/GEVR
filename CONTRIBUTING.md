@@ -4,14 +4,14 @@ Fan testers first. Thanks for helping GEVR Beta.
 
 ## Play the current zip
 
-Current zip is **vr441**. Grab **[GEVR-Beta-vr441-win64.zip](https://github.com/no6969el/GEVR/releases/tag/vr441)** and follow [README Play](README.md#play-vr441---the-one-to-grab).
+Current zip is **vr442**. Grab **[GEVR-Beta-vr442-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** and follow [README Play](README.md#play-vr442---the-one-to-grab).
 
 - **Headset:** `Start-GEVR.bat`
 - **No headset / monitor only:** `Play-on-monitor.bat`
 
 Bring a **USA GoldenEye `.z64` you own**. The zip has no ROM. We will not ask you to upload one.
 
-Older tags may still show on GitHub. **Latest is vr441.** **vr440** stays published for comparison (not Latest). Do not hunt vr439 or older tag downloads.
+Older tags may still show on GitHub. **Latest is vr442.** **vr441** and **vr440** stay published for history (not Latest). Do not hunt vr439 or older tag downloads.
 
 ## File a bug or crash
 
@@ -21,7 +21,9 @@ Use the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose). The f
 - OpenXR runtime
 - SteamVR on/off
 - HMD vs monitor
-- `Start-GEVR.bat` yes/no (if you have no headset, use `Play-on-monitor.bat` and pick **No (used Play-on-monitor.bat)**)
+- `Start-GEVR.bat` yes/no (if you have no headset, use `Play-on-monitor.bat` and pick **No**)
+
+If the game hard-crashed, look beside `goldeneye.exe` for **`gevr-fault-*.txt`** and paste the first lines.
 
 **Do not upload ROM files** (no `.z64` / `.n64` / `.v64`, no dumps). Screenshots, a short clip, or a few log lines are enough.
 
@@ -41,3 +43,5 @@ Multiplayer later is a **LAN / same-network add-on**, not a mod.
 This GitHub tree is mostly docs, issue forms, and pack templates. The playable workshop lives in the Release zip, not as a clone-and-build here.
 
 If a credit line is missing for something we really used, open an Issue titled `Credits: ...` and point at the borrow.
+
+Stay tuned. Star the repo and [follow @no6969el](https://github.com/no6969el).

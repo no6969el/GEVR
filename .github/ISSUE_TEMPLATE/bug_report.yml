@@ -8,13 +8,15 @@ body:
       value: |
         Thanks for helping improve GEVR Beta. **Please do not attach ROM files** to this issue.
 
-        Crashes are common in Beta — if the game closed on you, use the **Crash report** template instead.
+        Crashes are common in Beta - if the game closed on you, use the **Crash report** template instead.
+
+        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (vr442).
 
   - type: input
     id: headset_model
     attributes:
       label: Headset model
-      description: Which headset are you using? (e.g. Pimax Crystal Super, Quest 3, none — monitor only)
+      description: Which headset are you using? (e.g. Pimax Crystal Super, Quest 3, none - monitor only)
       placeholder: Pimax Crystal Super
     validations:
       required: true
@@ -37,7 +39,7 @@ body:
     id: steamvr_running
     attributes:
       label: Is SteamVR running?
-      description: SteamVR can be installed but off — pick what matches your session.
+      description: SteamVR can be installed but off - pick what matches your session.
       options:
         - Yes
         - No
@@ -63,7 +65,7 @@ body:
     id: start_gevr_bat
     attributes:
       label: Did you start with Start-GEVR.bat?
-      description: The recommended launcher in the Release zip — not a download from this repo alone.
+      description: The recommended launcher in the Release zip - not a download from this repo alone. No headset? Use Play-on-monitor.bat and pick No.
       options:
         - Yes
         - No
@@ -75,8 +77,8 @@ body:
     id: build_tag
     attributes:
       label: Build or Release tag
-      description: Optional but helpful (e.g. vr441 from Releases).
-      placeholder: vr441
+      description: Optional but helpful (e.g. vr442 from Releases).
+      placeholder: vr442
     validations:
       required: false
 
@@ -84,8 +86,8 @@ body:
     id: boot_cmd
     attributes:
       label: Boot script filename
-      description: The `gevr-*-boot.cmd` file next to Start-GEVR.bat in your unzip folder (e.g. gevr-vr441-boot.cmd). Fast way to spot a stale unzip vs a real bug.
-      placeholder: gevr-vr441-boot.cmd
+      description: The `gevr-*-boot.cmd` file next to Start-GEVR.bat in your unzip folder (e.g. gevr-vr442-boot.cmd). Fast way to spot a stale unzip vs a real bug.
+      placeholder: gevr-vr442-boot.cmd
     validations:
       required: false
 
@@ -93,7 +95,7 @@ body:
     id: repro_steps
     attributes:
       label: Short steps to reproduce
-      description: What were you doing? Keep it brief — a few steps is enough.
+      description: What were you doing? Keep it brief - a few steps is enough.
       placeholder: |
         1. Launched with Start-GEVR.bat
         2. Loaded Facility
@@ -120,7 +122,7 @@ body:
   - type: textarea
     id: extra
     attributes:
-      label: Screenshots, clip, or log lines
-      description: Optional — a short clip or the first few `[getv]` / OpenXR log lines can help. No ROM files.
+      label: Screenshots, clip, log lines, or fault file
+      description: Optional - a short clip, the first few `[getv]` / OpenXR log lines, or `gevr-fault-*.txt` beside the exe can help. No ROM files.
     validations:
       required: false

@@ -6,7 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Sorry it crashed — reports like this help a lot. **Please do not attach ROM files.**
+        Sorry it crashed - reports like this help a lot. **Please do not attach ROM files.**
+
+        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (vr442).
+
+        If `goldeneye.exe` died hard, look beside it for `gevr-fault-*.txt` and paste the first lines below.
 
   - type: input
     id: headset_model
@@ -58,6 +62,7 @@ body:
     id: start_gevr_bat
     attributes:
       label: Did you start with Start-GEVR.bat?
+      description: No headset? Use Play-on-monitor.bat and pick No.
       options:
         - Yes
         - No
@@ -69,8 +74,8 @@ body:
     id: build_tag
     attributes:
       label: Build or Release tag
-      description: Optional (e.g. vr441).
-      placeholder: vr441
+      description: Optional (e.g. vr442).
+      placeholder: vr442
     validations:
       required: false
 
@@ -78,8 +83,8 @@ body:
     id: boot_cmd
     attributes:
       label: Boot script filename
-      description: The `gevr-*-boot.cmd` file next to Start-GEVR.bat (e.g. gevr-vr441-boot.cmd).
-      placeholder: gevr-vr441-boot.cmd
+      description: The `gevr-*-boot.cmd` file next to Start-GEVR.bat (e.g. gevr-vr442-boot.cmd).
+      placeholder: gevr-vr442-boot.cmd
     validations:
       required: false
 
@@ -120,9 +125,17 @@ body:
       required: true
 
   - type: textarea
+    id: fault_file
+    attributes:
+      label: Fault file (gevr-fault-*.txt)
+      description: Optional - if a `gevr-fault-*.txt` appeared beside goldeneye.exe, paste the first lines. No ROM files.
+    validations:
+      required: false
+
+  - type: textarea
     id: extra
     attributes:
       label: On-screen message, Windows error, or log lines
-      description: Optional — no ROM files.
+      description: Optional - no ROM files.
     validations:
       required: false

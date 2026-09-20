@@ -1,11 +1,11 @@
 ﻿# 00-STATE - READ THIS FIRST. NOTHING ELSE, UNTIL YOU NEED IT.
 
-**Currency: 2026-09-16 (public ship `vr441`)**
+**Currency: 2026-09-20 (public ship `vr442` / cook 452)**
 
-- **Latest public Beta:** [GEVR Beta vr441](https://github.com/no6969el/GEVR/releases/tag/vr441) (`GEVR_SHIP_TAG=vr441`, full KEEP + PLAY0 boot).
-- **vr440** remains published but is no longer Latest. Same `goldeneye.exe` as vr441; vr440's boot armed picture KEEP only, not the chair feature set (see [`docs/ship-feature-checklist.md`](ship-feature-checklist.md)).
-- **Binary:** unchanged between vr440 and vr441; the cut is boot + pack smoke + docs.
-- **Pack smoke:** `_smoke-ship-zip.ps1` rewritten 2026-09-16 (prior flattened copy gated nothing).
+- **Latest public Beta:** [GEVR Beta vr442](https://github.com/no6969el/GEVR/releases/latest) (`GEVR_SHIP_TAG=vr442`). Player door: [`README.md`](../README.md).
+- **vr441** remains published but is no longer Latest (full chair boot / PLAY0 KEEP).
+- **vr440** remains published but is not Latest. Picture KEEP only; chair features were in the exe and unarmed (see [`docs/ship-feature-checklist.md`](ship-feature-checklist.md)).
+- **Pack smoke:** `_smoke-ship-zip.ps1` rewritten 2026-09-16 (prior flattened copy gated nothing). Historical vr441 boot notes stay below.
 
 ---
 

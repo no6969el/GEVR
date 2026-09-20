@@ -2,6 +2,8 @@
 
 This folder is for **packers and maintainers**. Player play steps live in the repo README and in the zip as `RELEASE-NOTES.txt`.
 
+**Player Latest is [vr442](https://github.com/no6969el/GEVR/releases/latest).** Front-facing notes: [`templates/RELEASE-NOTES-vr442.txt`](templates/RELEASE-NOTES-vr442.txt). Pack scripts below may still name older tags until the next pack pass.
+
 Binaries are built on the owner SimRig from the private product tree. Here we keep the **pack layout**, **smoke gates**, and **launcher templates** only.
 
 ## Live cut: vr440

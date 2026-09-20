@@ -2,7 +2,7 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr440**. [README Play](README.md#play-vr440) - [vr440 release](https://github.com/no6969el/GEVR/releases/tag/vr440). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr442**. [README Play](README.md#play-vr442---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
 
@@ -93,9 +93,9 @@ If you spot a missing credit for something we really used, open an Issue titled 
 
 ## Quick links
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr440 and file bugs
+- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr442 and file bugs
 - [LICENSE-MAP.md](LICENSE-MAP.md) - whose license is whose
-- [README Play](README.md#play) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
+- [README Play](README.md#play-vr442---the-one-to-grab) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
 - [docs/ORIGIN.md](docs/ORIGIN.md) - ours vs upstream tags

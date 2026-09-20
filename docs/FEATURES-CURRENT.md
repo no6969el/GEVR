@@ -1,40 +1,45 @@
-# Feature snapshot (public) - 2026-09-19
+# Feature snapshot (public) - 2026-09-20
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441) (GitHub Latest). This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr442](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is **vr441**. Play steps: [README Play](../README.md#play-vr441---the-one-to-grab). Download: [vr441 release](https://github.com/no6969el/GEVR/releases/tag/vr441).
+High-level status of the playable wear. Current zip is **vr442**. Play steps: [README Play](../README.md#play-vr442---the-one-to-grab). Download: [Latest release](https://github.com/no6969el/GEVR/releases/latest).
 
 ## Working enough for Beta focus
 - OpenXR VR present (true stereo path)
 - Head look + locomotion keepers
 - Controller gun aim; squeeze ADS mark on the gun ray (not stuck in face centre)
+- Dual-wield fire from each hand and per-hand tracers
+- Thrown grenades follow the hand; rockets nose along the flight path
+- Grenade launcher single-shot
+- Tank auto-mount on chassis + stick pitch for shells
+- Die / continue / pad reload in the same process ([issue #38](https://github.com/no6969el/GEVR/issues/38))
+- Far character visibility boost
+- Empty left hand temporary cube (MASK left)
+- Hard-crash fault file `gevr-fault-*.txt` beside the exe
 - Hit placement improved on recent wear
 - Explosion / fire colour and bullet sparks much improved vs early September
 - Flat desktop play still available (`Play-on-monitor.bat`)
 - Local / split-screen multiplayer on a monitor
 
-## In the current test wear / coming in the next update
-Not tagged as Latest yet. Soft list only:
-- Dual-wield fire from each hand and per-hand tracers
-- Thrown grenades and rockets following the hand
-- Cleaner Magnum drum and ammo HUD digits
-- Tank climb after you fidget onto the hatch
+## Cooking / later (not shipped)
+Soft list only:
+- Two-hand support snap and cube hide-on-near
+- Runtime Hertz request ([issue #49](https://github.com/no6969el/GEVR/issues/49)); boot stays 90-pinned
+- Ghost empty hand (parked); nicer hands after that
+- Big object / plane-shell explosion hard crash can still happen
 
 ## Open / rough
 - Crashes under investigation (report with the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose))
-- Die / quit / reload same exe can leave the world weird - fully quit and relaunch ([issue #38](https://github.com/no6969el/GEVR/issues/38))
-- Grenade launcher can double-spawn or self-blast
-- Tank turret pitch on XR is yaw-only so far
-- Rocket mesh may still face your head
-- Mass explosions can crash
-- Full colocated body + fancy hand mesh unfinished (ghost fingers first)
+- Mass explosions can still hard-crash (fault file now)
+- Dam crates / water / one-eye glass holes
+- Full colocated body + fancy hand mesh unfinished (cube now; ghost fingers later)
 
 ## Refused / not shipping as crutches
 - FOV-match camera rewrite stays off unless a measured falsifier reopens it
 - Boxy articulated hand mesh was rejected in the chair
 - No ROM redistribution (do not upload ROM files)
 
-## Headset / runtime (vr441)
+## Headset / runtime (vr442)
 
 Verified on this Beta (details in README Play):
 

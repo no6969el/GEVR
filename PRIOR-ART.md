@@ -2,7 +2,7 @@
 
 Human-facing thank-you sheet (who / what for): **[CREDITS.md](CREDITS.md)**. License split: **[LICENSE-MAP.md](LICENSE-MAP.md)**. How testers report: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-Current play zip is **vr440**: [README Play](README.md#play-vr440) - [vr440 release](https://github.com/no6969el/GEVR/releases/tag/vr440).
+Current play zip is **vr442**: [README Play](README.md#play-vr442---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest).
 
 Credits owed for prior art that influenced GEVR designs. Required before the first public push (see `PUBLISH-MANIFEST.md` in the private workspace).
 

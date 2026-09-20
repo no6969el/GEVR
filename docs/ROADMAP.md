@@ -1,8 +1,8 @@
 # Roadmap
 
-Honest list. Watch [Releases](https://github.com/no6969el/GEVR/releases) for what you can play this week.
+Honest list. Watch [Releases](https://github.com/no6969el/GEVR/releases/latest) for what you can play this week.
 
-**Play now:** [GEVR Beta vr441](https://github.com/no6969el/GEVR/releases/tag/vr441) (GitHub Latest). Stay here until a new wear-passed zip lands.
+**Play now:** [GEVR Beta vr442](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest).
 
 How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). Watch list: [COMING-SOON.md](COMING-SOON.md).
 
@@ -11,26 +11,16 @@ How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester
 - Solo VR GoldenEye (OpenXR)
 - Bring your own USA ROM
 - Headset via `Start-GEVR.bat`, or monitor via `Play-on-monitor.bat`
+- Tank auto-mount + stick pitch, dual-wield fire, rockets that point where they fly
+- Die / continue / pad reload in the same process
 - Local / split-screen multiplayer on a monitor
-
-## In the current test wear / next update (not tagged yet)
-
-- Dual-wield fire and per-hand tracers
-- Thrown grenades and rockets following the hand
-- Cleaner Magnum drum and ammo HUD digits
-- Tank climb after you get onto the hatch
-- Ammo HUD picture polish in the wear stack
 
 ## Cooking (do not call these shipped)
 
-- Ghost see-through empty hand (fingers, not boxes)
-- Hands / guns stopping at walls
-- Touch-to-enter tank
-- Rocket model facing the flight path
-- Grenade-launcher double-spawn and self-blast
-- Tank turret pitch on the right stick
-- Reload or die-continue without restarting the exe ([issue #38](https://github.com/no6969el/GEVR/issues/38))
-- Explosion rooms less likely to hard-crash, plus better crash logs
+- Two-hand support snap and cube hide-on-near
+- Runtime Hertz request ([issue #49](https://github.com/no6969el/GEVR/issues/49)); boot stays 90-pinned
+- Ghost see-through empty hand (parked; cube is the interim)
+- Explosion rooms less likely to hard-crash (fault file is in; the crash can still happen)
 
 ## Later
 
@@ -40,4 +30,4 @@ How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester
 - Full-body Bond later
 - Dam water, one-eye glass holes, comfort knobs
 
-Star the repo and Watch -> Releases if you want the next cut without hunting.
+Star the repo and [follow @no6969el](https://github.com/no6969el). Watch -> Releases if you want the next cut without hunting.
