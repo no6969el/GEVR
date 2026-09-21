@@ -25,13 +25,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 **Note:** This clip is from an **older public cut (~vr441)**. The game has moved on — grab **[Latest (vr443.1)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
 
-[![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
-
-<p align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/z4B0Ceqrf6I" title="GoldenEye VR Is Finally Here… And You Can Play It Now (~vr441 footage)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</p>
-
-[Watch on YouTube](https://www.youtube.com/watch?v=z4B0Ceqrf6I) — streamer playtest / look-at-this energy, not a current build walkthrough.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z4B0Ceqrf6I" title="GoldenEye VR Is Finally Here… And You Can Play It Now (~vr441 footage)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
