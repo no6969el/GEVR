@@ -86,7 +86,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 - Use **[vr444 Latest](https://github.com/no6969el/GEVR/releases/latest)** (`GEVR-Beta-vr444-win64.zip`). Older tag pages stay; their **zips were stripped** where we pulled them. **vr434** tag history: pulled build with ROM images baked into `goldeneye.exe`.
 - The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
-- Stuck covert-modem scrap on the floor is quieter; Dam blue / dish depth still cooking.
+- Stuck covert-modem scrap on the floor is quieter; Dam blue is probably the same convert-modem issue; dish depth still cooking.
 - Big explosions can still hard-crash. The fault file is new; the crash is not fully gone.
 - Two-hand snap and weapon wheel HUD are **not** in this zip. Gun vanish below chest (GUNZ / HANDSOLID) is left off. See [COMING-SOON.md](docs/COMING-SOON.md).
 - On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.

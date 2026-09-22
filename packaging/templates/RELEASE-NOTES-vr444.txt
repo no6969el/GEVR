@@ -18,7 +18,8 @@ rebuilds the image cache once from your same ROM. Saves stay.
 ------------------------------------
 - Quieter covert-modem scrap. The stuck floor scrap / flicker is
   quieted. The modem in your hand and the screens stay on.
-  (Dam blue / dish-on-glass depth still cooking.)
+  Dam blue flicker is probably the same convert-modem issue
+  (labels got mixed under #70). Dish-on-glass depth still open.
 - Throwables live in your hand. Grenades, mines, plastique, and the
   covert modem appear in the grip and leave from there. Grenades and
   mines were resized to better reflect their actual dimensions in

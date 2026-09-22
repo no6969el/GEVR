@@ -60,7 +60,7 @@ From the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr4
 
 ### 1) Quiet stuck modem scrap (the big one)
 
-Stuck covert-modem scrap / flicker on the floor is hidden. The hand modem and screens stay on. Dam blue / dish-on-glass depth is still cooking ([#70](https://github.com/no6969el/GEVR/issues/70)).
+Stuck covert-modem scrap / flicker on the floor is hidden. The hand modem and screens stay on. Dam blue flicker is probably the same convert-modem story (we mixed the labels under [#70](https://github.com/no6969el/GEVR/issues/70)); dish-on-glass depth is still open.
 
 ### 2) Throwables in your hand
 
@@ -89,7 +89,7 @@ The game follows your headset refresh rate (72 / 80 / 90 / 120 as your runtime r
 
 ### Worked this week, not public-on yet
 
-- **Dam blue flicker** ([#70](https://github.com/no6969el/GEVR/issues/70)) - still known; modem scrap improved above
+- **Dam blue / convert-modem** ([#70](https://github.com/no6969el/GEVR/issues/70)) - Dam blue is probably the convert modem, not a separate bug; floor scrap quieter above; dish-on-glass depth still open
 - #74 arms body - still cooking as a product story
 - Pause-menu VR Settings / laser select - parked
 - Weapon wheel HUD - cooking
@@ -148,7 +148,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 We would rather tell you than surprise you. These are **vr444 today**.
 
-- **Dam blue flicker** (end section) - **known and being worked on** ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
+- **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
 - **Big explosions** (large objects, plane shells) can still hard-crash. If they do, grab `gevr-fault-*.txt` beside the exe before you relaunch.
 - Alarm can keep ringing after a death or stage return.

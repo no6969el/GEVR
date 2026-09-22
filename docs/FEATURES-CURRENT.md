@@ -38,7 +38,7 @@ Soft list only (matches [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/r
 ## Open / rough
 - Crashes under investigation (report with the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose))
 - Mass explosions can still hard-crash (fault file now)
-- Dam blue flicker still known ([issue #70](https://github.com/no6969el/GEVR/issues/70)); dish-on-glass depth still open
+- Dam blue flicker is probably the convert modem ([issue #70](https://github.com/no6969el/GEVR/issues/70)), not a separate bug; dish-on-glass depth still open
 - Dam crates / water / one-eye glass holes
 - Full colocated body + fancy hand mesh unfinished (cube now; ghost fingers later)
 

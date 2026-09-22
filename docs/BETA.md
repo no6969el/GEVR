@@ -95,7 +95,7 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 - Empty hand shows the cube; armed hand hides it
 - Die / continue / load another mission in the same process (should stay clean)
 - Explosions and sparks (mass blow-ups can still crash - keep the fault file)
-- Dam blue flicker (known - issue #70); stuck modem scrap should be quieter; Dam water look
+- Dam blue flicker is probably the convert modem (known - issue #70; labels got mixed); stuck modem scrap should be quieter; Dam water look
 - One-eye glass bullet holes
 - Facility halls / guards
 - Local split-screen on a monitor if you have a friend on the couch
