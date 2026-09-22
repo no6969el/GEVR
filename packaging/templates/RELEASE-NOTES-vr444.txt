@@ -1,0 +1,43 @@
+GEVR Beta vr444
+===============
+
+From-source GoldenEye 007 in real OpenXR VR. Bring your own USA ROM.
+
+Major glitch cut after vr443.1. Cooked on SimRig 2026-09-20/21.
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) What is new in vr444 (on the box)
+------------------------------------
+- Quieter covert-modem scrap. The stuck floor scrap / flicker is
+  quieted. The modem in your hand and the screens stay on.
+  (Dam blue / dish-on-glass depth still cooking.)
+- Throwables live in your hand. Grenades, mines, plastique, and the
+  covert modem appear in the grip and leave from there. Grenades feel
+  small; mines a touch larger.
+- Hand cue cubes hide while that hand holds a weapon. Empty / fists
+  show the cube again. The cube is smaller than before.
+- Tap A for the next gun. Tap left-controller X for the previous gun.
+  (A full weapon-wheel HUD is still cooking.)
+- Follows your headset refresh rate (72 / 80 / 90 / 120 as your runtime
+  reports) instead of pinning 90. High Hz is still Beta - report odd
+  feel if you see it.
+
+Still in from vr443.1: physical walk moves you (not the world), guns
+stick to your hands, look-right VR Settings, Dam sky pin, dual-wield,
+BYO-ROM cache, in-app Update.
+
+3) Play
+-------
+Start-GEVR.bat (uses GevrRomStarter). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.

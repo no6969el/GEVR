@@ -82,17 +82,26 @@ $requiredBootKnobs = [ordered]@{
     "GETV_SUPERSAMPLE"          = "3"
     "GETV_XR_PLAY_SRCFBO"       = "1"
     "GETV_XR_PLAY_EYERECT"      = "1"
-    "GETV_VR_SKYMESH"           = "1"
+    # #72 Dam jump-strip: cloud remesh OFF (was 1). SKYPIN KEEP covers look-up.
+    "GETV_VR_SKYMESH"           = "0"
     "GETV_VR_SKYSCISSOR"        = "1"
-    # core VR
+    # vr444 KEEP (throwables / hand cube / modem scrap)
+    "GETV_VR_THROWGRIP"         = "2"
+    "GETV_VR_HANDCUBE_HIDEARMED"= "1"
+    "GETV_VR_MODEMDROP"         = "3"
+    "GETV_VR_HANDCUBE_MM"       = "45"
+    "GETV_BIND_WEAPON_PREV"     = "x"
+    # core VR (#49: GETV_FPS must stay unset so EXE 421/422 follow HMD)
     "GETV_VR"                   = "1"
-    "GETV_FPS"                  = "90"
+    "GETV_SIMDIV"               = "1"
+    "GETV_SIMHZ"                = "query"
     "GETV_STEREO_SRC"           = "xr"
     "GE_VR_XR"                  = "1"
 }
 
 # Knobs that must NOT be armed in a public boot.
 $forbiddenBootKnobs = @(
+    "GETV_FPS",
     "GETV_XR_FOVMATCH",
     "GETV_VR_WALLCENSUS",
     "GETV_VR_ROOMLOADWHY",

@@ -1,6 +1,6 @@
 # Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr443](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr443-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play-vr443---the-one-to-grab). Tag: [vr443](https://github.com/no6969el/GEVR/releases/tag/vr443).
+**Play now:** [GEVR Beta vr444](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr444-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play-vr444---the-one-to-grab). Tag: [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444).
 
 **Star** the repo and [**follow @no6969el**](https://github.com/no6969el). **Watch -> Releases** so the next zip shows up without you refreshing every day.
 
@@ -8,28 +8,34 @@
 - **vr434** was pulled (baked ROM images).
 - **vr438** was BYO-ROM with a stub VR boot. Do not use.
 - **vr439** zip removed when vr440 shipped. Tag page stays.
+- **vr443** was HOLD; **vr443.1** fixed motion. Play **vr444**.
 
-## On this cut (vr443)
+## On this cut (vr444)
 
 - Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
+- **Throwables** in hand (grenades, mines, plastique, covert modem); leave from the grip.
+- Tap **A** = next weapon; left-controller **X** = previous.
+- Hand cue cubes hide while armed; smaller when empty / fists.
+- Game follows your headset refresh rate (72 / 80 / 90 / 120 as reported).
 - **VR Settings** on the intro hub (look right): TURN SPEED / STYLE / SNAP SIZE. Prefs in `%LOCALAPPDATA%\GEVR`.
 - **In-app Update** in the starter (checks Latest on open; click Update to download).
-- Dam sky look-up pinned (SKYPIN, on by default).
+- Dam sky look-up pinned (on by default).
 - Auto-Aim defaults OFF. Pause watch: left stick moves the highlight in VR. **B** reloads. Pause is the Menu / system button (Tab on keyboard / monitor).
 - **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR), **native PimaxXR**, **Quest 3 + Virtual Desktop OpenXR (VDXR)**.
-- 72 / 80 should work. Default / recommended is **90**. Over 90 is still beta-test territory - please report issues. We do not call 120 / 144 signed off.
+- High Hz is Beta-test territory - please report issues. We do not call every high-Hz path signed off yet.
 - Tank auto-mount and stick pitch. GL single-shot. Rockets nose along the flight path. Die/continue [#38](https://github.com/no6969el/GEVR/issues/38). Far guards. Left-hand cube. Fault files.
 - Local / split-screen multiplayer works on a monitor.
 
 
 ## Cooking for a later update
 
-Soft list only. Matches the [vr443 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr443). Do **not** treat these as shipped.
+Soft list only. Matches the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444). Do **not** treat these as shipped.
 
 - Pause-menu VR Settings (intro glass is in; pause later)
 - Two-hand snap is still cooking (coming later)
-- Higher Hertz requests are not signed off yet - stick to 72 / 80 / 90 for now ([issue #49](https://github.com/no6969el/GEVR/issues/49))
-- Ghost hand is parked for this cut. Empty left hand cube is temporary
+- Weapon wheel HUD is still cooking
+- High Hz polish - follow-headset is in; report if something feels off ([issue #49](https://github.com/no6969el/GEVR/issues/49))
+- Ghost hand is parked for this cut. Empty-hand cube is temporary
 - Gun vanish below chest (GUNZ / HANDSOLID) left off until fixed
 - Big explosion / plane shell can still hard-crash (the fault file helps)
 

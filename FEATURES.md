@@ -8,9 +8,31 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Latest playable cut:** [**GEVR Beta vr443**](https://github.com/no6969el/GEVR/releases/latest) - public Beta (BYO-ROM, file-backed images from your cart). Zip: **`GEVR-Beta-vr443-win64.zip`**.
+**Latest playable cut:** [**GEVR Beta vr444**](https://github.com/no6969el/GEVR/releases/latest) - public Beta (BYO-ROM, file-backed images from your cart). Zip: **`GEVR-Beta-vr444-win64.zip`**.
 
-[Play the Beta](https://github.com/no6969el/GEVR/releases/latest) | [vr443 tag](https://github.com/no6969el/GEVR/releases/tag/vr443) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md) | [Coming soon](docs/COMING-SOON.md)
+[Play the Beta](https://github.com/no6969el/GEVR/releases/latest) | [vr444 tag](https://github.com/no6969el/GEVR/releases/tag/vr444) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md) | [Coming soon](docs/COMING-SOON.md)
+
+---
+
+## On the box / Current features
+
+What you can do in **vr444** today (player language):
+
+- OpenXR VR present - true stereo, stand inside the room
+- Physical walk / strafe moves **you**; guns stay with your hands
+- Controller gun aim; squeeze ADS on the gun ray; dual-wield fire
+- Quieter covert-modem scrap (stuck floor scrap hidden; hand modem + screens stay)
+- Throwables in your hand (grenades, mines, plastique, covert modem) leave from the grip
+- Tap **A** = next weapon; left-controller **X** = previous (weapon wheel still cooking)
+- Hand cue cube hides while that hand holds a weapon; smaller cube when empty / fists
+- Tank auto-mount and stick pitch for shells; rockets nose along the flight path
+- VR Settings on the intro hub (**look right**): turn speed / style / snap size
+- In-app **Update** in GevrRomStarter (checks GitHub Latest)
+- Game follows your headset refresh rate (72 / 80 / 90 / 120 as reported)
+- BYO-ROM + file-backed images; recenter = both thumbstick clicks
+- Local / split-screen multiplayer on a monitor
+
+Fuller snapshot: [FEATURES-CURRENT.md](docs/FEATURES-CURRENT.md).
 
 ---
 
@@ -20,10 +42,10 @@ Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds Golden
 Walk around your playspace and Bond walks with you. Turn your head - the world stays put. Recenter anytime with **both thumbstick clicks**. (This cut includes the playspace comfort pass so straying off your reset spot does not shear the gun and world when you look around.)
 
 **The gun is in your hand**
-Point the controller to aim. Trigger fires. Squeeze to ADS - the mark sits on the gun ray, not glued to your face. Dual-wield fires from each hand. Casings leave the weapon. Haptics pulse when a round actually goes off.
+Point the controller to aim. Trigger fires. Squeeze to ADS - the mark sits on the gun ray, not glued to your face. Dual-wield fires from each hand. Casings leave the weapon. Haptics pulse when a round actually goes off. Tap **A** / left **X** to cycle weapons.
 
 **Hands do Bond things**
-Punch / melee with your hands. Touch to use (doors, interact) by reaching instead of hunting a 2D prompt. Empty left hand draws a cube for now (temporary stand-in). Ghost hand is parked.
+Punch / melee with your hands. Touch to use (doors, interact) by reaching instead of hunting a 2D prompt. Throwables show in your hand and leave from the grip. Empty hand draws a smaller cube for now (hides while that hand holds a weapon). Ghost hand is parked.
 
 **Tanks that let you in**
 Stand on the chassis and you auto-mount. Stick pitch aims the shells.
@@ -39,7 +61,7 @@ Facility and friends, OpenXR on PC. Die / continue / pad reload works in the sam
 
 ---
 
-## What we tested (vr443)
+## What we tested (vr444)
 
 These paths are what this Beta was built and stared on:
 
@@ -50,7 +72,7 @@ These paths are what this Beta was built and stared on:
 | **Meta Quest 3 + Virtual Desktop OpenXR (VDXR)** | Verified attach / play |
 | **RTX 5060 laptop + Quest 3 + Virtual Desktop VDXR** | BarZ wear **vr441**, 2026-09-17; ran surprisingly well (one data point, not a minimum spec) |
 
-**Refresh rates:** 72 Hz and 80 Hz should work. **90 Hz** is recommended (default). Over 90 is still beta-test territory. Higher Hertz requests are not signed off - stick to 72 / 80 / 90 for now. We do not call 120 / 144 signed off.
+**Refresh rates:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off. We do not call every high-Hz path signed off yet.
 
 When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, and your **`gevr-*-boot.cmd`** filename. If it hard-crashed, attach the first lines of **`gevr-fault-*.txt`** beside the exe.
 
@@ -61,11 +83,12 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 - Crashes and rough edges are expected. That is why it is Beta.
 - You bring a **USA GoldenEye `.z64` you own**. No ROM in the download. Run **`Start-GEVR.bat`** so **GevrRomStarter** can bind your ROM (not bare `goldeneye.exe`).
 - **New install** waits once while cache prepares. **After an update**, keep the same `.z64`; the ship stamp rebuilds cache once. Saves stay.
-- Use **[vr443 Latest](https://github.com/no6969el/GEVR/releases/latest)** (`GEVR-Beta-vr443-win64.zip`). **vr441** / **vr440** tag pages stay; their **zips were stripped**. **vr434** tag history: pulled build with ROM images baked into `goldeneye.exe`.
+- Use **[vr444 Latest](https://github.com/no6969el/GEVR/releases/latest)** (`GEVR-Beta-vr444-win64.zip`). Older tag pages stay; their **zips were stripped** where we pulled them. **vr434** tag history: pulled build with ROM images baked into `goldeneye.exe`.
 - The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam water** can look flat or murky; **glass bullet holes** can show in one eye in places.
+- Stuck covert-modem scrap on the floor is quieter; Dam blue / dish depth still cooking.
 - Big explosions can still hard-crash. The fault file is new; the crash is not fully gone.
-- Two-hand snap and higher Hertz requests are **not** in this zip. Gun vanish below chest (GUNZ / HANDSOLID) is left off. See [COMING-SOON.md](docs/COMING-SOON.md).
+- Two-hand snap and weapon wheel HUD are **not** in this zip. Gun vanish below chest (GUNZ / HANDSOLID) is left off. See [COMING-SOON.md](docs/COMING-SOON.md).
 - On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there. The next multiplayer step we are aiming for is a **LAN / local-network add-on**; true online play is further out after that.
 - Full colocated Bond body and a fancier hub room are later - see the [roadmap](docs/ROADMAP.md).
 
@@ -73,7 +96,7 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 
 ## Start
 
-1. Grab **[`GEVR-Beta-vr443-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr443](https://github.com/no6969el/GEVR/releases/tag/vr443) (no ROM in the archive).
+1. Grab **[`GEVR-Beta-vr444-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444) (no ROM in the archive).
 2. Unzip. Run **`Start-GEVR.bat`** (**GevrRomStarter** - point at your USA `.z64`; the bat also locks in sharper VR with supersample 3 and the SrcFbo path, plus stereo / view-restore knobs that help eyes fuse).
 3. Drop in your **USA `.z64`** when the starter asks.
 4. Headset on. Recenter (both sticks). Enjoy.
