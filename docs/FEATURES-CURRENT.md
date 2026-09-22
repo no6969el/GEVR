@@ -23,11 +23,12 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr444-win64
 - Hard-crash fault file `gevr-fault-*.txt` beside the exe
 - Hit placement improved on recent wear
 - Explosion / fire colour and bullet sparks much improved vs early September
-- Flat desktop play still available (`Play-on-monitor.bat`)
+- Flat desktop play is fully playable (`Play-on-monitor.bat`) and picks up the same fixes as the VR cut improves
 - Local / split-screen multiplayer on a monitor
 
 ## Cooking / later (not shipped)
 Soft list only (matches [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444)):
+- Flat-screen settings and borderless fullscreen for the monitor path
 - Two-hand snap is still cooking
 - Weapon wheel HUD is still cooking
 - High Hz (over 90) is Beta-test territory - report if something feels off ([issue #49](https://github.com/no6969el/GEVR/issues/49))

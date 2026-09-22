@@ -25,12 +25,15 @@
 - High Hz is Beta-test territory - please report issues. We do not call every high-Hz path signed off yet.
 - Tank auto-mount and stick pitch. GL single-shot. Rockets nose along the flight path. Die/continue [#38](https://github.com/no6969el/GEVR/issues/38). Far guards. Left-hand cube. Fault files.
 - Local / split-screen multiplayer works on a monitor.
+- Flat / monitor is a first-class play path - fully playable, and it gets the same fixes as VR improves.
 
 
 ## Cooking for a later update
 
 Soft list only. Matches the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444). Do **not** treat these as shipped.
 
+- **Flat-screen settings** (resolution / display options for the monitor path)
+- **Borderless fullscreen** for flat / monitor play
 - Pause-menu VR Settings (intro glass is in; pause later)
 - Two-hand snap is still cooking (coming later)
 - Weapon wheel HUD is still cooking

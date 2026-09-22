@@ -10,7 +10,7 @@ How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester
 
 - Solo VR GoldenEye (OpenXR)
 - Bring your own USA ROM
-- Headset via `Start-GEVR.bat`, or monitor via `Play-on-monitor.bat`
+- Headset via `Start-GEVR.bat`, or monitor via `Play-on-monitor.bat` (flat is fully playable; same fixes land here as VR improves)
 - Throwables in hand; **A** / left **X** weapon cycle; smarter hand cubes
 - Follow headset refresh rate; VR Settings on intro hub; in-app Update
 - Tank auto-mount + stick pitch, GL single-shot, rockets that point where they fly
@@ -19,6 +19,8 @@ How to run it: [README](../README.md). Hands: [CONTROLS.md](CONTROLS.md). Tester
 
 ## Cooking (do not call these shipped)
 
+- Flat-screen settings (monitor path)
+- Borderless fullscreen (monitor path)
 - Two-hand snap (coming later)
 - Weapon wheel HUD
 - High Hz polish ([issue #49](https://github.com/no6969el/GEVR/issues/49)) - follow-headset is in; report quirks

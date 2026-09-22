@@ -31,6 +31,7 @@ What you can do in **vr444** today (player language):
 - Game follows your headset refresh rate (72 / 80 / 90 / 120 as reported)
 - BYO-ROM + file-backed images; recenter = both thumbstick clicks
 - Local / split-screen multiplayer on a monitor
+- Flat / monitor play is a real path (`Play-on-monitor.bat`) - fully playable, and it picks up the same fixes as we improve the VR cut
 
 Fuller snapshot: [FEATURES-CURRENT.md](docs/FEATURES-CURRENT.md).
 

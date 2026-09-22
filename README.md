@@ -42,7 +42,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 **Please use the bat** - it locks in the good VR settings and runs the ROM starter we ship for this cut (not bare `goldeneye.exe`).
 
-Default is **VR**. Flat / monitor works too if you just want a look (`Play-on-monitor.bat`).
+Default is **VR**. Flat / monitor is absolutely playable too (`Play-on-monitor.bat`) - same game, and it takes the fixes as we improve the VR cut. Flat-screen settings and borderless fullscreen are on the want list ([COMING-SOON](docs/COMING-SOON.md)).
 
 No ROM in the download. You bring yours.
 
@@ -163,7 +163,7 @@ We would rather tell you than surprise you. These are **vr444 today**.
 
 Still worth playing - absolutely. Facility, Dam, tanks that actually let you in, that first-person Bond feeling.
 
-On a **flat / monitor** setup, classic **local / split-screen multiplayer** is still there - couch chaos, same as you remember. Next social step is a **LAN / local-network multiplayer add-on** (not a mod). True online is further after that.
+On a **flat / monitor** setup, the game is fully playable (`Play-on-monitor.bat`) and picks up the same fixes as we improve VR. Classic **local / split-screen multiplayer** is still there - couch chaos, same as you remember. Flat-screen settings and borderless fullscreen are planned ([COMING-SOON](docs/COMING-SOON.md)). Next social step is a **LAN / local-network multiplayer add-on** (not a mod). True online is further after that.
 
 More tester notes: [BETA.md](docs/BETA.md) · [COMING-SOON.md](docs/COMING-SOON.md) · [CONTROLS.md](docs/CONTROLS.md).
 
@@ -193,6 +193,7 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 - Local / split-screen multiplayer on a monitor
 
 **Cooking**
+- Flat-screen settings and borderless fullscreen (monitor path)
 - Two-hand snap (coming later)
 - Weapon wheel HUD
 - High Hz polish ([issue #49](https://github.com/no6969el/GEVR/issues/49))
