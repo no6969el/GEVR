@@ -22,7 +22,7 @@ What you can do in **vr444** today (player language):
 - Physical walk / strafe moves **you**; guns stay with your hands
 - Controller gun aim; squeeze ADS on the gun ray; dual-wield fire
 - Quieter covert-modem scrap (stuck floor scrap hidden; hand modem + screens stay)
-- Throwables in your hand (grenades, mines, plastique, covert modem) leave from the grip
+- Throwables in your hand (grenades, mines, plastique, covert modem) leave from the grip; grenades and mines resized to better match real hand dimensions
 - Tap **A** = next weapon; left-controller **X** = previous (weapon wheel still cooking)
 - Hand cue cube hides while that hand holds a weapon; smaller cube when empty / fists
 - Tank auto-mount and stick pitch for shells; rockets nose along the flight path

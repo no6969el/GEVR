@@ -64,7 +64,7 @@ Stuck covert-modem scrap / flicker on the floor is hidden. The hand modem and sc
 
 ### 2) Throwables in your hand
 
-Grenades, mines, plastique, and the covert modem show in your hand and leave from the grip. Grenades feel small; mines a bit larger.
+Grenades, mines, plastique, and the covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
 
 ### 3) Smarter hand cubes
 

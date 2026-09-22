@@ -20,8 +20,9 @@ rebuilds the image cache once from your same ROM. Saves stay.
   quieted. The modem in your hand and the screens stay on.
   (Dam blue / dish-on-glass depth still cooking.)
 - Throwables live in your hand. Grenades, mines, plastique, and the
-  covert modem appear in the grip and leave from there. Grenades feel
-  small; mines a touch larger.
+  covert modem appear in the grip and leave from there. Grenades and
+  mines were resized to better reflect their actual dimensions in
+  your hand.
 - Hand cue cubes hide while that hand holds a weapon. Empty / fists
   show the cube again. The cube is smaller than before.
 - Tap A for the next gun. Tap left-controller X for the previous gun.

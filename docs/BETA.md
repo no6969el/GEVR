@@ -49,7 +49,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## vr444 wear notes
 
-- **Throwables:** grenades / mines / plastique / covert modem show in your hand and leave from the grip.
+- **Throwables:** grenades / mines / plastique / covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
 - **Weapon cycle:** tap **A** = next; left-controller **X** = previous. (Weapon wheel HUD still cooking.)
 - **Hand cubes:** hide while that hand holds a weapon; smaller when empty / fists.
 - **Refresh:** follows your headset rate (not pinned to 90).

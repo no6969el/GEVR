@@ -13,7 +13,7 @@
 ## On this cut (vr444)
 
 - Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
-- **Throwables** in hand (grenades, mines, plastique, covert modem); leave from the grip.
+- **Throwables** in hand (grenades, mines, plastique, covert modem); leave from the grip. Grenades and mines resized to better match real hand dimensions.
 - Tap **A** = next weapon; left-controller **X** = previous.
 - Hand cue cubes hide while armed; smaller when empty / fists.
 - Game follows your headset refresh rate (72 / 80 / 90 / 120 as reported).

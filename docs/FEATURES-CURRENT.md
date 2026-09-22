@@ -9,7 +9,7 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr444-win64
 - Head look + locomotion keepers; physical walk/strafe moves you
 - Controller gun aim; squeeze ADS mark on the gun ray (not stuck in face centre)
 - Dual-wield fire from each hand and per-hand tracers
-- Throwables appear in your hand and leave from the grip (grenades, mines, plastique, covert modem)
+- Throwables appear in your hand and leave from the grip (grenades, mines, plastique, covert modem); grenades and mines resized to better match real hand dimensions
 - Tap **A** = next weapon; left-controller **X** = previous
 - Hand cue cube hides while that hand holds a weapon; smaller cube when empty / fists
 - Thrown grenades follow the hand; rockets nose along the flight path
