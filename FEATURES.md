@@ -23,7 +23,8 @@ What you can do in **vr445.1** today (player language):
 - Controller gun aim; squeeze ADS on the gun ray; dual-wield fire (default ON)
 - While ADS: walk F/B on left stick; duck/stand on right stick
 - **Gunfire fixed** ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot)
-- **Mine flicker fixed** when remote/prox/timed mines stick (including Facility); covert-modem scrap quieter
+- **Black flicker quieted (temporary)** when remote/prox/timed mines stick (including Facility), same no-modem scrap hide as the covert modem. Props still pass through each other; they should collide and rest ([#55](https://github.com/no6969el/GEVR/issues/55))
+- Ammo counter picture in VR is in
 - Throwables in your hand leave from the grip; grenades and mines resized to better match real hand dimensions
 - Tap **A** = next weapon; left-controller **X** = previous (weapon wheel still cooking)
 - Hand cue cube hides while that hand holds a weapon; smaller cube when empty / fists

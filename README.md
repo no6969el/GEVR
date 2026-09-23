@@ -88,9 +88,9 @@ The game detects your headset refresh (72 / 80 / 90 / 120...) and matches it. No
 
 On cloudy maps, sky holds in the world instead of dragging with the visor.
 
-### 5) Mine flicker fixed
+### 5) Mine / black flicker quieted (temporary)
 
-Remote / prox / timed mines stuck on a wall or floor (**including Facility**) no longer black-flicker. Same KEEP family as covert-modem scrap.
+Remote / prox / timed mines stuck on a wall or floor (**including Facility**) no longer black-flicker. Same temporary hide as the covert modem: drop the scrap (no modem) so the flash stops and people can play. Props still pass through other props, and that overlap is what starts the flicker. The real fix is props that know about each other and sit on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
 
 ### Still in from vr444 / vr444.1
 
@@ -103,7 +103,7 @@ Remote / prox / timed mines stuck on a wall or floor (**including Facility**) no
 ### Still open / cooking
 
 - Frigate sea full-bleed / world-stable water
-- Sticky props that look correctly **on** the surface (scrap hide is interim)
+- Props still pass through other props. The no-modem scrap hide only keeps the black flicker quiet. Next: props collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55))
 - Dam blue / dish-on-glass ([#70](https://github.com/no6969el/GEVR/issues/70)); weapon wheel; two-hand snap
 
 Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEVR/releases/tag/vr445).
@@ -113,6 +113,7 @@ Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEV
 
 Soft list only. Matches the tag's **Still rough / coming soon**. Do not treat these as shipped.
 
+- Props that collide and rest on each other (black flicker is only quieted by the temporary no-modem hide, [issue #55](https://github.com/no6969el/GEVR/issues/55))
 - Two-hand snap is still cooking (coming later)
 - Weapon wheel HUD is still cooking
 - High Hz (over 90) is Beta-test territory - try it and report if something feels off ([issue #49](https://github.com/no6969el/GEVR/issues/49))
@@ -174,6 +175,7 @@ GitHub Issues are still great for tracked bugs; Discord is often faster for "am 
 We would rather tell you than surprise you. These are **vr445.1 today**.
 
 - **Statue Janus meet/scene** still **known / in progress** ([issue #82](https://github.com/no6969el/GEVR/issues/82)) - not fixed in this cut.
+- **Black flicker** on stuck mines / Facility (same family as covert-modem scrap) is **quiet for now**. The no-modem hide lets people play. Props still go through other props; that overlap is the cause. Next is props that collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
 - **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
 - **Big explosions** (large objects, plane shells) can still hard-crash. If they do, grab `gevr-fault-*.txt` beside the exe before you relaunch.

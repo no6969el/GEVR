@@ -18,7 +18,8 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445.1-win
 - VR Settings on intro hub (look right); in-app Update in GevrRomStarter
 - Game follows headset refresh rate (72 / 80 / 90 / 120 as reported)
 - Stuck covert-modem scrap on the floor quieter (hand modem / screens stay)
-- Mine flicker fixed when remote/prox/timed mines stick (including Facility)
+- Black flicker on stuck mines (including Facility) quieted for now by that same no-modem hide ([#55](https://github.com/no6969el/GEVR/issues/55)). Temporary so people can play
+- Ammo counter picture in VR is in
 - While ADS: walk F/B on left stick; duck/stand on right stick; dual-wield fire default ON
 - Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards use correct rifle fire tables/cadence
 - Cloudy sky stay-put (SKYINF); monitor stays live in VR
@@ -44,6 +45,7 @@ Soft list only (matches [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR
 - Statue Janus meet/scene still known / in progress ([issue #82](https://github.com/no6969el/GEVR/issues/82)) — not fixed in vr445.1
 - Crashes under investigation (report with the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose))
 - Mass explosions can still hard-crash (fault file now)
+- Props still pass through other props. The no-modem scrap hide only keeps black flicker quiet ([issue #55](https://github.com/no6969el/GEVR/issues/55)). Real fix: props collide and rest on each other
 - Dam blue flicker is probably the convert modem ([issue #70](https://github.com/no6969el/GEVR/issues/70)), not a separate bug; dish-on-glass depth still open
 - Dam crates / water / one-eye glass holes
 - Full colocated body + fancy hand mesh unfinished (cube now; ghost fingers later)
