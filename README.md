@@ -6,14 +6,14 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **vr444 (2026-09-21):** Major glitch cut - stuck covert-modem scrap quieted, throwables in hand, weapon cycle, follow headset Hz. Built on **vr443.1** motion KEEP. **Grab [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444)** or hit **Update** in GevrRomStarter.
+> **vr445 (2026-09-22):** Small update on **vr444.1** - ADS walk/crouch while aiming, dual-wield fire default ON, Hertz follow hardened, monitor stays live in VR, cloudy sky stay-put (SKYINF), **mine flicker fixed** (including Facility). **Grab [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445)** or hit **Update** in GevrRomStarter.
 
 ---
 The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-**Latest playable cut:** [**vr444**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr444-win64.zip`**. Major glitch cut (modem scrap) plus hands / throwables / A-X cycle / follow headset Hz.
+**Latest playable cut:** [**vr445**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445-win64.zip`**.
 
-**vr443.1** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay for history. Older **zips are gone** where we pulled them (vr443 was HOLD). Grab [**vr444**](https://github.com/no6969el/GEVR/releases/tag/vr444).
+**vr444.1** / **vr444** / **vr443.1** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445**](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
 If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
@@ -23,7 +23,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ## Streamer playtests
 
-**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr444)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
+**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
 
 [![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
@@ -31,9 +31,9 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ---
 
-## Play (vr444 - the one to grab)
+## Play (vr445 - the one to grab)
 
-1. Download **[GEVR-Beta-vr444-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr444](https://github.com/no6969el/GEVR/releases/tag/vr444) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr445-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445](https://github.com/no6969el/GEVR/releases/tag/vr445) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\\cache\\<ROM-hash>\\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
@@ -54,47 +54,45 @@ No ROM in the download. You bring yours.
 
 ---
 
-## What is new in vr444
+## What is new in vr445
 
-From the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444). Major glitch cut on top of **vr443.1** (motion KEEP already fixed).
+From the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Small update on **vr444.1**.
 
-### 1) Quiet stuck modem scrap (the big one)
+### 1) ADS walk + crouch
 
-Stuck covert-modem scrap / flicker on the floor is hidden. The hand modem and screens stay on. Dam blue flicker is probably the same convert-modem story (we mixed the labels under [#70](https://github.com/no6969el/GEVR/issues/70)); dish-on-glass depth is still open.
+While aiming (grip): left stick walks forward/back (no duck); right stick down/up ducks/stands.
 
-### 2) Throwables in your hand
+### 2) Dual-wield fire default ON
 
-Grenades, mines, plastique, and the covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
+Left trigger fires the left gun, right fires the right.
 
-### 3) Smarter hand cubes
+### 3) Hertz follow hardened
 
-The hand cue cube hides while that hand holds a weapon. Empty hand / fists bring the cube back. Cube is smaller than before.
+The game detects your headset refresh (72 / 80 / 90 / 120...) and matches it. No manual FPS pin for normal play. Monitor stays live while VR runs.
 
-### 4) Weapon cycle on the face buttons
+### 4) Cloud stay-put (SKYINF)
 
-Tap **A** = next weapon. Tap left-controller **X** = previous weapon. (Weapon wheel HUD still not shipped.)
+On cloudy maps, sky holds in the world instead of dragging with the visor.
 
-### 5) Follow your headset refresh
+### 5) Mine flicker fixed
 
-The game follows your headset refresh rate (72 / 80 / 90 / 120 as your runtime reports) instead of pinning 90. Still Beta - if something feels off at high Hz, [report it](https://github.com/no6969el/GEVR/issues/new/choose).
+Remote / prox / timed mines stuck on a wall or floor (**including Facility**) no longer black-flicker. Same KEEP family as covert-modem scrap.
 
-### Still in from vr443.1
+### Still in from vr444 / vr444.1
 
-- Physical walk/strafe moves **you**, not the world
-- Guns stay with your hands when you lean/strafe
-- **VR Settings** glass on the intro / cinema hub (**look right**): TURN SPEED / STYLE / SNAP SIZE
-- Dam sky look-up pinned (on by default)
-- In-app **Update** in GevrRomStarter
-- Open play space / dual-wield / picture KEEP / BYO-ROM / recenter both sticks
+- Stuck covert-modem scrap quieter; throwables in hand; **A** / left **X** weapon cycle; smarter hand cubes
+- Physical walk/strafe moves **you**; guns stay with your hands
+- **VR Settings** on the intro hub (**look right**); in-app **Update**
+- Frigate hostage / corpse path keepers from vr444.1
+- Open play space / picture KEEP / BYO-ROM / recenter both sticks
 
-### Worked this week, not public-on yet
+### Still open / cooking
 
-- **Dam blue / convert-modem** ([#70](https://github.com/no6969el/GEVR/issues/70)) - Dam blue is probably the convert modem, not a separate bug; floor scrap quieter above; dish-on-glass depth still open
-- #74 arms body - still cooking as a product story
-- Pause-menu VR Settings / laser select - parked
-- Weapon wheel HUD - cooking
+- Frigate sea full-bleed / world-stable water
+- Sticky props that look correctly **on** the surface (scrap hide is interim)
+- Dam blue / dish-on-glass ([#70](https://github.com/no6969el/GEVR/issues/70)); weapon wheel; two-hand snap
 
-Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEVR/releases/tag/vr444).
+Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
 
 ## What's cooking (later update)
@@ -140,7 +138,18 @@ These paths are what this Beta was built and stared on:
 
 **Refresh rates:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). Still Beta - if something feels off at high Hz, [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose). We do **not** call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
-When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, any log next to the zip or in the console, and any **`gevr-fault-*.txt`** beside the exe. Do **not** upload your ROM. [Open an Issue](https://github.com/no6969el/GEVR/issues/new/choose).
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, any log next to the zip or in the console, and any **`gevr-fault-*.txt`** beside the exe. Do **not** upload your ROM. [Open an Issue](https://github.com/no6969el/GEVR/issues/new/choose) or ask on [Discord](#discord-help--fan-chat).
+
+---
+
+## Discord (help + fan chat)
+
+**[Join the GEVR Discord](https://discord.gg/flat2vr)** for:
+
+- **Port help** - install, updates, ROM cache, comfort, crashes (tell us your headset and OpenXR runtime; **never upload your ROM**)
+- **Fan chat** - missions, nostalgia, loadouts, and GoldenEye talk with people actually playing the Beta
+
+GitHub Issues are still great for tracked bugs; Discord is often faster for "am I doing this right?" questions.
 
 **Discord (help + fan chat):** [discord.gg/flat2vr](https://discord.gg/flat2vr) - port help and GoldenEye fan chat with other players. BYO ROM / do not upload your ROM (setup details and logs only).
 

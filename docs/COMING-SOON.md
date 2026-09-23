@@ -1,6 +1,6 @@
-# Coming soon / watch this space
+﻿# Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr444](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr444-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play-vr444---the-one-to-grab). Tag: [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444).
+**Play now:** [GEVR Beta vr445](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr445-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Play steps: [README Play](../README.md#play-vr445---the-one-to-grab). Tag: [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
 **Star** the repo and [**follow @no6969el**](https://github.com/no6969el). **Watch -> Releases** so the next zip shows up without you refreshing every day.
 
@@ -30,7 +30,7 @@
 
 ## Cooking for a later update
 
-Soft list only. Matches the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444). Do **not** treat these as shipped.
+Soft list only. Matches the [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Do **not** treat these as shipped.
 
 - **Flat-screen settings** (resolution / display options for the monitor path)
 - **Borderless fullscreen** for flat / monitor play

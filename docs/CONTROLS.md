@@ -1,15 +1,15 @@
-# Controls (Beta)
+﻿# Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr444](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr445](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README Play](../README.md#play-vr444---the-one-to-grab). Download: [`GEVR-Beta-vr444-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README Play](../README.md#play-vr445---the-one-to-grab). Download: [`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat` - KEEP VR picture (XR stereo source, SrcFbo, supersample 3, sky / playspace) plus recenter / stick-turn.
 - **Monitor / no headset:** `Play-on-monitor.bat` - VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr444-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr445-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
 
@@ -44,25 +44,27 @@ After recenter, standing still and turning your head should not slide the world.
 | **A** | Next weapon |
 | **X** (left controller) | Previous weapon |
 | **Squeeze / grip** | ADS / aim mark on the gun ray (not stuck in face centre) |
+| **While ADS + left stick** | Walk forward/back (no duck) |
+| **While ADS + right stick** | Duck / stand |
 
-**vr444:** Auto-Aim defaults **OFF** in this build. Weapon wheel HUD is **not** shipped yet (still cooking). Two-hand snap is **not** shipped yet (still cooking).
+**vr445:** Auto-Aim defaults **OFF** in this build. Weapon wheel HUD is **not** shipped yet (still cooking). Two-hand snap is **not** shipped yet (still cooking).
 
 Rockets point their nose along the flight path. Grenade launcher is single-shot / muzzle feel OK (projectile-spawn experiment left off). Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
-## Hands (vr444)
+## Hands (vr445)
 
 - **Empty hand / fists** draw a cube for now (temporary stand-in; smaller than older cuts).
 - The cube **hides** while that hand holds a weapon.
 - Ghost hand is parked for this cut. Nicer hands come later. See [COMING-SOON.md](COMING-SOON.md).
 - Gun vanish below chest (GUNZ / HANDSOLID) is left off until fixed.
 
-## Tank (vr444)
+## Tank (vr445)
 
 - Stand on the chassis and you **auto-mount**.
 - **Right stick pitch** aims the shells. Yaw already worked.
 - Touch-to-enter as a separate gesture is not the ship path. Climb by getting onto the tank.
 
-## Reload, pause, and menus (vr444)
+## Reload, pause, and menus (vr445)
 
 - **B** reloads (right-hand B on Quest-style layouts).
 - **Menu / system button** opens pause and options in headset (not B, not Y). **Tab** still works on keyboard / monitor.
@@ -78,9 +80,9 @@ While the flat cinema or frontend menus are up, you are in a small hub room look
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play-vr444---the-one-to-grab) / [`GEVR-Beta-vr444-win64.zip`](https://github.com/no6969el/GEVR/releases/latest).
+GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play-vr445---the-one-to-grab) / [`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest).
 
-**Verified on vr444:**
+**Verified on vr445:**
 
 - **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3). We do not maintain that driver. We do support this experience.
 - **Native PimaxXR**
@@ -88,7 +90,7 @@ GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [READ
 
 **Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off. We do not call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
-**Headset recipe:** unzip **`GEVR-Beta-vr444-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
+**Headset recipe:** unzip **`GEVR-Beta-vr445-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
 

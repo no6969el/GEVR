@@ -1,26 +1,26 @@
-> **vr444 (2026-09-21):** Major glitch cut - stuck covert-modem scrap quieted, plus hands / throwables / weapon cycle / follow headset Hz. Built on vr443.1. Grab [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444) or use Update.
+﻿> **vr445 (2026-09-22):** ADS crouch/walk, dualfire ON, Hertz follow, monitor live, SKYINF, **mine flicker fixed** (incl. Facility). Grab [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445) or use Update.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr444**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr444-win64.zip`**. Play steps: [README](../README.md#play-vr444---the-one-to-grab). Tag: [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444).
+**Play this cut:** [**vr445**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr445-win64.zip`**. Play steps: [README](../README.md#play-vr445---the-one-to-grab). Tag: [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
-Older tag **pages** stay for history. **Latest is vr444.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr445.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
 - **vr441** / **vr440** tag pages stay. Their **zips were stripped** when later cuts shipped.
 - **vr439** zip removed when vr440 shipped. Tag page stays for record.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr444---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md) and [COMING-SOON.md](COMING-SOON.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr445---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md) and [COMING-SOON.md](COMING-SOON.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr444-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) - play steps in [README](../README.md#play-vr444---the-one-to-grab)
+- Download: [**GEVR-Beta-vr445-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) - play steps in [README](../README.md#play-vr445---the-one-to-grab)
 
 ## Launchers
 
@@ -35,7 +35,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr444-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444).
+1. Download and unzip **`GEVR-Beta-vr445-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\\GEVR\\cache`. Then play.
@@ -47,7 +47,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
 - **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr444 zip (type **YES**) to wipe **`%LOCALAPPDATA%\\GEVR\\cache`** only (keeps saves). The tag notes say: if the picture still looks wrong, delete `%LOCALAPPDATA%\\GEVR` and run the bat again (that also drops saves).
 
-## vr444 wear notes
+## vr445 wear notes
 
 - **Throwables:** grenades / mines / plastique / covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
 - **Weapon cycle:** tap **A** = next; left-controller **X** = previous. (Weapon wheel HUD still cooking.)

@@ -1,8 +1,8 @@
-# Feature snapshot (public) - 2026-09-21
+﻿# Feature snapshot (public) - 2026-09-22
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr444](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr445](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr444-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr444---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr444](https://github.com/no6969el/GEVR/releases/tag/vr444).
+High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr445---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
 ## Working enough for Beta focus
 - OpenXR VR present (true stereo path)
@@ -18,6 +18,9 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr444-win64
 - VR Settings on intro hub (look right); in-app Update in GevrRomStarter
 - Game follows headset refresh rate (72 / 80 / 90 / 120 as reported)
 - Stuck covert-modem scrap on the floor quieter (hand modem / screens stay)
+- Mine flicker fixed when remote/prox/timed mines stick (including Facility)
+- While ADS: walk F/B on left stick; duck/stand on right stick; dual-wield fire default ON
+- Cloudy sky stay-put (SKYINF); monitor stays live in VR
 - Die / continue reload no longer dumps you in junk space ([issue #38](https://github.com/no6969el/GEVR/issues/38) SETUPCOPY)
 - Far guards more visible (007 far-vis)
 - Hard-crash fault file `gevr-fault-*.txt` beside the exe
@@ -27,7 +30,7 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr444-win64
 - Local / split-screen multiplayer on a monitor
 
 ## Cooking / later (not shipped)
-Soft list only (matches [vr444 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr444)):
+Soft list only (matches [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445)):
 - Flat-screen settings and borderless fullscreen for the monitor path
 - Two-hand snap is still cooking
 - Weapon wheel HUD is still cooking

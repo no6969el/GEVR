@@ -1,0 +1,50 @@
+GEVR Beta vr445
+===============
+
+Small update on vr444.1. Bring your own USA ROM.
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) What is new in vr445
+-----------------------
+Controls (proofed):
+- While aiming (grip): walk forward/back on the left stick; duck/stand
+  on the right stick. Left stick no longer ducks while ADS.
+- Dual-wield: left trigger fires the left gun, right fires the right
+  (C-default ON; dig GETV_VR_DUALFIRE=0 for retail alternate).
+
+Launch / headset:
+- Hertz follow hardened: the game detects your headset refresh rate
+  (72 / 80 / 90 / 120...) and matches it. No manual GETV_FPS pin for
+  normal play. Dig GETV_SIMHZ=0 only if you need retail timing.
+- Monitor view stays live while VR is on (desktop mirror). Dig
+  GETV_XR_NODESKTOP=1 to skip the window resolve.
+- Cloud stay-put (SKYINF) -- cloudy maps: sky holds in the world
+  instead of dragging with the visor. Dig GETV_VR_SKYINF=0.
+- Mine flicker fixed -- remote/prox/timed mines stuck on a wall or
+  floor (including Facility) no longer black-flicker. Same KEEP as
+  covert modem scrap (MODEMDROP=3). Dig GETV_VR_MODEMDROP=0.
+
+Not in this tag:
+- Frigate sea full-bleed / world-stable water (still open).
+- Sticky props that look correctly on the surface (scrap hide is interim).
+
+Diagnostics (in this zip - no separate GitHub assets needed):
+- GEVR-Capture-Player-Log.bat  - make a log for Discord / bug reports
+- GEVR-Quest-Pin90.bat         - optional emergency pin if Hertz follow
+  fails on an older install (usually not needed on vr445)
+
+3) Play
+-------
+Start-GEVR.bat (uses GevrRomStarter). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.
