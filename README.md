@@ -23,7 +23,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ## Streamer playtests
 
-**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
+**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445.1)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
 
 [![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
@@ -31,9 +31,9 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ---
 
-## Play (vr445 - the one to grab)
+## Play (vr445.1 - the one to grab)
 
-1. Download **[GEVR-Beta-vr445-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445](https://github.com/no6969el/GEVR/releases/tag/vr445) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr445.1-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\\cache\\<ROM-hash>\\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
@@ -54,9 +54,23 @@ No ROM in the download. You bring yours.
 
 ---
 
+## What is new in vr445.1
+
+From the [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1). Point footnote on **vr445**.
+
+### Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84))
+
+On PC, rifle guards were using pistol lean / single-shot cadence because equipped weapon props were misread on 64-bit. They now use the correct rifle fire tables and cadence (auto/burst where intended).
+
+### Known / in progress ([#82](https://github.com/no6969el/GEVR/issues/82) Statue Janus)
+
+The meet/scene not starting at Janus is still open; we are working on it alongside this cut. **This tag does not fix Janus.**
+
+Everything else is still **vr445**.
+
 ## What is new in vr445
 
-From the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Small update on **vr444.1**.
+From the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Small update on **vr444.1**. Still the base of **vr445.1**.
 
 ### 1) ADS walk + crouch
 
@@ -121,7 +135,7 @@ Stay tuned. **Star** this repo and [**follow @no6969el**](https://github.com/no6
 - **Boot that actually hands over** - the bat sets stereo / view-restore so eyes fuse; refresh follows the headset.
 - **Movement feel** locked to the loco reference we preferred in the chair.
 
-**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr445](https://github.com/no6969el/GEVR/releases/latest).
+**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr445** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr445.1](https://github.com/no6969el/GEVR/releases/latest).
 
 ---
 
@@ -157,8 +171,9 @@ GitHub Issues are still great for tracked bugs; Discord is often faster for "am 
 
 ## Known quirks (honest Beta)
 
-We would rather tell you than surprise you. These are **vr445 today**.
+We would rather tell you than surprise you. These are **vr445.1 today**.
 
+- **Statue Janus meet/scene** still **known / in progress** ([issue #82](https://github.com/no6969el/GEVR/issues/82)) - not fixed in this cut.
 - **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
 - **Big explosions** (large objects, plane shells) can still hard-crash. If they do, grab `gevr-fault-*.txt` beside the exe before you relaunch.
@@ -195,7 +210,7 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 
 ## Roadmap (honest, not a calendar promise)
 
-**Now - enjoy the Beta (vr445)**
+**Now - enjoy the Beta (vr445.1)**
 - Solo VR campaign feel
 - Throwables in hand, A / X weapon cycle, smarter hand cubes
 - Tank climb + turret pitch, dual-wield fire, rockets that point where they fly
