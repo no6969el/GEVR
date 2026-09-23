@@ -51,7 +51,7 @@ Soft list only (matches [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/r
 - Boxy articulated hand mesh was rejected in the chair
 - No ROM redistribution (do not upload ROM files)
 
-## Headset / runtime (vr444)
+## Headset / runtime (vr445)
 
 Verified on this Beta (details in README Play):
 

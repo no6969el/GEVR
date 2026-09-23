@@ -121,7 +121,7 @@ Stay tuned. **Star** this repo and [**follow @no6969el**](https://github.com/no6
 - **Boot that actually hands over** - the bat sets stereo / view-restore so eyes fuse; refresh follows the headset.
 - **Movement feel** locked to the loco reference we preferred in the chair.
 
-**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr444](https://github.com/no6969el/GEVR/releases/latest).
+**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr445](https://github.com/no6969el/GEVR/releases/latest).
 
 ---
 
@@ -157,7 +157,7 @@ GitHub Issues are still great for tracked bugs; Discord is often faster for "am 
 
 ## Known quirks (honest Beta)
 
-We would rather tell you than surprise you. These are **vr444 today**.
+We would rather tell you than surprise you. These are **vr445 today**.
 
 - **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
@@ -195,7 +195,7 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 
 ## Roadmap (honest, not a calendar promise)
 
-**Now - enjoy the Beta (vr444)**
+**Now - enjoy the Beta (vr445)**
 - Solo VR campaign feel
 - Throwables in hand, A / X weapon cycle, smarter hand cubes
 - Tank climb + turret pitch, dual-wield fire, rockets that point where they fly
