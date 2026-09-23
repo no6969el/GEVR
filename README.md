@@ -15,9 +15,9 @@ The N64 classic you can finally *stand inside* - not an emulator overlay, not a 
 
 **vr443.1** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay for history. Older **zips are gone** where we pulled them (vr443 was HOLD). Grab [**vr444**](https://github.com/no6969el/GEVR/releases/tag/vr444).
 
-If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
+If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
-[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Features](FEATURES.md) · [Support](https://www.patreon.com/cw/GEVR)
+[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Discord](https://discord.gg/flat2vr) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Features](FEATURES.md) · [Support](https://www.patreon.com/cw/GEVR)
 
 ---
 
@@ -141,6 +141,8 @@ These paths are what this Beta was built and stared on:
 **Refresh rates:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). Still Beta - if something feels off at high Hz, [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose). We do **not** call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
 When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, any log next to the zip or in the console, and any **`gevr-fault-*.txt`** beside the exe. Do **not** upload your ROM. [Open an Issue](https://github.com/no6969el/GEVR/issues/new/choose).
+
+**Discord (help + fan chat):** [discord.gg/flat2vr](https://discord.gg/flat2vr) - port help and GoldenEye fan chat with other players. BYO ROM / do not upload your ROM (setup details and logs only).
 
 ---
 
