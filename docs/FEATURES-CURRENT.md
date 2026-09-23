@@ -1,8 +1,8 @@
-﻿# Feature snapshot (public) - 2026-09-22
+﻿# Feature snapshot (public) - 2026-09-23
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr445](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr445.1](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr445---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
+High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445.1-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr4451---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1).
 
 ## Working enough for Beta focus
 - OpenXR VR present (true stereo path)
@@ -20,6 +20,7 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445-win64
 - Stuck covert-modem scrap on the floor quieter (hand modem / screens stay)
 - Mine flicker fixed when remote/prox/timed mines stick (including Facility)
 - While ADS: walk F/B on left stick; duck/stand on right stick; dual-wield fire default ON
+- Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards use correct rifle fire tables/cadence
 - Cloudy sky stay-put (SKYINF); monitor stays live in VR
 - Die / continue reload no longer dumps you in junk space ([issue #38](https://github.com/no6969el/GEVR/issues/38) SETUPCOPY)
 - Far guards more visible (007 far-vis)
@@ -30,7 +31,7 @@ High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445-win64
 - Local / split-screen multiplayer on a monitor
 
 ## Cooking / later (not shipped)
-Soft list only (matches [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445)):
+Soft list only (matches [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1)):
 - Flat-screen settings and borderless fullscreen for the monitor path
 - Two-hand snap is still cooking
 - Weapon wheel HUD is still cooking
@@ -40,6 +41,7 @@ Soft list only (matches [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/r
 - Big explosion / plane shell can still hard-crash (fault file helps)
 
 ## Open / rough
+- Statue Janus meet/scene still known / in progress ([issue #82](https://github.com/no6969el/GEVR/issues/82)) — not fixed in vr445.1
 - Crashes under investigation (report with the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose))
 - Mass explosions can still hard-crash (fault file now)
 - Dam blue flicker is probably the convert modem ([issue #70](https://github.com/no6969el/GEVR/issues/70)), not a separate bug; dish-on-glass depth still open
@@ -51,7 +53,7 @@ Soft list only (matches [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/r
 - Boxy articulated hand mesh was rejected in the chair
 - No ROM redistribution (do not upload ROM files)
 
-## Headset / runtime (vr445)
+## Headset / runtime (vr445.1)
 
 Verified on this Beta (details in README Play):
 

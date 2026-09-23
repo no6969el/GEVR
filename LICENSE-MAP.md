@@ -2,7 +2,7 @@
 
 Simple map of whose stuff this is. Not legal advice.
 
-Current play zip is **vr445**. [README Play](README.md#play-vr445---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest).
+Current play zip is **vr445.1**. [README Play](README.md#play-vr4451---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest).
 
 Do **not** upload ROM files anywhere in this repo (Issues, PRs, comments).
 

@@ -8,10 +8,11 @@
 - **vr434** was pulled (baked ROM images).
 - **vr438** was BYO-ROM with a stub VR boot. Do not use.
 - **vr439** zip removed when vr440 shipped. Tag page stays.
-- **vr443** was HOLD; **vr443.1** fixed motion. Then **vr444** / **vr444.1**. Play **vr445**.
+- **vr443** was HOLD; **vr443.1** fixed motion. Then **vr444** / **vr444.1** / **vr445**. Play **vr445.1**.
 
-## On this cut (vr445)
+## On this cut (vr445.1)
 
+- **Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84))**; **Statue Janus ([#82](https://github.com/no6969el/GEVR/issues/82))** still known / in progress.
 - Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 - **Throwables** in hand (grenades, mines, plastique, covert modem); leave from the grip. Grenades and mines resized to better match real hand dimensions.
 - Tap **A** = next weapon; left-controller **X** = previous.
@@ -30,7 +31,7 @@
 
 ## Cooking for a later update
 
-Soft list only. Matches the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Do **not** treat these as shipped.
+Soft list only. Matches the [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1) (base still vr445). Do **not** treat these as shipped.
 
 - **Flat-screen settings** (resolution / display options for the monitor path)
 - **Borderless fullscreen** for flat / monitor play

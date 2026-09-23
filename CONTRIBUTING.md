@@ -4,14 +4,14 @@ Fan testers first. Thanks for helping GEVR Beta.
 
 ## Play the current zip
 
-Current zip is **vr445**. Grab **[GEVR-Beta-vr445-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445](https://github.com/no6969el/GEVR/releases/tag/vr445) and follow [README Play](README.md#play-vr445---the-one-to-grab).
+Current zip is **vr445.1**. Grab **[GEVR-Beta-vr445.1-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1) and follow [README Play](README.md#play-vr4451---the-one-to-grab).
 
 - **Headset:** `Start-GEVR.bat`
 - **No headset / monitor only:** `Play-on-monitor.bat`
 
 Bring a **USA GoldenEye `.z64` you own**. The zip has no ROM. We will not ask you to upload one.
 
-Older tag **pages** may still show on GitHub. **Latest is vr445.1.** **vr444.1** / **vr444** / **vr443** / **vr442** / **vr441** / **vr440** pages stay; their **zips were stripped** where we pulled them. Do not hunt those downloads.
+Older tag **pages** may still show on GitHub. **Latest is vr445.1.** **vr445** / **vr444.1** / **vr444** / **vr443** / **vr442** / **vr441** / **vr440** pages stay; their **zips were stripped** where we pulled them. Do not hunt those downloads.
 
 ## File a bug or crash
 
