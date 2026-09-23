@@ -18,7 +18,7 @@ Their sky emitter treated `unk20` / `unk24` as texel counts and multiplied by 32
 
 **Water did not.** **2026-09-13** `4806799` (D245) let the same tc-shift run on the water quad. On **Frigate** (`-level_26`) a water-fan vertex spanned about `S=-166..299317` and they tried `kS=4`, `kT=4`. The same day, `53c9a87` reopened it: live playtest still swapped two patterns as the view turned. Sky (same emitter) was fine. **2026-09-16** `7412a98` is a headless probe only. Turning the view flips `kT` 4→3, which a single-frame trace never saw. A fixed-k A/B knob exists and is **not** the default. Do not take D245 as a finished water fix.
 
-**GEVR check:** [#80](https://github.com/no6969el/GEVR/issues/80) is the Frigate water / horizon seam. If our sky emitter still does `(S - fold) * 32`, D227 is the same unit error. The water half is still open upstream; their leftover clue is that the shift amount changes while you turn.
+**GEVR check (owner, 2026-09-23):** flat water already looks right. In VR, turning the sea on looks right and then yaws with the head. The sea needs to stay put. That is the cloud bug, on the water quad. SKYINF already pins cloudy sky to the world and leaves the sea (issue [#80](https://github.com/no6969el/GEVR/issues/80) says SKYPIN remeshes cloud only). On a monitor the only yaw is Bond's, and the water fan is rebuilt from that same yaw, so the flat picture stays stuck to the deck. The headset adds a yaw the level does not use. D227 changes tiling and scroll speed. It does not take the visor out of the water's orientation. D245 is their flat-port attempt at "the pattern changes when you look around," and they reopened it. The VR read is the SKYINF path: world yaw for the water fan, both eyes sharing it, flat appearance left as it is.
 
 ### 2. Large triangles vanish next to the camera
 
@@ -95,7 +95,7 @@ An active object’s `Model*` was read through `((ChrRecord*)prop->chr)->chrflag
 
 ## What to open first when the workshop is up
 
-1. Sky emitter: is there still a `* 32` on coords that are already S10.5 (D227). Leave the water shift alone until that read is done; upstream reopened it.
+1. Frigate sea stay-put: same pin as SKYINF, on the water fan, world yaw shared by both eyes. D227 and D245 do not do that. A leftover `* 32` is only worth a look if clouds are still over-tiled or scrolling too fast.
 2. `gfx_sp_tri1` reject when any `w < 0` (D233), after the existing #79 admit path.
 3. Which `fovy` feeds the cull planes and guard fade (D222). This is the VR-shaped one.
 4. Scheduler retrace flag: struct index vs an 8-byte offset (D248), if the client looks stuck at half rate.
