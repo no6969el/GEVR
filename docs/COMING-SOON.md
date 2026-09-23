@@ -33,6 +33,7 @@
 
 Soft list only. Matches the [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1) (base still vr445). Do **not** treat these as shipped.
 
+- **Props that collide and rest on each other.** Black flicker / stuck-mine flash is only quieted by the temporary no-modem scrap hide ([issue #55](https://github.com/no6969el/GEVR/issues/55))
 - **Flat-screen settings** (resolution / display options for the monitor path)
 - **Borderless fullscreen** for flat / monitor play
 - Pause-menu VR Settings (intro glass is in; pause later)

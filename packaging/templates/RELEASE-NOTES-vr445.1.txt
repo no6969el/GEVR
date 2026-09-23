@@ -24,7 +24,8 @@ at Janus is still open; we are working on it alongside this cut. This tag
 does not fix Janus.
 
 Everything else is still vr445 (ADS walk/crouch, dual-wield default,
-Hertz follow, monitor in VR, SKYINF, mine flicker fix).
+Hertz follow, monitor in VR, SKYINF, mine/black flicker quieted for
+now by the temporary no-modem hide -- GitHub #55).
 
 3) Play
 -------

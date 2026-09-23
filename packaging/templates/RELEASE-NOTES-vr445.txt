@@ -28,13 +28,16 @@ Launch / headset:
   GETV_XR_NODESKTOP=1 to skip the window resolve.
 - Cloud stay-put (SKYINF) -- cloudy maps: sky holds in the world
   instead of dragging with the visor. Dig GETV_VR_SKYINF=0.
-- Mine flicker fixed -- remote/prox/timed mines stuck on a wall or
-  floor (including Facility) no longer black-flicker. Same KEEP as
-  covert modem scrap (MODEMDROP=3). Dig GETV_VR_MODEMDROP=0.
+- Mine / black flicker quieted (temporary) -- remote/prox/timed mines
+  stuck on a wall or floor (including Facility) no longer black-flicker.
+  Same hide as covert modem scrap (no modem, MODEMDROP=3). Dig
+  GETV_VR_MODEMDROP=0. Props still pass through other props; that
+  overlap is the cause. Real fix: props collide and rest on each other
+  (GitHub #55).
 
 Not in this tag:
 - Frigate sea full-bleed / world-stable water (still open).
-- Sticky props that look correctly on the surface (scrap hide is interim).
+- Props that collide and rest on each other (no-modem scrap hide is interim).
 
 Diagnostics (in this zip - no separate GitHub assets needed):
 - GEVR-Capture-Player-Log.bat  - make a log for Discord / bug reports

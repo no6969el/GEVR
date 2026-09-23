@@ -52,6 +52,8 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 - **Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)):** rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot from a 64-bit weapon-prop misread).
 - **Known / in progress ([#82](https://github.com/no6969el/GEVR/issues/82) Statue Janus):** meet/scene still open; this cut does not fix Janus.
 - **Throwables:** grenades / mines / plastique / covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
+- **Black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)):** quiet for now. Stuck mines (including Facility) use the same temporary no-modem scrap hide as the covert modem, so people can play. Props still pass through other props; that overlap is the cause. Next is props that collide and rest on each other.
+- **Ammo picture:** the VR ammo counter picture is in.
 - **Weapon cycle:** tap **A** = next; left-controller **X** = previous. (Weapon wheel HUD still cooking.)
 - **Hand cubes:** hide while that hand holds a weapon; smaller when empty / fists.
 - **Refresh:** follows your headset rate (not pinned to 90).
