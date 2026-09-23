@@ -11,7 +11,7 @@ Current zip is **vr445**. Grab **[GEVR-Beta-vr445-win64.zip](https://github.com/
 
 Bring a **USA GoldenEye `.z64` you own**. The zip has no ROM. We will not ask you to upload one.
 
-Older tag **pages** may still show on GitHub. **Latest is vr445.** **vr444.1** / **vr444** / **vr443** / **vr442** / **vr441** / **vr440** pages stay; their **zips were stripped** where we pulled them. Do not hunt those downloads.
+Older tag **pages** may still show on GitHub. **Latest is vr445.1.** **vr444.1** / **vr444** / **vr443** / **vr442** / **vr441** / **vr440** pages stay; their **zips were stripped** where we pulled them. Do not hunt those downloads.
 
 ## File a bug or crash
 

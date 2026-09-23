@@ -1,0 +1,35 @@
+GEVR Beta vr445.1
+==================
+
+Small update on vr445. Bring your own USA ROM.
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) Footnote on vr445.1
+----------------------
+Gunfire fixed (GitHub #84): On PC, rifle guards were using pistol lean /
+single-shot cadence because equipped weapon props were misread on 64-bit.
+They now pick the correct rifle fire tables and cadence (auto/burst where
+the weapon expects it).
+
+Known / in progress (GitHub #82 Statue Janus): The meet/scene not starting
+at Janus is still open; we are working on it alongside this cut. This tag
+does not fix Janus.
+
+Everything else is still vr445 (ADS walk/crouch, dual-wield default,
+Hertz follow, monitor in VR, SKYINF, mine flicker fix).
+
+3) Play
+-------
+Start-GEVR.bat (uses GevrRomStarter). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.

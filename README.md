@@ -6,14 +6,14 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **vr445 (2026-09-22):** Small update on **vr444.1** - ADS walk/crouch while aiming, dual-wield fire default ON, Hertz follow hardened, monitor stays live in VR, cloudy sky stay-put (SKYINF), **mine flicker fixed** (including Facility). **Grab [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445)** or hit **Update** in GevrRomStarter.
+> **vr445.1 (2026-09-23):** Point footnote on **vr445** — **gunfire fixed** ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards had pistol lean/single-shot cadence from a 64-bit weapon-prop misread; correct rifle fire tables/cadence now. **Statue Janus ([#82](https://github.com/no6969el/GEVR/issues/82))** meet/scene still **known / in progress** (not fixed here). **Grab [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1)** or **Update** in GevrRomStarter.
 
 ---
 The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-**Latest playable cut:** [**vr445**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445-win64.zip`**.
+**Latest playable cut:** [**vr445.1**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445.1-win64.zip`**.
 
-**vr444.1** / **vr444** / **vr443.1** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445**](https://github.com/no6969el/GEVR/releases/tag/vr445).
+**vr445** / **vr444.1** / **vr444** / older tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445.1**](https://github.com/no6969el/GEVR/releases/tag/vr445.1).
 
 If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 

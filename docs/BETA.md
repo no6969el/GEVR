@@ -6,7 +6,7 @@ GEVR's public label is **Beta**. Expect crashes and unfinished corners. File the
 
 **Play this cut:** [**vr445**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr445-win64.zip`**. Play steps: [README](../README.md#play-vr445---the-one-to-grab). Tag: [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445).
 
-Older tag **pages** stay for history. **Latest is vr445.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr445.1.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
