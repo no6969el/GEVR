@@ -78,6 +78,10 @@ $requiredBootKnobs = [ordered]@{
     "GETV_VR_RETICLE"           = "1"
     "GETV_VR_TOUCHUSE"          = "1"
     "GETV_VR_HANDMELEE"         = "1"
+    # #75 swing pose KEEP
+    "GETV_VR_SWINGHIT"          = "1"
+    "GETV_VR_SWINGPOSE"         = "1"
+    "GETV_VR_GUNREBASE"         = "1"
     # picture KEEP
     "GETV_SUPERSAMPLE"          = "3"
     "GETV_XR_PLAY_SRCFBO"       = "1"
@@ -85,12 +89,22 @@ $requiredBootKnobs = [ordered]@{
     # #72 Dam jump-strip: cloud remesh OFF (was 1). SKYPIN KEEP covers look-up.
     "GETV_VR_SKYMESH"           = "0"
     "GETV_VR_SKYSCISSOR"        = "1"
+    # Dam SKYWORLD KEEP (retire SKYINF while SKYWORLD on)
+    "GETV_VR_SKYWORLD"          = "1"
+    "GETV_VR_SKYINF"            = "0"
     # vr444 KEEP (throwables / hand cube / modem scrap)
     "GETV_VR_THROWGRIP"         = "2"
     "GETV_VR_HANDCUBE_HIDEARMED"= "1"
     "GETV_VR_MODEMDROP"         = "3"
     "GETV_VR_HANDCUBE_MM"       = "45"
     "GETV_BIND_WEAPON_PREV"     = "x"
+    # vr445.2 KEEP
+    "GETV_VR_JANUSSPAWN"        = "1"
+    "GETV_VR_GUNORIGIN"         = "1"
+    "GETV_AI_ANIMFRAMES"        = "1"
+    # vr450 KEEP (#80 water RECT + #90 grip doors)
+    "GETV_VR_SKYWATERRECT"      = "1"
+    "GETV_VR_GRIPUSE"           = "1"
     # core VR (#49: GETV_FPS must stay unset so EXE 421/422 follow HMD)
     "GETV_VR"                   = "1"
     "GETV_SIMDIV"               = "1"
@@ -115,7 +129,21 @@ $forbiddenBootKnobs = @(
     "GETV_SKYTRACE",
     "GETV_ROOMTRACE",
     "GETV_CULLWHY",
-    "GETV_XR_SHARPLOG"
+    "GETV_XR_SHARPLOG",
+    "GETV_VR_SKYWATERLERP",
+    "GETV_VR_SKYWATERLAYER",
+    "GETV_VR_SKYWATERUV",
+    "GETV_VR_TEXGUARD",
+    "GETV_VR_SCRAPDROP",
+    "GETV_VR_EMBEDEYE",
+    "GETV_VR_FALSEDOOR",
+    "GETV_VR_CHRPASS",
+    "GETV_VR_FRIGWHY",
+    "GETV_VR_DOORLOS",
+    "GETV_VR_FRIGMUTE",
+    "GETV_VR_FRIGDOORROOM",
+    "GETV_VR_FRIGOPEN",
+    "GETV_STEREO_MTXGUARD"
 )
 
 # Names that are not knobs in goldeneye.exe. Setting them is a silent no-op and has

@@ -1,0 +1,49 @@
+GEVR Beta vr450
+================
+
+Point update after vr445.2. Bring your own USA ROM.
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) What's new in vr450
+----------------------
+- Frigate water RECT (#80) -- GETV_VR_SKYWATERRECT default-on
+  (sea reads as 2-D blue wave; LERP/LAYER stay OFF)
+- Contextual Grip doors (#90) -- GETV_VR_GRIPUSE default-on
+  (squeeze near = USE toggle; clear = AIM). Pickup / mines / modem
+  are not the KEEP for this cut.
+
+Carry-forward from vr445.2 (unchanged KEEP):
+- Playspace / free move / hands follow (#74)
+- Melee swing pose (#75)
+- Statue Janus spawn (#82)
+- Gun origin
+- Walk/run after spot (#84) + ANIMFRAMES
+- Dam SKYWORLD tiled clouds (+ sky pin path)
+- Rifle cadence
+- Ship temp MODEMDROP=3 (honest temp hide for covert modem scrap)
+
+Known / still open:
+- #79 Frigate door / aperture (FRIGMUTE / FRIGDOORROOM out)
+- Grip pickup / mines / modem / mission-lock -- HOLD
+- Save slot 4 (007 + cheats) -- later cut
+- #70 prop-on-prop / Dam blue (MODEMDROP is temp, not the fix)
+
+Do NOT expect FRIGMUTE / FRIGDOORROOM / CHRPASS / FRIGOPEN / DOORLOS /
+SKYWATERLERP / SKYWATERLAYER / TEXGUARD / SCRAPDROP / EMBEDEYE /
+Dam MTXGUARD=2 / slot4 seed as default-on.
+
+3) Play
+-------
+Start-GEVR.bat (uses GevrRomStarter). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.
