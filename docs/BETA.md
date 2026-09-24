@@ -45,7 +45,8 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr445.2 zip (type **YES**) to wipe **`%LOCALAPPDATA%\\GEVR\\cache`** only (keeps saves). The tag notes say: if the picture still looks wrong, delete `%LOCALAPPDATA%\\GEVR` and run the bat again (that also drops saves).
+- **Picture wrong after an update:** run **`Clear-GEVR-cache.bat`** → **[1] Cache only** → type **YES** (wipes `%LOCALAPPDATA%\\GEVR\\cache` only; keeps saves). Download: [Clear-GEVR-cache.bat](../packaging/templates/Clear-GEVR-cache.bat).
+- **Quest / multi-version launch weirdness:** same bat → **[2] Clean reset** → type **YES**. Backs up saves, wipes caches/configs/temp/stale boots, restores saves. Does not delete your zip/exe unless you type **FULL**.
 
 ## vr445.2 wear notes
 

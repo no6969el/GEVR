@@ -38,5 +38,11 @@ SCRAPDROP / EMBEDEYE / Dam MTXGUARD=2 as default-on.
 Start-GEVR.bat (uses GevrRomStarter). USA .z64.
 Do not double-click goldeneye.exe.
 
+Having issues? Run Clear-GEVR-cache.bat in this folder.
+Picture wrong: type 1, then YES.
+Quest / OpenXR / junk after many versions: type 2, then YES.
+Press Enter to skip FULL (keeps this exe and zip).
+Then run Start-GEVR.bat again. Saves are kept.
+
 https://github.com/no6969el/GEVR/issues/new/choose
 Do not upload your ROM.

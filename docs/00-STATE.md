@@ -1,8 +1,8 @@
 ﻿# 00-STATE - READ THIS FIRST. NOTHING ELSE, UNTIL YOU NEED IT.
 
-**Currency: 2026-09-20 (public ship `vr442` / cook 452)**
+**Currency: 2026-09-24 (public ship `vr445.2`)**
 
-- **Latest public Beta:** [GEVR Beta vr442](https://github.com/no6969el/GEVR/releases/latest) (`GEVR-Beta-vr442-win64.zip`, `GEVR_SHIP_TAG=vr442`). Tag: [vr442](https://github.com/no6969el/GEVR/releases/tag/vr442). Player door: [`README.md`](../README.md).
+- **Latest public Beta:** [GEVR Beta vr445.2](https://github.com/no6969el/GEVR/releases/latest) (`GEVR-Beta-vr445.2-win64.zip`, `GEVR_SHIP_TAG=vr445.2`). Tag: [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2). Player door: [`README.md`](../README.md). Issues reset: [`Clear-GEVR-cache.bat`](../packaging/templates/Clear-GEVR-cache.bat) — **[1]** cache only, **[2]** clean reset keep-saves.
 - **vr441** / **vr440** tag pages stay. Their **zips were stripped** when vr442 shipped.
 - **Pack smoke:** `_smoke-ship-zip.ps1` rewritten 2026-09-16 (prior flattened copy gated nothing). Historical vr441 boot notes stay below.
 

@@ -2,28 +2,28 @@
 
 This folder is for **packers and maintainers**. Player play steps live in the repo README and in the zip as `RELEASE-NOTES.txt`.
 
-**Player Latest is [vr442](https://github.com/no6969el/GEVR/releases/latest)** (`GEVR-Beta-vr442-win64.zip`). Tag: [vr442](https://github.com/no6969el/GEVR/releases/tag/vr442). **vr441** / **vr440** zips were stripped (pages kept). Front-facing notes: [`templates/RELEASE-NOTES-vr442.txt`](templates/RELEASE-NOTES-vr442.txt). Pack scripts below may still name older tags until the next pack pass.
+**Player Latest is [vr445.2](https://github.com/no6969el/GEVR/releases/latest)** (`GEVR-Beta-vr445.2-win64.zip`). Tag: [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2). Front-facing notes: [`templates/RELEASE-NOTES-vr445.2.txt`](templates/RELEASE-NOTES-vr445.2.txt). Current pack script: `_pack-vr445.2.ps1`. Older sections below still show the vr440-era recipe.
 
 Binaries are built on the owner SimRig from the private product tree. Here we keep the **pack layout**, **smoke gates**, and **launcher templates** only.
 
-## Live cut: vr440
+## Live cut: vr445.2
 
-GitHub **Latest** is **vr440**. Pack that zip. Older **tags stay** on GitHub for history; their **zips were removed** (including vr439). Do not re-upload vr438 or vr434.
+GitHub **Latest** is **vr445.2**. Pack that zip with `_pack-vr445.2.ps1`. Older **tags stay** on GitHub for history. Do not re-upload pulled zips (vr438, vr434, and others already stripped).
 
-- `Start-GEVR.bat` = headset KEEP (calls `gevr-vr440-boot.cmd`, then GevrRomStarter)
+- `Start-GEVR.bat` = headset KEEP (calls `gevr-vr445.2-boot.cmd`, then GevrRomStarter)
 - `Play-on-monitor.bat` = flat monitor (no OpenXR, no stereo KEEP)
-- `Clear-GEVR-cache.bat` = deletes `%LOCALAPPDATA%\GEVR\cache` only (keeps saves; not a full wipe bat)
+- `Clear-GEVR-cache.bat` (+ optional `Clear-GEVR-cache.ps1`) = player clean/reset tool. **[1]** cache only; **[2]** clean reset keep-saves (backup → wipe junk → restore). Does not delete exe/zip unless the user types **FULL**.
 - BYO-ROM: player supplies a USA GoldenEye `.z64` they own
 - Zip also ships `filelist.gevr-images.csv`
 - Both launchers set `GEVR_SHIP_TAG=vr440` (headset via the boot cmd)
 
 The shipped `goldeneye.exe` must **not** embed ROM-derived `images/combined.bin`. Images load from `%LOCALAPPDATA%\GEVR\cache\<rom-sha256>\` after prepare. Save-game progress lives under `%LOCALAPPDATA%\GEVR` but outside `cache\`. The zip must **not** contain any ROM or EEPROM.
 
-Use `_pack-vr440.ps1`. `_pack-vr439.ps1` and `_pack-vr438.ps1` are retired and will throw.
+Use `_pack-vr445.2.ps1` for the current Latest zip. `_pack-vr439.ps1` and `_pack-vr438.ps1` are retired and will throw.
 
 ### Cache ship stamp (every public tag)
 
-Each Beta tag bumps **`GEVR_SHIP_TAG`** in `gevr-vrNNN-boot.cmd` (vr440 today). **`Start-GEVR.bat`** calls that boot cmd first, then **GevrRomStarter**, which runs **`gevr_prepare.exe`** on Start. **`Play-on-monitor.bat`** sets the same tag itself (no KEEP boot).
+Each Beta tag bumps **`GEVR_SHIP_TAG`** in `gevr-vrNNN-boot.cmd` (vr445.2 today). **`Start-GEVR.bat`** calls that boot cmd first, then **GevrRomStarter**, which runs **`gevr_prepare.exe`** on Start. **`Play-on-monitor.bat`** sets the same tag itself (no KEEP boot).
 
 After a successful prepare, the cache folder gets `ready` plus **`ship.txt`** (the current tag). If `ready` exists but `ship.txt` is missing or does not match `GEVR_SHIP_TAG`, prepare deletes `ready` and `combined.bin` and forces a full re-prepare from the same `.z64`. Same ROM hash is fine. Testers get **one** wait on first launch after a new zip; they do not wipe cache by hand unless pictures look wrong (`Clear-GEVR-cache.bat`).
 
@@ -120,11 +120,11 @@ KEEP knob names in `KEEP-SHIP-DEFAULTS.md`, or if that doc is missing from
 
 After merging stamp logic in GoldenEyeVR, run `packaging/_verify-cache-stamp-smoke.ps1` or follow the manual steps in `packaging/RESULT/GoldenEyeVR-cache-ship-stamp-APPLY.md` (stale `ship.txt` + `ready` must not skip prepare).
 
-## vr440 zip contents (canonical)
+## vr445.2 zip contents (canonical)
 
 - `goldeneye.exe` (file-backed images build)
 - Runtime DLLs from `build-windows` (including `glew32.dll`)
 - `filelist.gevr-images.csv`
 - `GevrRomStarter.exe`, `gevr_prepare.exe`, `EXPECTED-ROM.txt`
-- `Start-GEVR.bat`, `Play-on-monitor.bat`, `Clear-GEVR-cache.bat`, `gevr-vr440-boot.cmd`, `RELEASE-NOTES.txt`
+- `Start-GEVR.bat`, `Play-on-monitor.bat`, `Clear-GEVR-cache.bat`, `Clear-GEVR-cache.ps1`, `gevr-vr445.2-boot.cmd`, `RELEASE-NOTES.txt`
 - No Nintendo ROM in the archive

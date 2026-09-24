@@ -60,6 +60,9 @@ Copy-Item -LiteralPath (Join-Path $templates "RELEASE-NOTES-vr450.txt") -Destina
 if (Test-Path (Join-Path $templates "Clear-GEVR-cache.bat")) {
     Copy-Item (Join-Path $templates "Clear-GEVR-cache.bat") $OutDir -Force
 }
+if (Test-Path (Join-Path $templates "Clear-GEVR-cache.ps1")) {
+    Copy-Item (Join-Path $templates "Clear-GEVR-cache.ps1") $OutDir -Force
+}
 if (Test-Path (Join-Path $templates "Play-on-monitor.bat")) {
     Copy-Item (Join-Path $templates "Play-on-monitor.bat") $OutDir -Force
 }
