@@ -1,26 +1,26 @@
-> **vr450 (2026-09-24):** After **vr445.2** — Frigate water RECT ([#80](https://github.com/no6969el/GEVR/issues/80)) + Contextual Grip doors ([#90](https://github.com/no6969el/GEVR/issues/90)). Grab [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450) or use Update.
+> **vr450.1 (2026-09-24):** Same as **vr450** minus Contextual Grip (`GETV_VR_GRIPUSE` needs further testing — **not** in ship). Squeeze = AIM. RECT #80 + slot4 stay. Grab [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1) or use Update.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr450**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr450-win64.zip`**. Play steps: [README](../README.md#play-vr450---the-one-to-grab). Tag: [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450).
+**Play this cut:** [**vr450.1**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr450.1-win64.zip`**. Play steps: [README](../README.md#play-vr4501---the-one-to-grab). Tag: [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1).
 
-Older tag **pages** stay for history. **Latest is vr450.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr450.1.** **vr450** / **vr445.2** stay published. Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
 - **vr441** / **vr440** tag pages stay. Their **zips were stripped** when later cuts shipped.
 - **vr439** zip removed when vr440 shipped. Tag page stays for record.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr450---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md) and [COMING-SOON.md](COMING-SOON.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr4501---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md) and [COMING-SOON.md](COMING-SOON.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr450-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) - play steps in [README](../README.md#play-vr450---the-one-to-grab)
+- Download: [**GEVR-Beta-vr450.1-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) - play steps in [README](../README.md#play-vr4501---the-one-to-grab)
 
 ## Launchers
 
@@ -35,7 +35,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr450-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr450).
+1. Download and unzip **`GEVR-Beta-vr450.1-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1).
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\\GEVR\\cache`. Then play.
@@ -45,9 +45,9 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr450 zip (type **YES**) to wipe **`%LOCALAPPDATA%\\GEVR\\cache`** only (keeps saves). The tag notes say: if the picture still looks wrong, delete `%LOCALAPPDATA%\\GEVR` and run the bat again (that also drops saves).
+- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr450.1 zip (type **YES**) to wipe **`%LOCALAPPDATA%\\GEVR\\cache`** only (keeps saves). The tag notes say: if the picture still looks wrong, delete `%LOCALAPPDATA%\\GEVR` and run the bat again (that also drops saves).
 
-## vr450 wear notes
+## vr450.1 wear notes
 
 - **Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)):** rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot from a 64-bit weapon-prop misread).
 - **Known / in progress ([#82](https://github.com/no6969el/GEVR/issues/82) Statue Janus):** meet/scene still open; this cut does not fix Janus.

@@ -102,9 +102,8 @@ $requiredBootKnobs = [ordered]@{
     "GETV_VR_JANUSSPAWN"        = "1"
     "GETV_VR_GUNORIGIN"         = "1"
     "GETV_AI_ANIMFRAMES"        = "1"
-    # vr450 KEEP (#80 water RECT + #90 grip doors)
+    # vr450.1 KEEP (#80 water RECT; #90 GRIPUSE OFF — needs further testing)
     "GETV_VR_SKYWATERRECT"      = "1"
-    "GETV_VR_GRIPUSE"           = "1"
     # core VR (#49: GETV_FPS must stay unset so EXE 421/422 follow HMD)
     "GETV_VR"                   = "1"
     "GETV_SIMDIV"               = "1"
@@ -143,6 +142,7 @@ $forbiddenBootKnobs = @(
     "GETV_VR_FRIGMUTE",
     "GETV_VR_FRIGDOORROOM",
     "GETV_VR_FRIGOPEN",
+    "GETV_VR_GRIPUSE",
     "GETV_STEREO_MTXGUARD"
 )
 

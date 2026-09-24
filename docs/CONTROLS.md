@@ -1,15 +1,15 @@
 ﻿# Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr445](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr450.1](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README Play](../README.md#play-vr445---the-one-to-grab). Download: [`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445](https://github.com/no6969el/GEVR/releases/tag/vr445)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README Play](../README.md#play-vr4501---the-one-to-grab). Download: [`GEVR-Beta-vr450.1-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat` - KEEP VR picture (XR stereo source, SrcFbo, supersample 3, sky / playspace) plus recenter / stick-turn.
 - **Monitor / no headset:** `Play-on-monitor.bat` - VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr445-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr450.1-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
 
@@ -43,7 +43,7 @@ After recenter, standing still and turning your head should not slide the world.
 | **B** | Reload |
 | **A** | Next weapon |
 | **X** (left controller) | Previous weapon |
-| **Squeeze / grip** | ADS / aim mark on the gun ray (not stuck in face centre) |
+| **Squeeze / grip** | ADS / aim mark on the gun ray (not stuck in face centre). **vr450.1:** classic AIM — Contextual Grip (`GETV_VR_GRIPUSE`) is **not** default-on ([#90](https://github.com/no6969el/GEVR/issues/90) needs further testing). **A** = USE/reload for doors. |
 | **While ADS + left stick** | Walk forward/back (no duck) |
 | **While ADS + right stick** | Duck / stand |
 
