@@ -28,11 +28,11 @@ Quest / Index / Oculus Touch (same OpenXR actions):
 - **Carry-forward vr445.2 stack:** [#74](https://github.com/no6969el/GEVR/issues/74) playspace / free move / hands follow · [#75](https://github.com/no6969el/GEVR/issues/75) melee swing pose · [#82](https://github.com/no6969el/GEVR/issues/82) Janus spawn · gun origin · [#84](https://github.com/no6969el/GEVR/issues/84) walk/run + ANIMFRAMES · Dam SKYWORLD (+ sky pin) · rifle cadence from vr445.1 · temp MODEMDROP=3 (honest hide, not #70 fix)
 - **[#80](https://github.com/no6969el/GEVR/issues/80) Frigate water RECT** — `GETV_VR_SKYWATERRECT` default-on. LERP / LAYER stay **OFF**.
 - **[#90](https://github.com/no6969el/GEVR/issues/90) Contextual Grip doors** — `GETV_VR_GRIPUSE` default-on: squeeze near door = USE open/close; clear squeeze = AIM; **A** = USE/reload.
+- **Save slot 4 seed** — empty FOLDER4 gets 007 + 24 solo cheat unlocks (seed-if-empty; folders 1–3 never overwritten). Dig OFF: `GETV_SEEDFOLDER4=0`. See [`director-save-slot4-APPLY.md`](director-save-slot4-APPLY.md).
 
 ### HOLD (not in vr450 default-on)
 - Grip **pickup** / mines / modems (door GRIPUSE only)
 - **FRIGMUTE** / **FRIGDOORROOM** / Frigate aperture asym family ([#79](https://github.com/no6969el/GEVR/issues/79))
-- **Save slot 4** seed
 - SKYWATERLERP / SKYWATERLAYER · FALSEDOOR / CHRPASS / FRIGWHY / DOORLOS · EMBEDEYE / TEXGUARD / SCRAPDROP · Dam MTXGUARD=2
 
 ### Still from earlier cuts

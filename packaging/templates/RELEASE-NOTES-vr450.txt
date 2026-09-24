@@ -1,5 +1,5 @@
 GEVR Beta vr450
-================
+===============
 
 Point update after vr445.2. Bring your own USA ROM.
 
@@ -19,6 +19,9 @@ rebuilds the image cache once from your same ROM. Saves stay.
 - Contextual Grip doors (#90) -- GETV_VR_GRIPUSE default-on
   (squeeze near = USE toggle; clear = AIM). Pickup / mines / modem
   are not the KEEP for this cut.
+- Save slot 4 seed -- empty FOLDER4 gets 007 + all 24 solo cheat
+  unlocks on first boot (folders 1-3 never overwritten). Dig OFF:
+  GETV_SEEDFOLDER4=0. Do not arm GETV_UNLOCKALL.
 
 Carry-forward from vr445.2 (unchanged KEEP):
 - Playspace / free move / hands follow (#74)
@@ -33,12 +36,11 @@ Carry-forward from vr445.2 (unchanged KEEP):
 Known / still open:
 - #79 Frigate door / aperture (FRIGMUTE / FRIGDOORROOM out)
 - Grip pickup / mines / modem / mission-lock -- HOLD
-- Save slot 4 (007 + cheats) -- later cut
 - #70 prop-on-prop / Dam blue (MODEMDROP is temp, not the fix)
 
 Do NOT expect FRIGMUTE / FRIGDOORROOM / CHRPASS / FRIGOPEN / DOORLOS /
 SKYWATERLERP / SKYWATERLAYER / TEXGUARD / SCRAPDROP / EMBEDEYE /
-Dam MTXGUARD=2 / slot4 seed as default-on.
+Dam MTXGUARD=2 as default-on.
 
 3) Play
 -------

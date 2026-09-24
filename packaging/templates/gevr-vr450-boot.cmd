@@ -414,6 +414,9 @@ rem #90 Contextual Grip doors: squeeze near = USE toggle; clear = AIM. Dig =0.
 rem Pickup / mines / modem / mission-lock are NOT a separate KEEP for this cut
 rem (same knob today; release notes advertise doors only). Dig =0 turns doors off too.
 set GETV_VR_GRIPUSE=1
+rem Slot4 seed (007 + 24 solo cheats): C-default ON in goldeneye.exe (fileValidateSaves).
+rem Seeds FOLDER4 only when empty; never touches folders 1-3. Dig OFF: GETV_SEEDFOLDER4=0.
+rem Do NOT arm GETV_UNLOCKALL (that fills all four folders).
 rem Do NOT arm: FALSEDOOR / CHRPASS / FRIGWHY / DOORLOS / FRIGMUTE / FRIGDOORROOM /
 rem FRIGOPEN / SKYWATERLERP / SKYWATERLAYER / SKYWATERUV / TEXGUARD / SCRAPDROP / EMBEDEYE.
 rem Do NOT globalize GETV_STEREO_MTXGUARD=2 onto Dam (Facility/Bunker chairs only).
