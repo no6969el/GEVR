@@ -8,6 +8,8 @@ Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEA
 
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
+**Other way around:** product projects that reuse GEVR (name, docs, tools, playbook) are listed in [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) — separate from this “what GEVR borrowed” sheet.
+
 ---
 
 ## Not ours (please do not credit us for these)
@@ -98,6 +100,7 @@ If you spot a missing credit for something we really used, open an Issue titled 
 - [README Play](README.md#play-vr4451---the-one-to-grab) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
+- [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) - other product projects using GEVR (what they took)
 - [docs/ORIGIN.md](docs/ORIGIN.md) - ours vs upstream tags
 - [LICENSE](LICENSE) - this public docs/tools tree
 - [Roadmap](docs/ROADMAP.md) · [Coming soon](docs/COMING-SOON.md)
