@@ -5,7 +5,7 @@ cd /d "%~dp0"
 rem Flat / monitor play. No OpenXR, no stereo eyes.
 rem Headset play: use Start-GEVR.bat instead.
 
-set GEVR_SHIP_TAG=vr443
+set GEVR_SHIP_TAG=vr445.2
 set GE_VR_XR=0
 set GETV_STEREO=0
 set GETV_STEREO_MODE=0

@@ -1,0 +1,42 @@
+GEVR Beta vr445.2
+==================
+
+Small update on vr445.1. Bring your own USA ROM.
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) Footnote on vr445.2
+----------------------
+KEEP stack (wear-passed) now default-on:
+
+- Playspace / free move / hands follow (#74)
+- Melee swing pose (#75) -- hand in front + swing (loosened)
+- Statue Janus spawn (#82) -- GETV_VR_JANUSSPAWN
+- Gun origin -- shots leave from the drawn gun
+- Walk/run after spot (#84 leftover) + ANIMFRAMES (AI flinch frames)
+- Dam SKYWORLD tiled clouds (+ sky pin path)
+- Rifle cadence retained from vr445.1
+- Ship temp MODEMDROP=3 (honest temp hide for covert modem scrap)
+
+Known / still open:
+- #79 Frigate door / aperture SFX
+- #80 Frigate water stripes
+- #70 prop-on-prop / Dam blue (MODEMDROP is temp, not the fix)
+
+Do NOT expect FALSEDOOR / CHRPASS / Frigate water lerps / TEXGUARD /
+SCRAPDROP / EMBEDEYE / Dam MTXGUARD=2 as default-on.
+
+3) Play
+-------
+Start-GEVR.bat (uses GevrRomStarter). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.

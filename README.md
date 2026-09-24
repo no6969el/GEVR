@@ -6,14 +6,14 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **vr445.1 (2026-09-23):** Point footnote on **vr445** — **gunfire fixed** ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards had pistol lean/single-shot cadence from a 64-bit weapon-prop misread; correct rifle fire tables/cadence now. **Statue Janus ([#82](https://github.com/no6969el/GEVR/issues/82))** meet/scene still **known / in progress** (not fixed here). **Grab [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1)** or **Update** in GevrRomStarter.
+> **vr445.2 (2026-09-23):** Point footnote on **vr445.1** — KEEP stack default-on: **#74** playspace / free move / hands follow · **#75** melee swing pose · **#82** Janus spawn · **gun origin** · **#84** walk/run + **ANIMFRAMES** · Dam **SKYWORLD** (+ sky pin) · cadence from 445.1 · temp **MODEMDROP=3**. **Known open:** [#79](https://github.com/no6969el/GEVR/issues/79) / [#80](https://github.com/no6969el/GEVR/issues/80) / [#70](https://github.com/no6969el/GEVR/issues/70). **Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)** or **Update** in GevrRomStarter.
 
 ---
 The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-**Latest playable cut:** [**vr445.1**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445.1-win64.zip`**.
+**Latest playable cut:** [**vr445.2**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445.2-win64.zip`**.
 
-**vr445** / **vr444.1** / **vr444** / older tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445.1**](https://github.com/no6969el/GEVR/releases/tag/vr445.1).
+**vr445.1** / **vr445** / **vr444.1** / **vr444** / older tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445.2**](https://github.com/no6969el/GEVR/releases/tag/vr445.2).
 
 If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
@@ -23,7 +23,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ## Streamer playtests
 
-**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
+**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445.2)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
 
 [![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
@@ -31,9 +31,9 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ---
 
-## Play (vr445 - the one to grab)
+## Play (vr445.2 - the one to grab)
 
-1. Download **[GEVR-Beta-vr445-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445](https://github.com/no6969el/GEVR/releases/tag/vr445) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr445.2-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\\cache\\<ROM-hash>\\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.

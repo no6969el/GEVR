@@ -1,6 +1,6 @@
 ﻿# Coming soon / watch this space
 
-**Play now:** [GEVR Beta vr445.1](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr445.1-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Tag: [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1) (point footnote: #84 gunfire; #82 Janus known).
+**Play now:** [GEVR Beta vr445.2](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr445.2-win64.zip`**. Full zip, two bats, no ROM. You bring a USA GoldenEye `.z64`. Tag: [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) (KEEP: #74/#75/#82/gun origin/#84 walk-run+ANIMFRAMES/SKYWORLD; known open #79/#80/#70).
 
 **Star** the repo and [**follow @no6969el**](https://github.com/no6969el). **Watch -> Releases** so the next zip shows up without you refreshing every day.
 
