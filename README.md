@@ -6,14 +6,16 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **vr450 (2026-09-24):** After **vr445.2** — **Frigate water RECT** ([#80](https://github.com/no6969el/GEVR/issues/80)) default-on + **Contextual Grip doors** ([#90](https://github.com/no6969el/GEVR/issues/90)): squeeze near = USE open/close; clear = AIM; **A** = USE/reload. **Grab [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450)** or **Update** in GevrRomStarter.
+> **vr445.2 (2026-09-24):** GitHub **Latest**. KEEP stack default-on: **#74** playspace / free move / hands follow · **#75** melee swing pose · **#82** Janus spawn · **gun origin** · **#84** walk/run + **ANIMFRAMES** · Dam **SKYWORLD** · cadence from 445.1 · temp **MODEMDROP=3**. **Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)** or **Update** in GevrRomStarter.
+>
+> *Footnote:* Decided to test some other features longer before pushing. WATERRECT / GRIPUSE / slot4 stay on [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450) / [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1) (pre-release), **not** Latest.
 
 ---
 The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-**Latest playable cut:** [**vr450**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr450-win64.zip`**.
+**Latest playable cut:** [**vr445.2**](https://github.com/no6969el/GEVR/releases/latest) - zip **`GEVR-Beta-vr445.2-win64.zip`**.
 
-**vr445.2** / **vr445.1** / **vr445** / older tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr450**](https://github.com/no6969el/GEVR/releases/tag/vr450).
+**vr450** / **vr450.1** stay published as **pre-release** (tags + zips kept). **vr445.1** / **vr445** / older tag pages stay for history. Older **zips are gone** where we pulled them. Grab [**vr445.2**](https://github.com/no6969el/GEVR/releases/tag/vr445.2).
 
 If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
@@ -21,7 +23,7 @@ If this brings you back, **Star** the repo and [**follow @no6969el**](https://gi
 
 ---
 
-## Controller layout (vr450)
+## Controller layout (vr445.2)
 
 Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 
@@ -31,20 +33,18 @@ Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 | **Right stick** | Turn (Smooth or Snap — **VR Settings**, look right on the intro hub) |
 | **Both thumbstick clicks** | Recenter playspace |
 | **Trigger** | Fire (left fires left gun, right fires right when dual-wielding) |
-| **Squeeze / grip** (**GRIPUSE**) | **Near a door or useable:** USE — open **and** close. **Clear of a useable:** AIM / ADS. Walking into something does **not** activate it. |
+| **Squeeze / grip** | **AIM / ADS** |
 | **A** (right face button on Quest/Oculus Touch; Index **A**) | USE / reload (view-cone) |
 | **X** (left Quest/Oculus) | Previous weapon (when weapon-cycle is armed) |
 | **Head / room-scale** | Look around; physically walk to move in Bond-world |
 
-**Contextual Grip (doors) is ON in vr450** ([#90](https://github.com/no6969el/GEVR/issues/90)). Squeeze near the door to open or close; squeeze in clear air to aim. **A** still USE/reloads.
-
-**Not in this cut:** grabbing pickups / mines / modems with grip, Frigate mute/doorroom asym fixes, save slot 4 — those are HOLD. Fuller notes: [`docs/CONTROLS.md`](docs/CONTROLS.md).
+Classic squeeze = AIM. Contextual Grip / GRIPUSE is **not** in Latest (further testing on the 450 line). Fuller notes: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ---
 
 ## Streamer playtests
 
-**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr450)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
+**Note:** This clip is from an **older public cut (~vr441)**. The game has moved on - grab **[Latest (vr445.2)](https://github.com/no6969el/GEVR/releases/latest)** for what you can play now. Picture, comfort, and bugs may not match the video.
 
 [![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
@@ -52,9 +52,9 @@ Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 
 ---
 
-## Play (vr450 - the one to grab)
+## Play (vr445.2 - the one to grab)
 
-1. Download **[GEVR-Beta-vr450-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr450](https://github.com/no6969el/GEVR/releases/tag/vr450) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr445.2-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) (exe, `glew32.dll`, other runtime DLLs, ROM starter, launcher, notes). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** - it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\\cache\\<ROM-hash>\\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
@@ -75,46 +75,48 @@ No ROM in the download. You bring yours.
 
 ---
 
-## What is new in vr450
+## What is new in vr445.2
 
-Point release after **[vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)**.
+Point release after **[vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1)**. Wear-PASS KEEP stack default-on:
 
-### 1) Frigate water RECT ([#80](https://github.com/no6969el/GEVR/issues/80))
+- **[#74](https://github.com/no6969el/GEVR/issues/74)** playspace / free move / hands follow
+- **[#75](https://github.com/no6969el/GEVR/issues/75)** melee swing pose
+- **[#82](https://github.com/no6969el/GEVR/issues/82)** Janus spawn
+- **Gun origin** — shots leave from the drawn gun
+- **[#84](https://github.com/no6969el/GEVR/issues/84)** walk/run after spot + **ANIMFRAMES**
+- Dam **SKYWORLD** tiled clouds (+ sky pin path)
+- Rifle cadence retained from vr445.1
+- Ship temp **`MODEMDROP=3`** (honest temp hide for covert modem scrap — not the [#70](https://github.com/no6969el/GEVR/issues/70) fix)
 
-`GETV_VR_SKYWATERRECT` default-on — Frigate sea reads as a stable 2-D blue wave under yaw. **LERP / LAYER stay OFF.**
+### Not in Latest (longer testing)
 
-### 2) Contextual Grip doors ([#90](https://github.com/no6969el/GEVR/issues/90))
+WATERRECT (#80), Contextual Grip / GRIPUSE (#90), and save slot 4 stay on **vr450** / **vr450.1** pre-release only — decided to test those longer before pushing to Latest.
 
-`GETV_VR_GRIPUSE` default-on — squeeze near a door/useable = USE toggle (open **and** close); squeeze in clear air = AIM; bump alone never fires. **A** = USE/reload. See **Controller layout** at the top of this README.
+### HOLD / still cooking
 
-### Already in vr445.2 (unchanged)
-
-KEEP stack from vr445.2: playspace (#74), melee (#75), Janus (#82), gun origin, walk/run + ANIMFRAMES (#84), Dam SKYWORLD, rifle cadence, temp MODEMDROP=3 (honest hide — not the [#70](https://github.com/no6969el/GEVR/issues/70) fix).
-
-### HOLD / not in this cut
-
-- Grip **pickup** / mines / modems (doors only this cut)
 - Frigate **FRIGMUTE** / **DOORROOM** / aperture asym ([#79](https://github.com/no6969el/GEVR/issues/79))
-- Save **slot 4** seed
 - Prop-on-prop / Dam blue (#70) beyond the temp modem hide
+- Grip **pickup** / mines / modems
+
+---
 
 ## What is new in vr445.1
 
-From the [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1). Point footnote on **vr445**. Still carry-forward under **vr450**.
+From the [vr445.1 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445.1). Point footnote on **vr445**. Still carry-forward under **vr445.2**.
 
 ### Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84))
 
 On PC, rifle guards were using pistol lean / single-shot cadence because equipped weapon props were misread on 64-bit. They now use the correct rifle fire tables and cadence (auto/burst where intended).
 
-### Known / in progress ([#82](https://github.com/no6969el/GEVR/issues/82) Statue Janus)
+### Known / in progress on this tag ([#82](https://github.com/no6969el/GEVR/issues/82) Statue Janus)
 
-The meet/scene not starting at Janus is still open; we are working on it alongside this cut. **This tag does not fix Janus.**
+On **vr445.1**, Janus meet/scene was still open. **vr445.2** later KEEP’d Janus spawn — play Latest for that.
 
-Everything else is still **vr445**.
+Everything else on this tag is still **vr445**.
 
 ## What is new in vr445
 
-From the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Small update on **vr444.1**. Still the base of **vr445.1**.
+From the [vr445 RELEASE-NOTES](https://github.com/no6969el/GEVR/releases/tag/vr445). Small update on **vr444.1**. Still the base of **vr445.1** / **vr445.2**.
 
 ### 1) ADS walk + crouch
 
@@ -157,6 +159,9 @@ Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEV
 
 Soft list only. Matches the tag's **Still rough / coming soon**. Do not treat these as shipped.
 
+- Frigate water RECT / WATERRECT ([#80](https://github.com/no6969el/GEVR/issues/80)) — longer testing; on vr450 / vr450.1 pre-release only
+- Contextual Grip / GRIPUSE ([#90](https://github.com/no6969el/GEVR/issues/90)) — further testing
+- Save slot 4 seed — longer testing
 - Props that collide and rest on each other (black flicker is only quieted by the temporary no-modem hide, [issue #55](https://github.com/no6969el/GEVR/issues/55))
 - Two-hand snap is still cooking (coming later)
 - Weapon wheel HUD is still cooking
@@ -180,7 +185,7 @@ Stay tuned. **Star** this repo and [**follow @no6969el**](https://github.com/no6
 - **Boot that actually hands over** - the bat sets stereo / view-restore so eyes fuse; refresh follows the headset.
 - **Movement feel** locked to the loco reference we preferred in the chair.
 
-**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr445** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr445.1](https://github.com/no6969el/GEVR/releases/latest).
+**Older tags (history only):** **vr434** was pulled (ROM images baked into `goldeneye.exe`). **vr445** / **vr443** / **vr442** / **vr441** / **vr440** tag pages stay; their **zips were stripped** where we pulled them. Do not hunt an old zip. Play [vr445.2](https://github.com/no6969el/GEVR/releases/latest).
 
 ---
 
@@ -216,9 +221,9 @@ GitHub Issues are still great for tracked bugs; Discord is often faster for "am 
 
 ## Known quirks (honest Beta)
 
-We would rather tell you than surprise you. These are **vr450** today.
+We would rather tell you than surprise you. These are **vr445.2** today.
 
-- **Statue Janus meet/scene** still **known / in progress** ([issue #82](https://github.com/no6969el/GEVR/issues/82)) - not fixed in this cut.
+- **Frigate water / horizon** ([#80](https://github.com/no6969el/GEVR/issues/80)) — open on Latest; RECT only on vr450 / vr450.1 pre-release.
 - **Black flicker** on stuck mines / Facility (same family as covert-modem scrap) is **quiet for now**. The no-modem hide lets people play. Props still go through other props; that overlap is the cause. Next is props that collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
 - **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
@@ -256,7 +261,7 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 
 ## Roadmap (honest, not a calendar promise)
 
-**Now - enjoy the Beta (vr450)**
+**Now - enjoy the Beta (vr445.2)**
 - Solo VR campaign feel
 - Throwables in hand, A / X weapon cycle, smarter hand cubes
 - Tank climb + turret pitch, dual-wield fire, rockets that point where they fly
