@@ -12,7 +12,7 @@ GitHub **Latest** is **vr440**. Pack that zip. Older **tags stay** on GitHub for
 
 - `Start-GEVR.bat` = headset KEEP (calls `gevr-vr440-boot.cmd`, then GevrRomStarter)
 - `Play-on-monitor.bat` = flat monitor (no OpenXR, no stereo KEEP)
-- `Clear-GEVR-cache.bat` = deletes `%LOCALAPPDATA%\GEVR\cache` only (keeps saves; not a full wipe bat)
+- `Clear-GEVR-cache.bat` (+ optional `Clear-GEVR-cache.ps1`) = player clean/reset tool. **[1]** cache only; **[2]** clean reset keep-saves (backup → wipe junk → restore). Does not delete exe/zip unless the user types **FULL**.
 - BYO-ROM: player supplies a USA GoldenEye `.z64` they own
 - Zip also ships `filelist.gevr-images.csv`
 - Both launchers set `GEVR_SHIP_TAG=vr440` (headset via the boot cmd)

@@ -71,7 +71,8 @@ No ROM in the download. You bring yours.
 
 - **New install:** first launch waits once while images prepare into `%LOCALAPPDATA%\GEVR\\cache`, then you play. Saves start empty.
 - **Returning after a Beta update:** keep the same USA `.z64`. The ship stamp forces **one** automatic re-prepare. **Saves and VR Settings prefs are kept** under `%LOCALAPPDATA%\GEVR`. Or open the starter and use **Update** when it offers a newer tag. You do not delete the cache folder for a normal update.
-- **Picture still looks wrong:** the tag notes say delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves). Prefer **`Clear-GEVR-cache.bat`** first (type **YES**) if you want to keep saves. See `RELEASE-NOTES.txt` in the zip.
+- **Picture still looks wrong:** run **`Clear-GEVR-cache.bat`** → choose **[1] Cache only** → type **YES** (saves kept). See `RELEASE-NOTES.txt` in the zip.
+- **Quest / OpenXR launch weird after many Beta versions in one folder:** run the same **`Clear-GEVR-cache.bat`** → choose **[2] Clean reset** → type **YES**. It backs up folder saves first, wipes caches/configs/temp/update leftovers/stale boots, restores saves, and leaves your zip/exe alone unless you type **FULL**.
 
 ---
 
