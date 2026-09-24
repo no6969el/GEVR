@@ -115,7 +115,7 @@ rem 1. Cache ship stamp. Must match the wear exe's tag or gevr_prepare re-slices
 rem    Bump on every public tag. A changed stamp re-slices the image cache
 rem    once from the player's own ROM; the ROM slice itself is unchanged here.
 rem ---------------------------------------------------------------------------
-set GEVR_SHIP_TAG=vr450
+set GEVR_SHIP_TAG=vr450.1
 
 rem ---------------------------------------------------------------------------
 rem 2. Core VR + pacing (425w standing keepers; pacing follows the headset (421); do not re-pin GETV_FPS)
@@ -408,15 +408,15 @@ rem AI ANIMFRAMES: C-default ON in binary; explicit so shell cannot dig OFF. Dig
 set GETV_AI_ANIMFRAMES=1
 rem #84 walk/run gait: code KEEP (no knob). Cadence KEEP retained from vr445.1.
 
-rem --- vr450 KEEP (wear PASS; new on top of 445.2) ---
+rem --- vr450.1 KEEP (vr450 minus GRIPUSE; on top of 445.2) ---
 rem #80 Frigate water RECT: set above with SKYWORLD (SKYWATERRECT=1). LERP/LAYER/UV OFF.
-rem #90 Contextual Grip doors: squeeze near = USE toggle; clear = AIM. Dig =0.
-rem Pickup / mines / modem / mission-lock are NOT a separate KEEP for this cut
-rem (same knob today; release notes advertise doors only). Dig =0 turns doors off too.
-set GETV_VR_GRIPUSE=1
+rem #90 Contextual Grip (GETV_VR_GRIPUSE): NOT in 450.1 — needs further testing.
+rem Leave unset (cleared above) so squeeze = AIM like pre-450. Dig ON: GETV_VR_GRIPUSE=1.
+rem Pickup / mines / modem / mission-lock stay HOLD (not advertised).
 rem Slot4 seed (007 + 24 solo cheats): C-default ON in goldeneye.exe (fileValidateSaves).
 rem Seeds FOLDER4 only when empty; never touches folders 1-3. Dig OFF: GETV_SEEDFOLDER4=0.
 rem Do NOT arm GETV_UNLOCKALL (that fills all four folders).
 rem Do NOT arm: FALSEDOOR / CHRPASS / FRIGWHY / DOORLOS / FRIGMUTE / FRIGDOORROOM /
-rem FRIGOPEN / SKYWATERLERP / SKYWATERLAYER / SKYWATERUV / TEXGUARD / SCRAPDROP / EMBEDEYE.
+rem FRIGOPEN / SKYWATERLERP / SKYWATERLAYER / SKYWATERUV / TEXGUARD / SCRAPDROP / EMBEDEYE /
+rem GETV_VR_GRIPUSE (default OFF this cut).
 rem Do NOT globalize GETV_STEREO_MTXGUARD=2 onto Dam (Facility/Bunker chairs only).

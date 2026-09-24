@@ -2,15 +2,17 @@
 
 Point release after **vr445.2**. Testers on 445.2: **Update** in GevrRomStarter or grab this zip.
 
-**Release:** https://github.com/no6969el/GEVR/releases/tag/vr450 (Latest)  
+**Release:** https://github.com/no6969el/GEVR/releases/tag/vr450 (pre-release, not Latest)  
 **Zip:** `F:\Projects\GEVR\_publish-GEVR\packaging\out\GEVR-Beta-vr450-win64.zip`  
 **Smoke:** **PASS** (staging + zip, 55 KEEP knobs)  
-**vr445.2:** left intact — https://github.com/no6969el/GEVR/releases/tag/vr445.2
+**vr445.2:** left intact — https://github.com/no6969el/GEVR/releases/tag/vr445.2  
+**Slot4 APPLY:** [`director-save-slot4-APPLY.md`](director-save-slot4-APPLY.md)
 
 ## What’s new
 
 - **Frigate water RECT ([#80](https://github.com/no6969el/GEVR/issues/80)):** `GETV_VR_SKYWATERRECT` default-on — sea reads as 2-D blue wave, drifts, stays put under yaw. LERP/LAYER OFF.
 - **Contextual Grip doors ([#90](https://github.com/no6969el/GEVR/issues/90)):** `GETV_VR_GRIPUSE` default-on — squeeze near = USE open/close; clear = AIM; bump dead. **A** = USE/reload. *(Pickup / mines / modem not in this cut.)*
+- **Save slot 4 seed:** empty file-select **FOLDER4** gets **007 + all 24 solo cheat unlocks** on first boot (seed-if-empty). Folders **1–3 are never overwritten**. Dig OFF: `GETV_SEEDFOLDER4=0`. Do **not** arm `GETV_UNLOCKALL`.
 
 ## Controller layout (also at top of README)
 
@@ -34,7 +36,6 @@ KEEP stack from [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)
 
 - Grip pickup / mines / modem — HOLD until wear PASS
 - Frigate FRIGMUTE / DOORROOM / aperture asym (#79)
-- Save slot 4 — HOLD this cut
 - Prop-on-prop / Dam blue (#70)
 
 ## Play
