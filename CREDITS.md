@@ -2,7 +2,7 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr445.1**. [README Play](README.md#play-vr4451---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr445.2**. [README Play](README.md#play-vr4452---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
 

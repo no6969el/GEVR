@@ -1,8 +1,8 @@
-﻿# Feature snapshot (public) - 2026-09-23
+﻿# Feature snapshot (public) - 2026-09-24
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr445.1](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr445.2](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445.1-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr4451---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr445.1).
+High-level status of the playable wear. Current zip is **[`GEVR-Beta-vr445.2-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. Play steps: [README Play](../README.md#play-vr4452---the-one-to-grab). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2).
 
 ## Working enough for Beta focus
 - OpenXR VR present (true stereo path)
