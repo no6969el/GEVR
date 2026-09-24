@@ -2,6 +2,11 @@
 
 Point release after **vr445.2**. Testers on 445.2: **Update** in GevrRomStarter or grab this zip.
 
+**Release:** https://github.com/no6969el/GEVR/releases/tag/vr450 (Latest)  
+**Zip:** `F:\Projects\GEVR\_publish-GEVR\packaging\out\GEVR-Beta-vr450-win64.zip`  
+**Smoke:** **PASS** (staging + zip, 55 KEEP knobs)  
+**vr445.2:** left intact — https://github.com/no6969el/GEVR/releases/tag/vr445.2
+
 ## What’s new
 
 - **Frigate water RECT ([#80](https://github.com/no6969el/GEVR/issues/80)):** `GETV_VR_SKYWATERRECT` default-on — sea reads as 2-D blue wave, drifts, stays put under yaw. LERP/LAYER OFF.
