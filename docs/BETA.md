@@ -33,6 +33,15 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 
 **Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off. We do not call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
+### Half-speed / mushy VR?
+
+Turn off runtime motion smoothing before blaming Hertz.
+
+- **SteamVR:** Settings → Video → **Motion Smoothing = Off** (also check Applications → GEVR / `goldeneye.exe`).
+- **Virtual Desktop:** **Space Warp = Off**.
+
+GEVR follows headset Hz and ties game speed to that rate — MotSmooth / Space Warp (SSW / ASW family) halves the app rate and the game will feel half-rate. This is not a GEVR toggle. (Stuck at 60 Hz is a different path — see the 90/120 Hz side zips on the [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) release page.)
+
 ## Install and run
 
 1. Download and unzip **`GEVR-Beta-vr445.2-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2).
@@ -46,6 +55,7 @@ Use the bats. Do not double-click `goldeneye.exe`. Details: [CONTROLS.md](CONTRO
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
 - **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr445.2 zip (type **YES**) to wipe **`%LOCALAPPDATA%\\GEVR\\cache`** only (keeps saves). The tag notes say: if the picture still looks wrong, delete `%LOCALAPPDATA%\\GEVR` and run the bat again (that also drops saves).
+- **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off** — see [Half-speed / mushy VR?](#half-speed--mushy-vr) above.
 
 ## vr445.2 wear notes
 

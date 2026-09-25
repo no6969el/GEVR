@@ -56,6 +56,7 @@ No promise on the next tag. Play **vr445.2**. **Watch** the GitHub repo (Watch -
 Keep shooting. File Issues. Watch GitHub.
 ---
 ## What's new since last edit
+- **2026-09-24** - Docs warn: SteamVR Motion Smoothing / VD Space Warp Off (half-rate feel). Zip untouched.
 - **2026-09-24** - **Latest = vr445.2.** Front docs sync. Footnote: longer testing before pushing WATERRECT / GRIPUSE / slot4. vr450 + vr450.1 demoted to pre-release (tags/zips kept). [#80](https://github.com/no6969el/GEVR/issues/80) reopened.
 - **2026-09-24** - vr450.1 / vr450 published then rolled off Latest (GRIPUSE off in 450.1; RECT + slot4 on that line).
 - **2026-09-23** - **vr445.2** shipped KEEP stack (#74/#75/#82/gun origin/#84 walk-run+ANIMFRAMES/SKYWORLD).
@@ -72,6 +73,7 @@ Keep shooting. File Issues. Watch GitHub.
 - **Hz:** game follows headset refresh (72 / 80 / 90 / 120 as reported). High Hz still Beta-test territory (#49).
 ---
 ## Known quirks (honest)
+- **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; VD **Space Warp Off** (not a GEVR toggle; halves app rate)
 - Frigate water / horizon (#80) — **open again** on Latest (fix only on 450/450.1 pre-release)
 - Frigate door / aperture SFX / asym still open (#79)
 - Grip pickup / mines / modem **not** in this cut
