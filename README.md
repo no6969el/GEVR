@@ -6,6 +6,8 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
+> **Source note:** New GEVR **product code** is developed privately. This public repo stays the home for **player docs**, **Issues**, and **Beta zip Releases**. Grab playable builds from [Latest](https://github.com/no6969el/GEVR/releases/latest) (or **Update** in GevrRomStarter). Historical trees and older tags remain for reference; they are not the live workshop. Freeze tip: [`15449d0`](https://github.com/no6969el/GEVR/commit/15449d0eb55730f5cfc22a6cbcb7fceb40e5ebe3). See [`docs/SOURCE.md`](docs/SOURCE.md). Playable work ships as Beta zips; this tree is player-facing docs + historical reference.
+
 > **vr445.2 (2026-09-24):** GitHub **Latest**. KEEP stack default-on: **#74** playspace / free move / hands follow · **#75** melee swing pose · **#82** Janus spawn · **gun origin** · **#84** walk/run + **ANIMFRAMES** · Dam **SKYWORLD** · cadence from 445.1 · temp **MODEMDROP=3**. **Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)** or **Update** in GevrRomStarter.
 >
 > *Footnote:* Decided to test some other features longer before pushing. WATERRECT / GRIPUSE / slot4 stay on [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450) / [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1) (pre-release), **not** Latest.
