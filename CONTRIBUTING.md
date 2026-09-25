@@ -42,6 +42,11 @@ Multiplayer later is a **LAN / same-network add-on**, not a mod.
 
 This GitHub tree is mostly docs, issue forms, and pack templates. The playable workshop lives in the Release zip, not as a clone-and-build here.
 
+**PR policy (after 2026-09-25 code freeze):**
+- **No code PRs** to public `main` (`xr/`, `tools/`, `historical/recomp/patches/`, `packaging/rom-starter/*.c` / `*.h`, etc.). Open an [Issue](https://github.com/no6969el/GEVR/issues/new/choose) instead; new product work is private.
+- **Allowed** (owner discretion): typos, README / BETA / living-status / issue-template copy, and other front-facing docs.
+- Testers: Issues + zip feedback only. Do not expect to clone-and-build from this repo.
+
 If a credit line is missing for something we really used, open an Issue titled `Credits: ...` and point at the borrow.
 
 Stay tuned. Star the repo and [follow @no6969el](https://github.com/no6969el).
