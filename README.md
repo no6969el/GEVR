@@ -202,6 +202,8 @@ These paths are what this Beta was built and stared on:
 
 **Refresh rates:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). Still Beta - if something feels off at high Hz, [file an Issue](https://github.com/no6969el/GEVR/issues/new/choose). We do **not** call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
+**Half-speed / mushy VR?** Turn **SteamVR Motion Smoothing Off** (Settings → Video; also Applications → GEVR / `goldeneye.exe`) and **Virtual Desktop Space Warp Off**. MotSmooth / Space Warp halves the app rate; GEVR follows that rate, so the game feels half-speed. Not a GEVR toggle. Details: [`docs/BETA.md`](docs/BETA.md#half-speed--mushy-vr).
+
 When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, any log next to the zip or in the console, and any **`gevr-fault-*.txt`** beside the exe. Do **not** upload your ROM. [Open an Issue](https://github.com/no6969el/GEVR/issues/new/choose) or ask on [Discord](#discord-help--fan-chat).
 
 ---
@@ -223,6 +225,7 @@ GitHub Issues are still great for tracked bugs; Discord is often faster for "am 
 
 We would rather tell you than surprise you. These are **vr445.2** today.
 
+- **Half-speed / mushy VR:** turn **SteamVR Motion Smoothing Off** and **Virtual Desktop Space Warp Off** before blaming Hertz ([BETA.md](docs/BETA.md#half-speed--mushy-vr)).
 - **Frigate water / horizon** ([#80](https://github.com/no6969el/GEVR/issues/80)) — open on Latest; RECT only on vr450 / vr450.1 pre-release.
 - **Black flicker** on stuck mines / Facility (same family as covert-modem scrap) is **quiet for now**. The no-modem hide lets people play. Props still go through other props; that overlap is the cause. Next is props that collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
 - **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
