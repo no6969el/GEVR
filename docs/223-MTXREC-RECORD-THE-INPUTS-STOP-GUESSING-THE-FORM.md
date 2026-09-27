@@ -93,15 +93,6 @@ compare the current `v2w^T . ray` against `v2w^T . (H . ray)` and
 `v2w^T . (H^T . ray)`, where `H` is the head rotation from `POSEREC hq`. **Whichever
 minimises the angle to the observed bullet direction is the answer.**
 
-### A PARSING TRAP THE NEXT SESSION WILL HIT
-
-**`[MEASURED]` `MTXREC` and `POSEREC` SHARE A LINE — there is no newline between
-them in `gevr.log`.** A state machine that expects one record per line silently
-produces **zero** complete records. **Parse by regex over the whole file and zip by
-index; do not pair by line.**
-
----
-
 ## §4 — WHAT IS OWED
 
 1. **RUN §3's OFFLINE TEST. The data is in `gevr.log` already.** No wear test.

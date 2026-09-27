@@ -63,18 +63,14 @@ Native PimaxXR. Quest 3 + Virtual Desktop OpenXR.
 72 / 80 Hz should work. 90 Hz is recommended (default). Over 90 is
 still beta-test territory. Please report issues.
 
-Still rough / coming soon
--------------------------
+Still rough
+-----------
 - Big explosion / plane shell can still hard-crash (the fault file helps)
 - Higher Hertz requests are not signed off yet - stick to 72/80/90 for now
-- Two-hand snap is still cooking (coming later)
-- Ghost hand is parked for this cut
-- Empty left hand cube is temporary
-- Gun vanish below chest (GUNZ / HANDSOLID) left off until fixed
+- Empty hand draws a cube
 - Dam crates can still pop in; Dam water can look murky
 - Glass bullet holes can be one-eye
-- Local split-screen MP works. A LAN / same-network multiplayer
-  add-on is later
+- Local split-screen MP works
 
 https://github.com/no6969el/GEVR/issues/new/choose
 

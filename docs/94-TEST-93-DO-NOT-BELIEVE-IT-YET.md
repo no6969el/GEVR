@@ -175,5 +175,3 @@ exact identity, so the shipped behaviour is untouched.**
 > hypothesis you are currently holding, write the test before you write the
 > conclusion. A description that surprises you is evidence; a description that
 > flatters you is a lead."*
-
-**Nothing here is built. `48` rule 1.**

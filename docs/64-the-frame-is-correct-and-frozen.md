@@ -403,30 +403,6 @@ submits a frame" and "RT64 renders a workload". Everything downstream of that
 boundary is now measured and healthy, which is a much smaller search than this
 session started with.
 
-## NEXT SLICE — plan only, do not build yet
-
-The same treatment, one boundary upstream. In `rt64_workload_queue.cpp`, per
-second:
-
-1. workloads submitted by the game
-2. workloads actually rendered
-3. the rendered workload's draw-call count and its framebuffer address
-4. a cheap hash or serial of the workload identity, so "the same one 90 times"
-   is distinguishable from "90 different ones that happen to look alike"
-
-**What each would say if it were looking at the wrong thing:**
-
-- submitted ~60/s, rendered ~90/s, **identity constant** -> the queue is
-  re-rendering one pinned workload and discarding new ones. Names the bug.
-- submitted ~0/s -> the game is not submitting despite the VI tick running,
-  and the fault is upstream of RT64 entirely, in the recomp's graphics task.
-- submitted ~60/s and **identity changing** -> the workloads are fresh and
-  identical in content, which would mean the game is not DRAWING, only
-  flipping. Different bug again, and the search moves to the display list.
-
-**All three are distinguishable and none is what a working build produces**,
-since a working build has a changing identity AND changing pixels.
-
 ## Also still unexplained, and NOT to be folded in
 
 **The brightness.** mean 2.42/255, max 72, on a correct frame. Whether that is
@@ -515,27 +491,6 @@ today: Run A t0/t1, Run B 005s/010s, and shots 01-13 here). Not two viewpoints
 presented alternately.** `50`'s `frame * 2 + eye` indexing produces exactly that
 alternation. And a x1.4 difference between two targets that should be identical
 in brightness is not a stereo question at all.
-
-## NEXT — one launch, no code, and it is already built
-
-**`.\vr.ps1 -SkipEye 0` and `.\vr.ps1 -SkipEye 1`, WORN.**
-
-`56` proved each pass alone is correct under `-Flat` and called `-SkipEye` the
-most valuable diagnostic in the project. **It has never been run worn**, and the
-correlation above makes it the direct test:
-
-| Result | Means |
-|---|---|
-| Image comes **alive and bright** with one pass skipped | the second pass is what breaks it, and the search is inside the eye loop. Matches shots 19-22 exactly |
-| Still **frozen and dark** with one pass alone | the eye split breaks it even single-pass, and `56`'s `-Flat` result does not carry to XR — which would also be a finding, since `-Flat` cannot reach this stage (see the `vrPresentEyeWidth` gate above) |
-
-**A working build shows a live bright image under both, so neither outcome is
-one a working build also produces.**
-
-Run `-SkipEye 1` first: it leaves eye 0, the eye confirmed to be the left one by
-`27`'s tint test.
-
----
 
 # THE INTRO BURST — THE MOMENT IT STOPS, CAUGHT
 

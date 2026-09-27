@@ -89,22 +89,6 @@ REPLACES an absolute position in camera space; the seam ADDS to `gunofs`.
 
 ---
 
-## WHERE THE NEXT SESSION STARTS
-
-1. **Turn the rotation back on** — drop `-SeamNoRot` — and sweep
-   `-HandAxisX/Y/Z`, **one at a time**. The position is known-good underneath
-   it now, which is the whole reason this order was worth the launches.
-2. **Then slice 3, the bullet.** Asked for directly:
-   > *"We need to have the bullet go where the gun's facing, not where we're
-   > looking. It's making it hard to aim."*
-   **`38` has done the reading**: the shot comes from `crosshair_x_pos` /
-   `crosshair_y_pos` projected into screen space, the relation is invertible, and
-   the same hand pose that places the gun can drive it. **Write the inputs, never
-   `crosshair_angle`, and write them every frame.**
-3. **And the clamp is real**: `38` measured the aim as hard-limited to roughly
-   +/-30 degrees off body centre. **The world-space aim dot the user asked for is
-   the honest answer to it** — O64.
-
 ## THE FLAGS AS THEY STAND
 
 ```powershell

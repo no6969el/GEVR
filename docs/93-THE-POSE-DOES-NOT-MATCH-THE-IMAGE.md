@@ -22,7 +22,6 @@
 > document is dead regardless of what anybody felt.**
 
 
-
 **2026-08-23, immediately after `92`. Three questions, one wearer, no launch —
 then two source reads. `92` ranked three candidates and the answers eliminated
 ALL THREE, which is the most useful thing a diagnostic can do.**

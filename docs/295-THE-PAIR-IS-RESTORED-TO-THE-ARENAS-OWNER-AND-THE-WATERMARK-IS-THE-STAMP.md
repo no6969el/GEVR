@@ -212,10 +212,6 @@ removing it, or the removal is untestable.
 The same argument is why **`GETV_STEREO_VIEWRESTORE` defaults ON but has an off-switch**: ARM 2's
 positive arm is `VIEWRESTORE=0`, not a hand-built stale read.
 
-**ARM 3 IS THEREFORE THE NEXT SESSION'S WHOLE JOB, AND `296` CARRIES IT.** What this session
-established that it will need is in §3 (two accumulators, not one) and §6 (the CRLF trap that is
-waiting for it).
-
 ---
 
 ## §6 — TWO TRAPS FOUND WHILE WRITING, BOTH `[MEASURED]`, BOTH FOR `296`

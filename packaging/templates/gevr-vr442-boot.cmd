@@ -170,7 +170,6 @@ set GETV_VR_BODY=0
 set GETV_VR_BODY_NOARMS=1
 set GETV_VR_HANDCUBES=1
 set GETV_VR_HANDCUBE_MM=60
-rem chair: empty hand invisible with MASK=0+ghost miss; show cubes for now
 set GETV_VR_HANDCUBE_MASK=1
 rem chair: separate L/R triggers
 set GETV_VR_DUALFIRE=1
@@ -188,19 +187,15 @@ set GETV_VR_HANDMESH_POINT=1
 set GETV_VR_TANKTRACE=1
 set GETV_VR_TANKGHOST=1
 
-rem --- pack 452 (internal build) chair knobs ---
-rem Internal build: 452 (public still vr441 smoke until tagged)
 set GETV_VR_HANDSOLID=0
 set GETV_VR_GUNZ=0
 rem chair 2026-09-19: slip-in preferred over touch-enter
 set GETV_VR_TOUCHTANK=0
 set GETV_VR_TANKMOUNT=1
 set GETV_VR_TOUCHTANK_R=80
-rem chair: ghost miss ??? use HANDCUBES for empty hand
 set GETV_VR_GHOSTHAND=0
 set GETV_VR_GHOSTHAND_A=96
 set GETV_VR_ONESHOT=1
-rem chair 452: PROJSPAWN=1 spawned beside head not barrel
 set GETV_VR_PROJSPAWN=0
 set GETV_VR_ROCKETMODEL=1
 set GETV_VR_TANKPITCH=1
@@ -245,8 +240,10 @@ set GETV_VR_DRAWALL=1
 set GETV_VR_CULLWIDE=3.0
 set GETV_VR_SCREENWIDE=3.0
 set GETV_VR_ROOMBUDGET=64
-set GETV_VR_LODDIST=0.25
-rem last-cook: MaxVisRange vs FarFog ??? RESULT-FAR-CHR-VIS
+set GETV_VR_LODDIST=0.25
+
+rem last-cook: MaxVisRange vs FarFog ??? RESULT-FAR-CHR-VIS
+
 set GETV_VR_VISFAR=1
 set GETV_ROOMSCISSOR=0
 set GETV_PORTALOPEN=1
@@ -292,8 +289,6 @@ set GETV_RGBA16BE=0
 set GETV_TEX32BE=1
 
 set GE_VR_XR=1
-rem chair 452: gun vanish below chest ? GHOSTHAND=0 GUNZ=0 HANDSOLID=0; empty left cube
-rem chair 452: MASK=1 LEFT cube (0=neither); HANDMESH=0; two-hand snap dig parallel
 set GETV_VR_CASINGS=1
 set GETV_FPS=90
 rem public ship: no GETV_UNLOCKALL (chair-only; silent fix 2026-09-19)

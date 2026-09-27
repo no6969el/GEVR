@@ -63,45 +63,6 @@ eye width 800:  mean|diff| = 0.025    0.14% of pixels differ
 
 ---
 
-## THE FIX — designed, NOT BUILT. Next session starts here
-
-**Make eye 0 symmetric with eye 1.** Today eye 1 gets its own scratch target and
-eye 0 does not; that asymmetry is the bug's home.
-
-1. Size `eyeColorTargets` as `displayFrames * 2`, indexed `[frame*2 + eye]`.
-2. Give **both** eyes a scratch target — delete the `if (eye > 0)` special case
-   in the eye loop (`rt64_workload_queue.cpp` ~1160).
-3. Publish both: add `vrEyeZeroTarget` alongside `vrEyeOneTarget`, cleared before
-   the targets they name are destroyed (the rule already written for
-   `vrPresentEyeTexture`).
-4. Present samples the published target for **each** half, in both the SBS path
-   and the XR eye loop — the left half must stop using `renderParams.texture`.
-
-With both eyes composited into their own targets, eye 1 redrawing shared pair 0
-no longer destroys anything eye 0 still needs: the passes are already fully
-serialised by `execute(); wait();`.
-
-### The gate — write it before the code
-
-`.\vr.ps1 -Flat`, stand still, screenshot, split at the seam, cross-correlate.
-
-**Distant content must sit 113 px ± 5 apart, right eye further LEFT.**
-
-The log prints its own prediction, so this is a gate with a number in front of
-it, not an impression:
-
-```
-[gevr] PREDICTION: eye1 - eye0 = -0.2821 ndc = -94.2 px per 668-px half-frame
-```
-(scale to the screenshot's half-width: 800 px → **-113 px**)
-
-**What would make it fail:** today's build, which measures 0. No headset needed.
-
-**Regression gate:** `.\vr.ps1 -NoXr` must be unchanged. It is the path that must
-never break.
-
----
-
 ## What this VOIDS
 
 Same shape as `43` voiding the MSAA-era results.
@@ -215,12 +176,3 @@ the exe** — `07` GOTCHA 4, which has cost this project two rounds.
 
 ---
 
-## Start here next session
-
-1. **Build the fix above.** It is designed, gated, and needs no headset to verify.
-2. **Then the teardown fix**, before long sessions.
-3. `-ResScale` making things slower is unexplained and owns the 60 fps question.
-4. Read `DISPLAY PERIOD` before ever calling 60 fps a performance problem again.
-
-**Do not judge anything by wearing it until `-Flat` measures two different
-images.** That is the mistake this entire document exists to record.

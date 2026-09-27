@@ -17,8 +17,7 @@ rebuilds the image cache once from your same ROM. Saves stay.
 - Frigate water RECT (#80) -- GETV_VR_SKYWATERRECT default-on
   (sea reads as 2-D blue wave; LERP/LAYER stay OFF)
 - Contextual Grip doors (#90) -- GETV_VR_GRIPUSE default-on
-  (squeeze near = USE toggle; clear = AIM). Pickup / mines / modem
-  are not the KEEP for this cut.
+  (squeeze near = USE toggle; clear = AIM).
 
 Carry-forward from vr445.2 (unchanged KEEP):
 - Playspace / free move / hands follow (#74)
@@ -28,17 +27,7 @@ Carry-forward from vr445.2 (unchanged KEEP):
 - Walk/run after spot (#84) + ANIMFRAMES
 - Dam SKYWORLD tiled clouds (+ sky pin path)
 - Rifle cadence
-- Ship temp MODEMDROP=3 (honest temp hide for covert modem scrap)
-
-Known / still open:
-- #79 Frigate door / aperture (FRIGMUTE / FRIGDOORROOM out)
-- Grip pickup / mines / modem / mission-lock -- HOLD
-- Save slot 4 (007 + cheats) -- later cut
-- #70 prop-on-prop / Dam blue (MODEMDROP is temp, not the fix)
-
-Do NOT expect FRIGMUTE / FRIGDOORROOM / CHRPASS / FRIGOPEN / DOORLOS /
-SKYWATERLERP / SKYWATERLAYER / TEXGUARD / SCRAPDROP / EMBEDEYE /
-Dam MTXGUARD=2 / slot4 seed as default-on.
+- Ship temp MODEMDROP=3 (temp hide for covert modem scrap)
 
 3) Play
 -------

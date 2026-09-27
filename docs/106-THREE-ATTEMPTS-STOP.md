@@ -92,27 +92,6 @@ mine.** The allocation and the pass indexing are now both gated on
 `GE_VR_EYE_INTERP`, so **an unset build is byte-identical to the one before
 `103`.**
 
-## §6 — WHAT THE NEXT SESSION SHOULD DO, AND IT IS NOT A FOURTH ATTEMPT
-
-> **STOP BUILDING. The next move is one read and one experiment, and neither
-> needs the headset.**
-
-| # | Move | Why |
-|---|---|---|
-| **1** | **Change ONLY the variable never changed alone: make the present thread sample a DIFFERENT target every present WITHOUT publishing more passes** — e.g. alternate between two copies of the SAME finished frame-0 pair. **If that stalls, the cost is in changing the sampled texture, and nothing about passes or lifetimes was ever relevant.** If it does not stall, the pass path is implicated and lifetimes are back on the table | `56`'s method. Three attempts changed two things at once |
-| **2** | **Read what the VIRenderer does when `params.texture` changes** — descriptor set rebuild, layout transition, or a barrier that forces a queue sync. `prepareEyeFromTarget`'s resolve and downsample are both no-ops here (MSAA off, `ds_option 1`), so **the cost is downstream of it and has not been read** | The only unread code in the path |
-| **3** | **Then, separately, `23`** — partial interpolation. **§3 makes it a prerequisite for Route D, not an optional cleanup** | Characters in the wrong place is a ship blocker whatever the frame rate |
-
-**And the honest option that is now on the table: Route D may not be worth it.**
-`99` §2 said the target is "make the VIEW update at 90". **If interpolated frames
-are visually wrong, the route that reaches 90 by presenting them inherits that
-wrongness** — and `99` §4's timebase work, which `92` and `99` both called a
-last resort, starts looking less like a last resort and more like the only route
-that produces frames that are actually correct. **That is a judgement for the
-owner, not a conclusion for this document.**
-
----
-
 # §7 — §3 IS RETRACTED. THE INTERPOLATED FRAMES ARE FINE.
 
 **`.\vr.ps1 -NoXr`, run by the owner: *"Nope it all looks good here, runs great

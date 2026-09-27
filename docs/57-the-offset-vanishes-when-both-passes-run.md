@@ -242,20 +242,6 @@ and an unrendered target resolves to nothing, which is the black half.
 It is a hypothesis, not a finding — the eighth in this project, and the previous
 seven were wrong.**
 
-### The test, first thing next session
-
-Log, per eye, at present time: the target pointer, its resolved-texture pointer,
-**and the address key it resolves against.** If the two eyes resolve against the
-same address, that is the bug, and the fix is to give each eye's target its own
-identity — a distinct address key, or a copy taken at end-of-pass rather than a
-resolve at present-time.
-
-`present source: eye0=..E090 eye1=..E4F0` already shows two distinct *textures* —
-so the resolve produces two textures with the same contents. **Two distinct
-textures holding one image is precisely what a shared resolve source looks
-like.** That line has been in the log since `49` and was read as evidence the
-present path was fine.
-
 ## Settings to restore
 
 `graphics.json` `rr_option` is currently **`"Original"`** for this test. **It

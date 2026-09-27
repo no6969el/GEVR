@@ -5,8 +5,6 @@
 **Repo / README:** https://github.com/no6969el/GEVR — controller layout sits **near the top** of the README (after Latest blurb, before Streamer playtests).
 **How to play:** unzip → drop in your USA `.z64` → run `Start-GEVR.bat` → recenter with both thumbstick clicks
 
-> **Footnote:** Decided to test some other features longer before pushing — WATERRECT (#80), GRIPUSE (#90), and save slot 4 stay on the **vr450** / **vr450.1** pre-release tags, **not** Latest.
-
 ---
 ## Controller layout (vr445.2)
 
@@ -35,30 +33,16 @@ Quest / Index / Oculus Touch (same OpenXR actions):
 - [#82](https://github.com/no6969el/GEVR/issues/82) Janus spawn
 - Gun origin · [#84](https://github.com/no6969el/GEVR/issues/84) walk/run + ANIMFRAMES · Dam SKYWORLD · rifle cadence · temp MODEMDROP=3
 
-### Not in Latest (on vr450 / vr450.1 pre-release only)
-- [#80](https://github.com/no6969el/GEVR/issues/80) Frigate water RECT (`GETV_VR_SKYWATERRECT`) — wear PASS on 450 line; **issue reopened** until it ships in a Latest cut again
-- Save slot 4 007+cheats seed
-- [#90](https://github.com/no6969el/GEVR/issues/90) Contextual Grip / GRIPUSE — further testing; was pulled from 450.1
-
-### Still open / cooking
-- Frigate door / aperture asym ([#79](https://github.com/no6969el/GEVR/issues/79))
-- Dam blue / dish-on-glass ([#70](https://github.com/no6969el/GEVR/issues/70))
-- Grip pickup / mines / modem · two-hand snap · weapon wheel HUD
-- High Hz polish ([#49](https://github.com/no6969el/GEVR/issues/49)) · black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)) · ammo HUD picture ([#34](https://github.com/no6969el/GEVR/issues/34))
-
 ### Still from earlier cuts
 - ADS walk/crouch, dual-wield, Hertz follow, monitor in VR, mine flicker quiet (temp)
 - BYO-ROM, file-backed images. No ROM in the zip
 ---
-## What's coming (after this zip)
-No promise on the next tag. Play **vr445.2**. **Watch** the GitHub repo (Watch -> Releases). Star it if you want the next Bond drop without hunting.
-
 Keep shooting. File Issues. Watch GitHub.
 ---
 ## What's new since last edit
 - **2026-09-24** - Docs warn: SteamVR Motion Smoothing / VD Space Warp Off (half-rate feel). Zip untouched.
-- **2026-09-24** - **Latest = vr445.2.** Front docs sync. Footnote: longer testing before pushing WATERRECT / GRIPUSE / slot4. vr450 + vr450.1 demoted to pre-release (tags/zips kept). [#80](https://github.com/no6969el/GEVR/issues/80) reopened.
-- **2026-09-24** - vr450.1 / vr450 published then rolled off Latest (GRIPUSE off in 450.1; RECT + slot4 on that line).
+- **2026-09-24** - **Latest = vr445.2.** Front docs sync. vr450 + vr450.1 stay pre-release (tags/zips kept).
+- **2026-09-24** - vr450.1 / vr450 published then rolled off Latest.
 - **2026-09-23** - **vr445.2** shipped KEEP stack (#74/#75/#82/gun origin/#84 walk-run+ANIMFRAMES/SKYWORLD).
 - **2026-09-23** - **vr445.1** gunfire #84 cadence.
 - **2026-09-22** - **vr445** (ADS crouch/walk, dualfire ON, Hertz follow, monitor live, SKYINF, mine flicker incl. Facility).
@@ -74,13 +58,12 @@ Keep shooting. File Issues. Watch GitHub.
 ---
 ## Known quirks (honest)
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; VD **Space Warp Off** (not a GEVR toggle; halves app rate)
-- Frigate water / horizon (#80) — **open again** on Latest (fix only on 450/450.1 pre-release)
+- Frigate water / horizon (#80) can still look wrong on Latest
 - Frigate door / aperture SFX / asym still open (#79)
-- Grip pickup / mines / modem **not** in this cut
 - Dam mid-range crates/props can still pop in/out
 - Dam water can look flat/murky
 - Glass bullet holes can still be one-eye in places
-- Dam blue flicker / dish-on-glass (#70) — MODEMDROP=3 is a temp hide, not the fix
+- Dam blue flicker (#70) — MODEMDROP=3 hides the covert-modem scrap
 - Menu face-button confirm is still rough in places; watch highlight can miss an eye
 - Ammo HUD picture can look stretched or fat in VR (render, not clip)
 - Black flicker in VR (Facility gas tanks; Bunker after Surface) - not a shipped fix
@@ -89,8 +72,7 @@ Keep shooting. File Issues. Watch GitHub.
 - Still worth playing - that Bond-in-the-headset feeling
 ---
 ## Multiplayer
-- **Now (flat / monitor):** classic local split-screen still there
-- **Later:** LAN / local-network add-on, then true online (not the next zip)
+- **Flat / monitor:** classic local split-screen is in this cut
 ---
 ## How to report
 GitHub Issues: https://github.com/no6969el/GEVR/issues/new/choose
@@ -98,15 +80,7 @@ Include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**
 
 **Discord (help + fan chat):** https://discord.gg/flat2vr — port help and GoldenEye fan chat with other players. BYO ROM / do not upload your ROM (setup details and logs only).
 ---
-## Roadmap (loose)
-- Ship WATERRECT (#80) into a future Latest when ready; #90 GRIPUSE when further testing clears; #79 Frigate asym
-- #70 prop-on-prop (not MODEMDROP)
-- Fewer freezes / softer landings
-- Clearer first-run (ROM drop-in, saves that survive updates)
-- Dam crates / water / glass
-- More HUD / comfort polish
-- Then the multiplayer path above, later
-I'll keep **this post** updated instead of a new thread every drop. Star the repo / Watch Releases if you want the next ping. Also at
+I'll keep **this post** updated instead of a new thread every drop. Star the repo / Watch Releases if you want a ping. Also at
 https://www.patreon.com/cw/GEVR
 
 Jump in and enjoy finally being Bond in GoldenEye VR.

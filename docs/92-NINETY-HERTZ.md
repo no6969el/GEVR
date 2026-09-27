@@ -217,17 +217,3 @@ like, not whether it works.** Three questions, one launch, no code:
 
 ---
 
-## 7. WHAT THIS CHANGES IN THE PLAN
-
-**Comfort outranks features. `86`'s slice order is unchanged but its
-PRIORITY is now second.**
-
-| | |
-|---|---|
-| **S0 still ships first** | It is written (`91`) and it costs one build. **And it is the frame where a pacing instrument belongs** — `73`'s max-and-late-count is two lines beside quantities S0 already prints |
-| **NEW: O74, the pacing instrument** | `max` and a late-count beside `72`'s means. **Two lines. `73` asked for it and it has been outstanding since.** Do it WITH S0, not after — `48`'s amended rule 5: diagnostics may be batched, they cannot regress anything |
-| **NEW: O75, the three wearer questions** | Section 6. **One launch, no code, settles the ranking** |
-| **`23` is PROMOTED** | *"Explosion effects stick to the view when turning"* has sat as a cosmetic annoyance since Phase 1. **If candidate 2 is right it is the same bug as the judder, and it is the only worked instance of it in the tree** |
-| **H1 and the rest of `86`** | **After the judder question has an answer.** A slice built into a build that makes the wearer sick cannot be evaluated by the wearer, and the wearer is this project's best instrument |
-
-**Nothing here is built. `48` rule 1.**

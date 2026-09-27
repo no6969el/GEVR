@@ -253,16 +253,3 @@ All of `277` §9 (the two hoist sites, never driven) · `278` §6's INFERRED hoi
 `279` §5's amount arm · `280` §7.3's black-wall dump · `274` §7's CONTAMINATED gate ·
 **`287` ARM 6, the wear pass — STILL NEVER RUN.** **Carried forward honestly, not quietly.**
 
-## §10 — AND THE `288` DEFECTS IN `RUN-SHEET-288` ITSELF, FOR WHOEVER USES IT NEXT
-**(a) `§6`'s V2 block says *"same block as `§5` with these three lines changed"* and KEEPS
-`GETV_SIMHZ=query`, which `GETV_FPS=0` MAKES IMPOSSIBLE.** So the positive and negative controls
-differ in TWO things, not one. It does not void V2 — the statistic reads presented-frame
-intervals and the sim rate is not in that path — **but it is a scope limit.**
-**(b) GATE 3 IS INAPPLICABLE TO ANY UNCAPPED ARM.** `60 / cap` is undefined at `cap = 0`; the
-correct reading is the `CONTAMINATED` refusal itself. Same family as `287` defect (a): a gate
-carrying a hidden assumption.
-**(c) GATE 2 MANDATES OPEN ITEM 2's FAULT CELL.** Gate 2 is `ours: x=367.333`; the front-end text
-fault is `ge_offset_x() != 0`. **They are the same number — a run that passes gate 2 has broken
-menu text BY CONSTRUCTION**, and `[REPORTED]` as a fresh regression this session because nothing
-said so. **Do not "fix" it by moving to `1825x1369`: that prints `ours: x=0`, which is also what
-`WIDESCREEN=1` prints, so gate 2 would silently stop discriminating** (rule `17`).

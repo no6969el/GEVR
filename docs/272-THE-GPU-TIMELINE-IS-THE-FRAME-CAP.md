@@ -127,36 +127,6 @@ Cradle now has too. Small, but it is one less unknown for the next scene-heavy r
 - No claim about Cradle's *worst* case: the owner swept the valley, but a firefight was not
   sampled and 2.504 ms is the tail these runs saw, not the game's.
 
-## §7 — ►►►► THE REPAIR. PLANNED, GATED, AND DELIBERATELY NOT BUILT ◄◄◄◄
-**Rule 1: this is a plan and it stops. NOTHING IN §7 HAS BEEN WRITTEN.**
-
-**ONE behaviour change, diagnostics only, no game behaviour touched.** The pacer already
-publishes its measured sleep as a non-static global (`ge_pace_wait_ms`, `gfx_sdl2.c:133`)
-**precisely so it can be subtracted — that is how `271` fixed `WORK`.** The same move applies
-twice:
-1. **`glEndQuery` moves to before the pacer sleeps**, so the GL_TIME_ELAPSED window covers the
-   frame's draw work instead of the cap.
-2. **`CPU in swap` becomes `gfx_end_frame` MINUS the measured sleep** — the `271` subtraction,
-   already validated in-tree.
-
-### THE GATE, WRITTEN BEFORE THE CODE. IT IS THE PRECISE INVERSE OF §2.
-> **The repaired figure must be SCENE-SENSITIVE — Cradle ≫ Facility at the same cap — AND
-> CAP-INVARIANT — 60 and 90 agreeing within noise, the way `WORK` did in `271` §3.
-> If it stays identical across levels, or still moves with the cap, THE FIX FAILED AND I SAY
-> SO.** `GETV_NODRAW=1` must still take it to ~0.00.
-
-**Both halves are required.** Cap-invariance alone would pass on a number stuck at zero;
-scene-sensitivity alone would pass on a number that is really the CPU's. **§2 is the negative
-control and it already exists on disk** — the repaired instrument re-run on these same two
-Cradle arms either separates them or it does not.
-
-### WHAT IT WOULD PRINT IF POINTED AT THE WRONG THING
-- **Knob absent from the build** -> no `[getv][gputime] on:` banner. A clean null, not a fast
-  GPU (`133`, `268` §4). Every block must grep for the banner.
-- **Driver refuses** -> `no ARB_timer_query`. The answer is *I cannot answer this*, not a zero.
-- **Pointed at a menu** (`52`) -> few draws, small figure, meaningless. Gate on `lvlStageLoad`.
-- **Driver running far ahead** -> `n` well below 120. Do not read the mean if it is.
-
 ## §8 — METHOD NOTE, AND IT IS THE REUSABLE PART
 **The decisive test was not mine and it was not an instrument. It was the owner looking at the
 screen and asking what level he was standing in.**

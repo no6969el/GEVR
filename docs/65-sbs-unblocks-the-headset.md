@@ -131,20 +131,6 @@ nothing" can proceed with `-Sbs` on the command line while the barrier is
 found. That includes every stereo experiment, which has been impossible worn
 since `36`.
 
-## NEXT, in order
-
-1. **Read the SBS block against the eye block in `rt64_present_queue.cpp`** and
-   establish what `-Sbs` actually changes. Zero launches — `58`'s method, which
-   has now killed hypotheses 8 and 12 for free.
-2. **Confirm intermittency is not fooling us.** `-Sbs` is 2/2 and plain is 2/2,
-   which is better than a single launch but is not many. Three more of each.
-3. **Then B1, worn, with `-Sbs` on.** The `-Offset 500` and `-PresentEye`
-   experiments from `57` and `58` have never been run in the headset, only in
-   `-Flat`, and `64` established `-Flat` cannot reach the present stage.
-
-**Do NOT** fix the unguarded `eyeZeroTarget` (measured not to fire), chase
-brightness (explained in `64`), or give the doubling its own slice (it is B1).
-
 ## Corrections this document forces
 
 1. **`-SkipEye` does not disable the eye split under XR** — `64`. It disables

@@ -127,7 +127,7 @@ These must not be assigned a non-empty, non-`0` value in `gevr-*-boot.cmd` (clea
 Silent no-ops in `goldeneye.exe` - do not use in ship boots:
 
 - `GETV_SRCFBO` (use `GETV_XR_PLAY_SRCFBO`)
-- `GETV_MSGSCALE` (use `GETV_VR_MSGSCALE` if you ever need it; default 50 matches chair KEEP)
+- `GETV_MSGSCALE` (dead name; the live knob is `GETV_VR_MSGSCALE`, default 50)
 
 ## Pack smoke (owner)
 

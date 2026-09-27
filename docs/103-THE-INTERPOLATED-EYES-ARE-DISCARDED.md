@@ -109,20 +109,3 @@ publishing costs one guard.
 | **G-103-4** | **`-Flat` still measures -113 px +/-5, and `-NoXr` is untouched.** B1 |
 | **G-103-5** | **No new `0x139` on exit**, run five times. §4 item 1 is a lifetime change and B3 is already an open bugcheck |
 
-## §6 — THE NEXT SESSION'S FIRST MOVE, REPLACING `99` §5
-
-> **1. Read the `interpolatedMutex` handshake (`rt64_workload_queue.cpp:264-279`,
-> `:1270-1280`) and decide how the eye targets join it.** That is the whole
-> risk. No headset.
->
-> **2. Then publish per pass behind a knob — `GE_VR_EYE_INTERP=0` an exact
-> identity — and read `posecheck` before anyone puts the headset on.**
->
-> **3. Only then wear it.**
-
-**This is a much smaller change than `99` §4's timebase work and it does not
-touch the quantum, the aim integrators, or anything in `86`.** Route B stays
-where `99` left it: last resort.
-
-**And it is not a guess. The frames exist. There is a counter in this tree that
-has been printing their absence for two days.**

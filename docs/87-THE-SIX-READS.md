@@ -418,17 +418,3 @@ plan's target was correctly chosen. Its recipe needs one more line.**
 
 ## THE ORDER THIS SUGGESTS, WHICH IS `86` §6 WITH ONE EDIT
 
-```
-S0  instrument ──────────────────────────────► everything          UNCHANGED
-H1  recentre at level start ─────────────────► removes a confound   UNCHANGED
-reads 7 & 8  (field_FFC ownership, and sub_GAME_7F0680D4's callers)
-             ────────────────────────────────► A1 AND G3 both      NEW, and free
-H3  body yaw ────────────────────────────────► A1                   UNCHANGED
-G1  head-relative hand pose ──► G2 ──► G3                           UNCHANGED
-H2  head height  (cheaper than 86 said — re-discuss A vs B before building)
-R1  roomscale lean  (cdtypes mask, not a flag)
-A1  bullet follows the gun — TWO integrators ─► A2
-S1, C1  independent
-```
-
-**Nothing here is built. `48` rule 1 still holds: plan, discuss, then execute.**

@@ -1,4 +1,4 @@
-> **vr445.2 (2026-09-24):** GitHub **Latest**. KEEP stack default-on (#74/#75/#82/gun origin/#84/SKYWORLD). *Footnote:* decided to test WATERRECT / GRIPUSE / slot4 longer before pushing — those stay on vr450 / vr450.1 pre-release. Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) or use Update.
+> **vr445.2 (2026-09-24):** GitHub **Latest**. KEEP stack default-on (#74/#75/#82/gun origin/#84/SKYWORLD). Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2) or use Update.
 
 # Beta testing guide
 
@@ -13,7 +13,7 @@ Older tag **pages** stay for history. **Latest is vr445.2.** Do not download fro
 - **vr441** / **vr440** tag pages stay. Their **zips were stripped** when later cuts shipped.
 - **vr439** zip removed when vr440 shipped. Tag page stays for record.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr4452---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). What is coming: [ROADMAP.md](ROADMAP.md) and [COMING-SOON.md](COMING-SOON.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../README.md#play-vr4452---the-one-to-grab). Hands: [CONTROLS.md](CONTROLS.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
@@ -61,11 +61,10 @@ GEVR follows headset Hz and ties game speed to that rate — MotSmooth / Space W
 
 - **Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)):** rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot from a 64-bit weapon-prop misread).
 - **Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)):** KEEP in this cut.
-- **Not in Latest:** WATERRECT (#80), GRIPUSE (#90), slot4 — longer testing; on vr450 / vr450.1 pre-release only.
 - **Throwables:** grenades / mines / plastique / covert modem show in your hand and leave from the grip. Grenades and mines were resized to better reflect their actual dimensions in your hand.
-- **Black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)):** quiet for now. Stuck mines (including Facility) use the same temporary no-modem scrap hide as the covert modem, so people can play. Props still pass through other props; that overlap is the cause. Next is props that collide and rest on each other.
+- **Black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)):** quiet for now. Stuck mines (including Facility) use the same no-modem scrap hide as the covert modem, so people can play. Props still pass through other props; that overlap is the cause.
 - **Ammo picture:** the VR ammo counter picture is in.
-- **Weapon cycle:** tap **A** = next; left-controller **X** = previous. (Weapon wheel HUD still cooking.)
+- **Weapon cycle:** tap **A** = next; left-controller **X** = previous.
 - **Hand cubes:** hide while that hand holds a weapon; smaller when empty / fists.
 - **Refresh:** follows your headset rate (not pinned to 90).
 - **VR Settings:** on the intro hub, **look right**. Right stick U/D = row, L/R = change (TURN SPEED / STYLE / SNAP SIZE). Prefs save under `%LOCALAPPDATA%\GEVR`.
@@ -74,9 +73,8 @@ GEVR follows headset Hz and ties game speed to that rate — MotSmooth / Space W
 - **Pause watch:** **left stick** moves the highlight in VR.
 - **B** reloads. Pause is the **Menu / system button** in headset. **Tab** on keyboard / monitor still works.
 - **Tank:** stand on the chassis and you auto-mount. Stick pitch aims the shells.
-- **Empty hand** draws a cube for now (temporary stand-in). Ghost hand is parked.
-- **GL** is single-shot / muzzle feel OK. Projectile-spawn experiment is left off.
-- **Gun vanish below chest** (GUNZ / HANDSOLID) is left off until fixed.
+- **Empty hand** draws a cube.
+- **GL** is single-shot / muzzle feel OK.
 - **Hard crash:** look beside `goldeneye.exe` for `gevr-fault-*.txt` and attach the first lines (no ROM).
 
 ## How to report
@@ -116,16 +114,6 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 - Local split-screen on a monitor if you have a friend on the couch
 - Note any crash: what map, what action, fault file yes/no
 - If you run high Hz: note headset rate and whether anything feels off
-
-## What not to expect yet
-
-- Store-polish stability
-- Two-hand snap (still cooking)
-- Weapon wheel HUD (still cooking)
-- Signed-off high Hz polish (follow-headset is in; report quirks)
-- Gun vanish below chest (GUNZ / HANDSOLID)
-- Perfect body / hands (ghost fingers are parked; cube is the interim)
-- LAN or online multiplayer (local split-screen works now; a LAN **add-on** is later; online is later than that)
 
 Jump in and enjoy finally being Bond in GoldenEye VR.
 

@@ -6,40 +6,6 @@ Everything below is `[MEASURED]` from artefacts already on disk (18 `dlgrab_*.tx
 
 ---
 
-## §0 — THE HEADLINE, AND IT RETRACTS THE FRAMING IN `NEXT-SESSION-PROMPT-293`
-
-`NEXT-SESSION-PROMPT-293` names the first job as:
-
-> **THE TWO EYES ADMIT DIFFERENT GEOMETRY** … The only thing that differs is the **viewport
-> rectangle**, and something in room admission or the portal traversal reads it.
-
-**That is wrong on all three counts, and the dumps that were already sitting in
-`getv\build-windows` say so.**
-
-1. **ROOM ADMISSION DOES NOT DIVERGE.** `gSPSegment(SPSEGMENT_BG_VTX)` is written once per room
-   by `bgRenderRoomPrimary`/`Secondary`. It is **equal in both eyes in every one of the eighteen
-   dumps** — 2/2, 3/3, 4/4, 5/5, 6/6, 9/9, 10/10, 11/11, 12/12, 13/13, 15/15, 23/23.
-   `SPSEGMENT_BG_DL` is 1/1 everywhere. **The portal traversal, `bgDetermineVisibleRooms` and
-   `bgIsRoomOnScreen` are exonerated by measurement, not by argument.**
-2. **WHAT DIVERGES IS THE chr/prop MODEL PASS, AND ONLY THAT.** `SPSEGMENT_MODEL_MTX` and
-   `SPSEGMENT_MODEL_VTX` — written once per model draw — collapse in the second eye in every
-   dump. `dlgrab_5249`: **MODEL_MTX 39 -> 1, MODEL_VTX 17 -> 0, BG_VTX 3 -> 3.**
-3. **IT IS NOT A DIVERGENCE. IT IS A ONE-DIRECTIONAL LOSS.** Eye 1's set of `DL CALL` targets is a
-   **strict subset** of eye 0's in **all eighteen dumps** — `only-in-eye1 = 0`, every time.
-   **Nothing is ever admitted in the second eye that the first eye did not have.** A two-way
-   divergence and a one-way loss are different bugs and want different repairs.
-
-4. **AND THE SECOND EYE ALLOCATES NOTHING.** The `gSPSegment` **pointer values** — `dynAllocate`
-   is a bump allocator, so they are a direct read on who allocated — show `MODEL_VTX` **`fresh=0`**
-   in every dump that draws any model at all: **every model eye 1 draws comes out of a block eye 0's
-   tick allocated.** Its one fresh allocation per frame is the viewmodel. §2.1.
-
-**AND FAULT 3 IS NOT DOWNSTREAM OF THIS. IT IS THE SAME BUG SEEN FROM THE OTHER END** — see §3.
-`292` §5a's *"Fault 3 is a consequence of that divergence, not its cause"* is **retracted**:
-there is no upstream divergence to be a consequence of.
-
----
-
 ## §1 — THE MEASUREMENT
 
 `getv/tools/dlgrab_eyecensus.py` (new, committed with this doc). It splits a `GETV_DLGRAB` dump at

@@ -204,7 +204,3 @@ went.
 `HIGH`, it is the thing `X3-3` says this run cannot speak for, and `00-STATE` section 7c says a
 `HIGH` is not opened at the end of a session.
 
-**NEXT: `322`'s TWO COMMITS, THEN A FRESH SESSION.** The board's next question is one of two and
-the owner picks: **`X4`, the eye loop** (which also pays the format debt and calls in the loader
-vendoring the moment it needs the game build), or **the cheap `287`/`GETV_PACEHIST` arm at
-`90 Hz`** that would make section 2.4's comparison like-for-like before `D-X3` is written.
