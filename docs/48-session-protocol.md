@@ -85,21 +85,6 @@ not only in a new document.
 stopped being true. **A document's authority outlives its accuracy.**
 **~5 minutes, and it is the highest-value five minutes in this list.**
 
-### 3. Name the single next action
-
-One paragraph, concrete enough to start cold in ten minutes.
-
-> *"Log `viewOffset` for both eyes and read the two matrices side by side. If eye
-> 1 differs from eye 0 by anything but the sign of the x translation, that is the
-> bug. Twenty minutes."*
-
-Not *"continue investigating the stereo problem."* **~5 minutes.**
-
-**That is the floor. Twelve minutes.** Everything below is worth doing when there
-is room, and is not worth a bad mood when there is not.
-
----
-
 # STARTING A SESSION
 
 ### Read (5 min)

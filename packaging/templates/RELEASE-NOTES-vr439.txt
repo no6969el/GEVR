@@ -51,8 +51,7 @@ Still rough
 - Dam crates can still pop in
 - Dam water can look murky
 - Glass bullet holes can be one-eye
-- Local split-screen MP works. A LAN / same-network multiplayer
-  add-on is later.
+- Local split-screen MP works.
 
 https://github.com/no6969el/GEVR/issues/new/choose
 

@@ -283,22 +283,3 @@ BOTH.** That agrees with §0 item 5's structural kill and was reached independen
 **`V3` / `258` STAGE 6 CANNOT CLOSE UNTIL `A` IS FOUND. It is not a tuning problem and no venue
 fixes it.**
 
-## §10 — THE NEXT TWO STEPS, AND BOTH ARE `LOW`
-
-Filed as blocks in **`RUN-SHEET-311`**, not cited (`308` §0):
-
-1. **THE SEPARATION SWEEP — `LOW`, NO BUILD, ~5 MINUTES.** `A` says `measured = 0.705 x predicted`
-   **for every `sep`**. Re-grab the same wall at `GETV_STEREO_OFFSET` `32 / 64 / 128`. **A constant
-   ratio confirms a pure scale factor on the separation and rules out any additive or saturating
-   term; a ratio that moves with `sep` is a different animal and outranks everything.** It also
-   shrinks the quantization error by 2x and 4x, which sharpens the constant itself.
-2. **THE `MODE=2` DISCRIMINATOR — `LOW`, NO BUILD, ~5 MINUTES.** `GETV_STEREO_MODE=2` puts the
-   shift in the **PROJECTION** and never touches the view matrix (`stereo.c:284-295`), and it is
-   tuned to agree with a real separation at `D = 1000`. **Grab at `D ~= 1000` under `MODE=2`: if it
-   reads `1.00` the loss is in the VIEW path specifically, which is where `A` lives; if it also
-   reads `0.705` the loss is common to both paths and something this session believes it has
-   cleared is not clear.** A falsifier for `A`, not a fix for it.
-
-**THE INSTRUMENTED PRINT of the actual applied `|eye_pos - centre_pos|` is the obvious third step
-and it needs a BUILD, which makes it `MEDIUM`. Do the two `LOW` runs first — they may name the
-factor without one.**

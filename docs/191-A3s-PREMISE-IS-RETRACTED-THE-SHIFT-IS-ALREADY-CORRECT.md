@@ -117,24 +117,3 @@ place with either eye closed.**
 
 ---
 
-## §4 — WHAT THIS DOES TO THE ORDER, AND IT IS GOOD NEWS FOR THE OWNER'S PRIORITY
-
-**THE OWNER'S STANDING PRIORITY IS SHOT ACCURACY** — *"getting this hand tracking
-right and the bullet leaving the gun."* `A3` was the last gate in front of
-`B2`/`T7`, the near-wall/far-wall test that decides parallax versus a constant
-angular error.
-
-**`A3` NO LONGER NEEDS A BUILD, SO THE NEXT SESSION IS A PURE WEAR SESSION:**
-
-1. **`-HudDepth` sweep, `2.0 -> 1.0 -> 0.5`.** Gate `G-A3`. No build, no rebuild
-   between arms — **only the launch argument changes, which is `48` rule 5
-   satisfied for free.**
-2. **THEN `T7`/`B2` IN THE SAME SESSION, on whatever depth fused** (or on the
-   default if none did, recording that it did not). **Shoot a wall at arm's
-   length, then the same spot from across the room. Miss SHRINKS -> muzzle
-   parallax, `B1` is the known cure. Miss HOLDS -> a constant angular error.**
-   **`189` §2 removed `B2`'s other blocker**, so this is now reachable.
-3. **`noPose`** (`190` §3) and **`U-21`/`U-22`** wait for the next build. **Do not
-   build them into this session** — it is worth more as a no-build session.
-
-**NOTHING STAGED. THE COMMIT IS THE OWNER'S**, both repos.

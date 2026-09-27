@@ -76,16 +76,6 @@ exonerated and §1 was wrong.** They did not survive. Owner: *"Yeah. That fixed 
 - **`RB-04` is untouched.** 90 Hz with the synthetic clock still runs 1.5x fast.
 - No claim about the black shirt / Trevelyan face. Nothing here touches those.
 
-## §7 — WHAT THIS OWES NEXT (the decision is the owner's)
-1. **The default.** `auto` engaging silently at 90 is what cost this. Options, none taken:
-   pin `SIMDIV=1` unless asked; keep `auto` but refuse it above 60; or keep it and fix §2.
-2. **If `auto` is to be kept, the fix is in the mismatch, not the divider**: collision must
-   read the interpolated transform, or culling must run against the same state it draws.
-3. **The audio item is re-ranked.** `[REPORTED]` the late gun sound is present at 60 as well,
-   so the pacer is exonerated for it — `port_audio.c:520`'s `want.samples = 512` (23.2 ms by
-   the port's own comment at `:63`) is untried and is one line. It was ranked 8. That was a
-   ranking error under rule `16`.
-
 ## §8 — THE INSTRUMENTS BUILT THIS SESSION (all keep working, all off by default)
 - **`GETV_DLCENSUS=<n>` / `GETV_DLCENSUS_AFTER=<f>`** (`port_render.c`, tracked) — per-frame
   display-list census: command count, call/branch/depth structure, full opcode histogram.

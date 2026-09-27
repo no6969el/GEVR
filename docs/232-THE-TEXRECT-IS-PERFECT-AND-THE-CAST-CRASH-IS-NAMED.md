@@ -149,38 +149,6 @@ falsifies it and moves the fault into `modelSetScale`'s caller chain instead.
 
 ---
 
-## §4 — THE NEXT RUN. READ-ONLY, TWO PROBES, NO BEHAVIOUR CHANGE.
-
-**Both of these only print. Neither re-routes anything, so `48` permits them in
-one run — unlike `GETV_NOFILLRECT`, which does not travel with them.**
-**NO REBUILD IS NEEDED: both are already in `goldeneye.exe`.**
-
-```powershell
-Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-cd C:\Users\<USER>\Desktop\GoldenEyeVR\goldeneye-native\getv\build-windows
-$env:GETV_MPCHR    = "1"
-$env:GETV_RECTTRACE = "1"
-.\goldeneye.exe *> run_mp.log 2>&1
-```
-
-**Let the intro run to the crash.** The crash handler writes the log itself, so
-nothing is lost.
-
-**Then, and ONLY as a separate run, the overdraw A/B:**
-
-```powershell
-Remove-Item Env:GETV_* -ErrorAction SilentlyContinue
-$env:GETV_NOFILLRECT = "1"
-.\goldeneye.exe *> run_nofill.log 2>&1
-```
-
-**If the menu text appears with fill rectangles dropped, the text was being
-covered and the fault is a fill rectangle, not the glyph.** If it does not appear,
-overdraw by FILL rect is excluded and the next suspect is a textured rectangle
-drawn over it.
-
----
-
 ## §5 — WHAT IS NOT CLAIMED
 
 - **No fix is on disk.** `front.c:8560` wants a NULL check, and it is not written:

@@ -128,21 +128,6 @@ New line, every sample:
 **A missing node prints `absent`, never `0`** — `48`, because a zero here is
 indistinguishable from a muzzle at the model origin.
 
-## 4.1 WHAT THE NEXT RUN DECIDES
-
-- **Is `Switches[3]` present on every weapon?** `numSwitches` is documented in
-  `structs.h:1163` as *"Does not reflect number actually used"*, so presence must
-  be measured, not assumed.
-- **Does it CHANGE between weapons?** If a pistol and a rifle report the same
-  vector, it is not a per-weapon muzzle and this is over.
-- **What is its magnitude?** That establishes the model frame's scale against the
-  game units we already know, which is the whole blocker in §4.
-
-**IF ALL THREE PASS, `-MuzzleExt` AND ITS THREE SIGN KNOBS CAN BE DELETED and
-per-weapon muzzles come for free** — the outcome `163` §7 wrote off.
-
----
-
 # 5. WHAT CHANGES ON THE SHEET
 
 - **U-14** — **DECIDED AGAINST**, §2. Kept with its reason.

@@ -30,13 +30,6 @@ Quest / Index / Oculus Touch share these OpenXR actions.
 
 KEEP stack from [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2): playspace (#74), melee (#75), Janus (#82), gun origin, walk/run + ANIMFRAMES (#84), Dam SKYWORLD, rifle cadence, temp MODEMDROP=3.
 
-## HOLD / still open
-
-- Grip pickup / mines / modem — HOLD until wear PASS
-- Frigate FRIGMUTE / DOORROOM / aperture asym (#79)
-- Save slot 4 — HOLD this cut
-- Prop-on-prop / Dam blue (#70)
-
 ## Play
 
 `Start-GEVR.bat` or `Play-on-monitor.bat`, USA `.z64`. Do not double-click `goldeneye.exe`.

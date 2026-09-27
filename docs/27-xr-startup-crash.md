@@ -284,17 +284,6 @@ Resolving an address from a future crash:
 python  # against build\Release\GoldenRecomp.map, preferred base 0x140000000
 ```
 
-## Next
-
-**3f-3** — copy RT64's two eye targets into the swapchain images instead of
-clearing them, and settle `GE_VR_EYE_SIGN` by observation. The tint test comes
-first, before any judgement of the picture, per `10`.
-
-The floor calibration in `10` is now on the critical path: `26` said it was not
-needed for 3f-1 or 3f-2, and 3f-3 is where that stops being true.
-
----
-
 # 3f-2 gate: PASSED, 2026-08-22
 
 **Reported from the headset: red and blue, one colour per eye, filling the view.

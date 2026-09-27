@@ -27,7 +27,6 @@ rebuilds the image cache once from your same ROM. Saves stay.
 - Hand cue cubes hide while that hand holds a weapon. Empty / fists
   show the cube again. The cube is smaller than before.
 - Tap A for the next gun. Tap left-controller X for the previous gun.
-  (A full weapon-wheel HUD is still cooking.)
 - Follows your headset refresh rate (72 / 80 / 90 / 120 as your runtime
   reports) instead of pinning 90. High Hz is still Beta - report odd
   feel if you see it.

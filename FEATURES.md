@@ -10,7 +10,7 @@ Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds Golden
 
 **Latest playable cut:** [**GEVR Beta vr445.2**](https://github.com/no6969el/GEVR/releases/latest) - public Beta (BYO-ROM, file-backed images from your cart). Zip: **`GEVR-Beta-vr445.2-win64.zip`**.
 
-[Play the Beta](https://github.com/no6969el/GEVR/releases/latest) | [vr445.2 tag](https://github.com/no6969el/GEVR/releases/tag/vr445.2) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md) | [Roadmap](docs/ROADMAP.md) | [Coming soon](docs/COMING-SOON.md)
+[Play the Beta](https://github.com/no6969el/GEVR/releases/latest) | [vr445.2 tag](https://github.com/no6969el/GEVR/releases/tag/vr445.2) | [Controls](docs/CONTROLS.md) | [Credits](CREDITS.md)
 
 ---
 
@@ -24,10 +24,10 @@ What you can do in **vr445.2** today (player language):
 - While ADS: walk F/B on left stick; duck/stand on right stick
 - Playspace / free move / hands follow ([#74](https://github.com/no6969el/GEVR/issues/74)); melee swing pose ([#75](https://github.com/no6969el/GEVR/issues/75)); Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)); gun origin
 - **Gunfire / walk-run + ANIMFRAMES** ([#84](https://github.com/no6969el/GEVR/issues/84)): rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot)
-- **Black flicker quieted (temporary)** when remote/prox/timed mines stick (including Facility), same no-modem scrap hide as the covert modem. Props still pass through each other; they should collide and rest ([#55](https://github.com/no6969el/GEVR/issues/55))
+- **Black flicker quieted** when remote/prox/timed mines stick (including Facility), same no-modem scrap hide as the covert modem. Props still pass through each other ([#55](https://github.com/no6969el/GEVR/issues/55))
 - Ammo counter picture in VR is in
 - Throwables in your hand leave from the grip; grenades and mines resized to better match real hand dimensions
-- Tap **A** = next weapon; left-controller **X** = previous (weapon wheel still cooking)
+- Tap **A** = next weapon; left-controller **X** = previous
 - Hand cue cube hides while that hand holds a weapon; smaller cube when empty / fists
 - Dam SKYWORLD cloudy sky; game follows headset Hz; monitor stays live in VR
 - Tank auto-mount and stick pitch for shells; rockets nose along the flight path
@@ -51,7 +51,7 @@ Walk around your playspace and Bond walks with you. Turn your head - the world s
 Point the controller to aim. Trigger fires. Squeeze to ADS - the mark sits on the gun ray, not glued to your face. While ADS, walk on the left stick and duck on the right. Dual-wield fires from each hand. Casings leave the weapon. Haptics pulse when a round actually goes off. Tap **A** / left **X** to cycle weapons.
 
 **Hands do Bond things**
-Punch / melee with your hands. Touch to use (doors, interact) by reaching instead of hunting a 2D prompt. Throwables show in your hand and leave from the grip. Empty hand draws a smaller cube for now (hides while that hand holds a weapon). Ghost hand is parked.
+Punch / melee with your hands. Touch to use (doors, interact) by reaching instead of hunting a 2D prompt. Throwables show in your hand and leave from the grip. Empty hand draws a smaller cube (hides while that hand holds a weapon).
 
 **Tanks that let you in**
 Stand on the chassis and you auto-mount. Stick pitch aims the shells.
@@ -93,7 +93,6 @@ When you report a bug or crash, please include: **headset**, **OpenXR runtime**,
 - The zip includes **`glew32.dll`** and the other runtime DLLs Windows needs.
 - **Dam crates** can still pop in and out; **Dam / Frigate water** can still look wrong (world-stable sea still open); **glass bullet holes** can show in one eye in places.
 - Big explosions can still hard-crash. The fault file is new; the crash is not fully gone.
-- Two-hand snap and weapon wheel HUD are **not** in this zip. See [COMING-SOON.md](docs/COMING-SOON.md).
 - On a **flat / monitor** setup, classic **local split-screen multiplayer** is still there.
 
 ---

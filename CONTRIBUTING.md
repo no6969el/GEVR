@@ -36,8 +36,6 @@ If the game hard-crashed, look beside `goldeneye.exe` for **`gevr-fault-*.txt`**
 
 GoldenEye the game is Nintendo / Rareware. GEVR is a VR add-on on a from-source PC port. Not a ROM dump, not a "mod pack."
 
-Multiplayer later is a **LAN / same-network add-on**, not a mod.
-
 ## Code from this public repo
 
 This GitHub tree is mostly docs, issue forms, and pack templates. The playable workshop lives in the Release zip, not as a clone-and-build here.

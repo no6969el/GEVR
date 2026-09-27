@@ -4,7 +4,7 @@ Thank-you sheet for work GEVR actually leaned on. Click a name for the project; 
 
 Current play zip is **vr445.2**. [README Play](README.md#play-vr4452---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
-Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md) · [Roadmap](docs/ROADMAP.md).
+Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md).
 
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
@@ -86,7 +86,7 @@ These showed up in prior-art surveys. They are **not** credited as sources of GE
 
 1. **Licence first** - unclear or proprietary prior art does not influence design (see `docs/55-prior-art-licence-check.md`).
 2. **Name the borrow** - constants, transforms, and clamp splits get a recorded "what for," not a vague thank-you.
-3. **Map vs vendor** - Perfect Dark VR is **prior-art map** unless a future commit says code was brought in (then MIT notice + this sheet update).
+3. **Map vs vendor** - Perfect Dark VR is a **prior-art map**. That tree's code is not vendored here.
 4. **Game data stays with the player** - ROM and assets are never in the download.
 
 If you spot a missing credit for something we really used, open an Issue titled `Credits: ...` and point at the borrow. We will add a specific line, not a blanket shout-out. Do not upload ROM files.
@@ -103,4 +103,3 @@ If you spot a missing credit for something we really used, open an Issue titled 
 - [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) - other product projects using GEVR (what they took)
 - [docs/ORIGIN.md](docs/ORIGIN.md) - ours vs upstream tags
 - [LICENSE](LICENSE) - this public docs/tools tree
-- [Roadmap](docs/ROADMAP.md) · [Coming soon](docs/COMING-SOON.md)

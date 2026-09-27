@@ -2,7 +2,7 @@
 
 How to move, aim, and reset your position in [GEVR Beta vr445.2](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README Play](../README.md#play-vr4452---the-one-to-grab). Download: [`GEVR-Beta-vr445.2-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). What is next: [ROADMAP.md](ROADMAP.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README Play](../README.md#play-vr4452---the-one-to-grab). Download: [`GEVR-Beta-vr445.2-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
@@ -47,16 +47,14 @@ After recenter, standing still and turning your head should not slide the world.
 | **While ADS + left stick** | Walk forward/back (no duck) |
 | **While ADS + right stick** | Duck / stand |
 
-**vr445.2:** Auto-Aim defaults **OFF** in this build. Weapon wheel HUD is **not** shipped yet (still cooking). Two-hand snap is **not** shipped yet (still cooking).
+**vr445.2:** Auto-Aim defaults **OFF** in this build.
 
-Rockets point their nose along the flight path. Grenade launcher is single-shot / muzzle feel OK (projectile-spawn experiment left off). Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
+Rockets point their nose along the flight path. Grenade launcher is single-shot / muzzle feel OK. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
 ## Hands (vr445.2)
 
-- **Empty hand / fists** draw a cube for now (temporary stand-in; smaller than older cuts).
+- **Empty hand / fists** draw a cube (smaller than older cuts).
 - The cube **hides** while that hand holds a weapon.
-- Ghost hand is parked for this cut. Nicer hands come later. See [COMING-SOON.md](COMING-SOON.md).
-- Gun vanish below chest (GUNZ / HANDSOLID) is left off until fixed.
 
 ## Tank (vr445.2)
 
@@ -93,8 +91,6 @@ GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [READ
 **Headset recipe:** unzip **`GEVR-Beta-vr445-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
-
-Native Quest (standalone APK) is a later port, not this PC zip.
 
 ### If controls or VR feel dead
 

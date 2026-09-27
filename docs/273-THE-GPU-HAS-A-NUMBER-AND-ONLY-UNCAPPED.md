@@ -152,15 +152,3 @@ ran 43,800 frames before dying to `0xc0000005` after a death and a stage reload.
 investigated. **It bounds how long an uncapped GPU sample can be, which is why Cradle has 18
 windows and Facility 330.**
 
-## §8 — WHAT THIS COSTS THE NEXT SESSION, AND THE METHOD NOTE
-
-**HOW TO MEASURE THE GPU FROM NOW ON:** `GETV_GPUTIME=1` **with `GETV_FPS=0`**, `GETV_SIMDIV=1`,
-`GETV_VSYNC=0`, a pinned `GETV_STAGE`, and read only windows between `lvlStageLoad` events. **A
-capped run now says CONTAMINATED and means it.**
-
-**THE METHOD NOTE, AND IT IS `272` §8 EARNING ITS KEEP:** *when a measurement will not move, find
-the axis it is pinned to and change THAT.* `272` changed the SCENE and proved the fault. `273`
-changed the CAP and got the answer — **and the run that got it needed no build.** The build I
-argued for first moved the bracket, which was the axis I had a theory about rather than the axis
-the number was pinned to. **Two builds and nine runs; the two runs that answered it were the two
-that changed a run condition instead of the code.**

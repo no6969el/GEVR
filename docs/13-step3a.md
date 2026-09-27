@@ -96,8 +96,3 @@ copy /Y hle\rt64_shared_queue_resources.h.bak3a    hle\rt64_shared_queue_resourc
 del render\rt64_vr_eye.h
 ```
 
-## Next
-
-3b: a host-side call to `setVrConfig()` with hardcoded left-eye constants, so the
-override actually fires. Nothing in RT64 needs to change for it — that is the
-test of whether 3a drew the boundary in the right place.

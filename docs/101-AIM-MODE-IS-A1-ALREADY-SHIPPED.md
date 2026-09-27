@@ -90,22 +90,6 @@ already exists to a second one that must agree with it.
    gates are judged by looking at the gun, and `90` says the gun model can point
    somewhere the bullet does not.
 
-## §5 — WHAT THE NEXT SESSION SHOULD DO WITH THIS
-
-**Nothing yet. `48` rule 1: plan, discuss, then execute.** The reads owed:
-
-| # | Read | Why |
-|---|---|---|
-| **A1-R1** | **What sets `insightaimmode`, and can it be held true under VR without the button?** If aim mode can simply be ON in VR, the KISSY branch drives itself and we only supply the deltas | Decides whether this is a hook or a patch |
-| **A1-R2** | **What are `MAX_AIMLOCK_SPEED_DEFAULT` and the `0.65f/80.0f` scaling in real units?** The delta we feed must be in the same units as a stick | Decides the gain, and a wrong gain is `77`'s "it looks the same" all over again |
-| **A1-R3** | **Does the KISSY branch disable anything else we want** — `canLookAhead`, `canNaturalTurn`, `canSwivelGun` are all forced false in aim mode (`bondview2.c:4923-4937`) | **Aim mode changes MOVEMENT too.** Free aim must not silently cost the player their turning |
-
-**A1-R3 is the one that could kill it**, and it is the reason this is a route and
-not a decision. **The wearer found the mechanism; the reads decide whether it is
-usable without taking something else away.**
-
----
-
 # §6 — THE OWNER'S DESIGN, AND WHERE THE "ROTATION SPHERE" ACTUALLY IS
 
 > ***"Grab button on the controller activates the modded KISSY — kissy is

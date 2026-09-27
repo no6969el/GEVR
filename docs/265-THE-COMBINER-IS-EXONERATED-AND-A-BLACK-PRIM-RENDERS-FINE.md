@@ -68,16 +68,6 @@ finding.**
    50,341, and `CorumovZ`'s twelve all fall in `f=2721..2722`. Fine for a question about a
    static bind; **it is not a survey of the run.**
 
-## §6 — WHAT THE NEXT PROBE MUST DO, AND WHY IT IS THE SAME BRIDGE
-**Stop keying on `1x1`. Key on the MODEL.** `264`'s pointer bridge already does the hard
-part; it is currently filtered to degenerate binds by one `if`.
-**`GETV_CCMODEL=CorumovZ` — record EVERY bind of the named model, then print one line per
-draw that binds one of them.** That answers the question `263` §2's correlation was
-standing in for: **what actually draws the shirt, and what does it get?**
-**Its falsification condition must be written before it runs, and it must include: if the
-shirt surface never appears in the model's own bind set, the draw is not a textured draw
-at all and this instrument cannot see it.**
-
 ## §7 — NOT CLAIMED
 - **No cause is named.** `263` §4 is dead; nothing replaces it yet.
 - No claim about the Trevelyan face. **Nothing in this run touches it.**

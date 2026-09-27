@@ -91,29 +91,6 @@ head-turn half, which needs RB-07 and a headset.
 
 ---
 
-## §6 — NEXT, AND IT IS ONE LAUNCH
-
-```powershell
-.\vr.ps1 -NoXr -ViRate 90 -FloatDelta
-```
-
-**No rebuild.** The binary already contains RB-03; the knob is all that changes.
-
-> **G-135-3, THE GATE: `gd1000=` must read ~667 STEADY** instead of alternating
-> 1000/0. **And `per1000ms` MUST STAY AT 60** — if the float delta is right, the
-> game's speed does not change, only the smoothness of the motion inside it.
->
-> **`per1000ms` moving off 60 with `-FloatDelta` would be a real speed bug**, and
-> it is the one thing that would make the owner's "running faster" a fault after
-> all.
-
-**And the subjective question, which is now the only one left for RB-03:** with
-the clock provably correct at 60, **does the world look smoother than the run
-just played?** That comparison is clean for the first time — same build, same
-level, one knob.
-
----
-
 ## §7 — THE HONEST NOTE
 
 **Four documents and six builds were spent between `134` and here, and the

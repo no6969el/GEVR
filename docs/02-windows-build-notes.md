@@ -1,8 +1,4 @@
-﻿> **Build-phase note (2026-09-05):** This doc is part of the *ideas trail*.
-> The playable GETV VR workshop (gevr_*, working XR frame loop in the game
-> process, drop-in patch series) is **not** published yet — see
-> `docs/RELEASE-POLICY.md`. Use this to re-derive, not to clone a finished VR build.
-# Building GoldenEye64Recomp on Windows â€” undocumented gotchas
+﻿# Building GoldenEye64Recomp on Windows â€” undocumented gotchas
 
 Upstream supports macOS/Linux only. The Windows paths in CMake are intact (inherited from
 goldenrecomp) but untested, so these all had to be found the hard way. Rig: `simrig`,

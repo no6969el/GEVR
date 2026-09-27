@@ -85,17 +85,6 @@ that field rather than anything passed along.
 2.0 is not a novel value — the game ships levels at znear 2 — and the
 depth-precision objection does not apply, because RT64 renders to `D32_FLOAT`.
 
-### The prediction, so the next run can falsify it
-
-The band should **shrink roughly in proportion to znear**. If the Dam's native
-znear is 30, dropping to 2 should shrink the band by about fifteen times — from a
-visible strip to a hairline or nothing.
-
-**It may not vanish completely, and that would not refute this.** A wall can
-still clip a 2.8-unit pane if the camera gets close enough. What *would* refute
-it is the band staying the same size, which would mean the near face is not what
-is cutting the wall.
-
 ## Result — confirmed, 2026-08-22
 
 **The band is gone.** Clamping znear down to 2.0 removed it, which confirms the

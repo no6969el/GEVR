@@ -147,4 +147,3 @@ something if the file it names is still there.**
 change with its own falsifier and its own gate, and `00-STATE` §7c says a `HIGH` is not opened at
 the end of a session. **`PRIORITY-BOARD-320` §C already ranks it and nothing here re-ranks it.**
 
-**NEXT: `321`'s DOCS COMMIT, THEN `X3` AS A FRESH SESSION'S OPENER.**

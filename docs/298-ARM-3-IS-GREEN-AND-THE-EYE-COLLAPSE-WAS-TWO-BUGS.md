@@ -324,15 +324,3 @@ texture.
 
 ---
 
-## §8 — FALSIFIERS FOR THE NEXT SESSION, STATED BEFORE THEY RUN (rule `15`)
-
-1. **A -> B -> A on `GETV_NEARCLAMP` does NOT bring the artefact back.** Then the clamp is not the
-   mechanism and §4 is `[REPORTED]` coincidence. This is the first thing to run.
-2. **`GL_DEPTH_CLAMP` enabled in the backend does not change the artefact.** Then the depth-gradient
-   reading of `gfx_pc.c:3733` is wrong even though the knob moved it.
-3. **`GETV_PROPROOMTEST=0` does not keep the floor gun visible.** `getROOMID_isRendered` is
-   exonerated and the disappearing props are a fourth thing.
-4. **A `GETV_WINDOW` with an integer eye half does not drive R2's `dx` to 0.** Then §2.2's
-   viewport-rounding reading is wrong and the 1 px is something else.
-5. **R4/S3's 1/D law fails on a frame where both eyes are populated.** Then R2's green picture is
-   eye 1 replaying a copy, and §0's stated limit was the real story.

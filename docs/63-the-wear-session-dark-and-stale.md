@@ -89,22 +89,6 @@ to be the same fault. The save-select screen being bright argues the pipeline ca
 produce a correct image, so darkness may be scene-specific — **O6, "hard to
 see", has been open since `33` and was never triaged.**
 
-## THE BISECT, and it is the first thing next session
-
-**Three paths, three launches, in this order. Do not skip step 1.**
-
-| # | Run | Question |
-|---|---|---|
-| 1 | `.\vr.ps1 -NoXr`, **play a level properly** | Is the GAME intact on this build? Today only reached the menu — **G4 was never fully run** |
-| 2 | `.\vr.ps1 -Flat`, play a level properly | Does the EYE path break it, with no XR involved? |
-| 3 | `.\vr.ps1`, worn | Does the XR path break it? |
-
-**Whichever step first shows the dark stale frame names the layer.** If step 1
-shows it, nothing VR-side is involved at all and the whole search moves.
-
-**This bisect should have been run before the headset went on.** It costs three
-launches and it would have cost nothing to know.
-
 ## The one unambiguous WIN of the session
 
 **The full shutdown sequence executed, cleanly, TWICE:**

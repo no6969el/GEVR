@@ -107,5 +107,3 @@ that could not fire (`134`), and a helper the recompiler never emitted (this).
 > purpose-built gates have now failed in a row.** That is worth remembering the
 > next time a gate is written: `48` rule 4, and the fourth instance this week.
 
-**NEXT: rebuild and one `-NoXr -ViRate 90` run.** The marker either prints or it
-does not, and after this there are no untested links left in the chain.

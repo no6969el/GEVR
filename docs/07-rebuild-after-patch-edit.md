@@ -1,8 +1,4 @@
-﻿> **Build-phase note (2026-09-05):** This doc is part of the *ideas trail*.
-> The playable GETV VR workshop (gevr_*, working XR frame loop in the game
-> process, drop-in patch series) is **not** published yet — see
-> `docs/RELEASE-POLICY.md`. Use this to re-derive, not to clone a finished VR build.
-# Rebuilding after editing a file in `patches/` â€” verified 2026-08-22
+﻿# Rebuilding after editing a file in `patches/` â€” verified 2026-08-22
 
 The full build order in `02-windows-build-notes.md` is for a cold start. This is
 the inner loop: you changed a `.c` in `patches/` and want a new exe. Verified

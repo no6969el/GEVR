@@ -69,23 +69,6 @@ instrument in this project that cannot fail in the way it is being asked to.**
 | **NOT ESTABLISHED** | That no individual frame misses. The one 18.80 ms sample is a whole second whose MEAN was 18.80 ms, which is far worse than a spike and deserves finding |
 | **NOT ADDRESSED AT ALL** | Whether the images themselves are stale or duplicated between submits, which judders identically while every timing number stays perfect |
 
-## THE NEXT MEASUREMENT — one line, before any theory
-
-**Add `max` and a late-frame count beside the mean:**
-
-```
-frame budget: period 11.11 | mean 10.23 | max N | late N/90
-```
-
-`StageTimes` already accumulates per frame; a `std::max` and a counter are two
-lines in the same struct. **`48`'s amendment applies — this is a read-only
-diagnostic and may be batched with anything else.**
-
-**Write its wrong-thing branch first, as `48` now requires:** if `max` comes
-back at ~11 ms and `late` at 0 while the headset visibly judders, **the timing
-is not the fault and the images are** — which sends this at the 60/90 content
-question below rather than at the loop.
-
 ## THE OTHER HALF, WHICH THIS DOES NOT TOUCH
 
 `60` established the `60.0 fps` line is the emulated **N64 VI clock**, not the

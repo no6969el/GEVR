@@ -9,8 +9,6 @@
 > **Source note:** New GEVR **product code** is developed privately. This public repo stays the home for **player docs**, **Issues**, and **Beta zip Releases**. Grab playable builds from [Latest](https://github.com/no6969el/GEVR/releases/latest) (or **Update** in GevrRomStarter). Historical trees and older tags remain for reference; they are not the live workshop. Freeze tip: [`15449d0`](https://github.com/no6969el/GEVR/commit/15449d0eb55730f5cfc22a6cbcb7fceb40e5ebe3). See [`docs/SOURCE.md`](docs/SOURCE.md). Playable work ships as Beta zips; this tree is player-facing docs + historical reference.
 
 > **vr445.2 (2026-09-24):** GitHub **Latest**. KEEP stack default-on: **#74** playspace / free move / hands follow · **#75** melee swing pose · **#82** Janus spawn · **gun origin** · **#84** walk/run + **ANIMFRAMES** · Dam **SKYWORLD** · cadence from 445.1 · temp **MODEMDROP=3**. **Grab [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)** or **Update** in GevrRomStarter.
->
-> *Footnote:* Decided to test some other features longer before pushing. WATERRECT / GRIPUSE / slot4 stay on [vr450](https://github.com/no6969el/GEVR/releases/tag/vr450) / [vr450.1](https://github.com/no6969el/GEVR/releases/tag/vr450.1) (pre-release), **not** Latest.
 
 ---
 The N64 classic you can finally *stand inside* - not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
@@ -21,7 +19,7 @@ The N64 classic you can finally *stand inside* - not an emulator overlay, not a 
 
 If this brings you back, **Star** the repo and [**follow @no6969el**](https://github.com/no6969el) so you can catch the next drops. **Watch -> Releases** if you want a ping when we ship. Between cuts, we keep a [living status on Reddit](https://www.reddit.com/r/QuietWindows/comments/1whmk8l/gevr_living_status_goldeneye_in_native_openxr_vr/) - honest fan wear notes, not a second readme. For port help and GoldenEye fan chat, hop in [**Discord**](https://discord.gg/flat2vr) (BYO ROM - do not upload your ROM; setup details and logs only). Want to fund the next cuts? [Patreon](https://www.patreon.com/cw/GEVR) - the zip stays free.
 
-[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Discord](https://discord.gg/flat2vr) · [Roadmap](docs/ROADMAP.md) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Other projects using GEVR](docs/OTHER-PROJECTS.md) · [Features](FEATURES.md) · [Support](https://www.patreon.com/cw/GEVR)
+[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Discord](https://discord.gg/flat2vr) · [Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Other projects using GEVR](docs/OTHER-PROJECTS.md) · [Features](FEATURES.md) · [Support](https://www.patreon.com/cw/GEVR)
 
 ---
 
@@ -40,7 +38,7 @@ Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 | **X** (left Quest/Oculus) | Previous weapon (when weapon-cycle is armed) |
 | **Head / room-scale** | Look around; physically walk to move in Bond-world |
 
-Classic squeeze = AIM. Contextual Grip / GRIPUSE is **not** in Latest (further testing on the 450 line). Fuller notes: [`docs/CONTROLS.md`](docs/CONTROLS.md).
+Classic squeeze = AIM. Fuller notes: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ---
 
@@ -65,7 +63,7 @@ Classic squeeze = AIM. Contextual Grip / GRIPUSE is **not** in Latest (further t
 
 **Please use the bat** - it locks in the good VR settings and runs the ROM starter we ship for this cut (not bare `goldeneye.exe`).
 
-Default is **VR**. Flat / monitor is absolutely playable too (`Play-on-monitor.bat`) - same game, and it takes the fixes as we improve the VR cut. Flat-screen settings and borderless fullscreen are on the want list ([COMING-SOON](docs/COMING-SOON.md)).
+Default is **VR**. Flat / monitor is playable too (`Play-on-monitor.bat`) - same game, and it takes the fixes as we improve the VR cut.
 
 No ROM in the download. You bring yours.
 
@@ -88,17 +86,7 @@ Point release after **[vr445.1](https://github.com/no6969el/GEVR/releases/tag/vr
 - **[#84](https://github.com/no6969el/GEVR/issues/84)** walk/run after spot + **ANIMFRAMES**
 - Dam **SKYWORLD** tiled clouds (+ sky pin path)
 - Rifle cadence retained from vr445.1
-- Ship temp **`MODEMDROP=3`** (honest temp hide for covert modem scrap — not the [#70](https://github.com/no6969el/GEVR/issues/70) fix)
-
-### Not in Latest (longer testing)
-
-WATERRECT (#80), Contextual Grip / GRIPUSE (#90), and save slot 4 stay on **vr450** / **vr450.1** pre-release only — decided to test those longer before pushing to Latest.
-
-### HOLD / still cooking
-
-- Frigate **FRIGMUTE** / **DOORROOM** / aperture asym ([#79](https://github.com/no6969el/GEVR/issues/79))
-- Prop-on-prop / Dam blue (#70) beyond the temp modem hide
-- Grip **pickup** / mines / modems
+- Ship temp **`MODEMDROP=3`** (temp hide for covert modem scrap)
 
 ---
 
@@ -148,32 +136,7 @@ Remote / prox / timed mines stuck on a wall or floor (**including Facility**) no
 - Frigate hostage / corpse path keepers from vr444.1
 - Open play space / picture KEEP / BYO-ROM / recenter both sticks
 
-### Still open / cooking
-
-- Frigate sea full-bleed / world-stable water
-- Props still pass through other props. The no-modem scrap hide only keeps the black flicker quiet. Next: props collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55))
-- Dam blue / dish-on-glass ([#70](https://github.com/no6969el/GEVR/issues/70)); weapon wheel; two-hand snap
-
 Full notes: RELEASE-NOTES.txt in the zip / [tag](https://github.com/no6969el/GEVR/releases/tag/vr445).
-
-
-## What's cooking (later update)
-
-Soft list only. Matches the tag's **Still rough / coming soon**. Do not treat these as shipped.
-
-- Frigate water RECT / WATERRECT ([#80](https://github.com/no6969el/GEVR/issues/80)) — longer testing; on vr450 / vr450.1 pre-release only
-- Contextual Grip / GRIPUSE ([#90](https://github.com/no6969el/GEVR/issues/90)) — further testing
-- Save slot 4 seed — longer testing
-- Props that collide and rest on each other (black flicker is only quieted by the temporary no-modem hide, [issue #55](https://github.com/no6969el/GEVR/issues/55))
-- Two-hand snap is still cooking (coming later)
-- Weapon wheel HUD is still cooking
-- High Hz (over 90) is Beta-test territory - try it and report if something feels off ([issue #49](https://github.com/no6969el/GEVR/issues/49))
-- Ghost hand is parked for this cut
-- Empty-hand cube is temporary (smaller now; hides when armed)
-- Gun vanish below chest (GUNZ / HANDSOLID) left off until fixed
-- Big explosion / plane shell can still hard-crash (the fault file helps)
-
-Stay tuned. **Star** this repo and [**follow @no6969el**](https://github.com/no6969el). **Watch -> Releases** for the next zip.
 
 ---
 
@@ -229,8 +192,8 @@ We would rather tell you than surprise you. These are **vr445.2** today.
 
 - **Half-speed / mushy VR:** turn **SteamVR Motion Smoothing Off** and **Virtual Desktop Space Warp Off** before blaming Hertz ([BETA.md](docs/BETA.md#half-speed--mushy-vr)).
 - **Frigate water / horizon** ([#80](https://github.com/no6969el/GEVR/issues/80)) — open on Latest; RECT only on vr450 / vr450.1 pre-release.
-- **Black flicker** on stuck mines / Facility (same family as covert-modem scrap) is **quiet for now**. The no-modem hide lets people play. Props still go through other props; that overlap is the cause. Next is props that collide and rest on each other ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
-- **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut; dish-on-glass depth is still open.
+- **Black flicker** on stuck mines / Facility (same family as covert-modem scrap) is **quiet for now**. The no-modem hide lets people play. Props still go through other props; that overlap is the cause ([issue #55](https://github.com/no6969el/GEVR/issues/55)).
+- **Dam blue flicker** (end section) - probably the **convert modem**, not a separate mystery ([issue #70](https://github.com/no6969el/GEVR/issues/70)). Stuck covert-modem scrap on the floor is quieter this cut.
 - **Melee / fist** is in (swing-based), but **not finely tuned yet** - be careful standing next to characters you are not supposed to harm ([issue #75](https://github.com/no6969el/GEVR/issues/75)).
 - **Big explosions** (large objects, plane shells) can still hard-crash. If they do, grab `gevr-fault-*.txt` beside the exe before you relaunch.
 - Alarm can keep ringing after a death or stage return.
@@ -238,16 +201,14 @@ We would rather tell you than surprise you. These are **vr445.2** today.
 - **Glass bullet holes** can still show in one eye.
 - **HUD text** can sit too close or hard to read in depth.
 - **Headset refresh:** follows your HMD rate now. High Hz is still Beta-test territory ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
-- Empty hand is a **cube** for now (smaller; hides when that hand holds a weapon). Ghost fingers are parked.
-- **Gun vanish below chest** (GUNZ / HANDSOLID) is left off until it is fixed.
+- Empty hand draws a **cube** (smaller; hides when that hand holds a weapon).
 - Expect occasional **crashes** while we keep optimizing.
-- We are **not** promising full-body Bond or fancy glove meshes yet.
 
 Still worth playing - absolutely. Facility, Dam, tanks that actually let you in, that first-person Bond feeling.
 
-On a **flat / monitor** setup, the game is fully playable (`Play-on-monitor.bat`) and picks up the same fixes as we improve VR. Classic **local / split-screen multiplayer** is still there - couch chaos, same as you remember. Flat-screen settings and borderless fullscreen are planned ([COMING-SOON](docs/COMING-SOON.md)). Next social step is a **LAN / local-network multiplayer add-on** (not a mod). True online is further after that.
+On a **flat / monitor** setup, the game is fully playable (`Play-on-monitor.bat`) and picks up the same fixes as we improve VR. Classic **local / split-screen multiplayer** is still there - couch chaos, same as you remember.
 
-More tester notes: [BETA.md](docs/BETA.md) · [COMING-SOON.md](docs/COMING-SOON.md) · [CONTROLS.md](docs/CONTROLS.md).
+More tester notes: [BETA.md](docs/BETA.md) · [CONTROLS.md](docs/CONTROLS.md).
 
 ---
 
@@ -264,40 +225,11 @@ More pitch and cover energy: [FEATURES.md](FEATURES.md).
 
 ---
 
-## Roadmap (honest, not a calendar promise)
-
-**Now - enjoy the Beta (vr445.2)**
-- Solo VR campaign feel
-- Throwables in hand, A / X weapon cycle, smarter hand cubes
-- Tank climb + turret pitch, dual-wield fire, rockets that point where they fly
-- Comfort, aim, and picture quality
-- "It boots, it shoots, it sometimes crashes" honesty
-- Local / split-screen multiplayer on a monitor
-
-**Cooking**
-- Flat-screen settings and borderless fullscreen (monitor path)
-- Two-hand snap (coming later)
-- Weapon wheel HUD
-- High Hz polish ([issue #49](https://github.com/no6969el/GEVR/issues/49))
-- Ghost empty hand (parked); nicer mesh after that
-- Gun vanish below chest (GUNZ / HANDSOLID)
-- Softer landings when the big explosions go loud
-
-**Later**
-- **LAN / local-network multiplayer add-on** (not a mod; not this polish pack)
-- True online after that
-- Full-body Bond later
-- Dam water / glass / HUD-depth polish
-
-Fuller list: [`docs/ROADMAP.md`](docs/ROADMAP.md). Star + [follow @no6969el](https://github.com/no6969el) + **Watch -> Releases** if you want the next zip without refreshing every day.
-
----
-
 ## For press / curious readers
 
 **One-liner:** Native from-source GoldenEye VR for PC OpenXR - bring your own ROM.
 
-**Longer:** GEVR rebuilds GoldenEye on PC so VR can be done properly (stereo, 6DOF, controller aim), instead of stretching an emulator. Beta means playable and imperfect on purpose while we clear crashes and comfort. Multiplayer and bigger social features sit on the roadmap after the solo VR base is something we are proud to hand strangers.
+**Longer:** GEVR rebuilds GoldenEye on PC so VR can be done properly (stereo, 6DOF, controller aim), instead of stretching an emulator. Beta means playable and imperfect on purpose while we clear crashes and comfort. Local / split-screen multiplayer on a monitor is in this cut.
 
 Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). Other product projects that reuse GEVR work (name, docs, tools, playbook): [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md). We do not claim Nintendo's game data, Rare's assets, or third-party engines we did not write.
 
@@ -311,7 +243,6 @@ Deep technical trail: [`docs/00-START-HERE.md`](docs/00-START-HERE.md)
 Controls: [`docs/CONTROLS.md`](docs/CONTROLS.md)  
 Beta snapshot: [`docs/BETA.md`](docs/BETA.md) · [`docs/FEATURES-CURRENT.md`](docs/FEATURES-CURRENT.md)  
 Other projects using GEVR: [`docs/OTHER-PROJECTS.md`](docs/OTHER-PROJECTS.md)  
-Coming soon / release policy: [`docs/COMING-SOON.md`](docs/COMING-SOON.md) · [`docs/RELEASE-POLICY.md`](docs/RELEASE-POLICY.md)  
 Pack / smoke: [`packaging/README.md`](packaging/README.md) · ship boot allowlist: [`docs/ship-feature-checklist.md`](docs/ship-feature-checklist.md)
 
 ---

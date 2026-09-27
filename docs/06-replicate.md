@@ -1,8 +1,4 @@
-﻿> **Build-phase note (2026-09-05):** This doc is part of the *ideas trail*.
-> The playable GETV VR workshop (gevr_*, working XR frame loop in the game
-> process, drop-in patch series) is **not** published yet — see
-> `docs/RELEASE-POLICY.md`. Use this to re-derive, not to clone a finished VR build.
-# Replicating this tree from a clean clone
+﻿# Replicating this tree from a clean clone
 
 Assumes Windows x64. Toolchain versions that are known to work are in
 `02-windows-build-notes.md`; **clang must be 18.1.8**, not 22.

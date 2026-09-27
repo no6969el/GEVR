@@ -341,13 +341,6 @@ its data/addresses live in the reconstructed image, so layout shifts must couple
    truly impossible as patches (MoveBond internal instrumentation §8/§9, `224` §3.1's camera
    restructure), and budget the regeneration coupling.
 
-### NEXT STEP TO UNLOCK THE SOURCE PATH
-Ask the upstream GE-recomp source (cblock85 / kholdfuzion) for the TLB-free build
-configuration + the N64Recomp fork used, rather than reconstructing the linker/TLB transform
-from scratch. That is the single highest-leverage action for the whole `224` §3 program.
-
----
-
 ## §11 — THE TLB IS DEMAND-PAGING, NOT JUST MAPPING. "TLB-FREE" = RESIDENCY CONVERSION.
 
 **`[READ]` `src/tlb_manage.c` `tlbmanageTranslateLoadRomFromTlbAddress`, with the generic

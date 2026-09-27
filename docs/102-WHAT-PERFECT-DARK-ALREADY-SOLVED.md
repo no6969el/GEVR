@@ -219,18 +219,3 @@ integrated at a **fixed `dt = 1/90`** with a TODO to use the real frame delta.
 - **Collision call signatures.** `cdCollectGeoForCylMove` / `cdExamCylMove02` /
   `cdTestLos05` have GE cognates, not twins. **The SEQUENCE transfers**: collect
   rooms -> disable own perimeter -> cylinder test -> LOS test -> re-enable.
-- **Quest/GLES paths** and `vr_android_jni.cpp`.
-
-## §6 — WHAT THIS DOES TO `86`'s SLICES
-
-| Slice | Was | Now |
-|---|---|---|
-| **G2** rotation convention | A **sign sweep** the wearer judges | **A CHECK.** `{w,-x,y,-z}` + a 1.5708 rad X offset, applied after smoothing. One launch confirms or denies |
-| **G3** grip offsets | A table to derive by wearing | **A TABLE TO VERIFY**, six classes, plus the Ry180 basis warning |
-| **A1** bullet follows gun | Pre-load both integrators via a new patch | Unchanged in physics — **`x/(1-damp)` confirmed verbatim** — but §1 changes what "done" looks like |
-| **A2** world aim dot | **Mandatory**, because `90` said no unclamped shot path exists | **Re-open.** PD leaves the SHOT unclamped and clamps only the drawn crosshair. **A2 may be a nicety, not the mechanism** |
-| **H2** head height | Two writes, option B-i | Confirmed shape, **plus the crouch-state thresholds and the running-max bug already solved** |
-| **R1** roomscale | Probe on sight-blocking geometry | Confirmed, **with radius 12, a +/-10 slab, a second LOS test, and the fade-before-HUD stereo bug** |
-
-**Nothing here is built. `48` rule 1.** The next session picks slices with a
-table of measured constants instead of a sweep plan.

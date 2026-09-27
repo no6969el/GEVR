@@ -102,27 +102,6 @@ admit MORE rooms at the same spot. It admits exactly the same. `bgDetermineVisib
 (`bg.c:5638`) rebuilds the clip box every frame from `viGetViewLeft/Width/Top/Height`
 (`bg.c:6198`), so a stale box was never the story either.
 
-## §4 — WHAT IS STILL OPEN, AND IT IS THE NEXT SESSION'S FIRST TASK
-
-1. **`GETV_WIDESCREEN=0` DID NOT ELIMINATE IT.** `[REPORTED]`: bars appeared on the sides, the
-   perspective was visibly different, *"there were still minor cases of the issue."*
-   **THERE IS MORE THAN ONE CONTRIBUTOR AND §2 IS ONLY THE LARGEST.**
-2. **THE PER-ROOM PORTAL SCISSORS ARE THE SURFACE TO SUSPECT NEXT.** `[MEASURED]` the game emits
-   sub-rectangles every frame, e.g. `dlgrab_2290`: `(820,120)-(1024,500)`, `(4,120)-(152,696)`;
-   `dlgrab_2763`: `(236,388)-(400,584)`, `(712,436)-(808,488)`. They come from
-   **`bg.c:622-677`**, where each room's 2D bbox is outersected against `screensize` and becomes a
-   `SETSCISSOR`. **Same rooms admitted; the RECTANGLE each is clipped to is a separate question
-   and §3 does not answer it.**
-3. **THE MEASUREMENT THAT CLOSES IT: correlate ONE artifact frame's hole to ONE `SETSCISSOR`
-   rect.** The dump and its BMP are the same frame by construction (`268` §8, and `93` is the doc
-   that paid for that requirement). **Nobody has yet identified which V1 dump has the artifact on
-   screen** — the session lead was asked and the session ended first.
-4. **TWO SYMPTOMS, NOT ESTABLISHED AS ONE FAULT.** `[REPORTED]`: standing still gives *"a big
-   black texture covering the wall that is typically white"* — **not see-through**; walking gives
-   *"the right side show clear see-through."* **`263` §1 is the standing warning: six black faces
-   were invented by inferring one fault from two screenshots. Do not merge these without a
-   measurement.**
-
 ## §5 — THE TANK WAS NEVER ENTERED, AND THE ENTRY CHAIN IS NOW WRITTEN DOWN
 
 Four arms across Runway and Streets. **`PtankZ` is converted in both Streets logs, so a tank model

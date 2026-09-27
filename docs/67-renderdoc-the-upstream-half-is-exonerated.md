@@ -131,44 +131,6 @@ rather than by argument, which is more than twelve hypotheses achieved.
 
 ---
 
-## THE NEXT QUERY, ON THE CAPTURE THAT IS ALREADY ON DISK
-
-**No new launch is needed. The capture is kept at:**
-
-```
-GoldenEyeVR\ge-vr-shots\rdc\gevr_frame21238.rdc     (164 MB, the frame)
-GoldenEyeVR\ge-vr-shots\rdc\gevr.zip.xml            (59 MB, the call stream)
-GoldenEyeVR\ge-vr-shots\rdc\gevr.zip                (93 MB, the blobs)
-```
-
-**The one unresolved link: which descriptor the dispatch actually reads.**
-
-An SRV is *created* for each buffer. It is then staged into a shader-visible
-heap and referenced by a root descriptor table. The capture holds:
-
-- 24 x `ID3D12Device::CopyDescriptorsSimple`
-- 11 x `SetComputeRootDescriptorTable`
-- 5 x `CreateDescriptorHeap`
-
-**The question: does pass B's dispatch read a table slot holding eye 1's SRV,
-or a stale slot still holding eye 0's?** Resolve
-`SetComputeRootDescriptorTable` -> heap + offset -> the `CopyDescriptorsSimple`
-that last wrote that offset -> the `CreateShaderResourceView` it came from ->
-the resource id. If that resource is 82638 for BOTH dispatches, B1 is named.
-
-**What it would say if it were looking at the wrong thing:** if the two
-dispatches resolve to two different heap offsets that each hold the right SRV,
-the descriptor path is correct too, and the fault is inside the compute shader
-itself — its indexing into the buffer, or `srcViewProjIndices`. That is a
-different search and a different document.
-
-**Open the capture in `qrenderdoc.exe` for this.** The GUI resolves the
-descriptor chain automatically and shows the bound resource per dispatch, which
-is many hours of XML parsing done for free. **This is the one step in this
-project that genuinely wants a human at the screen.**
-
----
-
 ## Housekeeping
 
 - **RenderDoc 1.45 installed** via winget (`BaldurKarlsson.RenderDoc`). MIT, so

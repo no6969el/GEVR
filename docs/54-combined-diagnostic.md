@@ -158,12 +158,3 @@ targets, and full serialisation between them.
 useless"**, and it points where that section said it would: the stage between the
 transform buffer and the vertices.
 
-## Next, and it needs no code
-
-```powershell
-.\vr.ps1 -Flat -Offset 500
-```
-
-A 1000-unit separation. If the halves are still identical at that magnitude, the
-per-eye parameter differentiates **nothing** within a run, and every remaining
-question about amounts, signs and scales is closed at once.

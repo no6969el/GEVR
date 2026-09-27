@@ -338,19 +338,6 @@ appeared six times in this project.
 **un-offset** view, and the halves are identical rather than one-offset-one-not,
 so it does not fit on its own. **The discriminating measurement is below.**
 
-## Next action — one launch, and it splits the remaining span
-
-**`-Flat -Offset 0`, same spot, compared against this capture.**
-
-| Result | Means |
-|---|---|
-| **Identical to the `-Offset 500` capture** | The eye offset does not reach the PIXELS at all, despite reaching the view matrix in full. The fault is in what the draws read — the buffer, not the eye assignment |
-| **Different** | The offset does reach the pixels; both halves are then showing ONE eye's offset view, and the question is which eye and how it got into both |
-
-`57` proposed this comparison and then reported a three-way result instead; the
-`-Offset 0` vs `-Offset 500` both-passes pair does not appear to have been run.
-It costs one launch and one return to the spot.
-
 ## Instrument defects found in this run — log them, do not chase them
 
 - **`fb census` now reports `1 pairs`, not the `2 pairs` `49` built its root
@@ -462,23 +449,6 @@ Everything on both sides of "the pixels each pass produced" is measured correct
 and distinct. **That one row is now the entire remaining search space**, and
 `39` O26 has said "never measured" about it since `53`.
 
-## Next action — and it fires B-G3
-
-**`-SkipEye 1` then `-SkipEye 0`, same spot, this build.** `57` ran this pair on
-the previous build and concluded both-passes equals eye1-alone; repeating it here
-gets that answer with `view FINAL` and `target stamp` printing alongside, so the
-identification is made on a build whose instruments have all been verified.
-
-| Result | Means |
-|---|---|
-| both-passes == **eye1-alone** | Eye 1's pass produced the pixels in eye 0's target too. `57`'s conclusion reproduces on a verified build |
-| both-passes == **eye0-alone** | The opposite, and `57`'s identification was wrong |
-| both-passes == **neither** | `57`'s original "third image" reading returns, on a build where it can be trusted |
-
-**B-G3 fires on the same runs:** under `-SkipEye`, the skipped eye's target must
-stamp as `-1` (NEVER WRITTEN). If it stamps as an eye index, something wrote a
-target with no pass, which changes the question again.
-
 ## More instrument defects
 
 - **O39: `gevr_stereo.py` calls identical halves "the docs\49 failure"
@@ -552,27 +522,3 @@ Not a cancellation, not a resolve, not the view matrix, not present, not
 interpolation, not the transform buffers, not the targets being shared. **A
 write, by the second pass, into the first pass's texture.**
 
-## The next slice — census the WRITES, not the passes
-
-The stamp records only the pass's **override** target. A pass can touch other
-targets through paths the stamp never sees, and two are already visible in
-source:
-
-- `rt64_workload_queue.cpp:751` and `:790` — `targetManager.get(otherColorTargetKey)`
-  / `otherDepthTargetKey`, RT64's synchronisation between targets whose
-  framebuffer regions overlap.
-- `fbManager.recordOperations(...)` at the end of every pass — `:862`.
-
-**The instrument: a write counter on `RenderTarget` itself**, bumped wherever the
-target becomes a framebuffer attachment or a copy destination, tagged with the
-eye index currently rendering. Printed per eye target at present time.
-
-**Gate:** eye 0's target must show writes **only** while eye 0's pass is
-recording. A write bearing eye 1's tag names the line. **What it reports if it is
-looking at the wrong thing:** if eye 0's target shows zero writes in a run where
-its half is not black, the counter is not on the path that fills it, and the run
-is void rather than exonerating.
-
-**Plan only. Not built.** `48`'s trigger for a plan-and-stop is met: this touches
-shared RT64 code and it is the first edit in three that is not purely additive
-logging.
