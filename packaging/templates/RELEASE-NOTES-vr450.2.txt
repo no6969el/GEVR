@@ -1,0 +1,46 @@
+﻿GEVR Beta vr450.2
+=================
+
+Wear-focused update. Bring your own USA ROM. No ROM in the zip.
+
+Live: https://github.com/no6969el/GEVR/releases/tag/vr450.2
+Zip:  https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip
+
+1) In-app Update
+----------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat.
+
+The starter finds goldeneye.exe in the same folder and sets the game
+path for you. Do not double-click goldeneye.exe.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) What is new in vr450.2 (outcomes)
+------------------------------------
+Keepers are hard-coded in the binary. They stay on with a clean launch.
+
+- Cuff / watch — left-hand cuff stays with the controller through stages
+- FREEARM (#109) — two-handed NPC / weapon poses look better
+- VTXFIXREFS (#117) — more stable Surface geometry
+- Door snap — door-edge aim / hit more dependable around room edges
+- False doors — quieter decoy / false door presentation
+- Corpse pass — dead bodies jam doors less often
+- Re-grab — thrown remote / prox mines can be picked back up
+- Mines — stick to guards, follow them, stay visible while carried
+- Landmark / aim scale / embed eye — aim and world marks stay readable
+
+3) Next series
+--------------
+Levels and gameplay stoppers: Frigate door / aperture, mission locks,
+save-slot coverage, remaining prop-on-prop / Dam-water problems.
+
+4) Play
+-------
+Start-GEVR.bat (GevrRomStarter + colocated goldeneye.exe). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.
