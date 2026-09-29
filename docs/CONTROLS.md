@@ -1,15 +1,15 @@
-﻿# Controls (Beta)
+# Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr445.2](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr450.2](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README Play](../README.md#play-vr4452---the-one-to-grab). Download: [`GEVR-Beta-vr445.2-win64.zip`](https://github.com/no6969el/GEVR/releases/latest) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README Play](../README.md#play-vr4502---the-one-to-grab). Download: [GEVR-Beta-vr450.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr450.2](https://github.com/no6969el/GEVR/releases/tag/vr450.2)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
-- **Headset:** `Start-GEVR.bat` - KEEP VR picture (XR stereo source, SrcFbo, supersample 3, sky / playspace) plus recenter / stick-turn.
-- **Monitor / no headset:** `Play-on-monitor.bat` - VR off, no stereo eyes. This is also the path for **local split-screen**.
+- **Headset:** Start-GEVR.bat — starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
+- **Monitor / no headset:** Play-on-monitor.bat — VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr445.2-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **GEVR-Beta-vr450.2-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
 
@@ -20,7 +20,7 @@ When things feel offset, or after you move your playspace setup:
 Also works:
 
 - **Xbox pad:** L3 + R3 together
-- **Keyboard:** `Home` while the game window has focus
+- **Keyboard:** Home while the game window has focus
 
 One stick click alone does nothing. This is the same recenter the game uses when you enter gameplay from the cinema / menu.
 
@@ -35,6 +35,8 @@ After recenter, standing still and turning your head should not slide the world.
 | **Head / 6DOF** | Look around; move in the playspace to translate in-world |
 | **Controllers** | Gun aim follows the controller |
 
+**Short example:** stand in your playspace, click both sticks to recenter, then walk forward with the left stick while looking around with your head.
+
 ## Fire and aim
 
 | Input | What it does |
@@ -47,54 +49,69 @@ After recenter, standing still and turning your head should not slide the world.
 | **While ADS + left stick** | Walk forward/back (no duck) |
 | **While ADS + right stick** | Duck / stand |
 
-**vr445.2:** Auto-Aim defaults **OFF** in this build.
+**vr450.2:** Auto-Aim defaults **OFF** in this build. Aim scale and eye embedding keep the mark readable in headset.
+
+**Short example:** squeeze to ADS, walk with the left stick, fire with the trigger. Tap **A** / left **X** to cycle weapons; **B** reloads.
 
 Rockets point their nose along the flight path. Grenade launcher is single-shot / muzzle feel OK. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
-## Hands (vr445.2)
+## Hands and cuff (vr450.2)
 
 - **Empty hand / fists** draw a cube (smaller than older cuts).
 - The cube **hides** while that hand holds a weapon.
+- Left-hand **cuff / watch** stays with the controller through stage changes.
 
-## Tank (vr445.2)
+## Mines and re-grab (vr450.2)
+
+- Thrown **remote / proximity** mines can be **picked back up** when the game allows it.
+- Mines can **stick to guards**, follow them, and stay visible while carried.
+- **Short example:** throw a prox mine at a guard, watch it ride along, or re-grab a remote you just tossed if you change your mind.
+
+## Doors and bodies (vr450.2)
+
+- Door-edge aim / hit snap is more dependable around room boundaries.
+- False / decoy door presentation is quieter.
+- Dead bodies are less likely to jam a door mid open/close (**corpse pass**).
+
+## Tank (vr450.2)
 
 - Stand on the chassis and you **auto-mount**.
 - **Right stick pitch** aims the shells. Yaw already worked.
 - Touch-to-enter as a separate gesture is not the ship path. Climb by getting onto the tank.
 
-## Reload, pause, and menus (vr445.2)
+## Reload, pause, and menus (vr450.2)
 
 - **B** reloads (right-hand B on Quest-style layouts).
 - **Menu / system button** opens pause and options in headset (not B, not Y). **Tab** still works on keyboard / monitor.
 - In the **pause watch**, **left stick** moves the menu highlight in VR.
-- Face-button confirm in menus is still partly wired. If a face button does nothing, that may still be a known gap - file an Issue with your headset and bat.
+- Face-button confirm in menus is still partly wired. If a face button does nothing, that may still be a known gap — file an Issue with your headset and bat.
 - Die / continue reload should no longer dump you in junk space ([issue #38](https://github.com/no6969el/GEVR/issues/38) SETUPCOPY). If it still breaks, quit the exe, run the bat again, and report it.
 
 ## Cinema / menus
 
 While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen. Turn your head and the screen stays put in the room.
 
-**VR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes TURN SPEED, TURN STYLE (Smooth/Snap), and SNAP SIZE (gray on Smooth). Those prefs save under `%LOCALAPPDATA%\GEVR` with your saves.
+**VR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes TURN SPEED, TURN STYLE (Smooth/Snap), and SNAP SIZE (gray on Smooth). Those prefs save under %LOCALAPPDATA%\GEVR with your saves.
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play-vr445---the-one-to-grab) / [`GEVR-Beta-vr445-win64.zip`](https://github.com/no6969el/GEVR/releases/latest).
+GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play-vr4502---the-one-to-grab) / [GEVR-Beta-vr450.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip).
 
-**Verified on vr445:**
+**Verified:**
 
 - **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3). We do not maintain that driver. We do support this experience.
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off. We do not call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
+**Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory — try it and report if something feels off. We do not call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
 
-**Headset recipe:** unzip **`GEVR-Beta-vr445-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
+**Headset recipe:** unzip **GEVR-Beta-vr450.2-win64.zip**, run **Start-GEVR.bat**, point at your USA .z64, put the headset on, recenter with both stick clicks.
 
-**No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
+**No headset:** **Play-on-monitor.bat** (flat 2D, no OpenXR).
 
 ### If controls or VR feel dead
 
-1. Launch with **`Start-GEVR.bat`** (headset) or **`Play-on-monitor.bat`** (flat), not bare `goldeneye.exe`
+1. Launch with **Start-GEVR.bat** (headset) or **Play-on-monitor.bat** (flat), not bare goldeneye.exe
 2. Recenter with **both** stick clicks
 3. Confirm Windows is handing GEVR the OpenXR runtime you think it is
 4. File an Issue with **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **Start-GEVR.bat yes/no** (Play-on-monitor.bat if no headset). [CONTRIBUTING](../CONTRIBUTING.md).
