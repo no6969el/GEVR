@@ -1,0 +1,45 @@
+GEVR Beta vr451
+===============
+
+Bring your own USA ROM. No ROM in the zip.
+
+Live: https://github.com/no6969el/GEVR/releases/tag/vr451
+Zip:  https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip
+
+1) Stay on Latest (Update)
+--------------------------
+Open GevrRomStarter - it checks GitHub Latest.
+Click Update once to pull this zip, keep saves / prefs / your .z64,
+then launch Start-GEVR.bat. Always stay on Latest so you have the
+features listed below.
+
+The starter finds goldeneye.exe in the same folder and sets the game
+path for you. Do not double-click goldeneye.exe.
+
+Each Beta tag bumps a ship stamp so the first launch after an update
+rebuilds the image cache once from your same ROM. Saves stay.
+
+2) What is new in vr451 (player words)
+--------------------------------------
+- Cuff / watch: left cuff; right over cuff + grab detonates remotes if
+  mines are armed, else watch laser from the cuff; hip holster; draws
+  over cuff; no three-arm watch pull-out; proximity alone does not fire
+- Hand cycle: left alone; per-hand cycle; grip pick; per-hip holster;
+  hands respect each other's space
+- Prop stick: barrels, tanks, vehicles, crates, modems, and prop-on-prop;
+  guards still stick as before
+- Already smoother this pass: free-aim arms, vertex fixes, door hit-snap,
+  false doors, corpse pass-through, re-grab, mines on characters
+
+3) Next series
+--------------
+Levels and gameplay stoppers already reported.
+Scope / lens fill is still parked - not in this cut.
+
+4) Play
+-------
+Start-GEVR.bat (GevrRomStarter + colocated goldeneye.exe). USA .z64.
+Do not double-click goldeneye.exe.
+
+https://github.com/no6969el/GEVR/issues/new/choose
+Do not upload your ROM.
