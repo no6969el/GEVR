@@ -1,19 +1,17 @@
 # Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr450.2](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr451](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README Play](../README.md#play-vr4502---the-one-to-grab). Download: [GEVR-Beta-vr450.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr450.2](https://github.com/no6969el/GEVR/releases/tag/vr450.2)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr451](https://github.com/no6969el/GEVR/releases/tag/vr451)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
-- **Headset:** Start-GEVR.bat — starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
-- **Monitor / no headset:** Play-on-monitor.bat — VR off, no stereo eyes. This is also the path for **local split-screen**.
+- **Headset:** Start-GEVR.bat - starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
+- **Monitor / no headset:** Play-on-monitor.bat - VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **GEVR-Beta-vr450.2-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **GEVR-Beta-vr451-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
-
-When things feel offset, or after you move your playspace setup:
 
 **Click both thumbsticks at the same time** (press both sticks in like L3+R3).
 
@@ -22,9 +20,9 @@ Also works:
 - **Xbox pad:** L3 + R3 together
 - **Keyboard:** Home while the game window has focus
 
-One stick click alone does nothing. This is the same recenter the game uses when you enter gameplay from the cinema / menu.
+One stick click alone does nothing.
 
-After recenter, standing still and turning your head should not slide the world. Walking in your room should move you in Bond-world.
+**Short example:** stand in your playspace, click both sticks, then walk forward with the left stick while looking around with your head.
 
 ## Move and look
 
@@ -35,67 +33,75 @@ After recenter, standing still and turning your head should not slide the world.
 | **Head / 6DOF** | Look around; move in the playspace to translate in-world |
 | **Controllers** | Gun aim follows the controller |
 
-**Short example:** stand in your playspace, click both sticks to recenter, then walk forward with the left stick while looking around with your head.
-
 ## Fire and aim
 
 | Input | What it does |
 |---|---|
 | **Trigger** | Fire (each hand fires its own gun when dual-wielding) |
 | **B** | Reload |
-| **A** | Next weapon |
-| **X** (left controller) | Previous weapon |
-| **Squeeze / grip** | ADS / aim mark on the gun ray (not stuck in face centre) |
+| **A** | Next weapon (that hand) |
+| **X** (left controller) | Previous weapon (that hand) |
+| **Squeeze / grip** | ADS / aim mark on the gun ray; also grab for holster, watch press, and pick-up |
 | **While ADS + left stick** | Walk forward/back (no duck) |
 | **While ADS + right stick** | Duck / stand |
 
-**vr450.2:** Auto-Aim defaults **OFF** in this build. Aim scale and eye embedding keep the mark readable in headset.
-
 **Short example:** squeeze to ADS, walk with the left stick, fire with the trigger. Tap **A** / left **X** to cycle weapons; **B** reloads.
 
-Rockets point their nose along the flight path. Grenade launcher is single-shot / muzzle feel OK. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
+Rockets point their nose along the flight path. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
-## Hands and cuff (vr450.2)
+## Cuff / watch (vr451)
 
-- **Empty hand / fists** draw a cube (smaller than older cuts).
-- The cube **hides** while that hand holds a weapon.
-- Left-hand **cuff / watch** stays with the controller through stage changes.
+- **Left cuff** stays with your left controller through missions.
+- **Watch press:** put your **right hand over the left cuff** and **grab** (squeeze rising edge). If remotes are planted / mines are armed, that **detonates** them (no detonator item needed). If nothing is planted, fires a **watch laser from the cuff**.
+- **Holster:** bring a gun to your **hip** and grab to empty that hand; grab the hip again to take it back.
+- Right hand **draws over** the cuff (not under it). No watch pull-out weapon - no three-arm look.
+- **Proximity alone does not fire** - you need the grab over the cuff.
 
-## Mines and re-grab (vr450.2)
+**Short example:** plant remotes, hover your right hand over the watch, grab once to detonate. Or with nothing planted, same gesture fires the watch laser.
+
+## Hand cycle (vr451)
+
+- Leave the **left hand alone** (empty) when you want.
+- Cycle weapons **per hand** with **A** / left **X**.
+- **Grip** near a thrown mine or stickable to pick it up.
+- **Per-hip holster** - each side can stash / restore with grab at the hip.
+- Hands **respect each other's space** - one hand's holster / cuff / pick does not steal the other.
+
+**Short example:** holster the right gun at the right hip, keep cycling the left, then grab the hip again to redraw.
+
+## Mines, prop stick, and re-grab (vr451)
 
 - Thrown **remote / proximity** mines can be **picked back up** when the game allows it.
-- Mines can **stick to guards**, follow them, and stay visible while carried.
-- **Short example:** throw a prox mine at a guard, watch it ride along, or re-grab a remote you just tossed if you change your mind.
+- **Prop stick:** mines and stickables stick to **barrels, tanks, vehicles, crates, modems**, and **onto other props**. Guards still take sticks as before.
+- **Short example:** throw a prox mine at a crate or a guard, watch it stick, or re-grab a remote you just tossed if you change your mind.
 
-## Doors and bodies (vr450.2)
+## Doors and bodies
 
 - Door-edge aim / hit snap is more dependable around room boundaries.
 - False / decoy door presentation is quieter.
-- Dead bodies are less likely to jam a door mid open/close (**corpse pass**).
+- Dead bodies are less likely to jam a door mid open/close.
 
-## Tank (vr450.2)
+## Tank
 
 - Stand on the chassis and you **auto-mount**.
 - **Right stick pitch** aims the shells. Yaw already worked.
-- Touch-to-enter as a separate gesture is not the ship path. Climb by getting onto the tank.
+- Climb by getting onto the tank.
 
-## Reload, pause, and menus (vr450.2)
+## Reload, pause, and menus
 
-- **B** reloads (right-hand B on Quest-style layouts).
+- **B** reloads.
 - **Menu / system button** opens pause and options in headset (not B, not Y). **Tab** still works on keyboard / monitor.
 - In the **pause watch**, **left stick** moves the menu highlight in VR.
-- Face-button confirm in menus is still partly wired. If a face button does nothing, that may still be a known gap — file an Issue with your headset and bat.
-- Die / continue reload should no longer dump you in junk space ([issue #38](https://github.com/no6969el/GEVR/issues/38) SETUPCOPY). If it still breaks, quit the exe, run the bat again, and report it.
 
 ## Cinema / menus
 
-While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen. Turn your head and the screen stays put in the room.
+While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen.
 
-**VR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes TURN SPEED, TURN STYLE (Smooth/Snap), and SNAP SIZE (gray on Smooth). Those prefs save under %LOCALAPPDATA%\GEVR with your saves.
+**VR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes TURN SPEED, TURN STYLE (Smooth/Snap), and SNAP SIZE (gray on Smooth). Prefs save under %LOCALAPPDATA%/GEVR with your saves.
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [README Play](../README.md#play-vr4502---the-one-to-grab) / [GEVR-Beta-vr450.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip).
 
 **Verified:**
 
@@ -103,9 +109,9 @@ GEVR uses **OpenXR**. Which runtime Windows hands us matters. Current zip: [READ
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory — try it and report if something feels off. We do not call every high-Hz path signed off yet ([issue #49](https://github.com/no6969el/GEVR/issues/49)).
+**Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off.
 
-**Headset recipe:** unzip **GEVR-Beta-vr450.2-win64.zip**, run **Start-GEVR.bat**, point at your USA .z64, put the headset on, recenter with both stick clicks.
+**Headset recipe:** unzip or **Update**, run **Start-GEVR.bat**, point at your USA .z64, put the headset on, recenter with both stick clicks.
 
 **No headset:** **Play-on-monitor.bat** (flat 2D, no OpenXR).
 
