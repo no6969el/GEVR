@@ -2,13 +2,13 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr445.2**. [README Play](README.md#play-vr4452---the-one-to-grab) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr451**. [README](README.md#how-to-play) - [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md).
 
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
-**Other way around:** product projects that reuse GEVR (name, docs, tools, playbook) are listed in [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) — separate from this “what GEVR borrowed” sheet.
+**Other way around:** product projects that reuse GEVR (name, docs, tools, playbook) are listed in [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) - separate from this "what GEVR borrowed" sheet.
 
 ---
 
@@ -32,7 +32,7 @@ We credit only real influence or reuse. Survey-only reads and projects we did **
 
 ### Alex-LeTux / perfect_dark_VR (MIT) - design map, not vendored code
 
-- **Repo:** https://github.com/Alex-LeTux/perfect_dark_VR  
+- **Repo:** https://github.com/Alex-LeTux/perfect_dark_VR
 - **Surveyed:** branch `port` @ `67ea20c86986c6bc85687f26a27418b266af309c`
 - **What we took (recorded influence only - their VR tree is not copied into GEVR):**
   - Controller quaternion basis of the form `{w, -x, y, -z}` (hand-axis knobs)
@@ -95,9 +95,9 @@ If you spot a missing credit for something we really used, open an Issue titled 
 
 ## Quick links
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr445.1 and file bugs
+- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr451 and file bugs
 - [LICENSE-MAP.md](LICENSE-MAP.md) - whose license is whose
-- [README Play](README.md#play-vr4451---the-one-to-grab) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
+- [README](README.md#how-to-play) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
 - [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) - other product projects using GEVR (what they took)

@@ -6,22 +6,24 @@
 
 **Native VR. Bring your own ROM. Beta is live.**
 
-Latest: **[vr450.2](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr450.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr450.2/GEVR-Beta-vr450.2-win64.zip)
+Latest: **[vr451](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr451-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip)
+
+Stay on Latest: use **Update** in GevrRomStarter so you have everything listed here. Saves stay.
 
 ---
 
 ## How to launch
 
-1. Grab the zip from [Latest](https://github.com/no6969el/GEVR/releases/latest).
+1. Grab the zip from [Latest](https://github.com/no6969el/GEVR/releases/latest) - or **Update** if you already play.
 2. Unzip. Run **`Start-GEVR.bat`**.
 3. Point **GevrRomStarter** at your USA `.z64`.
-4. Headset on → both sticks to recenter → look right for VR Settings.
+4. Headset on -> both sticks to recenter -> look right for VR Settings.
 
 Full steps: [README](README.md).
 
 ---
 
-## Features in vr450.2
+## Features in vr451
 
 **Movement & comfort**
 - Walk with the left stick; turn with the right (smooth or snap in VR Settings).
@@ -31,30 +33,35 @@ Full steps: [README](README.md).
 **Guns & hands**
 - Point to aim; trigger to fire; squeeze to ADS.
 - Dual-wield: each hand's trigger fires that gun.
-- **A** next weapon · **X** previous · **B** reload.
+- **A** next weapon · **X** previous · **B** reload (per hand where it applies).
 - Throwables leave from your grip.
-- Left cuff / watch stays on the left controller.
+- **Hand cycle** - left alone when you want; cycle per hand; grip pick; per-hip holster; hands respect each other's space.
+
+**Cuff / watch**
+- Left cuff stays on the left controller.
+- Right hand over cuff + **grab** -> detonate planted remotes if mines are armed; else **watch laser** from the cuff.
+- Holster at the hip with grab; right hand draws over the cuff (not under).
+- No three-arm watch pull-out. Proximity alone does not fire.
 
 **World toys**
-- Re-grab thrown remote / prox mines; mines can stick to guards.
+- **Prop stick** - barrels, tanks, vehicles, crates, modems, and prop-on-prop; guards still stick as before.
+- Re-grab thrown remote / prox mines.
 - Cleaner door-edge hits; quieter false doors; corpses jam doors less.
 - Landmark / aim scale / embed eye for readable aim.
 - Tank auto-mount when you stand on the chassis.
 
+**Already smoother this pass**
+- Free-aim arms, vertex fixes, door hit-snap, false doors, corpse pass-through, re-grab, mines on characters.
+
 **Other**
 - Flat / monitor play (`Play-on-monitor.bat`) and classic local split-screen.
-- In-app **Update** in GevrRomStarter.
+- In-app **Update** in GevrRomStarter - stay on Latest.
 
 ---
 
-## Coming next — cuff / watch
+## Coming next
 
-Not in vr450.2 yet — next build:
-
-- Right hand over cuff + squeeze → detonate remotes, or watch laser if none planted.
-- Hip holster / unholster with grab.
-- Right hand draws over the cuff cleanly.
-- No watch-as-weapon pull-out (no three arms).
+Levels and gameplay stoppers already reported. Scope / lens fill is still parked - not claimed shipped.
 
 ---
 
