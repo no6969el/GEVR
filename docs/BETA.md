@@ -1,10 +1,10 @@
-> **vr451:** GitHub **Latest**. Use **Update** in GevrRomStarter and stay on Latest so you have the features listed here. Saves stay.
+> **vr452.2:** GitHub **Latest**. Use **Update** in GevrRomStarter and stay on Latest so you have the features listed here. Saves stay.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr451**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr451-win64.zip`**. Play steps: [README](../README.md#how-to-play). Tag: [vr451](https://github.com/no6969el/GEVR/releases/tag/vr451). Direct download: [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip).
+**Play this cut:** [**vr452.2**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.2-win64.zip`**. Play steps: [README](../README.md#how-to-play). Tag: [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2). Direct download: [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip).
 
 Always stay on Latest via **Update** (or a fresh zip). Older tag pages stay for history - do not download them as if they were Latest.
 
@@ -15,7 +15,7 @@ Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../READM
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr451-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip) - or use **Update** - play steps in [README](../README.md#how-to-play)
+- Download: [**GEVR-Beta-vr452.2-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip) - or use **Update** - play steps in [README](../README.md#how-to-play)
 
 ## Launchers
 
@@ -39,7 +39,7 @@ GEVR follows headset Hz and ties game speed to that rate - MotSmooth / Space War
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr451-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr451](https://github.com/no6969el/GEVR/releases/tag/vr451) - or click **Update** in GevrRomStarter.
+1. Download and unzip **`GEVR-Beta-vr452.2-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2) - or click **Update** in GevrRomStarter.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%/GEVR/cache`. Then play.
@@ -52,18 +52,21 @@ GEVR follows headset Hz and ties game speed to that rate - MotSmooth / Space War
 - **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the zip (type **YES**) to wipe **`%LOCALAPPDATA%/GEVR/cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%/GEVR` and run the bat again (that also drops saves).
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off** - see above.
 
-## vr451 wear notes
+## vr452.2 wear notes
 
-- **Update first** - stay on Latest so cuff/watch, hand cycle, and prop stick are actually in your folder.
+- **Update first** - stay on Latest so GEVR Settings, Visual modes, Apply, Reset, and HD toggle are in your folder.
+- **GEVR Settings:** Mode Select -> GEVR Settings. Change picture / Visual / HD, then **Apply** (game restarts; settings stick). See [GEVR-SETTINGS.md](GEVR-SETTINGS.md).
+- **Visual:** **VR** (full headset), **XR** (square outline), **Flat** (monitor). Apply to switch.
+- **Reset defaults:** confirm Yes; restore follows pending Visual (VR-friendly or Flat-friendly).
+- **HD textures:** optional; off by default; needs a pack on disk.
 - **Cuff / watch:** left cuff on left; right hand over cuff + grab detonates remotes if mines are armed, else watch laser from the cuff; hip holster; right hand draws over the cuff; no three-arm watch pull-out; proximity alone does not fire.
 - **Hand cycle:** left alone when you want; cycle per hand; grip pick; per-hip holster; hands respect each other's space.
 - **Prop stick:** barrels, tanks, vehicles, crates, modems, and prop-on-prop; guards still stick as before.
-- **Already smoother this pass (player words):** free-aim arms, vertex fixes, door hit-snap, false doors, corpse pass-through, re-grab, mines on characters.
 - Throwables leave from your grip.
 - Weapon cycle: tap **A** = next; left-controller **X** = previous. **B** reloads.
 - Hand cubes hide while that hand holds a weapon.
-- Refresh follows your headset rate.
-- VR Settings: on the intro hub, **look right**. Prefs save under `%LOCALAPPDATA%/GEVR`.
+- Frame rate can follow your headset or display from GEVR Settings.
+- VR Settings glass: on the intro hub, **look right** (turn style / snap). Prefs save under `%LOCALAPPDATA%/GEVR`.
 - Auto-Aim defaults OFF.
 - Tank: stand on the chassis and you auto-mount. Stick pitch aims the shells.
 - Hard crash: look beside `goldeneye.exe` for `gevr-fault-*.txt` and attach the first lines (no ROM).
@@ -88,7 +91,8 @@ Do **not** upload your ROM. Forms: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## What to test first
 
-- Boot into VR; confirm **Update** / Latest is vr451
+- Boot into VR; confirm **Update** / Latest is vr452.2
+- GEVR Settings: change Visual or supersample, **Apply**, confirm it stuck after relaunch
 - Cuff / watch: right over cuff + grab (detonate or laser); holster at hip; no three-arm look
 - Hand cycle: empty left, per-hand cycle, grip pick, per-hip holster
 - Prop stick on a barrel / crate / vehicle and on a guard
