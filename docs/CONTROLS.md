@@ -1,15 +1,15 @@
 # Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr451](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr452.2](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr451](https://github.com/no6969el/GEVR/releases/tag/vr451)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** Start-GEVR.bat - starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
 - **Monitor / no headset:** Play-on-monitor.bat - VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **GEVR-Beta-vr451-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **GEVR-Beta-vr452.2-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
 
@@ -49,7 +49,7 @@ One stick click alone does nothing.
 
 Rockets point their nose along the flight path. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
-## Cuff / watch (vr451)
+## Cuff / watch (vr452.2)
 
 - **Left cuff** stays with your left controller through missions.
 - **Watch press:** put your **right hand over the left cuff** and **grab** (squeeze rising edge). If remotes are planted / mines are armed, that **detonates** them (no detonator item needed). If nothing is planted, fires a **watch laser from the cuff**.
@@ -59,7 +59,7 @@ Rockets point their nose along the flight path. Throwables (grenades, mines, pla
 
 **Short example:** plant remotes, hover your right hand over the watch, grab once to detonate. Or with nothing planted, same gesture fires the watch laser.
 
-## Hand cycle (vr451)
+## Hand cycle (vr452.2)
 
 - Leave the **left hand alone** (empty) when you want.
 - Cycle weapons **per hand** with **A** / left **X**.
@@ -69,7 +69,7 @@ Rockets point their nose along the flight path. Throwables (grenades, mines, pla
 
 **Short example:** holster the right gun at the right hip, keep cycling the left, then grab the hip again to redraw.
 
-## Mines, prop stick, and re-grab (vr451)
+## Mines, prop stick, and re-grab (vr452.2)
 
 - Thrown **remote / proximity** mines can be **picked back up** when the game allows it.
 - **Prop stick:** mines and stickables stick to **barrels, tanks, vehicles, crates, modems**, and **onto other props**. Guards still take sticks as before.
@@ -93,6 +93,12 @@ Rockets point their nose along the flight path. Throwables (grenades, mines, pla
 - **Menu / system button** opens pause and options in headset (not B, not Y). **Tab** still works on keyboard / monitor.
 - In the **pause watch**, **left stick** moves the menu highlight in VR.
 
+## GEVR Settings (vr452.2)
+
+From **Mode Select**, open **GEVR Settings** to change supersample, filter, frame rate, game speed, optional HD textures, and **Visual** mode (VR / XR / Flat). Highlight **Apply** to save and relaunch. Full how-to: [GEVR-SETTINGS.md](GEVR-SETTINGS.md).
+
+On the intro hub you can still **look right** for the older **VR Settings** glass (turn style / snap size).
+
 ## Cinema / menus
 
 While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen.
@@ -101,7 +107,7 @@ While the flat cinema or frontend menus are up, you are in a small hub room look
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip).
 
 **Verified:**
 
