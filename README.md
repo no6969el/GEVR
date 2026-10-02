@@ -6,8 +6,8 @@
 
 **GoldenEye in VR. Bring your own ROM.**
 
-Latest build: **[vr451](https://github.com/no6969el/GEVR/releases/latest)**  
-Direct zip: [`GEVR-Beta-vr451-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip)
+Latest build: **[vr452.2](https://github.com/no6969el/GEVR/releases/latest)**  
+Direct zip: [`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)
 
 [Discord](https://discord.gg/flat2vr) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Credits](CREDITS.md)
 
@@ -21,16 +21,28 @@ GEVR has an in-app **Update** in **GevrRomStarter**. Use it when a newer build i
 
 ## How to play
 
-1. Download **[`GEVR-Beta-vr451-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip)** (no ROM inside) - or click **Update** if you already play.
+1. Download **[`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)** (no ROM inside) - or click **Update** if you already play.
 2. Unzip anywhere.
 3. Double-click **`Start-GEVR.bat`** - it opens **GevrRomStarter**, which finds `goldeneye.exe` in the same folder.
 4. Point it at a **USA GoldenEye `.z64` you own**.
 5. Put the headset on. Click **both thumbsticks** to recenter.
-6. On the intro hub, **look right** for **VR Settings** (turn style / snap size).
+6. On **Mode Select**, open **GEVR Settings** to tune picture, Visual mode (VR / XR / Flat), and optional HD textures - then **Apply** so the game restarts with your choices saved.
 
 Tip: if VR feels half-speed, turn **SteamVR Motion Smoothing** and **Virtual Desktop Space Warp** **Off**.
 
-Flat screen: use **`Play-on-monitor.bat`**. Same game; split-screen multiplayer works on a monitor.
+Flat screen: set Visual to **Flat** in GEVR Settings and **Apply**, or use **`Play-on-monitor.bat`**. Same game; split-screen multiplayer works on a monitor.
+
+---
+
+## What's new in vr452.2
+
+- **GEVR Settings** - from Mode Select: sharpen the picture, pick launch style, optional HD, then **Apply**.
+- **Visual modes** - full **VR**, square-outline **XR**, or **Flat** on your monitor.
+- **Apply & restart** - save once; the game comes back in the mode you picked. Supersample and friends stick across that relaunch.
+- **Reset defaults** - one confirm restores a solid VR or Flat starting point.
+- **Optional HD textures** - sharper walls and props when you install a pack (off by default).
+
+How-to: [`docs/GEVR-SETTINGS.md`](docs/GEVR-SETTINGS.md).
 
 ---
 
@@ -53,7 +65,7 @@ More detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ---
 
-## What you can do now (vr451)
+## What you can do now (vr452.2)
 
 - **Stand inside GoldenEye** - real OpenXR stereo; walk your playspace and Bond moves with you.
 - **Aim with your hands** - point the controller, squeeze to ADS, fire with the trigger.
@@ -66,7 +78,7 @@ More detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 - **Doors & bodies** - cleaner door-edge aim, quieter false doors, corpses jam doors less.
 - **Readable aim** - scaled aimer / landmarks / eye marks that stay clear in headset.
 - **Tanks** - stand on the chassis to mount; aim shells with the stick.
-- **Already smoother this pass** - free-aim arms, vertex fixes, door hit-snap, false doors, corpse pass-through, re-grab, and mines on characters.
+- **Your settings, your way** - GEVR Settings for picture, Visual VR / XR / Flat, Apply that sticks, Reset defaults, optional HD.
 
 ---
 
@@ -78,6 +90,6 @@ Next fix series: **levels and gameplay stoppers** already reported. Scope / lens
 
 ## Links
 
-[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Discord](https://discord.gg/flat2vr) · [Features](FEATURES.md) · [Patreon](https://www.patreon.com/cw/GEVR)
+[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Discord](https://discord.gg/flat2vr) · [Features](FEATURES.md) · [GEVR Settings](docs/GEVR-SETTINGS.md) · [Patreon](https://www.patreon.com/cw/GEVR)
 
 Star the repo and [follow @no6969el](https://github.com/no6969el) for the next drop.

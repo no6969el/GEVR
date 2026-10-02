@@ -4,9 +4,9 @@
 
 # GEVR features
 
-**Native VR. Bring your own ROM. Beta is live.**
+**Native VR. Bring your own ROM. Settings you can see.**
 
-Latest: **[vr451](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr451-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip)
+Latest: **[vr452.2](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)
 
 Stay on Latest: use **Update** in GevrRomStarter so you have everything listed here. Saves stay.
 
@@ -17,18 +17,39 @@ Stay on Latest: use **Update** in GevrRomStarter so you have everything listed h
 1. Grab the zip from [Latest](https://github.com/no6969el/GEVR/releases/latest) - or **Update** if you already play.
 2. Unzip. Run **`Start-GEVR.bat`**.
 3. Point **GevrRomStarter** at your USA `.z64`.
-4. Headset on -> both sticks to recenter -> look right for VR Settings.
+4. Headset on -> both sticks to recenter -> **Mode Select** -> **GEVR Settings** when you want to tune.
 
-Full steps: [README](README.md).
+Full steps: [README](README.md). Settings how-to: [GEVR Settings](docs/GEVR-SETTINGS.md).
 
 ---
 
-## Features in vr451
+## New in vr452.2
+
+**GEVR Settings**
+- Open from **Mode Select** (under Mission / Multiplayer).
+- **Supersample**, **Filter**, **Frame rate**, **Game speed**, optional **HD textures**, and **Visual mode**.
+- **Apply** saves and restarts into your choices - picture settings stick across that relaunch.
+- **Reset defaults** restores a solid VR or Flat starting point (depends on your pending Visual mode).
+
+**Visual mode**
+| Mode | What you get |
+|------|----------------|
+| **VR** | Full headset play (default). |
+| **XR** | Headset with a clean square / outline frame. |
+| **Flat** | Play on your monitor - full screen, no headset required. |
+
+**Optional HD textures**
+- Toggle in GEVR Settings (off by default).
+- Turn on only if you already installed an HD texture pack where GEVR expects it.
+
+---
+
+## Features you already have
 
 **Movement & comfort**
 - Walk with the left stick; turn with the right (smooth or snap in VR Settings).
 - Recenter anytime with both thumbstick clicks.
-- Game follows your headset refresh rate.
+- Frame rate can follow your headset or display from GEVR Settings.
 
 **Guns & hands**
 - Point to aim; trigger to fire; squeeze to ADS.
@@ -50,11 +71,8 @@ Full steps: [README](README.md).
 - Landmark / aim scale / embed eye for readable aim.
 - Tank auto-mount when you stand on the chassis.
 
-**Already smoother this pass**
-- Free-aim arms, vertex fixes, door hit-snap, false doors, corpse pass-through, re-grab, mines on characters.
-
 **Other**
-- Flat / monitor play (`Play-on-monitor.bat`) and classic local split-screen.
+- Flat / monitor play (GEVR Settings Visual Flat + Apply, or `Play-on-monitor.bat`) and classic local split-screen.
 - In-app **Update** in GevrRomStarter - stay on Latest.
 
 ---
@@ -65,4 +83,4 @@ Levels and gameplay stoppers already reported. Scope / lens fill is still parked
 
 ---
 
-[Controls](docs/CONTROLS.md) · [Credits](CREDITS.md) · [Discord](https://discord.gg/flat2vr)
+[Controls](docs/CONTROLS.md) · [GEVR Settings](docs/GEVR-SETTINGS.md) · [Credits](CREDITS.md) · [Discord](https://discord.gg/flat2vr)
