@@ -2,9 +2,15 @@
 
 Fan testers first. Thanks for helping GEVR Beta.
 
+## Stay on Latest (Update first)
+
+**Before you play or file a bug:** open **GevrRomStarter** and click **Update** once if GitHub has a newer build. That keeps your saves, prefs, and ROM path while pulling **Latest** (today **vr451**). Do not hunt older tag zips unless we ask you to reproduce on a specific cut.
+
+Fresh install? Grab **[GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest), then use **Update** on every later drop.
+
 ## Play the current zip
 
-Current zip is **vr451**. Grab **[GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr451](https://github.com/no6969el/GEVR/releases/tag/vr451) and follow [README](README.md#how-to-play). Prefer **Update** in GevrRomStarter so you stay on Latest.
+Follow [README — How to play](README.md#how-to-play).
 
 - **Headset:** `Start-GEVR.bat`
 - **No headset / monitor only:** `Play-on-monitor.bat`

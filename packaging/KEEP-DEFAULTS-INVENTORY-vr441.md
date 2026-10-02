@@ -59,8 +59,7 @@ exports them in the shell.
 | Knob | Value | Class |
 |------|-------|-------|
 | `GETV_VR` | `1` | KEEP_SHIP |
-| `GETV_FPS` | `90` | PLAYER_PREF |
-| `GETV_SIMDIV` | `1` | KEEP_SHIP |
+| `GETV_FPS` | *(unset on ship boot)* | Headset follows HMD refresh; monitor bat may pin `60`. |
 | `GETV_SIMHZ` | `query` | PLAYER_PREF |
 | `GETV_BUDGET` | `120` | PLAYER_PREF |
 | `GETV_XR_PLAY` | `1` | KEEP_SHIP |
@@ -227,7 +226,6 @@ These are the assignments whose primary job is **ON** or a named KEEP value
 |------|------------|
 | `GEVR_SHIP_TAG` | `vr441` |
 | `GETV_VR` | `1` |
-| `GETV_SIMDIV` | `1` |
 | `GETV_XR_PLAY` | `1` |
 | `GETV_XR_PLAY_STEREO` | `1` |
 | `GETV_XR_PLAY_SCREEN` | `2` |
@@ -332,7 +330,7 @@ All **39** `$requiredBootKnobs` entries appear in the tables above.
 Cleared to empty so a polluted shell cannot arm dig / falsifiers. **C_DEFAULT
 UNKNOWN** after wipe unless the player sets them.
 
-`GETV_XR_FOVMATCH`, `GETV_REALCLOCK`, `GETV_GUN_AIM`, `GETV_FULLSCREEN`,
+`GETV_XR_FOVMATCH`, `GETV_GUN_AIM`, `GETV_FULLSCREEN`,
 `GETV_WINDOW`, `GETV_MSAA`, `GETV_FXAA`, `GETV_CRT`, `GETV_CRT_SCANLINE`,
 `GETV_CRT_MASK`, `GETV_CRT_CURVE`, `GETV_CRT_VIGNETTE`, `GETV_XR_SHARPLOG`,
 `GETV_FIREDUMP`, `GETV_VR_VISFAR`, `GETV_ROOMHOLD`, `GETV_CULLWHY`,
