@@ -97,7 +97,7 @@ A FAIL on the monitor bat blocks Latest even if the headset sit was clean.
 | Knob | Ship value | Notes |
 |------|------------|--------|
 | `GETV_VR` | `1` | Public boot required (`geVrXrEnabled`; unset means off) |
-| `GETV_FPS` | `90` | Public boot required |
+| `GETV_FPS` | *(unset)* | Must stay unset in ship boot so pacing follows the HMD (#49). Do not pin `90` in public boots. |
 | `GETV_STEREO_SRC` | `xr` | Public boot required |
 | `GE_VR_XR` | `1` | Set in boot; **known no-op** in this binary (VR arm is `GETV_VR`). Kept for `Play-on-monitor.bat` gate compatibility. |
 
