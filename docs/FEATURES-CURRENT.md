@@ -1,8 +1,12 @@
-# Feature snapshot (public) - 2026-09-30
+# Feature snapshot (public) - 2026-10-02
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr451](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Stay on Latest via **Update**. This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.2](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Stay on Latest via **Update**. This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is [GEVR-Beta-vr451-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr451/GEVR-Beta-vr451-win64.zip). Play steps: [README](../README.md#how-to-play). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr451](https://github.com/no6969el/GEVR/releases/tag/vr451).
+High-level status of the playable wear. Current zip is [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip). Play steps: [README](../README.md#how-to-play). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2).
+
+## New in vr452.2
+- **GEVR Settings** on Mode Select (picture, Visual VR / XR / Flat, optional HD, Apply + relaunch that sticks, Reset defaults)
+- How-to: [GEVR-SETTINGS.md](GEVR-SETTINGS.md)
 
 ## Working enough for Beta focus
 - OpenXR VR present (true stereo path)
@@ -22,8 +26,9 @@ High-level status of the playable wear. Current zip is [GEVR-Beta-vr451-win64.zi
 - Tank auto-mount and stick pitch for tank shells
 - VR Settings on intro hub (look right); in-app **Update** in GevrRomStarter - stay on Latest
 - Starter finds colocated goldeneye.exe and sets game path
-- Game follows headset refresh rate (72 / 80 / 90 / 120 as reported)
-- Flat desktop play (Play-on-monitor.bat); local / split-screen multiplayer on a monitor
+- Frame rate can follow headset or display from GEVR Settings
+- Flat desktop play (Visual Flat + Apply, or Play-on-monitor.bat); local / split-screen multiplayer on a monitor
+- Optional HD textures toggle (off by default; needs a pack)
 
 ## Open / rough (next series)
 - Levels and **gameplay stoppers** already reported
@@ -32,7 +37,7 @@ High-level status of the playable wear. Current zip is [GEVR-Beta-vr451-win64.zi
 - Mass explosions can still hard-crash
 - No ROM redistribution (do not upload ROM files)
 
-## Headset / runtime (vr451)
+## Headset / runtime (vr452.2)
 
 Verified on this Beta (details in README):
 
