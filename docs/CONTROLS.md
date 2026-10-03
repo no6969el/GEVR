@@ -31,7 +31,7 @@ Auto-Aim defaults **OFF** in this build.
 | Control | Action |
 |---|---|
 | **Right trigger** | Fire the gun in your **right** hand |
-| **Left trigger** | Fire the gun in your **left** hand when dual-wielding |
+| **Left trigger** | Fire the gun in your **left** hand |
 | **Right grip (squeeze)** | **Aim / ADS** — insight aim on the gun ray (aim mark on the weapon, not glued to your face) |
 | **Right grip at a door** | **Open / close** the door (same squeeze; no separate “use” reach when you are in range) |
 | **Right grip on your left watch face** | **Watch press** — see [Bond’s watch & cuff](#bonds-watch--cuff) (laser, detonator, or magnet attract depending on what you selected in the pause watch) |
@@ -66,7 +66,7 @@ Same bindings as Quest; Index names:
 | Index control | Same as Quest | Action |
 |---|---|---|
 | **Right trigger** | Right trigger | Fire right gun |
-| **Left trigger** | Left trigger | Fire left gun (dual-wield) |
+| **Left trigger** | Left trigger | Fire left gun |
 | **Right grip (A button grip)** | Right grip | Aim / ADS; door; watch press; hip holster |
 | **Left grip** | Left grip | Aim (left gun); door; pickup; mine regrab; two-hand support |
 | **Right thumbstick** | Right stick | Turn |
