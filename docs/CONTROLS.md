@@ -199,7 +199,7 @@ Use **`Play-on-monitor.bat`**. Mouse look is on by default (`GETV_MOUSE=0` turns
 | **Arrow keys** | Turn (mapped like the right stick) |
 | **Space** or **Left Ctrl** | Fire |
 | **Q** | Aim |
-| **E** or **F** | USE / reload / activate (**B** on the virtual pad) |
+| **E** or **F** | USE / activate (**B** on the virtual pad) |
 | **R** or **Enter** | Next weapon |
 | **X** (pad right shoulder key mapping) | Previous weapon when bound (`GETV_BIND_WEAPON_PREV`) |
 | **Z / X** | Left / right shoulder (C-buttons retail mapping) |
