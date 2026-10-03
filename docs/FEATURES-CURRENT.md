@@ -1,48 +1,24 @@
-# Feature snapshot (public) - 2026-10-02
+﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.3](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Stay on Latest via **Update**. This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.4](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install-vr4524).
 
-High-level status of the playable wear. Current zip is [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip). Play steps: [README](../README.md#how-to-play). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3).
+Current zip: **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)**. Tag: [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4).
 
-## New in vr452.2
-- **GEVR Settings** on Mode Select (picture, Visual VR / XR / Flat, optional HD, Apply + relaunch that sticks, Reset defaults)
-- How-to: [GEVR-SETTINGS.md](GEVR-SETTINGS.md)
+## vr452.4 highlights
 
-## Working enough for Beta focus
-- OpenXR VR present (true stereo path)
-- Head look + locomotion; physical walk/strafe moves you
-- Controller gun aim; squeeze ADS on the gun ray
-- Dual-wield fire from each hand
-- Throwables appear in your hand and leave from the grip
-- Tap **A** = next weapon; left-controller **X** = previous; **B** = reload
-- Hand cue cube hides while that hand holds a weapon
-- **Cuff / watch** - left cuff; right over cuff + grab detonates if mines armed else watch laser; hip holster; draws over cuff; no three-arm watch pull-out; proximity alone does not fire
-- **Hand cycle** - left alone; per-hand cycle; grip pick; per-hip holster; hands respect each other's space
-- **Prop stick** - barrels / tanks / vehicles / crates / modems + prop-on-prop; guards still stick as before
-- Mine **re-grab**
-- Door-edge snap, quieter false doors, corpse pass so bodies jam doors less
-- Free-aim arms, vertex fixes, and related comfort already in this pass
-- Landmark / aim scale / embed eye for readable aim in headset
-- Tank auto-mount and stick pitch for tank shells
-- VR Settings on intro hub (look right); in-app **Update** in GevrRomStarter - stay on Latest
-- Starter finds colocated goldeneye.exe and sets game path
-- Frame rate can follow headset or display from GEVR Settings
-- Flat desktop play (Visual Flat + Apply, or Play-on-monitor.bat); local / split-screen multiplayer on a monitor
-- Optional HD textures toggle (off by default; needs a pack)
+- **HD textures** — your `hdtextures` folder beside the exe; enable in GEVR Settings, Apply, next boot
+- **Saved settings** — VR, XR, and flat profiles
+- **Monitor output** — both eyes, left, right, or off while in VR/XR
+- **Rockets** — on-gun launcher with flat crosshair
 
-## Open / rough (next series)
-- Levels and **gameplay stoppers** already reported
-- Scope / lens fill still parked - not claimed shipped
-- Crashes under investigation (report with the [issue forms](https://github.com/no6969el/GEVR/issues/new/choose))
-- Mass explosions can still hard-crash
-- No ROM redistribution (do not upload ROM files)
+## Core VR (carry-forward)
 
-## Headset / runtime (vr452.2)
+- OpenXR stereo, 6DOF, controller aim, ADS on the gun ray, dual-wield
+- Playspace / recenter (both stick clicks), grip doors, melee swing, Janus spawn
+- Throwables, tank mount, BYO-ROM file-backed images, GevrRomStarter Update
 
-Verified on this Beta (details in README):
+## Headset / runtime
 
-- Pimax Crystal Super + **SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR)
-- Native **PimaxXR**
-- **Quest 3 + Virtual Desktop (VDXR)**
+Pimax (SteamVR OpenXR + CustomHeadsetOpenVR), native PimaxXR, Quest 3 + VDXR — see [README](../README.md#what-we-tested).
 
-When you report: headset, OpenXR runtime, SteamVR on/off, HMD vs monitor, Start-GEVR.bat yes/no (Play-on-monitor.bat if no headset). [CONTRIBUTING.md](../CONTRIBUTING.md).
+Controls: [CONTROLS.md](CONTROLS.md). Beta quirks: [BETA.md](BETA.md).
