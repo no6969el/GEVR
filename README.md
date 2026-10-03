@@ -78,14 +78,21 @@ Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ## vr452.4 features (how to use them)
 
+### GEVR Settings (in-game menu)
+
+On the intro hub, **look right** at the **GEVR Settings** glass. **A** selects a row; **left / right** on the stick changes the value; **Apply** saves and restarts into those settings. Choices are stored separately for **VR**, **XR**, and **flat** (change **Visual mode** to switch which profile you are editing).
+
+Rows today: **Supersample** (e.g. 3 Sharp), **Monitor** (on), **Full screen** (off), **Window size**, **Filter** (bilinear), **Frame rate** (Headset), **Game speed** (Smooth 90), **HD textures** (off until you add a pack), **Visual mode** (VR), **Beta** (none yet), **Reset defaults**, **Apply** (save and restart).
+
+New features will keep being added to this menu. **Beta** will hold test options in the future.
+
 ### HD textures
 
 **GEVR does not ship the pack.** Download the community **GLideN64 PNG** zip (**not** the `.hts` file) from the [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract it so the **`GOLDENEYE`** folders sit inside an **`hdtextures`** folder next to `goldeneye.exe`. Do not rename files. In **GEVR Settings**, turn **HD textures** on, **Apply**, then play on the **next boot**.
 
 | Feature | How |
 |---|---|
-| **Settings that save** | **GEVR Settings** (intro hub, look right) — separate **VR**, **XR**, and **flat** profiles; **Apply** restarts into what you picked. |
-| **Monitor output** | While in VR or XR, choose **both eyes**, **left**, **right**, or **off** for the desktop picture (saved per VR/XR profile). Greyed out in flat. |
+| **Monitor output** | In the menu, **Monitor** — **both eyes**, **left**, **right**, or **off** on the desktop while you are in VR or XR (greyed out in flat). |
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |
 
 Older comfort and combat passes still in this line: playspace / hands ([#74](https://github.com/no6969el/GEVR/issues/74)), melee swing ([#75](https://github.com/no6969el/GEVR/issues/75)), Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)), Dam sky / grip doors ([#80](https://github.com/no6969el/GEVR/issues/80), [#90](https://github.com/no6969el/GEVR/issues/90)), cuff / dual-wield / watch magnet, and more — see [FEATURES.md](FEATURES.md).
