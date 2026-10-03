@@ -45,7 +45,7 @@ New features will keep being added here. **Beta** will hold test options later (
 
 ### Pause watch — GAME OPTIONS
 
-In mission, **Menu** opens the pause watch. Open **GAME OPTIONS**. The list runs **past ratio** — **scroll down** with the **left stick**. The sheet ends with: **scroll down - vr settings below**. VR comfort rows live under ratio on that page.
+In mission, **Menu** opens the pause watch. Open **GAME OPTIONS**. The list runs **past ratio** — **scroll down** with the **left stick**. While the highlight is still on a retail row, the last retail line reads exactly: **scroll down - vr settings below**. VR comfort rows sit **below** ratio on that page.
 
 ### Reload gesture (VR)
 

@@ -55,7 +55,7 @@ Auto-Aim defaults **OFF** in this build.
 
 **Dual-wield** is only when you hold **two guns** — put a second gun in the left hand (weapon cycle or pickup). **Left trigger** fires the left gun; **right trigger** fires the right gun. A **single** gun in the left hand still fires with **left trigger** on its own. Each hand keeps its own weapon line.
 
-**Throwables** (grenades, timed mines, remote/proximity mines, plastique, covert modem, etc.): they appear in the hand; **trigger** throws or fires; **B** still handles use/plant/reload where retail does. After you throw or plant a mine, use **grip regrab** (above) to recover your own stuck mines when the game allows it.
+**Throwables** (grenades, timed mines, remote/proximity mines, plastique, covert modem, etc.): they appear in the hand; **trigger** throws or fires; **B** handles plant/activate and other retail **B** actions where GoldenEye maps them (not gun reload — use the [reload gesture](#reload-gesture-vr)). After you throw or plant a mine, use **grip regrab** (above) to recover your own stuck mines when the game allows it.
 
 ---
 
@@ -72,7 +72,7 @@ Same bindings as Quest; Index names:
 | **Right thumbstick** | Right stick | Turn |
 | **Left thumbstick** | Left stick | Walk |
 | **Right A** | Right A | Next weapon |
-| **Right B** | Right B | USE / activate (reload = gesture) |
+| **Right B** | Right B | USE / activate |
 | **Left X** (face button) | Left X | Previous weapon |
 | **Left Y** | Left Y | Pause (in shipped profile) |
 | **System / menu button** | Quest **Menu** | Pause |
