@@ -1,8 +1,8 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr453](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install-vr453).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.4](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install-vr4524).
 
-Current zip: **[`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip)**. Tag: [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453).
+Current zip: **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)**. Tag: [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4).
 
 ## vr453 highlights
 

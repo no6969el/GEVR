@@ -1,26 +1,26 @@
-> **vr453:** GitHub **Latest**. Grab [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453) or use Update in GevrRomStarter.
+> **vr452.4:** GitHub **Latest**. Grab [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4) or use Update in GevrRomStarter.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr453**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr453-win64.zip`**. Install: [README](../README.md#install-vr453). Tag: [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453).
+**Play this cut:** [**vr452.4**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.4-win64.zip`**. Install: [README](../README.md#install-vr4524). Tag: [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4).
 
-Older tag **pages** stay for history. **Latest is vr453.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr452.4.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
 - **vr441** / **vr440** tag pages stay. Their **zips were stripped** when later cuts shipped.
 - **vr439** zip removed when vr440 shipped. Tag page stays for record.
 
-Player door: [00-START-HERE.md](00-START-HERE.md). Install: [README](../README.md#install-vr453). Hands: [CONTROLS.md](CONTROLS.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
+Player door: [00-START-HERE.md](00-START-HERE.md). Install: [README](../README.md#install-vr4524). Hands: [CONTROLS.md](CONTROLS.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr453-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) — [README Install](../README.md#install-vr453)
+- Download: [**GEVR-Beta-vr452.4-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) — [README Install](../README.md#install-vr4524)
 
 ## Launchers
 
@@ -44,7 +44,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr453-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453).
+1. Download and unzip **`GEVR-Beta-vr452.4-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4).
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\\GEVR\\cache`. Then play.
