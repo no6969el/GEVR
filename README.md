@@ -4,92 +4,148 @@
 
 # GEVR
 
-**GoldenEye in VR. Bring your own ROM.**
+**GoldenEye. Native. In VR. Bring your own ROM.**
 
-Latest build: **[vr452.3](https://github.com/no6969el/GEVR/releases/latest)**  
-Direct zip: [`GEVR-Beta-vr452.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip)
+> **Play now:** GitHub **Latest** is **[vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)** — zip [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Or hit **Update** in GevrRomStarter.
 
-[Discord](https://discord.gg/flat2vr) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Credits](CREDITS.md)
-
----
-
-## Stay on Latest
-
-GEVR has an in-app **Update** in **GevrRomStarter**. Use it when a newer build is out (saves stay). Always stay on Latest so you have the features listed below.
+> This public repo is for **player docs**, **Issues**, and **Beta zip Releases**. New product code is developed privately. See [`docs/SOURCE.md`](docs/SOURCE.md).
 
 ---
 
-## How to play
+The N64 classic you can finally *stand inside* — not an emulator overlay, not a flat game with a headset stuck on. GEVR is a from-source PC port of *GoldenEye 007* built for real OpenXR VR. You supply a **USA GoldenEye ROM you legally own**; the starter prepares a local cache and **`Start-GEVR.bat`** launches through **GevrRomStarter** (not bare `goldeneye.exe`).
 
-1. Download **[`GEVR-Beta-vr452.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip)** (no ROM inside) - or click **Update** if you already play.
+| | |
+|---|---|
+| **Download** | [**GEVR-Beta-vr452.4-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip) |
+| **Release page** | [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4) |
+| **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
+| **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
+| **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
+| **Discord** | [discord.gg/flat2vr](https://discord.gg/flat2vr) |
+| **Features** | [FEATURES.md](FEATURES.md) |
+| **Support** | [Patreon](https://www.patreon.com/cw/GEVR) |
+
+Star the repo and [follow @no6969el](https://github.com/no6969el). **Watch → Releases** for ship pings.
+
+---
+
+## Install (vr452.4)
+
+1. Download **[GEVR-Beta-vr452.4-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4). **No ROM inside the zip.**
 2. Unzip anywhere.
-3. Double-click **`Start-GEVR.bat`** - it opens **GevrRomStarter**, which finds `goldeneye.exe` in the same folder.
-4. Point it at a **USA GoldenEye `.z64` you own**.
-5. Put the headset on. Click **both thumbsticks** to recenter.
-6. On **Mode Select**, open **GEVR Settings** to tune picture, Visual mode (VR / XR / Flat), and optional HD textures - then **Apply** so the game restarts with your choices saved.
+3. Run **`Start-GEVR.bat`** — it sets VR boot knobs and starts **GevrRomStarter.exe**.
+4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
+5. Put the headset on. Recenter with **both thumbstick clicks**.
+6. On the intro hub, **look right** for **GEVR Settings** and tune comfort. Enjoy.
 
-Tip: if VR feels half-speed, turn **SteamVR Motion Smoothing** and **Virtual Desktop Space Warp** **Off**.
+**Please use the bat** — it locks in the good VR settings and runs the ROM starter we ship for this cut (not bare `goldeneye.exe`).
 
-Flat screen: set Visual to **Flat** in GEVR Settings and **Apply**, or use **`Play-on-monitor.bat`**. Same game; split-screen multiplayer works on a monitor.
+Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no headset.
 
----
+**New install:** first launch waits once while images prepare, then you play. Saves start empty.
 
-## What's new in vr452.2
-
-- **GEVR Settings** - from Mode Select: sharpen the picture, pick launch style, optional HD, then **Apply**.
-- **Visual modes** - full **VR**, square-outline **XR**, or **Flat** on your monitor.
-- **Apply & restart** - save once; the game comes back in the mode you picked. Supersample and friends stick across that relaunch.
-- **Reset defaults** - one confirm restores a solid VR or Flat starting point.
-- **Optional HD textures** - sharper walls and props when you install a pack (off by default).
-
-How-to: [`docs/GEVR-SETTINGS.md`](docs/GEVR-SETTINGS.md).
+**After an update:** keep the same USA `.z64`. The ship stamp forces **one** automatic re-prepare. **Saves and GEVR Settings are kept** under `%LOCALAPPDATA%\GEVR`. Or use **Update** in GevrRomStarter. For picture problems, try **`Clear-GEVR-cache.bat`** (type **YES**) before deleting the whole `%LOCALAPPDATA%\GEVR` folder.
 
 ---
 
-## Controls
+## Controls (right after install)
+
+Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 
 | Input | What it does |
 |---|---|
 | **Left stick** | Walk |
-| **Right stick** | Turn (smooth or snap - set in VR Settings) |
-| **Both stick clicks** | Recenter |
-| **Trigger** | Fire (each hand fires its own gun when dual-wielding) |
-| **Squeeze / grip** | Aim down sights; also grab for holster / watch press / pick-up |
-| **A** (right) | Next weapon (that hand) |
-| **X** (left) | Previous weapon (that hand) |
-| **B** | Reload |
+| **Right stick** | Turn (Smooth or Snap — **GEVR Settings**, look right on the intro hub) |
+| **Both thumbstick clicks** | Recenter playspace |
+| **Trigger** | Fire (left fires left gun, right fires right when dual-wielding) |
+| **Squeeze / grip** | **AIM / ADS** (aim mark on the gun ray) |
+| **Squeeze near a door** | Open / close |
+| **B** (right face; Index **B**) | USE / reload |
+| **A** (right face; Index **A**) | Next weapon |
+| **X** (left Quest/Oculus) | Previous weapon |
+| **Menu / system** | Pause (headset). **Tab** on keyboard / monitor |
+| **Head / room-scale** | Look around; physically walk to move in Bond-world |
 
-**Short examples:** click both sticks to recenter · squeeze to ADS, then walk · right hand over left cuff + grab to detonate or fire the watch laser · gun to hip + grab to holster · grip near a thrown mine to pick it back up.
+**Quick examples:** (1) Recenter — both sticks in at once. (2) ADS walk — squeeze to aim, left stick walks, right stick ducks/stands. (3) Dual-wield — each trigger fires its hand. (4) Door — squeeze near the handle. (5) Pick mines back up when you can.
 
-More detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
-
----
-
-## What you can do now (vr452.2)
-
-- **Stand inside GoldenEye** - real OpenXR stereo; walk your playspace and Bond moves with you.
-- **Aim with your hands** - point the controller, squeeze to ADS, fire with the trigger.
-- **Dual-wield** - hold a gun in each hand; each trigger fires that hand.
-- **Cuff / watch** - left cuff stays on your left. Put your **right hand over the cuff** and **grab**: detonates planted remotes if mines are armed; otherwise fires a **watch laser** from the cuff. Holster at the hip with grab. Right hand draws over the cuff (not under). No three-arm watch pull-out. Proximity alone does not fire.
-- **Hand cycle** - leave the left hand empty when you want; cycle weapons per hand; grip to pick things up; holster at each hip; hands respect each other's space.
-- **Prop stick** - mines and stickables stick to barrels, tanks, vehicles, crates, modems, and onto other props. Guards still take sticks as before.
-- **Mines** - throw, stick, and **pick them back up** (re-grab).
-- **Throwables** leave from your grip, not from mid-air.
-- **Doors & bodies** - cleaner door-edge aim, quieter false doors, corpses jam doors less.
-- **Readable aim** - scaled aimer / landmarks / eye marks that stay clear in headset.
-- **Tanks** - stand on the chassis to mount; aim shells with the stick.
-- **Your settings, your way** - GEVR Settings for picture, Visual VR / XR / Flat, Apply that sticks, Reset defaults, optional HD.
+Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ---
 
-## Coming next
+## vr452.4 features (how to use them)
 
-Next fix series: **levels and gameplay stoppers** already reported. Scope / lens fill is still parked - not in this cut.
+| Feature | How |
+|---|---|
+| **HD textures** | Put your picture pack in an **`hdtextures`** folder next to `goldeneye.exe` ( **`GOLDENEYE`** tree inside). In **GEVR Settings**, turn **HD textures** on, **Apply**, then play on the **next boot**. The zip does not include a texture pack. |
+| **Settings that save** | **GEVR Settings** (intro hub, look right) — separate **VR**, **XR**, and **flat** profiles; **Apply** restarts into what you picked. |
+| **Monitor output** | While in VR or XR, choose **both eyes**, **left**, **right**, or **off** for the desktop picture (saved per VR/XR profile). Greyed out in flat. |
+| **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |
+
+Older comfort and combat passes still in this line: playspace / hands ([#74](https://github.com/no6969el/GEVR/issues/74)), melee swing ([#75](https://github.com/no6969el/GEVR/issues/75)), Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)), Dam sky / grip doors ([#80](https://github.com/no6969el/GEVR/issues/80), [#90](https://github.com/no6969el/GEVR/issues/90)), cuff / dual-wield / watch magnet, and more — see [FEATURES.md](FEATURES.md).
 
 ---
 
-## Links
+## Streamer playtests
 
-[Latest zip](https://github.com/no6969el/GEVR/releases/latest) · [Discord](https://discord.gg/flat2vr) · [Features](FEATURES.md) · [GEVR Settings](docs/GEVR-SETTINGS.md) · [Patreon](https://www.patreon.com/cw/GEVR)
+**Note:** This clip is from an **older public cut (~vr441)**. Grab **[Latest (vr452.4)](https://github.com/no6969el/GEVR/releases/latest)** for what ships now.
 
-Star the repo and [follow @no6969el](https://github.com/no6969el) for the next drop.
+[![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
+
+[Watch on YouTube](https://www.youtube.com/watch?v=z4B0Ceqrf6I) — streamer playtest.
+
+---
+
+## What we tested
+
+| Path | Notes |
+|------|--------|
+| **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) | Primary wear path — we do not maintain that driver; we *do* support this experience |
+| **Native PimaxXR** | Verified attach / play |
+| **Meta Quest 3 + Virtual Desktop OpenXR (VDXR)** | Verified attach / play |
+| **RTX 5060 laptop + Quest 3 + Virtual Desktop VDXR** | BarZ wear **vr441**, 2026-09-17; one data point, not a minimum spec |
+
+**Half-speed / mushy VR?** Turn **SteamVR Motion Smoothing Off** and **Virtual Desktop Space Warp Off**. Details: [`docs/BETA.md`](docs/BETA.md#half-speed--mushy-vr).
+
+When you report a bug or crash, please include: **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, whether you used **`Start-GEVR.bat`**, your **`gevr-*-boot.cmd`** filename from the zip folder, any log next to the zip or in the console, and any **`gevr-fault-*.txt`** beside the exe. Do **not** upload your ROM.
+
+---
+
+## Discord (help + fan chat)
+
+**[Join the GEVR Discord](https://discord.gg/flat2vr)** for port help and GoldenEye fan chat. BYO ROM — do not upload your ROM (setup details and logs only). GitHub Issues stay great for tracked bugs.
+
+---
+
+## Known quirks (honest Beta)
+
+- **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; VD **Space Warp Off** ([BETA.md](docs/BETA.md#half-speed--mushy-vr)).
+- **Frigate door / aperture** ([#79](https://github.com/no6969el/GEVR/issues/79)) and other level stoppers — ongoing focus.
+- **Prop-on-prop / Dam blue** ([#70](https://github.com/no6969el/GEVR/issues/70)) and remaining Dam / Frigate water look issues.
+- **Melee / fist** is in (swing-based) but not finely tuned ([#75](https://github.com/no6969el/GEVR/issues/75)).
+- **Big explosions** can still hard-crash — grab `gevr-fault-*.txt` beside the exe before relaunch.
+- Empty hand draws a **cube** (hides when that hand holds a weapon).
+- Expect occasional **crashes** while we keep polishing.
+
+More tester notes: [BETA.md](docs/BETA.md) · [CONTROLS.md](docs/CONTROLS.md).
+
+---
+
+## Why this exists
+
+- **Native / from-source** — full ownership of the game loop for proper VR
+- **OpenXR** — Crystal, Quest via PC, SteamVR-class HMDs
+- **Your ROM** — legal ownership stays with you
+- **Feel first** — 6DOF, aiming, presence; then polish; then extras
+
+More pitch: [FEATURES.md](FEATURES.md). Credits: [CREDITS.md](CREDITS.md). Boundaries: [PRIOR-ART.md](PRIOR-ART.md), [LICENSE](LICENSE). Other projects using GEVR: [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md).
+
+---
+
+## Docs (player)
+
+- Start: [`docs/00-START-HERE.md`](docs/00-START-HERE.md)
+- Controls: [`docs/CONTROLS.md`](docs/CONTROLS.md)
+- Beta snapshot: [`docs/BETA.md`](docs/BETA.md) · [`docs/FEATURES-CURRENT.md`](docs/FEATURES-CURRENT.md)
+- Other projects: [`docs/OTHER-PROJECTS.md`](docs/OTHER-PROJECTS.md)
+
+Jump in and enjoy finally being Bond in GoldenEye VR.

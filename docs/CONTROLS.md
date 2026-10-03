@@ -1,15 +1,44 @@
 # Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr452.3](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr452.4](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install-vr4524). Download: [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
-- **Headset:** Start-GEVR.bat - starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
-- **Monitor / no headset:** Play-on-monitor.bat - VR off, no stereo eyes. This is also the path for **local split-screen**.
+- **Headset:** `Start-GEVR.bat` — VR picture, recenter, stick-turn, then GevrRomStarter.
+- **Monitor / no headset:** `Play-on-monitor.bat` — VR off, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **GEVR-Beta-vr452.3-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr452.4-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
+
+## Controller layout
+
+Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
+
+| Input | What it does |
+|---|---|
+| **Left stick** | Walk |
+| **Right stick** | Turn (Smooth or Snap from **GEVR Settings**) |
+| **Both thumbstick clicks** | Recenter playspace |
+| **Trigger** | Fire (each hand fires its own gun when dual-wielding) |
+| **Squeeze / grip** | AIM / ADS (aim mark on the gun ray, not stuck in face centre) |
+| **Squeeze near a door** | Open / close |
+| **B** (right face; Index **B**) | USE / reload |
+| **A** (right face; Index **A**) | Next weapon |
+| **X** (left Quest/Oculus) | Previous weapon |
+| **Menu / system** | Pause in headset (**Tab** on keyboard / monitor) |
+| **Head / 6DOF** | Look around; walk your room to move in Bond-world |
+
+### Short examples
+
+1. **Recenter** — press both sticks in at once (L3+R3). One stick alone does nothing.
+2. **ADS walk** — squeeze to aim; left stick walks forward/back (no duck); right stick ducks / stands.
+3. **Dual-wield fire** — second gun in the other hand; left trigger / right trigger each fire their gun.
+4. **Door** — stand near the door and squeeze to open/close; squeeze in the clear to aim again.
+5. **Weapon cycle** — **A** next, left **X** previous.
+6. **Mine regrab** — throw a remote / prox mine, then pick it up again when you can.
+
+Auto-Aim defaults **OFF** in this build.
 
 ## Reset position (recenter)
 
@@ -18,18 +47,16 @@ Use those bats from **GEVR-Beta-vr452.3-win64.zip**. Do not double-click goldene
 Also works:
 
 - **Xbox pad:** L3 + R3 together
-- **Keyboard:** Home while the game window has focus
+- **Keyboard:** `Home` while the game window has focus
 
-One stick click alone does nothing.
-
-**Short example:** stand in your playspace, click both sticks, then walk forward with the left stick while looking around with your head.
+After recenter, standing still and turning your head should not slide the world. Walking in your room should move you in Bond-world.
 
 ## Move and look
 
 | Input | What it does |
 |---|---|
 | **Left stick** | Walk |
-| **Right stick** | Turn (Smooth or Snap from VR Settings) |
+| **Right stick** | Turn (Smooth or Snap from GEVR Settings) |
 | **Head / 6DOF** | Look around; move in the playspace to translate in-world |
 | **Controllers** | Gun aim follows the controller |
 
@@ -38,76 +65,52 @@ One stick click alone does nothing.
 | Input | What it does |
 |---|---|
 | **Trigger** | Fire (each hand fires its own gun when dual-wielding) |
-| **B** | Reload |
-| **A** | Next weapon (that hand) |
-| **X** (left controller) | Previous weapon (that hand) |
-| **Squeeze / grip** | ADS / aim mark on the gun ray; also grab for holster, watch press, and pick-up |
+| **B** | USE / reload |
+| **A** | Next weapon |
+| **X** (left controller) | Previous weapon |
+| **Squeeze / grip** | ADS / aim mark on the gun ray |
+| **Squeeze near a door** | Open / close |
 | **While ADS + left stick** | Walk forward/back (no duck) |
 | **While ADS + right stick** | Duck / stand |
 
-**Short example:** squeeze to ADS, walk with the left stick, fire with the trigger. Tap **A** / left **X** to cycle weapons; **B** reloads.
+**Rockets:** launcher stays on the gun; flat crosshair on the rocket path. Grenade launcher is single-shot / muzzle feel OK. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
 
-Rockets point their nose along the flight path. Throwables (grenades, mines, plastique, covert modem) show in your hand and leave from the grip.
+## Hands
 
-## Cuff / watch (vr452.2)
-
-- **Left cuff** stays with your left controller through missions.
-- **Watch press:** put your **right hand over the left cuff** and **grab** (squeeze rising edge). If remotes are planted / mines are armed, that **detonates** them (no detonator item needed). If nothing is planted, fires a **watch laser from the cuff**.
-- **Holster:** bring a gun to your **hip** and grab to empty that hand; grab the hip again to take it back.
-- Right hand **draws over** the cuff (not under it). No watch pull-out weapon - no three-arm look.
-- **Proximity alone does not fire** - you need the grab over the cuff.
-
-**Short example:** plant remotes, hover your right hand over the watch, grab once to detonate. Or with nothing planted, same gesture fires the watch laser.
-
-## Hand cycle (vr452.2)
-
-- Leave the **left hand alone** (empty) when you want.
-- Cycle weapons **per hand** with **A** / left **X**.
-- **Grip** near a thrown mine or stickable to pick it up.
-- **Per-hip holster** - each side can stash / restore with grab at the hip.
-- Hands **respect each other's space** - one hand's holster / cuff / pick does not steal the other.
-
-**Short example:** holster the right gun at the right hip, keep cycling the left, then grab the hip again to redraw.
-
-## Mines, prop stick, and re-grab (vr452.2)
-
-- Thrown **remote / proximity** mines can be **picked back up** when the game allows it.
-- **Prop stick:** mines and stickables stick to **barrels, tanks, vehicles, crates, modems**, and **onto other props**. Guards still take sticks as before.
-- **Short example:** throw a prox mine at a crate or a guard, watch it stick, or re-grab a remote you just tossed if you change your mind.
-
-## Doors and bodies
-
-- Door-edge aim / hit snap is more dependable around room boundaries.
-- False / decoy door presentation is quieter.
-- Dead bodies are less likely to jam a door mid open/close.
+- **Left cuff / arm** — the left watch cuff stays with the controller through stage transitions.
+- **Empty hand / fists** draw a cube (smaller than older cuts).
+- The cube **hides** while that hand holds a weapon.
 
 ## Tank
 
 - Stand on the chassis and you **auto-mount**.
-- **Right stick pitch** aims the shells. Yaw already worked.
-- Climb by getting onto the tank.
+- **Right stick pitch** aims the shells.
+- Climb by getting onto the tank (no separate touch-to-enter gesture).
 
 ## Reload, pause, and menus
 
-- **B** reloads.
+- **B** reloads / USE (right-hand B on Quest-style layouts).
 - **Menu / system button** opens pause and options in headset (not B, not Y). **Tab** still works on keyboard / monitor.
 - In the **pause watch**, **left stick** moves the menu highlight in VR.
+- Face-button confirm in menus is still partly wired. If a face button does nothing, file an Issue with your headset and bat.
+- Die / continue should no longer dump you in junk space ([issue #38](https://github.com/no6969el/GEVR/issues/38)). If it still breaks, quit the exe, run the bat again, and report it.
 
-## GEVR Settings (vr452.2)
+## Cinema / menus / GEVR Settings
 
-From **Mode Select**, open **GEVR Settings** to change supersample, filter, frame rate, game speed, optional HD textures, and **Visual** mode (VR / XR / Flat). Highlight **Apply** to save and relaunch. Full how-to: [GEVR-SETTINGS.md](GEVR-SETTINGS.md).
+While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen. Turn your head and the screen stays put in the room.
 
-On the intro hub you can still **look right** for the older **VR Settings** glass (turn style / snap size).
+**GEVR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes values. **Apply** saves and restarts into what you picked.
 
-## Cinema / menus
-
-While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen.
-
-**VR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes TURN SPEED, TURN STYLE (Smooth/Snap), and SNAP SIZE (gray on Smooth). Prefs save under %LOCALAPPDATA%/GEVR with your saves.
+| Setting | How |
+|---|---|
+| **HD textures** | Folder **`hdtextures`** next to `goldeneye.exe` with the **`GOLDENEYE`** tree inside; turn **HD textures** on, **Apply**, play on the **next boot** (pack not in the zip). |
+| **Profiles** | Separate **VR**, **XR**, and **flat** profiles; choices persist under `%LOCALAPPDATA%\GEVR`. |
+| **Monitor output** | In VR or XR: **both eyes**, **left**, **right**, or **off** on the desktop (per VR/XR profile). Not used in flat. |
+| **Turn comfort** | Turn speed, Smooth vs Snap, snap size (snap size gray on Smooth). |
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install-vr4524) / [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip).
 
 **Verified:**
 
@@ -115,17 +118,15 @@ GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Be
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Hz:** The game follows your headset refresh (72 / 80 / 90 / 120 as reported). High Hz is still Beta-test territory - try it and report if something feels off.
+**Headset recipe:** unzip **`GEVR-Beta-vr452.4-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
 
-**Headset recipe:** unzip or **Update**, run **Start-GEVR.bat**, point at your USA .z64, put the headset on, recenter with both stick clicks.
-
-**No headset:** **Play-on-monitor.bat** (flat 2D, no OpenXR).
+**No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
 
 ### If controls or VR feel dead
 
-1. Launch with **Start-GEVR.bat** (headset) or **Play-on-monitor.bat** (flat), not bare goldeneye.exe
+1. Launch with **`Start-GEVR.bat`** (headset) or **`Play-on-monitor.bat`** (flat), not bare `goldeneye.exe`
 2. Recenter with **both** stick clicks
 3. Confirm Windows is handing GEVR the OpenXR runtime you think it is
-4. File an Issue with **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **Start-GEVR.bat yes/no** (Play-on-monitor.bat if no headset). [CONTRIBUTING](../CONTRIBUTING.md).
+4. File an Issue with **headset**, **OpenXR runtime**, **SteamVR on/off**, **HMD vs monitor**, and **Start-GEVR.bat yes/no**. [CONTRIBUTING](../CONTRIBUTING.md).
 
 Do not upload your ROM.
