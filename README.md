@@ -50,6 +50,10 @@ Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no h
 
 ## Controls (right after install)
 
+**How to control GEVR in VR** — walkthrough on YouTube: **[watch here](https://www.youtube.com/watch?v=Jst5srE6Iwc)**
+
+[![How to control GEVR in VR](https://img.youtube.com/vi/Jst5srE6Iwc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Jst5srE6Iwc)
+
 Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 
 | Input | What it does |
@@ -82,16 +86,6 @@ Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |
 
 Older comfort and combat passes still in this line: playspace / hands ([#74](https://github.com/no6969el/GEVR/issues/74)), melee swing ([#75](https://github.com/no6969el/GEVR/issues/75)), Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)), Dam sky / grip doors ([#80](https://github.com/no6969el/GEVR/issues/80), [#90](https://github.com/no6969el/GEVR/issues/90)), cuff / dual-wield / watch magnet, and more — see [FEATURES.md](FEATURES.md).
-
----
-
-## Streamer playtests
-
-**Note:** This clip is from an **older public cut (~vr441)**. Grab **[Latest (vr452.4)](https://github.com/no6969el/GEVR/releases/latest)** for what ships now.
-
-[![GoldenEye VR Is Finally Here… And You Can Play It Now](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
-
-[Watch on YouTube](https://www.youtube.com/watch?v=z4B0Ceqrf6I) — streamer playtest.
 
 ---
 
