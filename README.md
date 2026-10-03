@@ -6,8 +6,8 @@
 
 **GoldenEye in VR. Bring your own ROM.**
 
-Latest build: **[vr452.2](https://github.com/no6969el/GEVR/releases/latest)**  
-Direct zip: [`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)
+Latest build: **[vr452.3](https://github.com/no6969el/GEVR/releases/latest)**  
+Direct zip: [`GEVR-Beta-vr452.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip)
 
 [Discord](https://discord.gg/flat2vr) · [Report a bug](https://github.com/no6969el/GEVR/issues/new/choose) · [Credits](CREDITS.md)
 
@@ -21,7 +21,7 @@ GEVR has an in-app **Update** in **GevrRomStarter**. Use it when a newer build i
 
 ## How to play
 
-1. Download **[`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)** (no ROM inside) - or click **Update** if you already play.
+1. Download **[`GEVR-Beta-vr452.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip)** (no ROM inside) - or click **Update** if you already play.
 2. Unzip anywhere.
 3. Double-click **`Start-GEVR.bat`** - it opens **GevrRomStarter**, which finds `goldeneye.exe` in the same folder.
 4. Point it at a **USA GoldenEye `.z64` you own**.

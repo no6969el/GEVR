@@ -2,7 +2,7 @@
 
 You found GEVR. GoldenEye in real VR, on PC, with a ROM you already own. It is Beta. It is worth playing.
 
-**Play:** [GEVR Beta vr452.2](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.2-win64.zip`**. Tag: [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2). Play steps: [README](../README.md#how-to-play). Prefer **Update** in GevrRomStarter so you stay on Latest.
+**Play:** [GEVR Beta vr452.3](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.3-win64.zip`**. Tag: [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3). Play steps: [README](../README.md#how-to-play). Prefer **Update** in GevrRomStarter so you stay on Latest.
 
 **Players and testers:** start at the [README](../README.md). Then [Beta notes](BETA.md), [controls](CONTROLS.md), [GEVR Settings](GEVR-SETTINGS.md), and [features](../FEATURES.md). How to report: [CONTRIBUTING](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 

@@ -1,10 +1,10 @@
-> **vr452.2:** GitHub **Latest**. Use **Update** in GevrRomStarter and stay on Latest so you have the features listed here. Saves stay.
+> **vr452.3:** GitHub **Latest**. Use **Update** in GevrRomStarter and stay on Latest so you have the features listed here. Saves stay.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr452.2**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.2-win64.zip`**. Play steps: [README](../README.md#how-to-play). Tag: [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2). Direct download: [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip).
+**Play this cut:** [**vr452.3**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.3-win64.zip`**. Play steps: [README](../README.md#how-to-play). Tag: [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3). Direct download: [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip).
 
 Always stay on Latest via **Update** (or a fresh zip). Older tag pages stay for history - do not download them as if they were Latest.
 
@@ -15,7 +15,7 @@ Player door: [00-START-HERE.md](00-START-HERE.md). Play steps: [README](../READM
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr452.2-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip) - or use **Update** - play steps in [README](../README.md#how-to-play)
+- Download: [**GEVR-Beta-vr452.3-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip) - or use **Update** - play steps in [README](../README.md#how-to-play)
 
 ## Launchers
 
@@ -39,7 +39,7 @@ GEVR follows headset Hz and ties game speed to that rate - MotSmooth / Space War
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr452.2-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2) - or click **Update** in GevrRomStarter.
+1. Download and unzip **`GEVR-Beta-vr452.3-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3) - or click **Update** in GevrRomStarter.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%/GEVR/cache`. Then play.
@@ -91,7 +91,7 @@ Do **not** upload your ROM. Forms: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## What to test first
 
-- Boot into VR; confirm **Update** / Latest is vr452.2
+- Boot into VR; confirm **Update** / Latest is vr452.3
 - GEVR Settings: change Visual or supersample, **Apply**, confirm it stuck after relaunch
 - Cuff / watch: right over cuff + grab (detonate or laser); holster at hip; no three-arm look
 - Hand cycle: empty left, per-hand cycle, grip pick, per-hip holster

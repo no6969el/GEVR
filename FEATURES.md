@@ -6,7 +6,7 @@
 
 **Native VR. Bring your own ROM. Settings you can see.**
 
-Latest: **[vr452.2](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr452.2-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip)
+Latest: **[vr452.3](https://github.com/no6969el/GEVR/releases/latest)** · [`GEVR-Beta-vr452.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip)
 
 Stay on Latest: use **Update** in GevrRomStarter so you have everything listed here. Saves stay.
 

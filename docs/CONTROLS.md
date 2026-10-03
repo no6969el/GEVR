@@ -1,15 +1,15 @@
 # Controls (Beta)
 
-How to move, aim, and reset your position in [GEVR Beta vr452.2](https://github.com/no6969el/GEVR/releases/latest).
+How to move, aim, and reset your position in [GEVR Beta vr452.3](https://github.com/no6969el/GEVR/releases/latest).
 
-Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Play steps: [README](../README.md#how-to-play). Download: [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3)). Prefer **Update** in GevrRomStarter so you stay on Latest. Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** Start-GEVR.bat - starts **GevrRomStarter**, which looks for goldeneye.exe in the same folder and sets the game path for you.
 - **Monitor / no headset:** Play-on-monitor.bat - VR off, no stereo eyes. This is also the path for **local split-screen**.
 
-Use those bats from **GEVR-Beta-vr452.2-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **GEVR-Beta-vr452.3-win64.zip**. Do not double-click goldeneye.exe. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Reset position (recenter)
 
@@ -107,7 +107,7 @@ While the flat cinema or frontend menus are up, you are in a small hub room look
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README](../README.md#how-to-play) / [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip).
 
 **Verified:**
 

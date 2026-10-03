@@ -1,8 +1,8 @@
 # Feature snapshot (public) - 2026-10-02
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.2](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Stay on Latest via **Update**. This page is not a second Play guide.
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.3](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Stay on Latest via **Update**. This page is not a second Play guide.
 
-High-level status of the playable wear. Current zip is [GEVR-Beta-vr452.2-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.2/GEVR-Beta-vr452.2-win64.zip). Play steps: [README](../README.md#how-to-play). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.2](https://github.com/no6969el/GEVR/releases/tag/vr452.2).
+High-level status of the playable wear. Current zip is [GEVR-Beta-vr452.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.3/GEVR-Beta-vr452.3-win64.zip). Play steps: [README](../README.md#how-to-play). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). Download: [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.3](https://github.com/no6969el/GEVR/releases/tag/vr452.3).
 
 ## New in vr452.2
 - **GEVR Settings** on Mode Select (picture, Visual VR / XR / Flat, optional HD, Apply + relaunch that sticks, Reset defaults)
