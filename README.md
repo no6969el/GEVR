@@ -72,7 +72,7 @@ Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no h
 | Control | What it does |
 |---|---|
 | **Right trigger** | Fire right-hand gun |
-| **Left trigger** | Fire left-hand gun (dual-wield) |
+| **Left trigger** | Fire left-hand gun |
 | **Grip / squeeze** | **Aim / ADS** on the gun ray |
 | **Grip near a door** | Open / close |
 | **Right B** (Index **B**) | **USE** — reload, switches, plant/activate, all retail **B** actions |
