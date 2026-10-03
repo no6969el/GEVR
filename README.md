@@ -54,25 +54,49 @@ Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no h
 
 [![How to control GEVR in VR](https://img.youtube.com/vi/Jst5srE6Iwc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Jst5srE6Iwc)
 
-Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
+**Right = gun hand, left = walk hand + watch cuff.** Meta Quest / Touch, Valve Index, and Oculus-style OpenXR use the same actions (Index names in [`docs/CONTROLS.md`](docs/CONTROLS.md)).
 
-| Input | What it does |
+### Movement & comfort
+
+| Control | What it does |
 |---|---|
-| **Left stick** | Walk |
-| **Right stick** | Turn in-game (comfort options are in **GEVR Settings** on the intro hub) |
-| **Both thumbstick clicks** | Recenter playspace |
-| **Trigger** | Fire (left fires left gun, right fires right when dual-wielding) |
-| **Squeeze / grip** | **AIM / ADS** (aim mark on the gun ray) |
-| **Squeeze near a door** | Open / close |
-| **B** (right face; Index **B**) | USE / reload |
-| **A** (right face; Index **A**) | Next weapon |
-| **X** (left Quest/Oculus) | Previous weapon |
-| **Menu / system** | Pause (headset). **Tab** on keyboard / monitor |
-| **Head / room-scale** | Look around; physically walk to move in Bond-world |
+| **Left stick** | Walk and strafe |
+| **Right stick** | Turn (**Smooth** or **Snap** in **GEVR Settings**) |
+| **Both thumbstick clicks** | Recenter playspace (`Home` on keyboard) |
+| **Head / room-scale** | Look; walk your room to move in Bond-world |
+| **Right stick up/down while aiming** | Stand / crouch |
+| **Left stick while aiming** | Walk forward/back (no accidental duck) |
 
-**Quick examples:** (1) Recenter — both sticks in at once. (2) ADS walk — squeeze to aim, left stick walks, right stick ducks/stands. (3) Dual-wield — each trigger fires its hand. (4) Door — squeeze near the handle. (5) Pick mines back up when you can.
+### Combat & weapons
 
-Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
+| Control | What it does |
+|---|---|
+| **Right trigger** | Fire right-hand gun |
+| **Left trigger** | Fire left-hand gun (dual-wield) |
+| **Grip / squeeze** | **Aim / ADS** on the gun ray |
+| **Grip near a door** | Open / close |
+| **Right B** (Index **B**) | **USE** — reload, switches, plant/activate, all retail **B** actions |
+| **Right A** (Index **A**) | **Next weapon** (right hand) |
+| **Left X** | **Previous weapon** (left hand) |
+| **Left grip on fore-end** | **Two-hand hold** — stabilize rifles/shotguns/SMGs in the right hand |
+| **Grip near ground weapon** | Pick up into **that** hand |
+| **Grip on your own stuck mine** | Pick remote / arming prox mine back up |
+| **Right grip at hip** | Holster gun / draw from hip (fist toggle) |
+| **Trigger** | Throw grenades, fire launchers, etc. |
+
+**Dual-wield:** one gun per hand; each trigger fires that hand. **Throwables** (grenades, mines, plastique, modem) show in-hand; **B** plants/activates where retail does.
+
+### Bond’s watch (pause + cuff)
+
+| Control | What it does |
+|---|---|
+| **Menu** (Quest left; Index system) | **Pause** — watch inventory (**Left Y** also pause in shipped profile) |
+| **Pause watch → Watch Laser** | Cuff press = **laser only** |
+| **Pause watch → Detonator** | Cuff press = **detonate remotes** if any planted, else **laser** |
+| **Pause watch → Watch Magnet Attract** | Select, then **touch left cuff + right squeeze** = one **attract** pulse (ammo spent) |
+| **Right grip on left watch face + squeeze** | **Cuff press** — laser, detonate, or magnet (per selection above) |
+
+Magnet **repel** is still picked from the pause watch like retail (no cuff shortcut). Full watch and flat keyboard tables: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ---
 
