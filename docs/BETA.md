@@ -70,7 +70,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **VR Settings (intro hub):** on the intro hub, **look right** at **GEVR Settings**. Right stick U/D = row, L/R = change (TURN SPEED / STYLE / SNAP SIZE). Prefs save under `%LOCALAPPDATA%\GEVR`.
 - **Pause GAME OPTIONS:** **Menu** → **GAME OPTIONS** — scroll **past ratio** with the **left stick** (**scroll down - vr settings below**) for VR comfort rows on the watch.
 - **Reload gesture:** mag-fed guns reload from the **magazine** (top, bottom, Uzi); pistols, shotgun, and other no-mag guns use the **chest cross**; **handle grab** swaps hands only. Guns do **not** auto-reload. See [CONTROLS.md](CONTROLS.md#reload-gesture-vr).
-- **Update button:** starter checks GitHub Latest on open. Click **Update** to pull a newer zip (saves / prefs / your `.z64` left alone).
+- **Update button:** starter checks GitHub Latest on open. Click **Update** to pull a newer zip (saves / prefs / your `.z64` left alone). **Latest** is the newest **non-prerelease** only—prebeta GitHub releases are not what **Update** installs. Planned: a version **dropdown** in GevrRomStarter (rules in [GEVR-ROM-STARTER-VERSION-PICKER.md](GEVR-ROM-STARTER-VERSION-PICKER.md)).
 - **Auto-Aim defaults OFF** (`GETV_AUTOAIM` in the shipped exe).
 - **Pause watch:** **left stick** moves the highlight in VR.
 - **B** is retail **USE** / activate in VR (doors, gadgets, plant) — **not** gun reload; use the reload gesture. Pause is the **Menu / system button** in headset. **Tab** on keyboard / monitor still works.
