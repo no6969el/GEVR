@@ -1,11 +1,14 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr452.4](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install-vr4524).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr453](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install-vr453).
 
-Current zip: **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)**. Tag: [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4).
+Current zip: **[`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip)**. Tag: [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453).
 
-## vr452.4 highlights
+## vr453 highlights
 
+- **Reload gesture** — mag-fed guns reload from the magazine (top, bottom, Uzi); pistols, shotgun, and other no-mag guns use the chest cross; handle grab swaps hands; no auto-reload
+- **Pause GAME OPTIONS** — list continues past ratio; scroll down (**scroll down - vr settings below**) for VR comfort rows
+- **Left-hand fire** — left trigger fires whenever the left hand holds a gun; dual-wield is the two-gun case only
 - **HD textures** — [pack releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) / [evilgames page](https://evilgames.eu/texture-packs/ge007-hd.htm); GLideN64 **PNG** zip (not `.hts`) → `hdtextures` next to the exe; GEVR Settings on, Apply, next boot. GEVR does not ship the pack.
 - **Saved settings** — VR, XR, and flat profiles
 - **Monitor output** — both eyes, left, right, or off while in VR/XR
@@ -13,7 +16,7 @@ Current zip: **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/
 
 ## Core VR (carry-forward)
 
-- OpenXR stereo, 6DOF, controller aim, ADS on the gun ray, dual-wield
+- OpenXR stereo, 6DOF, controller aim, ADS on the gun ray, per-hand triggers (dual-wield when holding two guns)
 - Playspace / recenter (both stick clicks), grip doors, melee swing, Janus spawn
 - Throwables, tank mount, BYO-ROM file-backed images, GevrRomStarter Update
 

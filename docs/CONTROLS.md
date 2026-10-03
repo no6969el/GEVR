@@ -1,15 +1,15 @@
 # Controls (Beta)
 
-How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr452.4](https://github.com/no6969el/GEVR/releases/latest)**.
+How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr453](https://github.com/no6969el/GEVR/releases/latest)**.
 
-Install first: [README Install](../README.md#install-vr4524). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#controls-right-after-install)). Download: [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Tester notes: [BETA.md](BETA.md). Menu + features: [README](../README.md#vr4524-features-how-to-use-them) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install-vr453). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#controls-right-after-install)). Download: [`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip). Tester notes: [BETA.md](BETA.md). Menu + features: [README](../README.md#vr453-features-how-to-use-them) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat` — VR picture, recenter, stick-turn, then GevrRomStarter.
 - **Monitor / no headset:** `Play-on-monitor.bat` — VR off, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr452.4-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr453-win64.zip`**. Do not double-click `goldeneye.exe`. Bare exe can skip the ROM cache update and leave VR input off.
 
 ## Default layout (OpenXR)
 
@@ -31,7 +31,7 @@ Auto-Aim defaults **OFF** in this build.
 | Control | Action |
 |---|---|
 | **Right trigger** | Fire the gun in your **right** hand |
-| **Left trigger** | Fire the gun in your **left** hand when dual-wielding |
+| **Left trigger** | Fire the gun in your **left** hand (any time that hand holds a gun — not only dual-wield) |
 | **Right grip (squeeze)** | **Aim / ADS** — insight aim on the gun ray (aim mark on the weapon, not glued to your face) |
 | **Right grip at a door** | **Open / close** the door (same squeeze; no separate “use” reach when you are in range) |
 | **Right grip on your left watch face** | **Watch press** — see [Bond’s watch & cuff](#bonds-watch--cuff) (laser, detonator, or magnet attract depending on what you selected in the pause watch) |
@@ -47,13 +47,13 @@ Auto-Aim defaults **OFF** in this build.
 | **Left stick while aiming** | Walk forward and back without the old “walk backward = accidental crouch” chord |
 | **Right A** | **Next weapon** (right-hand inventory step) |
 | **Left X** | **Previous weapon** (left-hand inventory step) |
-| **Right B** | **USE** — doors and switches at range, **reload**, plant/activate gadgets, throw cycle, and every other “action” press GoldenEye maps to **B** |
+| **Right B** | **USE** — doors and switches at range, plant/activate gadgets, throw cycle, and other retail **B** actions (**gun reload** uses the [reload gesture](#reload-gesture-vr), not **B**) |
 | **Menu** (left controller) | **Pause** — Bond’s watch menu in VR |
 | **Left Y** (optional) | Also mapped to **pause** in the shipped VR boot profile |
 | **Head / room-scale** | Look around; physically walk to move in Bond-world |
 | **Swing an empty hand or melee weapon** | Melee (swing-based; still being tuned) |
 
-**Dual-wield:** put a second gun in the left hand (weapon cycle or pickup). **Left trigger** fires the left gun; **right trigger** fires the right gun. Each hand keeps its own weapon line.
+**Dual-wield** is only when you hold **two guns** — put a second gun in the left hand (weapon cycle or pickup). **Left trigger** fires the left gun; **right trigger** fires the right gun. A **single** gun in the left hand still fires with **left trigger** on its own. Each hand keeps its own weapon line.
 
 **Throwables** (grenades, timed mines, remote/proximity mines, plastique, covert modem, etc.): they appear in the hand; **trigger** throws or fires; **B** still handles use/plant/reload where retail does. After you throw or plant a mine, use **grip regrab** (above) to recover your own stuck mines when the game allows it.
 
@@ -66,13 +66,13 @@ Same bindings as Quest; Index names:
 | Index control | Same as Quest | Action |
 |---|---|---|
 | **Right trigger** | Right trigger | Fire right gun |
-| **Left trigger** | Left trigger | Fire left gun (dual-wield) |
+| **Left trigger** | Left trigger | Fire left-hand gun |
 | **Right grip (A button grip)** | Right grip | Aim / ADS; door; watch press; hip holster |
 | **Left grip** | Left grip | Aim (left gun); door; pickup; mine regrab; two-hand support |
 | **Right thumbstick** | Right stick | Turn |
 | **Left thumbstick** | Left stick | Walk |
 | **Right A** | Right A | Next weapon |
-| **Right B** | Right B | USE / reload / activate |
+| **Right B** | Right B | USE / activate (reload = gesture) |
 | **Left X** (face button) | Left X | Previous weapon |
 | **Left Y** | Left Y | Pause (in shipped profile) |
 | **System / menu button** | Quest **Menu** | Pause |
@@ -90,6 +90,10 @@ The **left cuff is the watch** — it stays on your left arm in VR. You do **not
 3. Confirm gadgets and modes with the face buttons (same as retail watch pages).
 
 From this menu you can pick **Watch Laser**, **Detonator**, **Watch Magnet Attract**, **Watch Magnet Repel**, and other stage items when you have them.
+
+### GAME OPTIONS (ratio and VR settings)
+
+Open **GAME OPTIONS** on the pause watch. The list continues **past ratio**. **Scroll down** with the **left stick** — the retail sheet’s last line reads exactly: **scroll down - vr settings below**. VR comfort rows (turn speed, turn style, snap size, and related options) sit **below** ratio on that page.
 
 **Watch Laser vs Detonator (mode):**
 
@@ -135,6 +139,20 @@ You cannot put the **same** non-dual gun in both hands unless retail would allow
 
 ---
 
+## Reload gesture (VR)
+
+Guns do **not** auto-reload. Reload in VR with the physical gesture for that weapon — not with **B**.
+
+| Weapon type | Reload |
+|---|---|
+| **Magazine-fed** (mag on top, mag on bottom, **Uzi**, etc.) | Reload from the **magazine** — bring the mag through the reload motion |
+| **Pistols** and guns **without** a magazine (**shotgun** included) | Reload at the **chest cross** gesture only |
+| **Handle grab** (grab the gun handle to swap) | **Swaps hands** — does **not** reload |
+
+**B** still covers retail **USE**, plant, activate, and other **B** actions where GoldenEye maps them; it is not the VR gun-reload button.
+
+---
+
 ## Tank
 
 - Walk onto the **tank chassis** to **auto-mount**.
@@ -164,7 +182,7 @@ After recenter, turning your head while standing still should not slide the worl
 | Navigate | **A** selects a row; stick **left/right** changes value; **Apply** saves and restarts | **Left stick** moves highlight; face buttons confirm |
 | **A** in gameplay | **Next weapon** (not the settings UI) | — |
 
-Default rows and screenshot: [README](../README.md#vr452.4-features-how-to-use-them).
+Default rows and screenshot: [README](../README.md#vr453-features-how-to-use-them).
 
 ---
 
@@ -198,16 +216,17 @@ Weapon **previous** on keyboard follows `GETV_BIND_WEAPON_PREV` (shipped VR prof
 
 ## Reload, pause, and menus
 
-- **B** (right hand in VR) is the **only** action button — **USE**, **reload**, and **activate** share one press, same as retail GoldenEye.
+- **Gun reload (VR):** [reload gesture](#reload-gesture-vr) — magazine, chest cross, or handle grab; **no auto-reload**.
+- **B** (right hand in VR) is the retail **USE** / **activate** button — doors, gadgets, plant, and other **B** actions; **not** VR gun reload.
 - **Menu** opens pause in headset; **Tab** on keyboard.
-- In the **pause watch**, **left stick** moves the menu highlight in VR.
+- In the **pause watch**, **left stick** moves the menu highlight in VR; **GAME OPTIONS** continues past **ratio** — scroll down for VR settings (**scroll down - vr settings below**).
 - Die / continue should no longer dump you in junk space ([#38](https://github.com/no6969el/GEVR/issues/38)). If it still breaks, quit, run the bat again, and report it.
 
 ---
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install-vr4524) / [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install-vr453) / [`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip).
 
 **Verified:**
 
@@ -215,7 +234,7 @@ GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install-vr4524)
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Headset recipe:** unzip **`GEVR-Beta-vr452.4-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
+**Headset recipe:** unzip **`GEVR-Beta-vr453-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`** (flat 2D, no OpenXR).
 
