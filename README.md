@@ -6,7 +6,7 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **Play now:** GitHub **Latest** is **[vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)** — zip [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Or hit **Update** in GevrRomStarter.
+> **Play now:** GitHub **Latest** is **[vr453](https://github.com/no6969el/GEVR/releases/tag/vr453)** — zip [`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip). Or hit **Update** in GevrRomStarter.
 
 > This public repo is for **player docs**, **Issues**, and **Beta zip Releases**. New product code is developed privately. See [`docs/SOURCE.md`](docs/SOURCE.md).
 
@@ -16,8 +16,8 @@ The N64 classic you can finally *stand inside* — not an emulator overlay, not 
 
 | | |
 |---|---|
-| **Download** | [**GEVR-Beta-vr452.4-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip) |
-| **Release page** | [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4) |
+| **Download** | [**GEVR-Beta-vr453-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip) |
+| **Release page** | [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453) |
 | **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
 | **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
 | **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
@@ -29,9 +29,9 @@ Star the repo and [follow @no6969el](https://github.com/no6969el). **Watch → R
 
 ---
 
-## Install (vr452.4)
+## Install (vr453)
 
-1. Download **[GEVR-Beta-vr452.4-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr453-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr453](https://github.com/no6969el/GEVR/releases/tag/vr453). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** — it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
@@ -71,11 +71,12 @@ Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no h
 
 | Control | What it does |
 |---|---|
-| **Right trigger** | Fire right-hand gun |
-| **Left trigger** | Fire left-hand gun (dual-wield) |
+| **Right trigger** | Fire the gun in your **right** hand |
+| **Left trigger** | Fire the gun in your **left** hand (works on its own — not only when dual-wielding) |
 | **Grip / squeeze** | **Aim / ADS** on the gun ray |
 | **Grip near a door** | Open / close |
-| **Right B** (Index **B**) | **USE** — reload, switches, plant/activate, all retail **B** actions |
+| **Right B** (Index **B**) | **USE** — switches, plant/activate, and other retail **B** actions (gun reload is the **reload gesture**, not **B**) |
+| **Reload gesture** | Mag-fed guns reload from the **magazine** (top, bottom, or Uzi); pistols, shotgun, and other no-mag guns reload at the **chest cross**; **handle grab** swaps hands only. **No auto-reload** — see [`CONTROLS.md`](docs/CONTROLS.md#reload-gesture-vr) |
 | **Right A** (Index **A**) | **Next weapon** (right hand) |
 | **Left X** | **Previous weapon** (left hand) |
 | **Left grip on fore-end** | **Two-hand hold** — stabilize rifles/shotguns/SMGs in the right hand |
@@ -84,13 +85,14 @@ Default is **VR**. Flat / monitor: **`Play-on-monitor.bat`** — same game, no h
 | **Right grip at hip** | Holster gun / draw from hip (fist toggle) |
 | **Trigger** | Throw grenades, fire launchers, etc. |
 
-**Dual-wield:** one gun per hand; each trigger fires that hand. **Throwables** (grenades, mines, plastique, modem) show in-hand; **B** plants/activates where retail does.
+**Dual-wield** is only the **two-gun** case — one gun per hand; each trigger fires that hand. A lone gun in the left hand still fires with **left trigger**. **Throwables** (grenades, mines, plastique, modem) show in-hand; **B** plants/activates where retail does.
 
 ### Bond’s watch (pause + cuff)
 
 | Control | What it does |
 |---|---|
 | **Menu** (Quest left; Index system) | **Pause** — watch inventory (**Left Y** also pause in shipped profile) |
+| **Pause watch → GAME OPTIONS** | Scroll **past ratio** with the **left stick** — last line: **scroll down - vr settings below**; VR comfort rows sit under ratio |
 | **Pause watch → Watch Laser** | Cuff press = **laser only** |
 | **Pause watch → Detonator** | Cuff press = **detonate remotes** if any planted, else **laser** |
 | **Pause watch → Watch Magnet Attract** | Select, then **touch left cuff + right squeeze** = one **attract** pulse (ammo spent) |
@@ -100,7 +102,7 @@ Magnet **repel** is still picked from the pause watch like retail (no cuff short
 
 ---
 
-## vr452.4 features (how to use them)
+## vr453 features (how to use them)
 
 ### GEVR Settings (in-game menu)
 
@@ -110,7 +112,7 @@ On the intro hub, **look right** at the **GEVR Settings** glass (GoldenEye-style
 
 **Visual mode** is **VR**, **XR**, or **flat**. Each mode keeps its **own saved settings** — switch Visual mode to edit a different profile.
 
-Default rows in vr452.4 (yours may differ after you change things):
+Default rows in vr453 (yours may differ after you change things):
 
 | Row | Example value |
 |---|---|
@@ -143,12 +145,14 @@ New features will keep being added to this menu. **Beta** will hold test options
 2. In **GEVR Settings**, set **HD textures** to **On**.
 3. **Apply**, then play on the **next boot**.
 
-### More vr452.4 highlights
+### More vr453 highlights
 
 | Feature | One-line how-to |
 |---|---|
 | **Saved settings** | Edit under **Visual mode** VR / XR / flat; **Apply** restarts into that profile. |
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |
+| **Reload gesture** | Reload from the **magazine** on mag-fed guns (incl. Uzi); **chest cross** on pistols, shotgun, and other no-mag guns; **handle grab** swaps hands; guns do **not** auto-reload. |
+| **Pause VR settings** | **Pause** → **GAME OPTIONS** → scroll down past **ratio** (**scroll down - vr settings below**). |
 
 Older comfort and combat passes still in this line: playspace / hands ([#74](https://github.com/no6969el/GEVR/issues/74)), melee swing ([#75](https://github.com/no6969el/GEVR/issues/75)), Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)), Dam sky / grip doors ([#80](https://github.com/no6969el/GEVR/issues/80), [#90](https://github.com/no6969el/GEVR/issues/90)), cuff / dual-wield / watch magnet, and more — see [FEATURES.md](FEATURES.md).
 
@@ -156,7 +160,7 @@ Older comfort and combat passes still in this line: playspace / hands ([#74](htt
 
 ## Older playtest (video)
 
-This clip is from an **older public cut (~vr441)** — picture and controls may not match **vr452.4**.
+This clip is from an **older public cut (~vr441)** — picture and controls may not match **vr453**.
 
 [![GoldenEye VR streamer playtest (~vr441 era)](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
