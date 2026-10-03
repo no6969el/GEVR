@@ -103,7 +103,7 @@ While the flat cinema or frontend menus are up, you are in a small hub room look
 
 | Setting | How |
 |---|---|
-| **HD textures** | Folder **`hdtextures`** next to `goldeneye.exe` with the **`GOLDENEYE`** tree inside; turn **HD textures** on, **Apply**, play on the **next boot** (pack not in the zip). |
+| **HD textures** | [Pack](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) / [info](https://evilgames.eu/texture-packs/ge007-hd.htm) — GLideN64 **PNG** zip (not `.hts`); extract **`GOLDENEYE`** into **`hdtextures`** beside `goldeneye.exe` (do not rename); **HD textures** on, **Apply**, **next boot**. GEVR does not ship the pack. |
 | **Profiles** | Separate **VR**, **XR**, and **flat** profiles; choices persist under `%LOCALAPPDATA%\GEVR`. |
 | **Monitor output** | In VR or XR: **both eyes**, **left**, **right**, or **off** on the desktop (per VR/XR profile). Not used in flat. |
 | **Turn comfort** | Turn speed, Smooth vs Snap, snap size (snap size gray on Smooth). |

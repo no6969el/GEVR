@@ -6,7 +6,7 @@ Current zip: **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/
 
 ## vr452.4 highlights
 
-- **HD textures** — your `hdtextures` folder beside the exe; enable in GEVR Settings, Apply, next boot
+- **HD textures** — [pack releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) / [evilgames page](https://evilgames.eu/texture-packs/ge007-hd.htm); GLideN64 **PNG** zip (not `.hts`) → `hdtextures` next to the exe; GEVR Settings on, Apply, next boot. GEVR does not ship the pack.
 - **Saved settings** — VR, XR, and flat profiles
 - **Monitor output** — both eyes, left, right, or off while in VR/XR
 - **Rockets** — on-gun launcher with flat crosshair

@@ -78,9 +78,12 @@ Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ## vr452.4 features (how to use them)
 
+### HD textures
+
+**GEVR does not ship the pack.** Download the community **GLideN64 PNG** zip (**not** the `.hts` file) from the [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract it so the **`GOLDENEYE`** folders sit inside an **`hdtextures`** folder next to `goldeneye.exe`. Do not rename files. In **GEVR Settings**, turn **HD textures** on, **Apply**, then play on the **next boot**.
+
 | Feature | How |
 |---|---|
-| **HD textures** | Put your picture pack in an **`hdtextures`** folder next to `goldeneye.exe` ( **`GOLDENEYE`** tree inside). In **GEVR Settings**, turn **HD textures** on, **Apply**, then play on the **next boot**. The zip does not include a texture pack. |
 | **Settings that save** | **GEVR Settings** (intro hub, look right) — separate **VR**, **XR**, and **flat** profiles; **Apply** restarts into what you picked. |
 | **Monitor output** | While in VR or XR, choose **both eyes**, **left**, **right**, or **off** for the desktop picture (saved per VR/XR profile). Greyed out in flat. |
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |

@@ -16,9 +16,12 @@ Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds Golden
 
 ## vr452.4 — how to use what shipped
 
+### HD textures
+
+**GEVR does not ship the pack.** Get the **GLideN64 PNG** zip (**not** `.hts`) from [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract so **`GOLDENEYE`** folders are inside **`hdtextures`** next to `goldeneye.exe`. Do not rename files. **GEVR Settings** → HD textures **on** → **Apply** → **next boot**.
+
 | Feature | How |
 |---|---|
-| **HD textures** | Put your picture pack in **`hdtextures`** next to `goldeneye.exe` (**`GOLDENEYE`** tree inside). **GEVR Settings** → HD textures **on** → **Apply** → play on the **next boot**. No HD pack in the zip. |
 | **Settings that save** | **GEVR Settings** on the intro hub (look right) — **VR**, **XR**, and **flat** profiles; **Apply** restarts into your choices. |
 | **Monitor output** | In VR or XR, pick **both eyes**, **left**, **right**, or **off** for the desktop picture (saved per profile). |
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the flight path. |
