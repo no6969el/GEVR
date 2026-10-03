@@ -59,7 +59,7 @@ Quest / Meta Touch, Valve Index, and Oculus-style OpenXR binds (same actions):
 | Input | What it does |
 |---|---|
 | **Left stick** | Walk |
-| **Right stick** | Turn (Smooth or Snap — **GEVR Settings**, look right on the intro hub) |
+| **Right stick** | Turn in-game (comfort options are in **GEVR Settings** on the intro hub) |
 | **Both thumbstick clicks** | Recenter playspace |
 | **Trigger** | Fire (left fires left gun, right fires right when dual-wielding) |
 | **Squeeze / grip** | **AIM / ADS** (aim mark on the gun ray) |
@@ -80,22 +80,63 @@ Full detail: [`docs/CONTROLS.md`](docs/CONTROLS.md).
 
 ### GEVR Settings (in-game menu)
 
-On the intro hub, **look right** at the **GEVR Settings** glass. **A** selects a row; **left / right** on the stick changes the value; **Apply** saves and restarts into those settings. Choices are stored separately for **VR**, **XR**, and **flat** (change **Visual mode** to switch which profile you are editing).
+On the intro hub, **look right** at the **GEVR Settings** glass (GoldenEye-style folder UI). This is where picture, monitor, and profile options live — not the pause watch.
 
-Rows today: **Supersample** (e.g. 3 Sharp), **Monitor** (on), **Full screen** (off), **Window size**, **Filter** (bilinear), **Frame rate** (Headset), **Game speed** (Smooth 90), **HD textures** (off until you add a pack), **Visual mode** (VR), **Beta** (none yet), **Reset defaults**, **Apply** (save and restart).
+**How to use the menu:** **A** selects a row. Stick **left / right** changes that row’s value. **A** again accepts. Highlight **Apply** (Save+Restart) and press **A** to **save and restart** the game into your choices.
 
-New features will keep being added to this menu. **Beta** will hold test options in the future.
+**Visual mode** is **VR**, **XR**, or **flat**. Each mode keeps its **own saved settings** — switch Visual mode to edit a different profile.
+
+Default rows in vr452.4 (yours may differ after you change things):
+
+| Row | Example value |
+|---|---|
+| Supersample | 3 Sharp |
+| Monitor | On |
+| Full screen | Off |
+| Window | 1280×960 |
+| Filter | Bilinear |
+| Frame rate | Headset |
+| Game speed | Smooth 90 |
+| HD textures | Off |
+| Visual mode | VR |
+| Beta | None yet |
+| Reset defaults | No |
+| Apply | Save+Restart |
+
+<p align="center">
+  <img src="docs/images/gevr-settings-menu-vr452.4.png" alt="GEVR Settings menu on the intro hub" width="720" />
+</p>
+
+**Monitor** (while you play in VR or XR): choose **both eyes**, **left eye only**, **right eye only**, or **no desktop picture**. The row is **greyed out in flat** Visual mode. Monitor choice is saved with the **VR** and **XR** profiles, not the flat profile.
+
+New features will keep being added to this menu. **Beta** will hold test options in the future — it shows **None yet** today.
 
 ### HD textures
 
-**GEVR does not ship the pack.** Download the community **GLideN64 PNG** zip (**not** the `.hts` file) from the [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract it so the **`GOLDENEYE`** folders sit inside an **`hdtextures`** folder next to `goldeneye.exe`. Do not rename files. In **GEVR Settings**, turn **HD textures** on, **Apply**, then play on the **next boot**.
+**GEVR does not ship the pictures.** Download the community **GLideN64 PNG** zip (**not** the `.hts` file) from [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm).
 
-| Feature | How |
+1. Extract the zip so the **`GOLDENEYE`** folder sits inside **`hdtextures`** next to `goldeneye.exe` (do not rename the picture files).
+2. In **GEVR Settings**, set **HD textures** to **On**.
+3. **Apply**, then play on the **next boot**.
+
+### More vr452.4 highlights
+
+| Feature | One-line how-to |
 |---|---|
-| **Monitor output** | In the menu, **Monitor** — **both eyes**, **left**, **right**, or **off** on the desktop while you are in VR or XR (greyed out in flat). |
+| **Saved settings** | Edit under **Visual mode** VR / XR / flat; **Apply** restarts into that profile. |
 | **Rockets** | Rocket launcher stays on the gun; flat crosshair on the rocket path. |
 
 Older comfort and combat passes still in this line: playspace / hands ([#74](https://github.com/no6969el/GEVR/issues/74)), melee swing ([#75](https://github.com/no6969el/GEVR/issues/75)), Janus spawn ([#82](https://github.com/no6969el/GEVR/issues/82)), Dam sky / grip doors ([#80](https://github.com/no6969el/GEVR/issues/80), [#90](https://github.com/no6969el/GEVR/issues/90)), cuff / dual-wield / watch magnet, and more — see [FEATURES.md](FEATURES.md).
+
+---
+
+## Older playtest (video)
+
+This clip is from an **older public cut (~vr441)** — picture and controls may not match **vr452.4**.
+
+[![GoldenEye VR streamer playtest (~vr441 era)](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
+
+[Watch on YouTube](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
 ---
 

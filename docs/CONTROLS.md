@@ -2,7 +2,7 @@
 
 How to move, aim, and reset your position in [GEVR Beta vr452.4](https://github.com/no6969el/GEVR/releases/latest).
 
-Install first: [README Install](../README.md#install-vr4524). Download: [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip) ([Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)). Tester notes: [BETA.md](BETA.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install-vr4524). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#controls-right-after-install)). Download: [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Tester notes: [BETA.md](BETA.md). Menu + features: [README](../README.md#vr4524-features-how-to-use-them) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
@@ -97,16 +97,32 @@ After recenter, standing still and turning your head should not slide the world.
 
 ## Cinema / menus / GEVR Settings
 
-While the flat cinema or frontend menus are up, you are in a small hub room looking at a **world-locked** screen. Turn your head and the screen stays put in the room.
+On the **intro hub**, you are in a small room with a **world-locked** cinema screen. **GEVR Settings** glass is to your **right** (see [screenshot](../images/gevr-settings-menu-vr452.4.png) on the README).
 
-**GEVR Settings** glass sits to your **right** on that hub. Right stick: **up/down** picks a row, **left/right** changes values. **Apply** saves and restarts into what you picked.
+**In this menu only:** **A** selects a row; stick **left / right** changes the value; **A** accepts. **Apply** (Save+Restart) + **A** saves and restarts the game. (In gameplay, **A** is still **next weapon** — that is separate from this settings UI.)
 
-| Setting | How |
+**Visual mode** **VR** / **XR** / **flat** — each profile saves its own values under `%LOCALAPPDATA%\GEVR`.
+
+| Row (vr452.4 defaults) | Example |
 |---|---|
-| **HD textures** | [Pack](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) / [info](https://evilgames.eu/texture-packs/ge007-hd.htm) — GLideN64 **PNG** zip (not `.hts`); extract **`GOLDENEYE`** into **`hdtextures`** beside `goldeneye.exe` (do not rename); **HD textures** on, **Apply**, **next boot**. GEVR does not ship the pack. |
-| **Profiles** | Separate **VR**, **XR**, and **flat** profiles; choices persist under `%LOCALAPPDATA%\GEVR`. |
-| **Monitor output** | In VR or XR: **both eyes**, **left**, **right**, or **off** on the desktop (per VR/XR profile). Not used in flat. |
-| **Turn comfort** | Turn speed, Smooth vs Snap, snap size (snap size gray on Smooth). |
+| Supersample | 3 Sharp |
+| Monitor | On |
+| Full screen | Off |
+| Window | 1280×960 |
+| Filter | Bilinear |
+| Frame rate | Headset |
+| Game speed | Smooth 90 |
+| HD textures | Off |
+| Visual mode | VR |
+| Beta | None yet |
+| Reset defaults | No |
+| Apply | Save+Restart |
+
+**Monitor:** both eyes, left eye only, right eye only, or no desktop picture — for VR/XR play. Greyed out in flat. Saved with VR and XR, not flat.
+
+**HD textures:** [pack releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) · [evilgames page](https://evilgames.eu/texture-packs/ge007-hd.htm). GEVR does not ship the pictures. GLideN64 **PNG** zip (not `.hts`); **`GOLDENEYE`** inside **`hdtextures`** next to `goldeneye.exe`; On → **Apply** → next boot. Do not rename picture files.
+
+More rows will be added over time. **Beta** is for future test toggles (**None yet** today).
 
 ## Getting VR working
 

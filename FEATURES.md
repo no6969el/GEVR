@@ -16,24 +16,42 @@ Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds Golden
 
 ## vr452.4 — how to use what shipped
 
+Full walkthrough with screenshot: [README — GEVR Settings](../README.md#gevr-settings-in-game-menu).
+
 ### GEVR Settings (in-game menu)
 
-Intro hub — **look right**. **A** = select row; stick **left / right** = change value; **Apply** = save and restart into those settings. **Visual mode** picks which profile you edit (**VR**, **XR**, or **flat**).
+Intro hub — **look right** at **GEVR Settings**. **A** selects a row; stick **left / right** changes the value; **A** accepts. Highlight **Apply** (Save+Restart) and press **A** to save and restart.
 
-Rows today: Supersample (3 Sharp), Monitor on, Full screen off, Window size, Filter bilinear, Frame rate Headset, Game speed Smooth 90, HD textures off, Visual mode VR, Beta (none yet), Reset defaults, Apply (save and restart).
+**Visual mode:** **VR**, **XR**, or **flat** — each keeps its own saved settings.
 
-More options will land in this menu over time. **Beta** is reserved for test toggles later.
+| Row | Example |
+|---|---|
+| Supersample | 3 Sharp |
+| Monitor | On |
+| Full screen | Off |
+| Window | 1280×960 |
+| Filter | Bilinear |
+| Frame rate | Headset |
+| Game speed | Smooth 90 |
+| HD textures | Off |
+| Visual mode | VR |
+| Beta | None yet |
+| Reset defaults | No |
+| Apply | Save+Restart |
+
+**Monitor:** both eyes, left only, right only, or no desktop picture (VR/XR). Greyed out in flat. Saved with VR and XR profiles, not flat.
+
+New features will keep being added here. **Beta** will hold test options later (**None yet** today).
 
 ### HD textures
 
-**GEVR does not ship the pack.** Get the **GLideN64 PNG** zip (**not** `.hts`) from [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract so **`GOLDENEYE`** folders are inside **`hdtextures`** next to `goldeneye.exe`. Do not rename files. **GEVR Settings** → HD textures **on** → **Apply** → **next boot**.
+**GEVR does not ship the pictures.** [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) · [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm) — **GLideN64 PNG** zip (not `.hts`). Put **`GOLDENEYE`** inside **`hdtextures`** next to `goldeneye.exe`; HD textures **On** → **Apply** → **next boot**. Do not rename picture files.
 
 | Feature | How |
 |---|---|
-| **Monitor output** | Menu row **Monitor** — both eyes, left, right, or off (VR/XR). |
-| **Rockets** | Rocket launcher stays on the gun; flat crosshair on the flight path. |
+| **Rockets** | Launcher stays on the gun; flat crosshair on the path. |
 
-Install and controller layout: [README](../README.md).
+Install · controls video · binds: [README](../README.md).
 
 ---
 
