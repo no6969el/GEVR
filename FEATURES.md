@@ -8,9 +8,9 @@
 
 Not an emulator overlay. Not a flat game with a 3D wrapper. GEVR rebuilds GoldenEye on PC for real OpenXR stereo, 6DOF, and controller aim so you can actually *be* in the Facility.
 
-**Latest playable cut:** [**GEVR Beta vr453**](https://github.com/no6969el/GEVR/releases/latest) — public Beta (BYO-ROM). Zip: **`GEVR-Beta-vr453-win64.zip`**.
+**Latest playable cut:** [**GEVR Beta vr452.4**](https://github.com/no6969el/GEVR/releases/latest) — public Beta (BYO-ROM). Zip: **`GEVR-Beta-vr452.4-win64.zip`**.
 
-[Install](../README.md#install-vr453) · [Controls](../README.md#controls-right-after-install) · [vr453 tag](https://github.com/no6969el/GEVR/releases/tag/vr453) · [Credits](CREDITS.md)
+[Install](../README.md#install-vr4524) · [Controls](../README.md#controls-right-after-install) · [vr452.4 tag](https://github.com/no6969el/GEVR/releases/tag/vr452.4) · [Credits](CREDITS.md)
 
 ---
 
@@ -129,8 +129,8 @@ Facility and friends, OpenXR on PC. HUD and on-screen text pulled in off the HMD
 
 ## Play
 
-1. Grab **[`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)** (no ROM in the archive).
-2. Follow [README Install](../README.md#install-vr453).
+1. Grab **[`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)** (no ROM in the archive).
+2. Follow [README Install](../README.md#install-vr4524).
 3. [Controls](../README.md#controls-right-after-install) and [CONTROLS.md](docs/CONTROLS.md) for the full bind list.
 
 Report bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Do not upload your ROM.

@@ -6,7 +6,7 @@
 
 **GoldenEye. Native. In VR. Bring your own ROM.**
 
-> **Play now:** GitHub **Latest** is **[vr453](https://github.com/no6969el/GEVR/releases/tag/vr453)** — zip [`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip). Or hit **Update** in GevrRomStarter.
+> **Play now:** GitHub **Latest** is **[vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)** — zip [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Or hit **Update** in GevrRomStarter.
 
 > This public repo is for **player docs**, **Issues**, and **Beta zip Releases**. New product code is developed privately. See [`docs/SOURCE.md`](docs/SOURCE.md).
 
@@ -16,8 +16,8 @@ The N64 classic you can finally *stand inside* — not an emulator overlay, not 
 
 | | |
 |---|---|
-| **Download** | [**GEVR-Beta-vr453-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip) |
-| **Release page** | [vr453](https://github.com/no6969el/GEVR/releases/tag/vr453) |
+| **Download** | [**GEVR-Beta-vr452.4-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip) |
+| **Release page** | [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4) |
 | **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
 | **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
 | **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
@@ -29,9 +29,9 @@ Star the repo and [follow @no6969el](https://github.com/no6969el). **Watch → R
 
 ---
 
-## Install (vr453)
+## Install (vr452.4)
 
-1. Download **[GEVR-Beta-vr453-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr453](https://github.com/no6969el/GEVR/releases/tag/vr453). **No ROM inside the zip.**
+1. Download **[GEVR-Beta-vr452.4-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4). **No ROM inside the zip.**
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`** — it sets VR boot knobs and starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. Each Beta tag bumps a **ship stamp** so the first launch after an update rebuilds that cache once from your ROM.
