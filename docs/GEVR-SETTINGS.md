@@ -53,11 +53,13 @@ To go back to full VR later: set Visual to **VR** -> **Apply**.
 
 ## HD textures on / off
 
-**GEVR does not ship a texture pack.** Download the **GLideN64 PNG** zip (**not** `.hts`) from [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm). Extract so the **`GOLDENEYE`** folders sit inside **`hdtextures`** next to `goldeneye.exe`. Do not rename files.
+**GEVR does not ship a texture pack.** If **`hdtextures`** has only **`GOLDENEYE_HIRESTEXTURES.hts`** — for example BarZ’s folder `Z:\Desktop\New folder\hdtextures` — **that is wrong.** An `.hts` file in `hdtextures` does nothing. The game wants the extracted **GLideN64 PNG** pack: a **`GOLDENEYE`** folder inside **`hdtextures`**, and that **`hdtextures`** folder sits next to `goldeneye.exe`.
 
-1. Open **GEVR Settings**.
-2. Find **HD textures** and set **On**.
-3. **Apply**, then play on the **next boot**.
+1. Download the PNG zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
+2. Extract it so the **`GOLDENEYE`** folder is inside **`hdtextures`**, next to `goldeneye.exe`.
+3. Turn **HD textures** **On**.
+4. **Apply**.
+5. The pack loads on the **next boot**.
 
 **Default is Off.** Leaving it off is fine — the game looks good without a pack.
 
