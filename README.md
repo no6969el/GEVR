@@ -141,11 +141,13 @@ New features will keep being added to this menu. **Beta** will hold test options
 
 ### HD textures
 
-**GEVR does not ship the pictures.** Download the community **GLideN64 PNG** zip (**not** the `.hts` file) from [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm).
+**GEVR does not ship the pictures.** If **`hdtextures`** has only **`GOLDENEYE_HIRESTEXTURES.hts`** — for example BarZ’s folder `Z:\Desktop\New folder\hdtextures` — **that is wrong.** An `.hts` file in `hdtextures` does nothing. The game wants the extracted **GLideN64 PNG** pack: a **`GOLDENEYE`** folder inside **`hdtextures`**, and that **`hdtextures`** folder sits next to `goldeneye.exe`.
 
-1. Extract the zip so the **`GOLDENEYE`** folder sits inside **`hdtextures`** next to `goldeneye.exe` (do not rename the picture files).
-2. In **GEVR Settings**, set **HD textures** to **On**.
-3. **Apply**, then play on the **next boot**.
+1. Download the PNG zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm).
+2. Extract it so the **`GOLDENEYE`** folder is inside **`hdtextures`**, next to `goldeneye.exe`.
+3. Turn **HD textures** **On**.
+4. **Apply**.
+5. The pack loads on the **next boot**.
 
 ### More vr453 highlights
 
