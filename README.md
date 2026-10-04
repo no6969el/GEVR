@@ -8,7 +8,7 @@
 
 > **Play now:** GitHub **Latest** is **[vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4)** — zip [`GEVR-Beta-vr452.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr452.4/GEVR-Beta-vr452.4-win64.zip). Or hit **Update** in GevrRomStarter.
 
-> **Pre-beta (not Latest):** **[vr453](https://github.com/no6969el/GEVR/releases/tag/vr453)** is for players who want to try newer features and report issues — not fully tested. Zip: [`GEVR-Beta-vr453-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453/GEVR-Beta-vr453-win64.zip). **Update** in GevrRomStarter still follows GitHub **Latest** (vr452.4).
+> **Pre-beta (not Latest):** **[vr453.1](https://github.com/no6969el/GEVR/releases/tag/vr453.1)** is a pre-beta, not fully tested, and not Latest. Zip: [`GEVR-Beta-vr453.1-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr453.1/GEVR-Beta-vr453.1-win64.zip). **Update** in GevrRomStarter still follows GitHub **Latest** (vr452.4). vr453.1 adds the Mission Select GEVR Settings page that vr453 was missing.
 
 > This public repo is for **player docs**, **Issues**, and **Beta zip Releases**. New product code is developed privately. See [`docs/SOURCE.md`](docs/SOURCE.md).
 
