@@ -141,7 +141,7 @@ New features will keep being added to this menu. **Beta** will hold test options
 
 ### HD textures
 
-**GEVR does not ship the pictures.** If **`hdtextures`** has only **`GOLDENEYE_HIRESTEXTURES.hts`** — for example BarZ’s folder `Z:\Desktop\New folder\hdtextures` — **that is wrong.** An `.hts` file in `hdtextures` does nothing. The game wants the extracted **GLideN64 PNG** pack: a **`GOLDENEYE`** folder inside **`hdtextures`**, and that **`hdtextures`** folder sits next to `goldeneye.exe`.
+**GEVR does not ship the pictures.** If **`hdtextures`** has only **`GOLDENEYE_HIRESTEXTURES.hts`**, **that is wrong.** An `.hts` file in `hdtextures` does nothing. The game wants the extracted **GLideN64 PNG** pack: a **`GOLDENEYE`** folder inside **`hdtextures`**, and that **`hdtextures`** folder sits next to `goldeneye.exe`.
 
 1. Download the PNG zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or the [GE007 HD texture pack page](https://evilgames.eu/texture-packs/ge007-hd.htm).
 2. Extract it so the **`GOLDENEYE`** folder is inside **`hdtextures`**, next to `goldeneye.exe`.
@@ -179,7 +179,7 @@ This clip is from an **older public cut (~vr441)** — picture and controls may 
 | **Pimax Crystal Super + SteamVR OpenXR** via [CustomHeadsetOpenVR](https://github.com/sboys3/CustomHeadsetOpenVR) (sboys3) | Primary wear path — we do not maintain that driver; we *do* support this experience |
 | **Native PimaxXR** | Verified attach / play |
 | **Meta Quest 3 + Virtual Desktop OpenXR (VDXR)** | Verified attach / play |
-| **RTX 5060 laptop + Quest 3 + Virtual Desktop VDXR** | BarZ wear **vr441**, 2026-09-17; one data point, not a minimum spec |
+| **RTX 5060 laptop + Quest 3 + Virtual Desktop VDXR** | **vr441**, 2026-09-17; one data point, not a minimum spec |
 
 **Half-speed / mushy VR?** Turn **SteamVR Motion Smoothing Off** and **Virtual Desktop Space Warp Off**. Details: [`docs/BETA.md`](docs/BETA.md#half-speed--mushy-vr).
 
