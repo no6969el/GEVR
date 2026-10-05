@@ -2,7 +2,7 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr452.4**. [README Install](README.md#install-vr4524) — [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr454**. [README Install](README.md#install) — [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md).
 
@@ -95,9 +95,9 @@ If you spot a missing credit for something we really used, open an Issue titled 
 
 ## Quick links
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr445.1 and file bugs
+- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr454 and file bugs
 - [LICENSE-MAP.md](LICENSE-MAP.md) - whose license is whose
-- [README Play](README.md#play-vr4451---the-one-to-grab) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
+- [README Install](README.md#install) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)
 - [PRIOR-ART.md](PRIOR-ART.md) - Perfect Dark VR influence detail
 - [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) - other product projects using GEVR (what they took)
