@@ -235,11 +235,8 @@ When you report a bug or crash, include: **headset**, **OpenXR runtime**, **Stea
 ## Known quirks (honest Beta)
 
 - **Half-speed or mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off** ([BETA.md](docs/BETA.md#half-speed--mushy-vr)).
-- **Frigate door** and other level stoppers are still being worked on.
-- Some Dam and Frigate water and prop looks are still off.
-- A swing uses the held weapon’s damage. It is in, and it is not finely tuned.
 - **Big explosions** can still hard-crash. Grab `gevr-fault-*.txt` beside the exe before you relaunch.
-- An empty hand draws a **cube**. The cube hides when that hand holds a weapon.
+- An empty hand shows Bond's fist. The old hand cube is off.
 - Expect occasional **crashes** while we keep polishing.
 
 More tester notes: [BETA.md](docs/BETA.md) · [CONTROLS.md](docs/CONTROLS.md).

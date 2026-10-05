@@ -44,10 +44,7 @@ Keep shooting. File Issues. Watch GitHub.
 ---
 ## Known quirks (honest)
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; VD **Space Warp Off** (not a GEVR toggle; halves app rate)
-- Frigate water / horizon (#80) can still look wrong on Latest
-- Frigate door / aperture SFX / asym still open (#79)
 - Dam mid-range crates/props can still pop in/out
-- Dam water can look flat/murky
 - Glass bullet holes can still be one-eye in places
 - Dam blue flicker (#70) — MODEMDROP=3 hides the covert-modem scrap
 - Menu face-button confirm is still rough in places; watch highlight can miss an eye
