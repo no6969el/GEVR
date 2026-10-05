@@ -1,28 +1,30 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr453](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr454](https://github.com/no6969el/GEVR/releases/latest). For launch steps and the full control list, see the [README](../README.md) and [Controls](CONTROLS.md).
 
 ---
 
 ## Open GEVR Settings
 
 1. Start GEVR as usual (`Start-GEVR.bat`).
-2. Load your save and reach **Mode Select** (Mission / Multiplayer screen).
-3. Move to **GEVR Settings** (under Select Mission and Multiplayer).
-4. Press **A** (or your confirm button) to open the page.
+2. Reach **Mission Select**.
+3. Choose **GEVR Settings**. It sits next to **Select Mission**, **Multiplayer**, and **Cheat Options**.
+4. Press **A** to open the page.
 
-**Tip:** Cheat Options is a separate row when cheats are unlocked - leave that alone unless you are using cheats.
+The row is named **GEVR Settings**. It is not named Options.
+
+Cheat Options is the cheats row beside it. Leave that row alone unless you are using cheats.
 
 ---
 
 ## Change a setting
 
-1. Move up / down to highlight a row.
-2. Press **A** to enter that row (the value lights up).
-3. Press **Left / Right** to step through choices.
+1. Move up or down to highlight a row.
+2. Press **A** to edit that row.
+3. Press **Left** or **Right** to step through the choices.
 4. Press **A** again to accept, or **B** to cancel the edit.
 
-Nothing is permanent until you **Apply**.
+Nothing is kept until you **Apply**.
 
 ---
 
@@ -31,67 +33,90 @@ Nothing is permanent until you **Apply**.
 1. Highlight **Apply**.
 2. Press **A**.
 
-The game **saves your choices and restarts**. That is normal - picture size, filter, HD, and Visual mode need a fresh launch.
-
-After the restart you should see the new values stick (including supersample).
+The game saves your choices and relaunches. That is normal. Picture size, filter, HD textures, and Visual mode need a fresh launch.
 
 ---
 
 ## Visual modes
 
-| Mode | Best for | What happens |
-|------|----------|----------------|
-| **VR** | Everyday headset play | Full immersive VR. |
-| **XR** | A framed / cinema feel | Headset view with a clean square outline. |
-| **Flat** | Desk / couch on a monitor | No headset - full-screen monitor play. |
+| Mode | What you get |
+|------|----------------|
+| **VR** | Full headset play. |
+| **XR** | A smaller screen with a black outline. |
+| **Flat** | The game on the monitor. No headset. |
 
-Pick the mode -> **Apply** -> wait for the relaunch.
+Change the Visual mode row, then **Apply**. Apply saves and relaunches into that mode. VR, XR, and Flat each keep the settings saved for that mode.
 
-To go back to full VR later: set Visual to **VR** -> **Apply**.
+To come back to full VR later, set Visual mode to **VR** and Apply.
+
+You can also start on the monitor with `Play-on-monitor.bat`.
+
+---
+
+## Frame rate, supersample, and filter
+
+- **Frame rate** follows the headset unless you change it. **Fixed 90** is still available.
+- **Supersample** starts at **3**.
+- **Filter** starts on **bilinear**. **Point** is still available.
+
+---
+
+## Monitor picture
+
+While you are in the headset, the monitor picture can be **Both**, **Left**, **Right**, or **Off**.
+
+**Off** blanks the mirror on the desktop. You stay in the headset.
 
 ---
 
 ## HD textures on / off
 
-**GEVR does not ship a texture pack.** If **`hdtextures`** has only **`GOLDENEYE_HIRESTEXTURES.hts`**, **that is wrong.** An `.hts` file in `hdtextures` does nothing. The game wants the extracted **GLideN64 PNG** pack: a **`GOLDENEYE`** folder inside **`hdtextures`**, and that **`hdtextures`** folder sits next to `goldeneye.exe`.
+**GEVR does not ship a texture pack.** The zip does not include one. Put the PNG pack in **`hdtextures\GOLDENEYE`**, next to `goldeneye.exe`. **`GOLDENEYE_HIRESTEXTURES.hts`** is the wrong file. An `.hts` file in `hdtextures` does nothing.
 
 1. Download the PNG zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
-2. Extract it so the **`GOLDENEYE`** folder is inside **`hdtextures`**, next to `goldeneye.exe`.
+2. Extract it so the pictures land in **`hdtextures\GOLDENEYE`**, next to `goldeneye.exe`.
 3. Turn **HD textures** **On**.
 4. **Apply**.
-5. The pack loads on the **next boot**.
+5. The pack loads on the next boot.
 
-**Default is Off.** Leaving it off is fine — the game looks good without a pack.
+**Default is Off.** Leaving it off is fine.
+
+---
+
+## Other rows still on the page
+
+These rows are still there from earlier cuts:
+
+| Row | What players usually see first |
+|---|---|
+| Full screen | Off |
+| Window | 1280×960 |
+| Game speed | Smooth 90 |
+| HD textures | Off |
+| Beta | None yet |
+| Reset defaults | No |
+
+**Beta** is reserved for test options later. It shows **None yet** today.
 
 ---
 
 ## Reset defaults
 
-Want a clean starting point?
-
 1. Open **GEVR Settings**.
 2. Highlight **Reset defaults**.
-3. Confirm **Yes** (Are you sure?).
-4. The restore follows your **current Visual choice**:
-   - **Flat** Visual -> Flat-friendly defaults (monitor rate, full screen, classic speed).
-   - **Anything else** -> VR-friendly defaults (supersample 3, follow headset, bilinear, HD off, Visual VR).
+3. Confirm **Yes**.
+4. The restore follows your current Visual choice:
+   - **Flat** restores monitor-friendly defaults (monitor rate, full screen, classic speed).
+   - **VR** or **XR** restores headset-friendly defaults (supersample 3, follow the headset, bilinear, HD off, Visual mode VR).
 5. Hit **Apply** if you want that save to relaunch now.
-
----
-
-## Frame rate and game speed (short)
-
-- **Headset play:** prefer following the headset so the game matches your display.
-- **Flat / monitor:** you can follow the monitor rate and pick Original 60 or Smooth 90 for game speed.
-- Use the menu - no special scripts required.
 
 ---
 
 ## If something looks wrong
 
-- Did you **Apply** after changing Visual or HD?
-- Flat still opening in VR? Set Visual to **Flat** and Apply again.
-- Picture soft after Apply? Check **Supersample** is still what you want (default 3).
-- Still stuck? Quit fully, run `Start-GEVR.bat` again, and open Settings once more.
+- Did you **Apply** after changing Visual mode or HD textures?
+- Flat still opening in the headset? Set Visual mode to **Flat** and Apply again.
+- Picture soft after Apply? Check that **Supersample** is still **3**, or whatever you chose.
+- Still stuck? Quit fully, run `Start-GEVR.bat` again, and open GEVR Settings once more.
 
-Report bugs with: headset or flat, what you changed, and what you expected. [CONTRIBUTING](../CONTRIBUTING.md).
+Report bugs with headset or flat, what you changed, and what you expected. [CONTRIBUTING](../CONTRIBUTING.md).
