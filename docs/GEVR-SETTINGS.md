@@ -1,6 +1,8 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr454](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr456.1](https://github.com/no6969el/GEVR/releases/tag/vr456.1). For launch steps, see the [README](../README.md#install). For binds, see [Controls](CONTROLS.md). How to play: [Start here](00-START-HERE.md).
+
+Ammo digits, the hip holster, weapon pictures, and chest reload stay on without boot knobs. They are not rows on this page.
 
 ---
 
@@ -69,17 +71,19 @@ The row is greyed out in Flat. The choice is saved with the VR and XR settings.
 
 ---
 
-## HD textures on / off
+## HD textures
 
-**GEVR does not ship a texture pack.** The zip has no pack. If `hdtextures` only has `GOLDENEYE_HIRESTEXTURES.hts`, that is the wrong file. An `.hts` file in `hdtextures` does nothing.
+HD textures are beta. They can stutter, including on a fast card.
 
-1. Download a GLideN64 **PNG** zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
+The zip has no texture pack. PNG packs go in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. An `.hts` file in `hdtextures` does nothing.
+
+1. Download a GLideN64 PNG zip. [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
 2. Put the pictures in `hdtextures\GOLDENEYE`, next to `goldeneye.exe`.
 3. Turn **HD textures** **On**.
 4. **Apply**.
 5. The pack loads on the next boot.
 
-**Default is Off.** Leaving it off is fine.
+The row starts at **Off**. Leaving it off is fine.
 
 ---
 

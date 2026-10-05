@@ -1,17 +1,19 @@
 # GEVR - living status
 
-Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). This note is an old status log.
+Players: use [How to play](00-START-HERE.md) and [Controls](CONTROLS.md). This note is an old status log.
 
-**Latest:** [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) — `GEVR-Beta-vr454-win64.zip`. You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
+**Latest:** [vr456.1](https://github.com/no6969el/GEVR/releases/tag/vr456.1) — `GEVR-Beta-vr456.1-win64.zip`. You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
 
-**How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks.
+**How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks. [Start here](00-START-HERE.md).
 
-**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the previous weapon on the left hand. **B** reloads any gun the normal way. **Y** opens the watch. The full list is on the [README](../README.md#vr454).
+**Buttons:** Left X is the previous weapon on the left hand. Right A is the next weapon on the right hand. B reloads any gun. Upper chest plus grab reloads. A visible magazine reloads with a grip. Pistol, shotgun, sniper, and other guns with no visible magazine reload across the chest or with B. Y opens the watch. The full list is on [Controls](CONTROLS.md).
+
+Ammo digits, the hip holster, weapon pictures, and chest reload stay on without boot knobs. Shooting over a ledge no longer deflects down. HD textures are beta. They can stutter, including on a fast card. [HD textures](GEVR-SETTINGS.md#hd-textures).
 
 ---
 ## Older status (kept for the record)
 
-**Download (latest at the time of the notes below):** older than vr454. Do not treat the rest of this file as the current button list.
+**Download (latest at the time of the notes below):** older than vr456.1. Do not treat the rest of this file as the current button list.
 
 ### What’s in Latest (KEEP, default-on at bake)
 - [#74](https://github.com/no6969el/GEVR/issues/74) playspace / free move / hands follow

@@ -1,15 +1,15 @@
 # Controls (Beta)
 
-How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr454](https://github.com/no6969el/GEVR/releases/latest)**.
+How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr456.1](https://github.com/no6969el/GEVR/releases/latest)**.
 
-Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). What vr454 adds: [README](../README.md#vr454) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc). Download: [`GEVR-Beta-vr456.1-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.1/GEVR-Beta-vr456.1-win64.zip). The zip has no ROM and no HD texture pack. How to play: [Start here](00-START-HERE.md). Tester notes: [BETA.md](BETA.md). Settings: [GEVR Settings](GEVR-SETTINGS.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat` — VR picture, then GevrRomStarter.
 - **Monitor / no headset:** `Play-on-monitor.bat` — flat picture, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr454-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr456.1-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
 
 You can also switch picture from **GEVR Settings**: set Visual mode to **VR**, **XR**, or **Flat**, then **Apply**. Apply saves and relaunches into that mode.
 
@@ -49,7 +49,7 @@ Auto-aim starts **off**.
 | **Left stick while aiming** | Walk forward and back |
 | **Right A** | **Next weapon** on the **right** hand |
 | **Left X** | **Previous weapon** on the **left** hand |
-| **Right B** | **Reload button.** Reloads any gun the normal way. You do not have to use a gesture. Also doors, switches, plant, and activate |
+| **Right B** | **B** reloads any gun. Also doors, switches, plant, and activate |
 | **Y** | **Opens the watch** |
 | **Menu** (left controller) | Also opens the pause watch |
 | **Head / room-scale** | Look around. Walk your room to move in the level |
@@ -74,7 +74,7 @@ Same bindings as Quest. Index names:
 | **Right thumbstick** | Right stick | Turn. On the sniper, forward or back steps the zoom |
 | **Left thumbstick** | Left stick | Walk |
 | **Right A** | Right A | Next weapon on the right hand |
-| **Right B** | Right B | Reload button for any gun; also use / activate |
+| **Right B** | Right B | B reloads any gun; also use / activate |
 | **Left X** | Left X | Previous weapon on the left hand |
 | **Left Y** | Y | Opens the watch |
 | **System / menu button** | Quest **Menu** | Also opens the pause watch |
@@ -106,6 +106,8 @@ Touch the left cuff with your right hand and grip.
 
 ## Weapons and holster
 
+Ammo digits, the hip holster, weapon pictures, and chest reload stay on without boot knobs.
+
 | Control | Action |
 |---|---|
 | **Right A** | **Next** weapon on the **right** hand |
@@ -129,11 +131,9 @@ In VR, the ammo digits sit on the grip. You read them from behind the gun. Flat 
 
 ## Reload
 
-You do not have to reload by hand. Press **B**, the reload button, and any gun reloads the normal way.
+**B** reloads any gun. Upper chest plus grab reloads. A visible magazine reloads with a grip.
 
-You can also hold any gun to your upper chest and press the grab button to reload it. On a gun with a visible magazine, grab that magazine with the grip button to reload it.
-
-Pistols, the shotgun, the sniper, and other guns with no visible magazine reload across the chest, or with **B**.
+Pistol, shotgun, sniper, and other guns with no visible magazine reload across the chest or with **B**.
 
 Grabbing the handle swaps hands and does not reload. Guns do not reload on their own.
 
@@ -153,7 +153,7 @@ The right-hand sniper hides the red crosshair. The left-hand green aimer is not 
 
 ## Aim
 
-Point the controller. Bullet spread stays around that aim. Rockets, the grenade launcher, and the watch laser are unchanged.
+Point the controller. Bullet spread stays around that aim. Shooting over a ledge no longer deflects down. Rockets, the grenade launcher, and the watch laser are unchanged.
 
 Rockets stay on the gun, with a flat crosshair.
 
@@ -192,7 +192,7 @@ After you recenter, turning your head while you stand still should not slide the
 | Change a row | **A** selects the row. Stick **left / right** changes the value. **A** accepts | **Left stick** moves the highlight. Face buttons confirm |
 | Save | **Apply** saves and relaunches into that mode | The watch sheet saves the retail way |
 | **A** during play | **Next weapon** on the right hand | — |
-| **B** during play | Reload button for any gun, plus use / activate | — |
+| **B** during play | B reloads any gun, plus use / activate | — |
 
 Picture choices on that page:
 
@@ -201,7 +201,7 @@ Picture choices on that page:
 - **Supersample** starts at **3**. **Filter** starts on **bilinear**. **Point** is still available.
 - **Monitor:** **Both**, **Left**, **Right**, or **Off**. Off blanks the mirror while you stay in the headset.
 
-Starting rows and the rest of the how-to: [README](../README.md#vr454) · [GEVR Settings](GEVR-SETTINGS.md).
+Starting rows and the rest of the how-to: [GEVR Settings](GEVR-SETTINGS.md). How to play: [Start here](00-START-HERE.md).
 
 ---
 
@@ -235,10 +235,10 @@ Flat mode keeps the ammo count in the corner.
 
 ## Reload, pause, and menus
 
-- **B** is the reload button. It reloads any gun the normal way. You do not have to use a gesture.
-- Hold any gun to your upper chest and press the grab button to reload it.
-- On a gun with a visible magazine, grab that magazine with the grip button to reload it.
-- Pistols, the shotgun, the sniper, and other guns with no visible magazine reload across the chest, or with **B**.
+- **B** reloads any gun.
+- Upper chest plus grab reloads.
+- A visible magazine reloads with a grip.
+- Pistol, shotgun, sniper, and other guns with no visible magazine reload across the chest or with **B**.
 - Grabbing the handle swaps hands and does not reload.
 - Guns do not reload on their own.
 - **Y** opens the watch. **Menu** does too. **Tab** opens pause on the keyboard.
@@ -248,7 +248,7 @@ Flat mode keeps the ammo count in the corner.
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr456.1-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.1/GEVR-Beta-vr456.1-win64.zip).
 
 **Verified:**
 
@@ -256,11 +256,11 @@ GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GE
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Headset:** unzip **`GEVR-Beta-vr454-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
+**Headset:** unzip **`GEVR-Beta-vr456.1-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`**.
 
-PNG texture packs go in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file.
+HD textures are beta. They can stutter, including on a fast card. PNG packs go in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. Steps: [HD textures](GEVR-SETTINGS.md#hd-textures).
 
 ### If controls or VR feel dead
 
