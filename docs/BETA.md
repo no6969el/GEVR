@@ -65,7 +65,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **Black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)):** quiet for now. Stuck mines (including Facility) use the same no-modem scrap hide as the covert modem, so people can play. Props still pass through other props; that overlap is the cause.
 - **Ammo:** digits sit on the grip and read from behind the gun. Flat mode keeps the corner count.
 - **Weapon change:** **Right A** is the next weapon on the right hand. **Left X** is the previous weapon on the left hand.
-- **Hand cubes:** hide while that hand holds a weapon; smaller when empty.
+- An empty hand shows Bond's fist. The old hand cube is off.
 - **Frame rate:** follows the headset by default. Fixed 90 is still available in **GEVR Settings**.
 - **GEVR Settings:** on **Mission Select**, next to **Select Mission**, **Multiplayer**, and **Cheat Options**. It is not named Options. **A** selects a row. Stick left / right changes the value. **Apply** saves and relaunches. Prefs save under `%LOCALAPPDATA%\GEVR`.
 - **Watch:** **Y** opens it. **GAME OPTIONS** goes past ratio. The last line says scroll down for VR settings. A cuff grab detonates planted remotes. Otherwise the watch laser comes from the cuff. There is no detonator in the weapon cycle. The **left stick** moves the watch highlight. **Tab** still pauses on the keyboard.
@@ -77,7 +77,6 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **Auto-aim** starts off.
 - **B** also covers switches, plant, and activate. **Menu** also opens the pause watch.
 - **Tank:** stand on the chassis and you auto-mount. Stick pitch aims the shells.
-- **Empty hand** draws a cube.
 - **GL** is single-shot / muzzle feel OK.
 - **Hard crash:** look beside `goldeneye.exe` for `gevr-fault-*.txt` and attach the first lines (no ROM).
 
@@ -110,10 +109,10 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 - Grenade launcher: one shot per trigger, no self-blast
 - Rockets stay on the gun, with a flat crosshair
 - Far guards / characters stay readable
-- Empty hand shows the cube; armed hand hides it
+- An empty hand shows Bond's fist. The old hand cube is off.
 - Die / continue / load another mission in the same process (should stay clean)
 - Explosions and sparks (mass blow-ups can still crash - keep the fault file)
-- Dam blue flicker is probably the convert modem (known - issue #70; labels got mixed); stuck modem scrap should be quieter; Dam water look
+- Dam blue flicker is probably the convert modem (known - issue #70; labels got mixed); stuck modem scrap should be quieter
 - One-eye glass bullet holes
 - Facility halls / guards
 - Local split-screen on a monitor if you have a friend on the couch
