@@ -1,31 +1,17 @@
 # GEVR - living status
-**Last updated:** 2026-09-24
-**One-liner:** From-source *GoldenEye 007* on PC for real OpenXR VR. Bring your own USA ROM. Stand inside it.
-**Download (latest):** https://github.com/no6969el/GEVR/releases/latest → **[vr445.2](https://github.com/no6969el/GEVR/releases/tag/vr445.2)**
-**Repo / README:** https://github.com/no6969el/GEVR — controller layout sits **near the top** of the README (after Latest blurb, before Streamer playtests).
-**How to play:** unzip → drop in your USA `.z64` → run `Start-GEVR.bat` → recenter with both thumbstick clicks
+
+Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). This note is an old status log.
+
+**Latest:** [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) — `GEVR-Beta-vr454-win64.zip`. You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
+
+**How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks.
+
+**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the previous weapon on the left hand. **B** reloads any gun the normal way. **Y** opens the watch. The full list is on the [README](../README.md#vr454).
 
 ---
-## Controller layout (vr445.2)
+## Older status (kept for the record)
 
-Quest / Index / Oculus Touch (same OpenXR actions):
-
-| Input | What it does |
-|---|---|
-| **Left stick** | Walk |
-| **Right stick** | Turn (Smooth / Snap in VR Settings) |
-| **Both stick clicks** | Recenter |
-| **Trigger** | Fire (each hand its own gun when dual-wielding) |
-| **Squeeze / grip** | **AIM / ADS** |
-| **A** (right face, Quest/Oculus; Index A) | USE / reload (view-cone) |
-| **X** (left, Quest/Oculus) | Previous weapon (where WEAPAX is on) |
-| **Head / 6DOF** | Look; walk your room to move in-world |
-
----
-## Current cut
-**vr445.2** — GitHub **Latest**. Hit **Update** in GevrRomStarter or grab `GEVR-Beta-vr445.2-win64.zip`.
-
-**vr450** / **vr450.1** stay published as **pre-release** (tags + zips kept). They are **not** Latest.
+**Download (latest at the time of the notes below):** older than vr454. Do not treat the rest of this file as the current button list.
 
 ### What’s in Latest (KEEP, default-on at bake)
 - [#74](https://github.com/no6969el/GEVR/issues/74) playspace / free move / hands follow

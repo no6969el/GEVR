@@ -1,12 +1,14 @@
 ﻿# Start here
 
-You found GEVR. GoldenEye in real VR, on PC, with a ROM you already own. It is Beta. It is worth playing.
+You found GEVR. GoldenEye in real VR, on PC, with a USA ROM you already own. It is Beta. It is worth playing.
 
-**Play:** [GEVR Beta vr452.4](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr452.4-win64.zip`**. Tag: [vr452.4](https://github.com/no6969el/GEVR/releases/tag/vr452.4). Install and controls: [README](../README.md#install-vr4524).
+**Play:** [GEVR Beta vr454](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr454-win64.zip`**. Tag: [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454). The zip has no ROM and no HD texture pack. Install and controls: [README](../README.md#install). VR actions: [README](../README.md#vr-actions).
 
 **Players and testers:** start at the [README](../README.md). Then [Beta notes](BETA.md), [controls](CONTROLS.md), and [features](../FEATURES.md). How to report: [CONTRIBUTING](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
 Headset: `Start-GEVR.bat`. No headset: `Play-on-monitor.bat`. Do not upload ROM files.
+
+PNG texture packs go in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file.
 
 Stay tuned. Star the repo and [follow @no6969el](https://github.com/no6969el).
 
