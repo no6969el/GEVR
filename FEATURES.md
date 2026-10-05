@@ -24,7 +24,7 @@ The how-to for this cut is on the [README](README.md#vr454). This page is the sh
 - **Frame rate** follows the headset. **Fixed 90** is still available.
 - **Supersample** starts at 3. **Filter** starts on bilinear. **Point** is still available.
 - **Monitor:** **Both**, **Left**, **Right**, or **Off**. Off blanks the mirror while you stay in the headset.
-- **Left X** is the previous weapon on the left hand. **Right A** is the next weapon on the right hand.
+- **Left X** is the next weapon on the left hand. **Right A** is the next weapon on the right hand.
 - Grip holds a gun. Release holsters it. A new gun goes to the hip, and the old gun goes to inventory. Empty guns stay in the hand. Grenades, mines, and gadgets still switch away when used up.
 - You do not have to reload by hand. **B** reloads any gun the normal way. You can also hold any gun to your upper chest and press the grab button. On a gun with a visible magazine, grab that magazine with the grip button. Pistols, the shotgun, the sniper, and other guns with no visible magazine reload across the chest, or with **B**. A handle grab swaps hands and does not reload. Guns do not reload on their own.
 - A left-hand gun fires on its own.

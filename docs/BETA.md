@@ -64,7 +64,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **Throwables:** grenades, mines, plastique, and the covert modem show in your hand and leave from the grip. Remote, proximity, and timed mines draw in the hand like the grenade.
 - **Black flicker ([#55](https://github.com/no6969el/GEVR/issues/55)):** quiet for now. Stuck mines (including Facility) use the same no-modem scrap hide as the covert modem, so people can play. Props still pass through other props; that overlap is the cause.
 - **Ammo:** digits sit on the grip and read from behind the gun. Flat mode keeps the corner count.
-- **Weapon change:** **Right A** is the next weapon on the right hand. **Left X** is the previous weapon on the left hand.
+- **Weapon change:** **Right A** is the next weapon on the right hand. **Left X** is the next weapon on the left hand.
 - **Hand cubes:** hide while that hand holds a weapon; smaller when empty.
 - **Frame rate:** follows the headset by default. Fixed 90 is still available in **GEVR Settings**.
 - **GEVR Settings:** on **Mission Select**, next to **Select Mission**, **Multiplayer**, and **Cheat Options**. It is not named Options. **A** selects a row. Stick left / right changes the value. **Apply** saves and relaunches. Prefs save under `%LOCALAPPDATA%\GEVR`.
@@ -103,7 +103,7 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 - Aim and shoot (auto-aim starts off); **left trigger** fires a left-hand gun on its own
 - Dual-wield with two guns (each trigger fires its hand)
 - Press **B** and confirm any gun reloads the normal way, with no gesture. Also try an upper-chest grab on any gun, and a grip on a visible magazine. Pistols, the shotgun, and the sniper should reload across the chest or with **B**. A handle grab should swap hands and not reload
-- **Right A** goes to the next weapon on the right hand. **Left X** goes to the previous weapon on the left hand
+- **Right A** goes to the next weapon on the right hand. **Left X** goes to the next weapon on the left hand
 - Throw a grenade. Remote, proximity, and timed mines should draw in the hand the same way
 - Open the watch with **Y**. Open **GAME OPTIONS** and scroll past ratio. The last line says scroll down for VR settings
 - Climb a tank by standing on the chassis; pitch the turret with the stick

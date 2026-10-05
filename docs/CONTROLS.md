@@ -20,7 +20,7 @@ GEVR uses the usual FPS layout:
 | Hand | Role |
 |---|---|
 | **Right controller** | Gun hand — fire, aim, **A** next weapon, **B** reload button, comfort turn stick |
-| **Left controller** | Walk hand — move stick, **X** previous weapon, **Y** opens the watch, cuff on the arm |
+| **Left controller** | Walk hand — move stick, **X** next weapon, **Y** opens the watch, cuff on the arm |
 
 **Meta Quest / Touch**, **Valve Index**, and other **Oculus-style OpenXR** profiles use the same actions. Only the names printed on the plastic differ.
 
@@ -48,7 +48,7 @@ Auto-aim starts **off**.
 | **Right stick up / down while aiming** | Stand / crouch |
 | **Left stick while aiming** | Walk forward and back |
 | **Right A** | **Next weapon** on the **right** hand |
-| **Left X** | **Previous weapon** on the **left** hand |
+| **Left X** | **Next weapon** on the **left** hand |
 | **Right B** | **Reload button.** Reloads any gun the normal way. You do not have to use a gesture. Also doors, switches, plant, and activate |
 | **Y** | **Opens the watch** |
 | **Menu** (left controller) | Also opens the pause watch |
@@ -75,7 +75,7 @@ Same bindings as Quest. Index names:
 | **Left thumbstick** | Left stick | Walk |
 | **Right A** | Right A | Next weapon on the right hand |
 | **Right B** | Right B | Reload button for any gun; also use / activate |
-| **Left X** | Left X | Previous weapon on the left hand |
+| **Left X** | Left X | Next weapon on the left hand |
 | **Left Y** | Y | Opens the watch |
 | **System / menu button** | Quest **Menu** | Also opens the pause watch |
 
@@ -109,7 +109,7 @@ Touch the left cuff with your right hand and grip.
 | Control | Action |
 |---|---|
 | **Right A** | **Next** weapon on the **right** hand |
-| **Left X** | **Previous** weapon on the **left** hand |
+| **Left X** | **Next** weapon on the **left** hand |
 | **Grip pickup** | Squeeze near a weapon on the ground to equip it to **that** hand |
 | **Grip, then release** | Grip **holds** the gun. Release **holsters** it at the hip |
 

@@ -6,7 +6,7 @@ Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). 
 
 **How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks.
 
-**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the previous weapon on the left hand. **B** reloads any gun the normal way. **Y** opens the watch. The full list is on the [README](../README.md#vr454).
+**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the next weapon on the left hand. **B** reloads any gun the normal way. **Y** opens the watch. The full list is on the [README](../README.md#vr454).
 
 ---
 ## Older status (kept for the record)

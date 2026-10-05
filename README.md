@@ -40,7 +40,7 @@ The N64 classic you can stand inside. GEVR is a from-source PC port of *GoldenEy
 | **Grip** | Aim down the gun |
 | **Grip near a door** | Open or close it |
 | **Right A** | Next weapon on the **right** hand |
-| **Left X** | Previous weapon on the **left** hand |
+| **Left X** | Next weapon on the **left** hand |
 | **Right B** | Reload button. Reloads any gun the normal way. Also switches, plant, and activate |
 | **Upper chest + grab** | Optional. Reloads any gun |
 | **Grip on a visible magazine** | Reloads that gun |
@@ -109,7 +109,7 @@ Each mode keeps its own saved settings. Switch Visual mode when you want to edit
 
 ### Weapon change
 
-**Left X** is the previous weapon on the left hand. **Right A** is the next weapon on the right hand.
+**Left X** is the next weapon on the left hand. **Right A** is the next weapon on the right hand.
 
 ### Hip holster
 
