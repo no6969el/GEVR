@@ -1,8 +1,8 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr454](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr454](../README.md#vr454).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr455](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr454](../README.md#vr454).
 
-Current zip: **[`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip)**. Tag: [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454). The zip has no ROM and no HD texture pack.
+Current zip: **[`GEVR-Beta-vr455-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip)**. Tag: [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455). The zip has no ROM and no HD texture pack.
 
 ## vr454
 

@@ -8,11 +8,11 @@
 
 GEVR rebuilds GoldenEye on PC for real OpenXR stereo, so you can stand in the Facility. You bring a USA GoldenEye ROM you own. The zip has no ROM and no HD texture pack.
 
-**Latest:** [**GEVR Beta vr454**](https://github.com/no6969el/GEVR/releases/latest). Zip: **`GEVR-Beta-vr454-win64.zip`**.
+**Latest:** [**GEVR Beta vr455**](https://github.com/no6969el/GEVR/releases/latest). Zip: **`GEVR-Beta-vr455-win64.zip`**.
 
-[Install](README.md#install) · [VR actions](README.md#vr-actions) · [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) · [Credits](CREDITS.md)
+[Install](README.md#install) · [VR actions](README.md#vr-actions) · [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455) · [Credits](CREDITS.md)
 
-The how-to for this cut is on the [README](README.md#vr454). This page is the short pitch.
+The how-to is still on the [README](README.md#vr454). This page is the short pitch.
 
 ---
 
@@ -86,7 +86,7 @@ Full sentences and the button tables: [README](README.md#vr454) · [CONTROLS.md]
 
 ## Play
 
-1. Grab **[`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. The archive has no ROM and no HD texture pack.
+1. Grab **[`GEVR-Beta-vr455-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. The archive has no ROM and no HD texture pack.
 2. Follow [README Install](README.md#install).
 3. Use [VR actions](README.md#vr-actions) and [CONTROLS.md](docs/CONTROLS.md) for the binds.
 

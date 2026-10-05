@@ -1,12 +1,12 @@
-> **vr454:** GitHub **Latest**. Grab [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) or use Update in GevrRomStarter.
+> **vr455:** GitHub **Latest**. Grab [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455) or use Update in GevrRomStarter.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr454**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr454-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454).
+**Play this cut:** [**vr455**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr455-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455).
 
-Older tag **pages** stay for history. **Latest is vr454.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr455.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
@@ -20,7 +20,7 @@ Player door: [00-START-HERE.md](00-START-HERE.md). Install: [README](../README.m
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr454-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) — [README Install](../README.md#install)
+- Download: [**GEVR-Beta-vr455-win64.zip**](https://github.com/no6969el/GEVR/releases/latest) — [README Install](../README.md#install)
 
 ## Launchers
 
@@ -44,7 +44,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr454-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454). The zip has no ROM and no HD texture pack.
+1. Download and unzip **`GEVR-Beta-vr455-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455). The zip has no ROM and no HD texture pack.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\\GEVR\\cache`. Then play.
@@ -54,7 +54,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr454 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
+- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr455 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off** — see [Half-speed / mushy VR?](#half-speed--mushy-vr) above.
 
 ## Beta wear notes

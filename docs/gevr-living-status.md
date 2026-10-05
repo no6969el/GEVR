@@ -2,7 +2,7 @@
 
 Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). This note is an old status log.
 
-**Latest:** [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) — `GEVR-Beta-vr454-win64.zip`. You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
+**Latest:** [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455) — `GEVR-Beta-vr455-win64.zip`. You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
 
 **How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks.
 
@@ -11,7 +11,7 @@ Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). 
 ---
 ## Older status (kept for the record)
 
-**Download (latest at the time of the notes below):** older than vr454. Do not treat the rest of this file as the current button list.
+**Download (latest at the time of the notes below):** older than vr455. Do not treat the rest of this file as the current button list.
 
 ### What’s in Latest (KEEP, default-on at bake)
 - [#74](https://github.com/no6969el/GEVR/issues/74) playspace / free move / hands follow
@@ -26,6 +26,7 @@ Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). 
 Keep shooting. File Issues. Watch GitHub.
 ---
 ## What's new since last edit
+- **2026-10-05** - **Latest = vr455.** Same keepers as vr454. Ammo digits, hip holster, weapon pictures, and chest reload are hard-coded on in the exe. Players on vr454 should Update or download the new zip. The vr454 release stays.
 - **2026-09-24** - Docs warn: SteamVR Motion Smoothing / VD Space Warp Off (half-rate feel). Zip untouched.
 - **2026-09-24** - **Latest = vr445.2.** Front docs sync. vr450 + vr450.1 stay pre-release (tags/zips kept).
 - **2026-09-24** - vr450.1 / vr450 published then rolled off Latest.

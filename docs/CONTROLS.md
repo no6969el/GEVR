@@ -1,15 +1,15 @@
 # Controls (Beta)
 
-How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr454](https://github.com/no6969el/GEVR/releases/latest)**.
+How to move, aim, shoot, and use Bond’s watch in **[GEVR Beta vr455](https://github.com/no6969el/GEVR/releases/latest)**.
 
-Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). What vr454 adds: [README](../README.md#vr454) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr455-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). What vr454 adds: [README](../README.md#vr454) · [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat` — VR picture, then GevrRomStarter.
 - **Monitor / no headset:** `Play-on-monitor.bat` — flat picture, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr454-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr455-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
 
 You can also switch picture from **GEVR Settings**: set Visual mode to **VR**, **XR**, or **Flat**, then **Apply**. Apply saves and relaunches into that mode.
 
@@ -248,7 +248,7 @@ Flat mode keeps the ammo count in the corner.
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr455-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip).
 
 **Verified:**
 
@@ -256,7 +256,7 @@ GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GE
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Headset:** unzip **`GEVR-Beta-vr454-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
+**Headset:** unzip **`GEVR-Beta-vr455-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`**.
 

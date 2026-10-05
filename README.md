@@ -8,7 +8,9 @@
 
 The N64 classic you can stand inside. GEVR is a from-source PC port of *GoldenEye 007* for real OpenXR VR. You bring a **USA GoldenEye ROM you own**. The zip has **no ROM** and **no HD texture pack**.
 
-> **Latest:** **[vr454](https://github.com/no6969el/GEVR/releases/tag/vr454)** — [`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
+> **Latest:** **[vr455](https://github.com/no6969el/GEVR/releases/tag/vr455)** — [`GEVR-Beta-vr455-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
+
+Already downloaded vr454? Hit **Update** again, or download the new zip. **vr455** is the one to install if ammo digits, the hip holster, weapon pictures, and chest reload did not show up after vr454. Those four are hard-coded on in the exe. They stay on even if you already installed vr454, even if GevrRomStarter skips the boot knobs, and even if a saved prefs file exists. The [vr454 how-to](#vr454) below still applies.
 
 ---
 
@@ -175,8 +177,8 @@ Playspace movement, grip doors, the tank, and recenter are still in. Details: [F
 
 | | |
 |---|---|
-| **Download** | [**GEVR-Beta-vr454-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip) |
-| **Release page** | [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454) |
+| **Download** | [**GEVR-Beta-vr455-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip) |
+| **Release page** | [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455) |
 | **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
 | **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
 | **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
@@ -184,7 +186,7 @@ Playspace movement, grip doors, the tank, and recenter are still in. Details: [F
 | **Features** | [FEATURES.md](FEATURES.md) |
 | **Support** | [Patreon](https://www.patreon.com/cw/GEVR) |
 
-1. Download **[GEVR-Beta-vr454-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454). The zip has no ROM and no HD texture pack.
+1. Download **[GEVR-Beta-vr455-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr455/GEVR-Beta-vr455-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr455](https://github.com/no6969el/GEVR/releases/tag/vr455). The zip has no ROM and no HD texture pack.
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`**. It starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. The first launch after an update rebuilds that cache once from your ROM.
@@ -203,7 +205,7 @@ The game starts in **VR**. For a monitor with no headset, run **`Play-on-monitor
 
 ## Older playtest (video)
 
-This clip is from an older public cut. Picture and controls may not match **vr454**.
+This clip is from an older public cut. Picture and controls may not match **vr455**.
 
 [![GoldenEye VR streamer playtest](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
