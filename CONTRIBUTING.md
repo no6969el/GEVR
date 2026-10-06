@@ -4,14 +4,14 @@ Fan testers first. Thanks for helping GEVR Beta.
 
 ## Play the current zip
 
-Current zip is **vr456.4**. Grab **[GEVR-Beta-vr456.4-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr456.4](https://github.com/no6969el/GEVR/releases/tag/vr456.4) and follow [README Install](README.md#install). The zip has no ROM and no HD texture pack.
+Current zip is **vr456.5**. Grab **[GEVR-Beta-vr456.5-win64.zip](https://github.com/no6969el/GEVR/releases/latest)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [tag vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5) and follow [README Install](README.md#install). The zip has no ROM and no HD texture pack.
 
 - **Headset:** `Start-GEVR.bat`
 - **No headset / monitor only:** `Play-on-monitor.bat`
 
 Bring a **USA GoldenEye `.z64` you own**. The zip has no ROM. We will not ask you to upload one.
 
-Older tag **pages** may still show on GitHub. **Latest is vr456.4.** Older pages stay for the record. Do not hunt those downloads.
+Older tag **pages** may still show on GitHub. **Latest is vr456.5.** Older pages stay for the record. Do not hunt those downloads.
 
 ## File a bug or crash
 
