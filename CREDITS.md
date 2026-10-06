@@ -2,13 +2,13 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr454**. [README Install](README.md#install) — [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr456.3**. [README Install](README.md#install) · [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md).
 
 We credit only real influence or reuse. Survey-only reads and projects we did **not** copy stay off this list (or are marked "not used"). Details and licence notes: [PRIOR-ART.md](PRIOR-ART.md). Licence for this public tree: [LICENSE](LICENSE).
 
-**Other way around:** product projects that reuse GEVR (name, docs, tools, playbook) are listed in [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md) — separate from this “what GEVR borrowed” sheet.
+**Other way around:** product projects that reuse GEVR (name, docs, tools, playbook) are listed in [docs/OTHER-PROJECTS.md](docs/OTHER-PROJECTS.md). Separate from this "what GEVR borrowed" sheet.
 
 ---
 
