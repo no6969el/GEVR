@@ -15,7 +15,7 @@ vr456.4 stays up as the previous tag. This is a new Latest so Update can see it.
 
 ## How to play this cut
 - Stick click opens the weapon wheel. Default is a circle. NO WEAPON sits at 12 o'clock. The centre follows your hover. Boxes are 2x dark grey. GEVR Settings STICK WHEEL can switch to Weapon Vert (a column). Change the row, unpause, then the next stick-click uses it. No reboot.
-- Watch picker on the left cuff: three squares with pictures and labels (Laser / Magnet / Repel). Yellow highlight is the middle square. Magnet is unlimited in VR. Laser and Repel stay on the normal watch item flow. Watch picker and stick weapon wheel play nicer together, so opening the watch keeps your gun put.
+- Watch picker on the left cuff: three squares with pictures and labels (Laser / Magnet / Repel). Yellow highlight is the middle square. Magnet is unlimited in VR. Laser and Repel stay on the normal watch item flow.
 - Holster swap: hip grip on the same gun is a real swap. Weapon switch prefers a free inventory copy over the hip gun.
 - Left X is the next weapon on the left hand. Right A is the next weapon on the right hand.
 - VR has no walk bob, no landing dip, no gun-hand sway.
@@ -28,7 +28,7 @@ vr456.4 stays up as the previous tag. This is a new Latest so Update can see it.
 - HD memos keep decoded HD pictures in memory (GETV_HD_MEMO_MB=0 turns that off).
 - XR catch-up: missed headset frames no longer slow the sim. Quitting actually quits.
 
-Not in this zip: thermal vision, corpse freeze, Gun Drop / Arm Bounds default-on.
+Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default-on.
 
 ## Linux testers
 A flat-only Linux alpha is up as its own prerelease, not Latest.

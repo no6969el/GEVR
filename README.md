@@ -84,7 +84,7 @@ Hip grip on the same gun is a real swap. Weapon switch prefers a free inventory 
 
 ### Watch picker
 
-Pictures and labels on the left cuff: Laser / Magnet / Repel. Magnet is unlimited in VR (no ammo spend, no DRY). Laser and Repel stay on the normal watch item flow. Watch picker and stick weapon wheel play nicer together.
+Pictures and labels on the left cuff: Laser / Magnet / Repel. Magnet is unlimited in VR (no ammo spend, no DRY). Laser and Repel stay on the normal watch item flow.
 
 ### Moonraker and rockets
 
