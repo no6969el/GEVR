@@ -1,4 +1,4 @@
-name: Bug report
+﻿name: Bug report
 description: Something looks wrong or does not behave the way you expect
 title: "[Bug] "
 labels: ["bug", "beta"]
@@ -10,7 +10,7 @@ body:
 
         Crashes are common in Beta - if the game closed on you, use the **Crash report** template instead.
 
-        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.6-win64.zip).
+        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.7-win64.zip).
 
   - type: input
     id: headset_model
