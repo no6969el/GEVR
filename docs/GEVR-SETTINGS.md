@@ -1,13 +1,13 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr454](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr456.3](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
 
 ---
 
 ## Open GEVR Settings
 
 1. Start GEVR as usual (`Start-GEVR.bat`).
-2. Reach **Mission Select**.
+2. Reach **Mission Select**. Look right on the intro hub too.
 3. Move to **GEVR Settings**. It sits next to **Select Mission**, **Multiplayer**, and **Cheat Options**.
 4. Press **A** to open the page.
 
@@ -69,17 +69,28 @@ The row is greyed out in Flat. The choice is saved with the VR and XR settings.
 
 ---
 
+## Pause VR Settings (snap-turn and stick wheel)
+
+In a mission, press **Y** (or **Menu**), open **GAME OPTIONS**, and scroll past ratio. Those VR rows are where you:
+
+- Turn **snap-turn** on and pick an angle.
+- Set **STICK WHEEL** to **Weapon wheel** (circle default) or **Weapon Vert** (the old up-and-down list).
+
+You do not need to Apply or restart. The next stick click uses the wheel style you picked.
+
+---
+
 ## HD textures on / off
 
 **GEVR does not ship a texture pack.** The zip has no pack. If `hdtextures` only has `GOLDENEYE_HIRESTEXTURES.hts`, that is the wrong file. An `.hts` file in `hdtextures` does nothing.
 
-1. Download a GLideN64 **PNG** zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
+1. Download a GLideN64 **PNG** zip, not the `.hts` file. [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
 2. Put the pictures in `hdtextures\GOLDENEYE`, next to `goldeneye.exe`.
 3. Turn **HD textures** **On**.
 4. **Apply**.
 5. The pack loads on the next boot.
 
-**Default is Off.** Leaving it off is fine.
+**Default is Off.** Leaving it off is fine. Memo cameras look sharp in this cut either way.
 
 ---
 
