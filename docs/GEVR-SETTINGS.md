@@ -1,6 +1,6 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr456.4](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr456.5](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
 
 ---
 
