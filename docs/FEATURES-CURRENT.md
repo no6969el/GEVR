@@ -1,10 +1,10 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr456.5](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr456.5](../README.md#vr4565). Hands: [CONTROLS.md](CONTROLS.md).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr456.6](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr456.6](../README.md#vr4566). Hands: [CONTROLS.md](CONTROLS.md).
 
-Current zip: **[`GEVR-Beta-vr456.5-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.5/GEVR-Beta-vr456.5-win64.zip)**. Tag: [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5). The zip has no ROM and no HD texture pack.
+Current zip: **[`GEVR-Beta-vr456.6-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.6/GEVR-Beta-vr456.6-win64.zip)**. Tag: [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6). The zip has no ROM and no HD texture pack.
 
-## vr456.5
+## vr456.6
 
 - **Visual mode:** VR, XR (smaller screen, black outline), or Flat on the monitor. Change the row in **GEVR Settings** and **Apply**. Apply saves and relaunches into that mode.
 - **Frame rate:** follows the headset by default. Fixed 90 is still available.
@@ -34,7 +34,7 @@ Current zip: **[`GEVR-Beta-vr456.5-win64.zip`](https://github.com/no6969el/GEVR/
 - **Janus meeting:** the crowd stops respawning after the meeting.
 - **HD textures:** PNG pack in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. GEVR does not ship the pack.
 
-Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default-on.
+Not in this zip: thermal vision, corpse freeze, Gun Drop / Arm Bounds default-on.
 
 ## Still in this cut
 

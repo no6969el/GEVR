@@ -2,7 +2,7 @@
 
 Thank-you sheet for work GEVR actually leaned on. Click a name for the project; each line says **exactly what** we used it for.
 
-Current play zip is **vr456.5**. [README Install](README.md#install) · [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
+Current play zip is **vr456.6**. [README Install](README.md#install) · [Latest release](https://github.com/no6969el/GEVR/releases/latest). How to file bugs: [CONTRIBUTING.md](CONTRIBUTING.md). Whose license is whose: [LICENSE-MAP.md](LICENSE-MAP.md).
 
 Player door: [README](README.md) · [Beta notes](docs/BETA.md) · [Features](FEATURES.md).
 
@@ -32,13 +32,13 @@ We credit only real influence or reuse. Survey-only reads and projects we did **
 
 ### Alex-LeTux / perfect_dark_VR (MIT) - design map, not vendored code
 
-- **Repo:** https://github.com/Alex-LeTux/perfect_dark_VR  
+- **Repo:** https://github.com/Alex-LeTux/perfect_dark_VR 
 - **Surveyed:** branch `port` @ `67ea20c86986c6bc85687f26a27418b266af309c`
 - **What we took (recorded influence only - their VR tree is not copied into GEVR):**
-  - Controller quaternion basis of the form `{w, -x, y, -z}` (hand-axis knobs)
-  - Pistol grip offset `(0, 16, -4)` scaled into our gun-offset knobs
-  - `x/(1-damp)` integrator pre-load idea
-  - Drawn-vs-shot clamp split (aim draw path vs fire path)
+ - Controller quaternion basis of the form `{w, -x, y, -z}` (hand-axis knobs)
+ - Pistol grip offset `(0, 16, -4)` scaled into our gun-offset knobs
+ - `x/(1-damp)` integrator pre-load idea
+ - Drawn-vs-shot clamp split (aim draw path vs fire path)
 - **Also:** Perfect Dark VR's *waiting-room / hub feel* informed our cinema-hub direction (procedural room + world-locked board). We map the idea; we do **not** vendor their hub sources.
 - **Upstream notices that travel with that lineage:** Perfect Dark decomp (Ryan Dwyer et al.) and the Perfect Dark PC port (MIT).
 
@@ -95,7 +95,7 @@ If you spot a missing credit for something we really used, open an Issue titled 
 
 ## Quick links
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr456.5 and file bugs
+- [CONTRIBUTING.md](CONTRIBUTING.md) - how to play vr456.6 and file bugs
 - [LICENSE-MAP.md](LICENSE-MAP.md) - whose license is whose
 - [README Install](README.md#install) | [Releases/latest](https://github.com/no6969el/GEVR/releases/latest)
 - [README](README.md) · [Beta notes](docs/BETA.md) · [Controls](docs/CONTROLS.md)

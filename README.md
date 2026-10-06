@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="GEVR-box-cover.png" alt="GoldenEye 007 VR - GEVR box art" width="480" />
+ <img src="GEVR-box-cover.png" alt="GoldenEye 007 VR - GEVR box art" width="480" />
 </p>
 
 # GEVR
@@ -8,7 +8,7 @@
 
 The N64 classic you can stand inside. GEVR is a from-source PC port of *GoldenEye 007* for real OpenXR VR. You bring a **USA GoldenEye ROM you own**. The zip has **no ROM** and **no HD texture pack**.
 
-> **Latest:** **[vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5)** ([`GEVR-Beta-vr456.5-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.5/GEVR-Beta-vr456.5-win64.zip)). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
+> **Latest:** **[vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6)** ([`GEVR-Beta-vr456.6-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.6/GEVR-Beta-vr456.6-win64.zip)). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
 
 Linux testers: a flat-only Linux alpha is its own prerelease, not Latest. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1).
 
@@ -72,7 +72,7 @@ There is no detonator in the weapon cycle. The full bind list is in [`docs/CONTR
 
 ---
 
-## vr456.5
+## vr456.6
 
 ### Stick weapon wheel
 
@@ -135,7 +135,7 @@ On **Mission Select**, **GEVR Settings** sits next to **Select Mission**, **Mult
 Each mode keeps its own saved settings. Switch Visual mode when you want to edit a different one. The monitor row is for VR and XR. It is greyed out in Flat.
 
 <p align="center">
-  <img src="docs/images/gevr-settings-menu-vr452.4.png" alt="GEVR Settings menu on Mission Select" width="720" />
+ <img src="docs/images/gevr-settings-menu-vr452.4.png" alt="GEVR Settings menu on Mission Select" width="720" />
 </p>
 
 ### Reload
@@ -182,7 +182,7 @@ The zip does not include a texture pack. If `hdtextures` only has `GOLDENEYE_HIR
 
 Playspace movement, grip doors, the tank, and recenter are still in. Details: [FEATURES.md](FEATURES.md).
 
-Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default-on.
+Not in this zip: thermal vision, corpse freeze, Gun Drop / Arm Bounds default-on.
 
 ---
 
@@ -190,8 +190,8 @@ Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default
 
 | | |
 |---|---|
-| **Download** | [**GEVR-Beta-vr456.5-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr456.5/GEVR-Beta-vr456.5-win64.zip) |
-| **Release page** | [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5) |
+| **Download** | [**GEVR-Beta-vr456.6-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr456.6/GEVR-Beta-vr456.6-win64.zip) |
+| **Release page** | [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6) |
 | **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
 | **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
 | **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
@@ -199,7 +199,7 @@ Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default
 | **Features** | [FEATURES.md](FEATURES.md) |
 | **Support** | [Patreon](https://www.patreon.com/cw/GEVR) |
 
-1. Download **[GEVR-Beta-vr456.5-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr456.5/GEVR-Beta-vr456.5-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5). The zip has no ROM and no HD texture pack.
+1. Download **[GEVR-Beta-vr456.6-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr456.6/GEVR-Beta-vr456.6-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6). The zip has no ROM and no HD texture pack.
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`**. It starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. The first launch after an update rebuilds that cache once from your ROM.
@@ -218,7 +218,7 @@ The game starts in **VR**. For a monitor with no headset, run **`Play-on-monitor
 
 ## Older playtest (video)
 
-This clip is from an older public cut. Picture and controls may not match **vr456.5**.
+This clip is from an older public cut. Picture and controls may not match **vr456.6**.
 
 [![GoldenEye VR streamer playtest](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
