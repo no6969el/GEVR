@@ -1,6 +1,6 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr456.5](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr456.6](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
 
 ---
 
@@ -107,8 +107,8 @@ Decoded HD pictures stay in memory (HD memo overlay, 1 GB cap) so they stutter l
 2. Highlight **Reset defaults**.
 3. Confirm **Yes**.
 4. The restore follows your current Visual choice:
-   - **Flat** restores monitor-friendly defaults.
-   - Any other Visual mode restores VR-friendly defaults: supersample 3, frame rate follows the headset, bilinear filter, HD off, Visual VR.
+ - **Flat** restores monitor-friendly defaults.
+ - Any other Visual mode restores VR-friendly defaults: supersample 3, frame rate follows the headset, bilinear filter, HD off, Visual VR.
 5. Hit **Apply** if you want that save to relaunch now.
 
 ---

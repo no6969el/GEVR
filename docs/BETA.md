@@ -1,12 +1,12 @@
-> **vr456.5:** GitHub **Latest**. Grab [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5) or use Update in GevrRomStarter.
+> **vr456.6:** GitHub **Latest**. Grab [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6) or use Update in GevrRomStarter.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr456.5**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr456.5-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5). Hands: [CONTROLS.md](CONTROLS.md).
+**Play this cut:** [**vr456.6**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr456.6-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6). Hands: [CONTROLS.md](CONTROLS.md).
 
-Older tag **pages** stay for history. **Latest is vr456.5.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr456.6.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
@@ -15,14 +15,14 @@ Older tag **pages** stay for history. **Latest is vr456.5.** Do not download fro
 
 Player door: [00-START-HERE.md](00-START-HERE.md). Install: [README](../README.md#install). Hands: [CONTROLS.md](CONTROLS.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
-Linux testers: flat alpha is a separate prerelease. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1). Windows Latest stays this vr456.5 zip.
+Linux testers: flat alpha is a separate prerelease. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1). Windows Latest stays this vr456.6 zip.
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr456.5-win64.zip**](https://github.com/no6969el/GEVR/releases/latest). [README Install](../README.md#install)
+- Download: [**GEVR-Beta-vr456.6-win64.zip**](https://github.com/no6969el/GEVR/releases/latest). [README Install](../README.md#install)
 
 ## Launchers
 
@@ -46,7 +46,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr456.5-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.5](https://github.com/no6969el/GEVR/releases/tag/vr456.5). The zip has no ROM and no HD texture pack.
+1. Download and unzip **`GEVR-Beta-vr456.6-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.6](https://github.com/no6969el/GEVR/releases/tag/vr456.6). The zip has no ROM and no HD texture pack.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\GEVR\cache`. Then play.
@@ -56,7 +56,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr456.5 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
+- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr456.6 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off**. See [Half-speed / mushy VR?](#half-speed--mushy-vr) above.
 
 ## Beta wear notes
@@ -88,7 +88,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **Tank:** stand on the chassis and you auto-mount. Stick pitch aims the shells. Empty mag auto-loads the next shell.
 - **Empty hand** draws a cube.
 - **GL** is single-shot / muzzle feel OK.
-- **Not in this zip:** 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default-on.
+- **Not in this zip:** thermal vision, corpse freeze, Gun Drop / Arm Bounds default-on.
 - **Hard crash:** look beside `goldeneye.exe` for `gevr-fault-*.txt` and attach the first lines (no ROM).
 
 ## How to report
