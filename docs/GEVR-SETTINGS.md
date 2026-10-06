@@ -1,6 +1,6 @@
 # GEVR Settings - simple how-to
 
-This page covers **GEVR Settings** in [vr454](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
+This page covers **GEVR Settings** in [vr456.3](https://github.com/no6969el/GEVR/releases/latest). For launch steps and controls, see the [README](../README.md) and [Controls](CONTROLS.md).
 
 ---
 
@@ -11,7 +11,7 @@ This page covers **GEVR Settings** in [vr454](https://github.com/no6969el/GEVR/r
 3. Move to **GEVR Settings**. It sits next to **Select Mission**, **Multiplayer**, and **Cheat Options**.
 4. Press **A** to open the page.
 
-The page is named **GEVR Settings**. It is not named Options.
+The page is named **GEVR Settings**. It is not named Options. In VR you look at that glass on the intro hub.
 
 ---
 
@@ -49,6 +49,22 @@ To go back to full VR later: set Visual to **VR**, then **Apply**. Each mode kee
 
 ---
 
+## STICK WHEEL, snap-turn, comfort
+
+These rows sit in **GEVR Settings** and under pause **VR SETTINGS** (scroll past ratio on GAME OPTIONS).
+
+| Row | What it does |
+|---|---|
+| **STICK WHEEL** | **Weapon wheel** (circle, default) or **Weapon Vert** (column). Next stick-click uses the new style. No reboot. |
+| **Turn style / snap size** | **Snap** uses real degrees: 15 / 22.5 / 30 / 45 / 60 / 90. The glass is click-to-edit. |
+| Comfort | VR has no walk bob, landing dip, or gun-hand sway in this cut. |
+
+Stick **click** opens the weapon wheel. Centre follows your hover. Boxes are 2x dark grey. **Both** stick clicks still **recenter**.
+
+Red and green **aimers** sit on the shot's first hit (not a settings row; always on in this cut).
+
+---
+
 ## Frame rate, supersample, and filter
 
 - Frame rate follows the headset by default. **Fixed 90** is still available.
@@ -73,13 +89,15 @@ The row is greyed out in Flat. The choice is saved with the VR and XR settings.
 
 **GEVR does not ship a texture pack.** The zip has no pack. If `hdtextures` only has `GOLDENEYE_HIRESTEXTURES.hts`, that is the wrong file. An `.hts` file in `hdtextures` does nothing.
 
-1. Download a GLideN64 **PNG** zip, not the `.hts` file — [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
+1. Download a GLideN64 **PNG** zip, not the `.hts` file. [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) or [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm).
 2. Put the pictures in `hdtextures\GOLDENEYE`, next to `goldeneye.exe`.
 3. Turn **HD textures** **On**.
 4. **Apply**.
 5. The pack loads on the next boot.
 
 **Default is Off.** Leaving it off is fine.
+
+Decoded HD pictures stay in memory (HD memo overlay, 1 GB cap) so they stutter less. `GETV_HD_MEMO_MB=0` turns that overlay off.
 
 ---
 

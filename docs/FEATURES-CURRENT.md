@@ -1,29 +1,40 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr454](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr454](../README.md#vr454).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr456.3](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr456.3](../README.md#vr4563). Hands: [CONTROLS.md](CONTROLS.md).
 
-Current zip: **[`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr454/GEVR-Beta-vr454-win64.zip)**. Tag: [vr454](https://github.com/no6969el/GEVR/releases/tag/vr454). The zip has no ROM and no HD texture pack.
+Current zip: **[`GEVR-Beta-vr456.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.3/GEVR-Beta-vr456.3-win64.zip)**. Tag: [vr456.3](https://github.com/no6969el/GEVR/releases/tag/vr456.3). The zip has no ROM and no HD texture pack.
 
-## vr454
+## vr456.3
 
-- **Visual mode** — VR, XR (smaller screen, black outline), or Flat on the monitor. Change the row in **GEVR Settings** and **Apply**. Apply saves and relaunches into that mode.
-- **Frame rate** — follows the headset by default. Fixed 90 is still available.
+- **Visual mode:** VR, XR (smaller screen, black outline), or Flat on the monitor. Change the row in **GEVR Settings** and **Apply**. Apply saves and relaunches into that mode.
+- **Frame rate:** follows the headset by default. Fixed 90 is still available.
 - **Supersample** starts at 3. **Filter** starts on bilinear. Point is still available.
-- **Monitor** — Both, Left, Right, or Off. Off blanks the mirror while you stay in the headset.
-- **GEVR Settings** — on Mission Select, next to Select Mission, Multiplayer, and Cheat Options. It is not named Options.
-- **Weapons** — Left X is the previous weapon on the left hand. Right A is the next weapon on the right hand.
-- **Hip holster** — grip to hold, release to holster. A new gun goes to the hip and the old gun goes to inventory. Empty guns stay in the hand. Grenades, mines, and gadgets still switch away when used up.
-- **Reload** — You do not have to reload by hand. B reloads any gun the normal way. Hold any gun to your upper chest and press the grab button to reload it. On a gun with a visible magazine, grab that magazine with the grip button. Pistols, the shotgun, the sniper, and other guns with no visible magazine reload across the chest, or with B. A handle grab swaps hands and does not reload. Guns do not reload on their own.
-- **Left hand** — a left-hand gun fires on its own.
-- **Ammo** — digits sit on the grip and read from behind the gun. Flat mode keeps the corner count. Weapon pictures sit on the lifting hand, including the grenade and mines.
-- **Mines** — remote, proximity, and timed mines draw in the hand like the grenade.
-- **Swing** — uses the held weapon’s damage. Shooting does not make the knife swing by itself.
-- **Spread** — stays around the controller aim. Rockets, the grenade launcher, and the watch laser are unchanged.
-- **Rockets** — stay on the gun, with a flat crosshair.
-- **Sniper** — a green dot stays on. Shots leave the eye along that dot. Right stick forward or back steps the zoom (30, 20, 15, 10, 7). Walking does not zoom. The right-hand sniper hides the red crosshair. The left-hand green aimer is not in this build.
-- **Watch** — Y opens it. GAME OPTIONS goes past ratio. The last line says scroll down for VR settings. A cuff grab detonates planted remotes, otherwise the watch laser comes from the cuff. There is no detonator in the weapon cycle.
-- **Janus meeting** — the crowd stops respawning after the meeting.
-- **HD textures** — PNG pack in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. GEVR does not ship the pack.
+- **Monitor:** Both, Left, Right, or Off. Off blanks the mirror while you stay in the headset.
+- **GEVR Settings:** on Mission Select, next to Select Mission, Multiplayer, and Cheat Options. It is not named Options.
+- **Stick weapon wheel:** stick click opens a circle (NO WEAPON at 12 o'clock). Centre follows the hover. Boxes are 2x dark grey. **STICK WHEEL** can set Weapon Vert.
+- **Weapons:** Left X is the next weapon on the left hand. Right A is the next weapon on the right hand.
+- **Holster swap:** same-gun hip grip is a real swap. Weapon switch prefers a free inventory copy over the hip gun.
+- **Watch picker:** pictures and labels on the left cuff (Laser / Magnet / Repel). Magnet is unlimited in VR. Laser and Repel use the normal watch item flow.
+- **Moonraker:** small circular scope lens only. Look through the ring. Shoot through the ring. Dual Moonrakers give two lenses. No front grill screen.
+- **Rockets:** stay locked to the launcher, not your head. Flat mouse-aim crosshair stays centred.
+- **Snap-turn:** real degrees (15 / 22.5 / 30 / 45 / 60 / 90) plus click-to-edit SETTINGS glass.
+- **Aimers:** red and green on the shot's first hit.
+- **Left-hand throwables:** no mirror.
+- **HD memo:** decoded HD pictures stay in memory. `GETV_HD_MEMO_MB=0` turns it off.
+- **Tank autoload:** shells keep retail empty-mag autoload.
+- **VR comfort:** no walk bob, landing dip, or gun-hand sway.
+- **XR catch-up / quit:** missed headset frames no longer slow the sim. Quitting actually quits.
+- **Reload:** magazine or chest-cross gesture. B is USE, not VR gun reload. Handle grab swaps hands and does not reload.
+- **Left hand:** a left-hand gun fires on its own.
+- **Ammo:** digits sit on the grip and read from behind the gun. Flat mode keeps the corner count. Weapon pictures sit on the lifting hand.
+- **Mines:** remote, proximity, and timed mines draw in the hand like the grenade.
+- **Swing:** uses the held weapon's damage. Shooting does not make the knife swing by itself.
+- **Sniper:** green dot stays on. Right stick forward or back steps the zoom (30, 20, 15, 10, 7).
+- **Watch:** Y opens it. GAME OPTIONS goes past ratio. Scroll down for VR settings.
+- **Janus meeting:** the crowd stops respawning after the meeting.
+- **HD textures:** PNG pack in `hdtextures\GOLDENEYE` next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. GEVR does not ship the pack.
+
+Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default-on.
 
 ## Still in this cut
 
@@ -33,6 +44,6 @@ Current zip: **[`GEVR-Beta-vr454-win64.zip`](https://github.com/no6969el/GEVR/re
 
 ## Headset / runtime
 
-Pimax (SteamVR OpenXR + CustomHeadsetOpenVR), native PimaxXR, Quest 3 + Virtual Desktop — see [README](../README.md#what-we-tested).
+Pimax (SteamVR OpenXR + CustomHeadsetOpenVR), native PimaxXR, Quest 3 + Virtual Desktop. See [README](../README.md#what-we-tested).
 
 Controls: [CONTROLS.md](CONTROLS.md). Beta notes: [BETA.md](BETA.md).
