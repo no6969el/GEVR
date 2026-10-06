@@ -1,10 +1,10 @@
 ﻿# Features (current Beta)
 
-> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr456.3](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr456.3](../README.md#vr4563). Hands: [CONTROLS.md](CONTROLS.md).
+> Player snapshot: [FEATURES.md](../FEATURES.md). Play [vr456.4](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Install: [README](../README.md#install). How to use this cut: [README vr456.4](../README.md#vr4564). Hands: [CONTROLS.md](CONTROLS.md).
 
-Current zip: **[`GEVR-Beta-vr456.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.3/GEVR-Beta-vr456.3-win64.zip)**. Tag: [vr456.3](https://github.com/no6969el/GEVR/releases/tag/vr456.3). The zip has no ROM and no HD texture pack.
+Current zip: **[`GEVR-Beta-vr456.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.4/GEVR-Beta-vr456.4-win64.zip)**. Tag: [vr456.4](https://github.com/no6969el/GEVR/releases/tag/vr456.4). The zip has no ROM and no HD texture pack.
 
-## vr456.3
+## vr456.4
 
 - **Visual mode:** VR, XR (smaller screen, black outline), or Flat on the monitor. Change the row in **GEVR Settings** and **Apply**. Apply saves and relaunches into that mode.
 - **Frame rate:** follows the headset by default. Fixed 90 is still available.

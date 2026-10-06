@@ -8,7 +8,7 @@
 
 The N64 classic you can stand inside. GEVR is a from-source PC port of *GoldenEye 007* for real OpenXR VR. You bring a **USA GoldenEye ROM you own**. The zip has **no ROM** and **no HD texture pack**.
 
-> **Latest:** **[vr456.3](https://github.com/no6969el/GEVR/releases/tag/vr456.3)** ([`GEVR-Beta-vr456.3-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.3/GEVR-Beta-vr456.3-win64.zip)). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
+> **Latest:** **[vr456.4](https://github.com/no6969el/GEVR/releases/tag/vr456.4)** ([`GEVR-Beta-vr456.4-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.4/GEVR-Beta-vr456.4-win64.zip)). Or hit **Update** in GevrRomStarter. Full binds: [docs/CONTROLS.md](docs/CONTROLS.md).
 
 Linux testers: a flat-only Linux alpha is its own prerelease, not Latest. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1).
 
@@ -72,7 +72,7 @@ There is no detonator in the weapon cycle. The full bind list is in [`docs/CONTR
 
 ---
 
-## vr456.3
+## vr456.4
 
 ### Stick weapon wheel
 
@@ -190,8 +190,8 @@ Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default
 
 | | |
 |---|---|
-| **Download** | [**GEVR-Beta-vr456.3-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr456.3/GEVR-Beta-vr456.3-win64.zip) |
-| **Release page** | [vr456.3](https://github.com/no6969el/GEVR/releases/tag/vr456.3) |
+| **Download** | [**GEVR-Beta-vr456.4-win64.zip**](https://github.com/no6969el/GEVR/releases/download/vr456.4/GEVR-Beta-vr456.4-win64.zip) |
+| **Release page** | [vr456.4](https://github.com/no6969el/GEVR/releases/tag/vr456.4) |
 | **Latest** | [Releases / Latest](https://github.com/no6969el/GEVR/releases/latest) |
 | **Controls** | [docs/CONTROLS.md](docs/CONTROLS.md) |
 | **Report a bug** | [New Issue](https://github.com/no6969el/GEVR/issues/new/choose) |
@@ -199,7 +199,7 @@ Not in this zip: 0085 thermal, 0086 corpse freeze, Gun Drop / Arm Bounds default
 | **Features** | [FEATURES.md](FEATURES.md) |
 | **Support** | [Patreon](https://www.patreon.com/cw/GEVR) |
 
-1. Download **[GEVR-Beta-vr456.3-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr456.3/GEVR-Beta-vr456.3-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.3](https://github.com/no6969el/GEVR/releases/tag/vr456.3). The zip has no ROM and no HD texture pack.
+1. Download **[GEVR-Beta-vr456.4-win64.zip](https://github.com/no6969el/GEVR/releases/download/vr456.4/GEVR-Beta-vr456.4-win64.zip)** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.4](https://github.com/no6969el/GEVR/releases/tag/vr456.4). The zip has no ROM and no HD texture pack.
 2. Unzip anywhere.
 3. Run **`Start-GEVR.bat`**. It starts **GevrRomStarter.exe**.
 4. Point at your **USA GoldenEye `.z64`** when asked. Images extract to `%LOCALAPPDATA%\GEVR\cache\<ROM-hash>\`. The first launch after an update rebuilds that cache once from your ROM.
@@ -218,7 +218,7 @@ The game starts in **VR**. For a monitor with no headset, run **`Play-on-monitor
 
 ## Older playtest (video)
 
-This clip is from an older public cut. Picture and controls may not match **vr456.3**.
+This clip is from an older public cut. Picture and controls may not match **vr456.4**.
 
 [![GoldenEye VR streamer playtest](https://img.youtube.com/vi/z4B0Ceqrf6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=z4B0Ceqrf6I)
 
