@@ -10,7 +10,7 @@ body:
 
         Crashes are common in Beta - if the game closed on you, use the **Crash report** template instead.
 
-        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.3-win64.zip).
+        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.4-win64.zip).
 
   - type: input
     id: headset_model
