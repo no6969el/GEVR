@@ -1,19 +1,19 @@
-﻿# Controls (Beta)
+# Controls (Beta)
 
-How to move, aim, shoot, and use Bond's watch in **[GEVR Beta vr456.7](https://github.com/no6969el/GEVR/releases/latest)**.
+How to move, aim, shoot, and use Bond's watch in **[GEVR Beta vr456.8](https://github.com/no6969el/GEVR/releases/latest)**.
 
-Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr456.7-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.7/GEVR-Beta-vr456.7-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr456.8-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.8/GEVR-Beta-vr456.8-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat`. VR picture, then GevrRomStarter.
 - **Monitor / no headset:** `Play-on-monitor.bat`. Flat picture, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr456.7-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr456.8-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
 
 You can also switch picture from **GEVR Settings**: set Visual mode to **VR**, **XR**, or **Flat**, then **Apply**. Apply saves and relaunches into that mode.
 
-Ship stamp is **vr456.7**. First launch rebuilds the image cache once from your own USA GoldenEye ROM.
+Ship stamp is **vr456.8**. First launch rebuilds the image cache once from your own USA GoldenEye ROM.
 
 ## Default layout (OpenXR)
 
@@ -248,7 +248,7 @@ Picture choices on that page:
 - **Supersample** starts at **3**. **Filter** starts on **bilinear**. **Point** is still available.
 - **Monitor:** **Both**, **Left**, **Right**, or **Off**. Off blanks the mirror while you stay in the headset.
 
-Starting rows: [README](../README.md#vr4567) · [GEVR Settings](GEVR-SETTINGS.md).
+Starting rows: [README](../README.md#vr4568) · [GEVR Settings](GEVR-SETTINGS.md).
 
 ---
 
@@ -314,7 +314,7 @@ Flat mode keeps the ammo count in the corner.
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr456.7-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.7/GEVR-Beta-vr456.7-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr456.8-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.8/GEVR-Beta-vr456.8-win64.zip).
 
 **Verified:**
 
@@ -322,7 +322,7 @@ GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GE
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Headset:** unzip **`GEVR-Beta-vr456.7-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
+**Headset:** unzip **`GEVR-Beta-vr456.8-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`**.
 

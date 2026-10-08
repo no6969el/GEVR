@@ -1,8 +1,8 @@
-﻿blank_issues_enabled: true
+blank_issues_enabled: true
 contact_links:
-  - name: Current zip (vr456.7 Latest)
+  - name: Current zip (vr456.8 Latest)
     url: https://github.com/no6969el/GEVR/releases/latest
-    about: GEVR-Beta-vr456.7-win64.zip. Play steps live in the README Play section. Do not upload ROM files.
+    about: GEVR-Beta-vr456.8-win64.zip. Play steps live in the README Play section. Do not upload ROM files.
   - name: How to report (CONTRIBUTING)
     url: https://github.com/no6969el/GEVR/blob/main/CONTRIBUTING.md
     about: Required bug/crash fields, both bats, no ROM uploads.

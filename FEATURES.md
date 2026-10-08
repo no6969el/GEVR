@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
  <img src="GEVR-box-cover.png" alt="GoldenEye 007 VR - GEVR box art" width="520" />
 </p>
 
@@ -8,15 +8,15 @@
 
 GEVR rebuilds GoldenEye on PC for real OpenXR stereo, so you can stand in the Facility. You bring a USA GoldenEye ROM you own. The zip has no ROM and no HD texture pack.
 
-**Latest:** [**GEVR Beta vr456.7**](https://github.com/no6969el/GEVR/releases/latest). Zip: **`GEVR-Beta-vr456.7-win64.zip`**.
+**Latest:** [**GEVR Beta vr456.8**](https://github.com/no6969el/GEVR/releases/latest). Zip: **`GEVR-Beta-vr456.8-win64.zip`**.
 
-[Install](README.md#install) · [VR actions](README.md#vr-actions) · [vr456.7](https://github.com/no6969el/GEVR/releases/tag/vr456.7) · [Credits](CREDITS.md)
+[Install](README.md#install) · [VR actions](README.md#vr-actions) · [vr456.8](https://github.com/no6969el/GEVR/releases/tag/vr456.8) · [Credits](CREDITS.md)
 
-The how-to for this cut is on the [README](README.md#vr4567). Hands: [docs/CONTROLS.md](docs/CONTROLS.md). This page is the short pitch.
+The how-to for this cut is on the [README](README.md#vr4568). Hands: [docs/CONTROLS.md](docs/CONTROLS.md). This page is the short pitch.
 
 ---
 
-## What you do in vr456.7
+## What you do in vr456.8
 
 **GEVR Settings** is on **Mission Select**, next to **Select Mission**, **Multiplayer**, and **Cheat Options**. It is not named Options. Change a row, then **Apply**. Apply saves and relaunches into that mode.
 
@@ -34,6 +34,8 @@ The how-to for this cut is on the [README](README.md#vr4567). Hands: [docs/CONTR
 - **Left-hand throwables** draw the right way around.
 - **Tank** shells auto-load after you fire.
 - **VR comfort:** no walk bob, no landing dip, no gun-hand sway.
+- **HD load:** textures come in without hitching the headset. Levels feel smooth when pictures arrive.
+- **Monitor Off** blanks the mirror cleanly. Your saved Monitor Output row still decides on or off.
 - **HD memo** keeps decoded HD pictures in memory (`GETV_HD_MEMO_MB=0` turns it off).
 - **XR catch-up:** missed headset frames no longer slow the sim. Quitting actually quits.
 - Reload guns with the gesture (magazine or chest cross). **B** is USE, not VR gun reload.
@@ -49,7 +51,7 @@ The how-to for this cut is on the [README](README.md#vr4567). Hands: [docs/CONTR
 
 **GEVR does not ship the pictures.** [GoldenEye-007-HD releases](https://github.com/GhostlyDark/GoldenEye-007-HD/releases) · [evilgames GE007 HD](https://evilgames.eu/texture-packs/ge007-hd.htm): a **GLideN64 PNG** zip, not `.hts`. Put the pack in **`hdtextures\GOLDENEYE`** next to `goldeneye.exe`. `GOLDENEYE_HIRESTEXTURES.hts` is the wrong file. Turn HD textures **On**, then **Apply**. The pack loads on the next boot.
 
-Full sentences and the button tables: [README](README.md#vr4567) · [CONTROLS.md](docs/CONTROLS.md).
+Full sentences and the button tables: [README](README.md#vr4568) · [CONTROLS.md](docs/CONTROLS.md).
 
 ---
 
@@ -97,7 +99,7 @@ Full sentences and the button tables: [README](README.md#vr4567) · [CONTROLS.md
 
 ## Play
 
-1. Grab **[`GEVR-Beta-vr456.7-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. The archive has no ROM and no HD texture pack.
+1. Grab **[`GEVR-Beta-vr456.8-win64.zip`](https://github.com/no6969el/GEVR/releases/latest)**. The archive has no ROM and no HD texture pack.
 2. Follow [README Install](README.md#install).
 3. [VR actions](README.md#vr-actions) and [CONTROLS.md](docs/CONTROLS.md) for the full bind list.
 
