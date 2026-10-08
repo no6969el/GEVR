@@ -1,17 +1,17 @@
-﻿# GEVR - living status
+# GEVR - living status
 
 Players: use the [README](../README.md#vr-actions) and [Controls](CONTROLS.md). This note is an old status log.
 
-**Latest:** [vr456.7](https://github.com/no6969el/GEVR/releases/tag/vr456.7) (`GEVR-Beta-vr456.7-win64.zip`). You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
+**Latest:** [vr456.8](https://github.com/no6969el/GEVR/releases/tag/vr456.8) (`GEVR-Beta-vr456.8-win64.zip`). You bring a USA GoldenEye ROM. The zip has no ROM and no HD texture pack.
 
 **How to play:** unzip, point `Start-GEVR.bat` at your USA `.z64`, recenter with both thumbstick clicks.
 
-**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the next weapon on the left hand. Stick click opens the weapon wheel. **B** is USE (not VR gun reload). **Y** opens the watch. The full list is on the [README](../README.md#vr4567).
+**Buttons:** **Right A** is the next weapon on the right hand. **Left X** is the next weapon on the left hand. Stick click opens the weapon wheel. **B** is USE (not VR gun reload). **Y** opens the watch. The full list is on the [README](../README.md#vr4568).
 
 ---
 ## Older status (kept for the record)
 
-**Download (latest at the time of the notes below):** older than vr456.7. Do not treat the rest of this file as the current button list.
+**Download (latest at the time of the notes below):** older than vr456.8. Do not treat the rest of this file as the current button list.
 
 ### What’s in Latest (KEEP, default-on at bake)
 - [#74](https://github.com/no6969el/GEVR/issues/74) playspace / free move / hands follow

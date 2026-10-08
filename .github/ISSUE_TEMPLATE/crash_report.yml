@@ -1,4 +1,4 @@
-﻿name: Crash report
+name: Crash report
 description: The game closed, froze, or hard-crashed
 title: "[Crash] "
 labels: ["crash", "beta"]
@@ -8,7 +8,7 @@ body:
       value: |
         Sorry it crashed - reports like this help a lot. **Please do not attach ROM files.**
 
-        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.7-win64.zip).
+        Play the current zip: https://github.com/no6969el/GEVR/releases/latest (GEVR-Beta-vr456.8-win64.zip).
 
         If `goldeneye.exe` died hard, look beside it for `gevr-fault-*.txt` and paste the first lines below.
 

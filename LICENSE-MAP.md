@@ -1,8 +1,8 @@
-﻿# License map
+# License map
 
 Simple map of whose stuff this is. Not legal advice.
 
-Current play zip is **vr456.7**. [README Install](README.md#install) · [Latest release](https://github.com/no6969el/GEVR/releases/latest).
+Current play zip is **vr456.8**. [README Install](README.md#install) · [Latest release](https://github.com/no6969el/GEVR/releases/latest).
 
 Do **not** upload ROM files anywhere in this repo (Issues, PRs, comments).
 
