@@ -1,19 +1,19 @@
 # Controls (Beta)
 
-How to move, aim, shoot, and use Bond's watch in **[GEVR Beta vr456.8](https://github.com/no6969el/GEVR/releases/latest)**.
+How to move, aim, shoot, and use Bond's watch in **[GEVR Beta vr457](https://github.com/no6969el/GEVR/releases/latest)**.
 
-Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr456.8-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.8/GEVR-Beta-vr456.8-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
+Install first: [README Install](../README.md#install). **Controls video:** [YouTube walkthrough](https://www.youtube.com/watch?v=Jst5srE6Iwc) (also on the [README](../README.md#vr-actions)). Download: [`GEVR-Beta-vr457-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr457/GEVR-Beta-vr457-win64.zip). The zip has no ROM and no HD texture pack. Tester notes: [BETA.md](BETA.md). Settings: [GEVR-SETTINGS.md](GEVR-SETTINGS.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Which bat
 
 - **Headset:** `Start-GEVR.bat`. VR picture, then GevrRomStarter.
 - **Monitor / no headset:** `Play-on-monitor.bat`. Flat picture, no stereo eyes. Also the path for **local split-screen**.
 
-Use those bats from **`GEVR-Beta-vr456.8-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
+Use those bats from **`GEVR-Beta-vr457-win64.zip`**. Do not double-click `goldeneye.exe`. A bare exe can skip the ROM cache update and leave VR input off.
 
 You can also switch picture from **GEVR Settings**: set Visual mode to **VR**, **XR**, or **Flat**, then **Apply**. Apply saves and relaunches into that mode.
 
-Ship stamp is **vr456.8**. First launch rebuilds the image cache once from your own USA GoldenEye ROM.
+Ship stamp is **vr457**. First launch rebuilds the image cache once from your own USA GoldenEye ROM.
 
 ## Default layout (OpenXR)
 
@@ -41,9 +41,9 @@ VR has **no walk bob**, **no landing dip**, and **no gun-hand sway**. Your view 
 | **Right grip (squeeze)** | **Aim / ADS** on the gun ray (aim mark on the weapon, not glued to your face) |
 | **Right grip at a door** | **Open / close** the door (same squeeze; no extra "use" reach when you are in range) |
 | **Right grip on your left watch face** | **Watch press** (laser, detonator, or magnet depending on pause watch / watch picker) |
-| **Right grip at your right hip** (gun hand low) | **Holster swap** (see [Weapons and holster](#weapons-and-holster)) |
+| **Right grip at your right hip** (gun hand low) | **Holster swap** (old hands and hip holsters; see [Weapons and holster](#weapons-and-holster)) |
 | **Left grip (squeeze)** | **Aim / ADS** when that hand holds a gun; near a door or pickup, same rules as the right grip for that hand |
-| **Left grip near a dropped weapon** | **Pick up** into **that** hand |
+| **Left grip near a dropped weapon** | **Pick up** into **that** hand. See also [Pickups, hands and arms](#pickups-hands-and-arms) |
 | **Left grip near your own stuck mine** | **Pick the mine back up** (remote mines and arming proximity mines you placed) |
 | **Left grip on a two-handed gun's fore-end** | **Two-hand support**: hold the left controller along the barrel and squeeze |
 | **Left stick** | Walk and strafe |
@@ -170,9 +170,12 @@ You cannot put the same non-dual gun in both hands unless the retail game would 
 
 Weapon pictures sit on the lifting hand, including the grenade and mines.
 
+Hip holsters belong to the old hands: set **HANDS AND ARMS** to Off in GEVR Settings to get the old hands and hip holsters back. With the new hands on (the default), small guns are drawn from the jacket and long guns from over the shoulders.
+
 ### Moonraker and sniper scopes
 
 - **Moonraker:** small **circular scope lens** on the hexagonal rear cap, open ring in the middle. Look through that ring. Shoot through that ring. Dual Moonrakers give **two lenses**, one per hand. **No front grill screen.**
+- **Scope magnifier (New):** bring your eye toward the sniper scope or the Moonraker lens and the picture grows: full size beyond about 30 cm, up to two and a half times bigger at about 12 cm. You no longer have to press the headset against it. The zoom level itself does not change.
 - **Sniper rifle:** still the one round plate with the green dot and zoom steps, on either hand. Hold a sniper in one hand and a Moonraker in the other and you get both: sniper plate plus Moonraker lens. Push the **right stick forward or back** to step sniper zoom: **30**, **20**, **15**, **10**, and **7**. Walking does not zoom.
 
 ### Rocket launcher
@@ -186,13 +189,34 @@ In VR, the ammo digits sit on the grip. You read them from behind the gun. Flat 
 
 ---
 
+## Pickups, hands and arms
+
+**New in vr457** unless marked Passed. New means built and checked on the bench, not yet tested in a headset. Passed means tested in a headset on an earlier test build.
+
+| Control | Action |
+|---|---|
+| **Walk over a gun** (**AUTO PICKUP**, on by default) | Both hands empty: the gun goes straight into your **right** hand. A gun already in a hand: the new gun goes to your inventory. A second copy of a gun you already own gives the dual pair in your inventory; a third copy gives ammo only. Turn **AUTO PICKUP** off in GEVR Settings (HANDS AND GUNS page) and the gun stays on the floor until you grab or pull it |
+| **Force-pull** (point a hand at a gun, ammo, key or armour, then squeeze the grip) | Passed: it flies to your hand. Pointing down at small items searches a little wider |
+| **Force-pull, keep holding the grip until it arrives** | New: the gun lands in your hand and stays there when you let go |
+| **Force-pull, let go while it is still flying** | New: the gun lands in your inventory instead |
+| **Force-pull with a gun already in one hand** | New: pulling another gun with the free hand sends it to your inventory |
+| **Force-pull a gun out of a guard's hand** | Passed (pull and disarm): you should hear a magnet sound and see the watch glow as the gun flies to you |
+| **Stick click with a gun in your hand** | New: the gun is put away and you find it in your inventory |
+| **Two guns, hands together, squeeze both grips** | New: squeeze both grips at nearly the same moment and the two guns swap hands |
+| **Touch a door or wall button** | Passed: the button presses. Hinged doors push open with your palm |
+| **Held items** | Passed: they follow your hand and drop onto whatever is below |
+
+**Hands and arms** (New, on by default): one clean hand and sleeve per side, arms that follow your body, and a closed watch band around the left wrist with the watch case on top. Small guns are drawn from your jacket, and long guns from over your shoulders: try drawing a pistol with the opposite hand from the chest, and a rifle from over the shoulder. Grenades and mines keep the old hold for now. To go back to the old hands and hip holsters, set **HANDS AND ARMS** to Off in GEVR Settings (HANDS AND GUNS page) or untick **New hands** in the launcher Options tab, then Apply or Start.
+
+---
+
 ## Reload gesture (VR)
 
 Guns do **not** auto-reload except **tank shells** (retail empty-mag autoload after you fire). Reload other guns with the physical gesture for that weapon, not with **B**.
 
 | Weapon type | Reload |
 |---|---|
-| **Magazine-fed** (mag on top, mag on bottom, **Uzi**, etc.) | Reload from the **magazine**: bring the mag through the reload motion |
+| **Magazine-fed** (mag on top, mag on bottom, **Uzi**, etc.) | Reload with the **gesture**. The default is an instant gesture reload. The physical magazine reload (squeeze to pull the magazine out) is off for now and still experimental |
 | **Pistols** and guns **without** a magazine (**shotgun** included) | Reload at the **chest cross** gesture only |
 | **Handle grab** (grab the gun handle to swap) | **Swaps hands**. Does **not** reload |
 
@@ -241,14 +265,16 @@ After you recenter, turning your head while you stand still should not slide the
 | **A** during play | **Next weapon** on the right hand | (settings closed) |
 | **B** during play | **USE** / plant / activate (not VR gun reload) | (settings closed) |
 
+GEVR Settings is now a set of pages: **GRAPHICS**, **VR**, **HANDS AND GUNS**, **WEATHER**, **ENEMY AI** and **BETA**. **AUTO PICKUP** and **HANDS AND ARMS** are on the HANDS AND GUNS page. Weather and enemy AI rows are on their own pages (see [GEVR Settings](GEVR-SETTINGS.md)).
+
 Picture choices on that page:
 
 - **Visual mode:** **VR**, **XR** (smaller screen, black outline), or **Flat** on the monitor.
 - **Frame rate:** follows the headset by default. **Fixed 90** is still available.
-- **Supersample** starts at **3**. **Filter** starts on **bilinear**. **Point** is still available.
+- **VR render scale** (Supersample in Flat): 50 to 150 percent of the headset's recommended picture size. **Filter** starts on **bilinear**. **Point** is still available.
 - **Monitor:** **Both**, **Left**, **Right**, or **Off**. Off blanks the mirror while you stay in the headset.
 
-Starting rows: [README](../README.md#vr4568) · [GEVR Settings](GEVR-SETTINGS.md).
+Starting rows: [README](../README.md#vr457) · [GEVR Settings](GEVR-SETTINGS.md).
 
 ---
 
@@ -296,7 +322,7 @@ Flat mode keeps the ammo count in the corner.
 
 ## Reload, pause, and menus
 
-- **Gun reload (VR):** [reload gesture](#reload-gesture-vr). Magazine, chest cross, or handle grab. **No auto-reload** except **tank shells**.
+- **Gun reload (VR):** [reload gesture](#reload-gesture-vr). Gesture reload, chest cross, or handle grab. **No auto-reload** except **tank shells**.
 - **B** is **USE** / plant / activate in VR. Not the VR gun-reload button.
 - **Y** opens the watch. **Menu** does too. **Tab** opens pause on the keyboard.
 - On the watch, the **left stick** moves the highlight. **GAME OPTIONS** goes past ratio. The last line says scroll down for VR settings.
@@ -306,15 +332,16 @@ Flat mode keeps the ammo count in the corner.
 
 ## Not in this zip
 
-- thermal vision: out
-- corpse freeze: out
-- Gun Drop / Arm Bounds stay off (not default-on keepers)
+- live wrist watch panel
+- throwing any prop
+- multiplayer bots
+- DLSS frame generation and neural upscaling
 
 ---
 
 ## Getting VR working
 
-GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr456.8-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr456.8/GEVR-Beta-vr456.8-win64.zip).
+GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GEVR-Beta-vr457-win64.zip`](https://github.com/no6969el/GEVR/releases/download/vr457/GEVR-Beta-vr457-win64.zip).
 
 **Verified:**
 
@@ -322,7 +349,7 @@ GEVR uses **OpenXR**. Current zip: [README Install](../README.md#install) / [`GE
 - **Native PimaxXR**
 - **Quest 3 + Virtual Desktop OpenXR (VDXR)**
 
-**Headset:** unzip **`GEVR-Beta-vr456.8-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
+**Headset:** unzip **`GEVR-Beta-vr457-win64.zip`**, run **`Start-GEVR.bat`**, point at your USA `.z64`, put the headset on, and recenter with both stick clicks.
 
 **No headset:** **`Play-on-monitor.bat`**.
 
