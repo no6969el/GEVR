@@ -1,12 +1,12 @@
-> **vr456.8:** GitHub **Latest**. Grab [vr456.8](https://github.com/no6969el/GEVR/releases/tag/vr456.8) or use Update in GevrRomStarter.
+> **vr457:** GitHub **Latest**. Grab [vr457](https://github.com/no6969el/GEVR/releases/tag/vr457) or use Update in GevrRomStarter.
 
 # Beta testing guide
 
 GEVR's public label is **Beta**. Expect crashes and unfinished corners. File them on Issues. We would rather hear from you than guess.
 
-**Play this cut:** [**vr456.8**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr456.8-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr456.8](https://github.com/no6969el/GEVR/releases/tag/vr456.8). Hands: [CONTROLS.md](CONTROLS.md).
+**Play this cut:** [**vr457**](https://github.com/no6969el/GEVR/releases/latest) (GitHub Latest). Zip: **`GEVR-Beta-vr457-win64.zip`**. The zip has no ROM and no HD texture pack. Install: [README](../README.md#install). Tag: [vr457](https://github.com/no6969el/GEVR/releases/tag/vr457). Hands: [CONTROLS.md](CONTROLS.md).
 
-Older tag **pages** stay for history. **Latest is vr456.8.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
+Older tag **pages** stay for history. **Latest is vr457.** Do not download from [vr420](https://github.com/no6969el/GEVR/releases/tag/vr420) / [vr434](https://github.com/no6969el/GEVR/releases/tag/vr434) / [vr438](https://github.com/no6969el/GEVR/releases/tag/vr438) / [vr439](https://github.com/no6969el/GEVR/releases/tag/vr439) / [vr440](https://github.com/no6969el/GEVR/releases/tag/vr440) / [vr441](https://github.com/no6969el/GEVR/releases/tag/vr441).
 
 - **vr434** was pulled. ROM images were baked into `goldeneye.exe`.
 - **vr443** zip was pulled (HOLD) then superseded by vr443.1 (motion KEEP not baked in), then vr444.
@@ -15,14 +15,14 @@ Older tag **pages** stay for history. **Latest is vr456.8.** Do not download fro
 
 Player door: [00-START-HERE.md](00-START-HERE.md). Install: [README](../README.md#install). Hands: [CONTROLS.md](CONTROLS.md). Pitch: [FEATURES.md](../FEATURES.md). How to report: [CONTRIBUTING.md](../CONTRIBUTING.md). License map: [LICENSE-MAP.md](../LICENSE-MAP.md).
 
-Linux testers: flat alpha is a separate prerelease. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1). Windows Latest stays this vr456.8 zip.
+Linux testers: flat alpha is a separate prerelease. [linux-alpha1](https://github.com/no6969el/GEVR/releases/tag/linux-alpha1). Windows Latest stays this vr457 zip.
 
 ## Before you start
 
 - A **legal** USA GoldenEye ROM you already own (we do not supply one)
 - Windows PC
 - Optional: OpenXR headset. No headset? Use the monitor bat.
-- Download: [**GEVR-Beta-vr456.8-win64.zip**](https://github.com/no6969el/GEVR/releases/latest). [README Install](../README.md#install)
+- Download: [**GEVR-Beta-vr457-win64.zip**](https://github.com/no6969el/GEVR/releases/latest). [README Install](../README.md#install)
 
 ## Launchers
 
@@ -46,7 +46,7 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 ## Install and run
 
-1. Download and unzip **`GEVR-Beta-vr456.8-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr456.8](https://github.com/no6969el/GEVR/releases/tag/vr456.8). The zip has no ROM and no HD texture pack.
+1. Download and unzip **`GEVR-Beta-vr457-win64.zip`** from [Latest](https://github.com/no6969el/GEVR/releases/latest) / [vr457](https://github.com/no6969el/GEVR/releases/tag/vr457). The zip has no ROM and no HD texture pack.
 2. Headset: `Start-GEVR.bat`. Monitor / no headset: `Play-on-monitor.bat`.
 3. Point at your USA `.z64`.
 4. First prepare waits once while images land in `%LOCALAPPDATA%\GEVR\cache`. Then play.
@@ -56,10 +56,34 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 
 - **New install:** run `Start-GEVR.bat` (headset) or `Play-on-monitor.bat` (no headset), pick your USA `.z64`, wait once, play.
 - **After a Beta update:** keep the same `.z64`. The ship stamp forces one re-prepare. **Saves are kept.** You do not delete the cache for a normal update.
-- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr456.8 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
+- **Troubleshooting only:** run **`Clear-GEVR-cache.bat`** from the vr457 zip (type **YES**) to wipe **`%LOCALAPPDATA%\GEVR\cache`** only (keeps saves). If the picture still looks wrong, delete `%LOCALAPPDATA%\GEVR` and run the bat again (that also drops saves).
 - **Half-speed / mushy VR:** SteamVR **Motion Smoothing Off**; Virtual Desktop **Space Warp Off**. See [Half-speed / mushy VR?](#half-speed--mushy-vr) above.
 
 ## Beta wear notes
+
+**How to read the tags.** **Passed** means tested in a headset on an earlier test build. **New** means built and checked on the bench, not yet tested in a headset. vr457 as a whole has not had a full headset pass. Please try the New items and report.
+
+**vr457 defaults for a fresh install:** hands and arms on, weather Original (no falling weather), enemy AI Classic (the original guards), auto pickup on, instant gesture reload (the physical magazine reload is off), upscaler off. Change them in **GEVR Settings** and press **Apply**; your saved choices always win.
+
+**New in vr457 (not yet tested in a headset):**
+
+- **Hands and arms** (on by default) with a closed watch band on the left wrist. Small guns are drawn from the jacket, long guns from over the shoulders. Grenades and mines keep the old hold. **HANDS AND ARMS** Off brings back the old hands and hip holsters.
+- **Pickup options:** AUTO PICKUP (on by default); force-pull that lands in your hand if you hold the grip until it arrives and in your inventory if you let go while it flies; a stick click with a gun in hand puts it in your inventory; two guns, hands together, squeeze both grips to swap them. Details: [CONTROLS.md](CONTROLS.md#pickups-hands-and-arms).
+- **Scope magnifier:** the sniper scope and the Moonraker lens grow as your eye comes close.
+- **Weather:** Off, Original (default), Enhanced, Dynamic, with rain out to the far yard. **Enemy AI:** Classic (default), Tactical, Tactical+. Squad chatter is muted.
+- **Train:** the two key guards leave after the brakes objective.
+- **GEVR Settings** is now a set of pages (GRAPHICS, VR, HANDS AND GUNS, WEATHER, ENEMY AI, BETA).
+
+**Passed in a headset on earlier test builds:** VR eyes independent of the desktop window, VR render scale 50 to 150 percent, MSAA that sizes itself to your graphics memory, force-pull, pull and disarm, door and wall button touch, hinged doors that push open, held items that follow your hand, and no white flash between menus and a level.
+
+**Known issues / in progress in vr457:**
+
+- The plastique from All Weapons can keep exploding and follow you. Leave All Weapons off when you place plastique.
+- Hands and arms: the thumb sits oddly on some guns; on the KF7 Soviet the left-side view draws the palm over the grip.
+- Tactical and Tactical+ enemy AI are options, not the default, and have not passed a headset test. Classic is the safe choice.
+- Multiplayer bots are not included. The physical magazine reload is off (still experimental).
+- The Upscaler row under BETA does nothing in this zip: NVIDIA's own files are not included.
+- The first time HD textures appear in a level you may feel a short hitch. Windowed only (no Fullscreen toggle).
 
 - **Gunfire fixed ([#84](https://github.com/no6969el/GEVR/issues/84)):** rifle guards use correct rifle fire tables/cadence (not pistol lean/single-shot from a 64-bit weapon-prop misread).
 - **Janus meeting:** the crowd stops respawning after the meeting.
@@ -75,20 +99,20 @@ SteamVR Motion Smoothing and Virtual Desktop Space Warp can make the game feel h
 - **VR comfort:** no walk bob, landing dip, or gun-hand sway.
 - **HD memo:** decoded HD pictures stay in memory. `GETV_HD_MEMO_MB=0` turns it off.
 - **XR catch-up / quit:** missed headset frames no longer slow the sim. Quitting actually quits.
-- **Hand cubes:** hide while that hand holds a weapon; smaller when empty.
+- **Hand cubes** (old hands, **HANDS AND ARMS** Off): hide while that hand holds a weapon; smaller when empty.
 - **Frame rate:** follows the headset by default. Fixed 90 is still available in **GEVR Settings**.
 - **GEVR Settings:** on **Mission Select**, next to **Select Mission**, **Multiplayer**, and **Cheat Options**. It is not named Options. **A** selects a row. Stick left / right changes the value. **Apply** saves and relaunches. Prefs save under `%LOCALAPPDATA%\GEVR`.
 - **Watch:** **Y** opens it. **GAME OPTIONS** goes past ratio. The last line says scroll down for VR settings. Cuff press follows the picker / pause watch. There is no detonator in the weapon cycle. The **left stick** moves the watch highlight. **Tab** still pauses on the keyboard.
-- **Reload:** magazine or chest-cross gesture. **B** is USE, not VR gun reload. Tank shells auto-load. A handle grab swaps hands and does not reload. See [CONTROLS.md](CONTROLS.md#reload-gesture-vr).
+- **Reload:** gesture reload (instant by default; the physical magazine reload is off) or chest cross. **B** is USE, not VR gun reload. Tank shells auto-load. A handle grab swaps hands and does not reload. See [CONTROLS.md](CONTROLS.md#reload-gesture-vr).
 - **Sniper:** a green dot stays on. Shots leave the eye along that dot. Right stick forward or back steps the zoom (30, 20, 15, 10, 7). Walking does not zoom.
 - **Swing:** uses the held weapon's damage. Shooting does not make the knife swing by itself.
 - **Update button:** the starter checks GitHub Latest on open. Click **Update** to pull a newer zip. Saves, settings, and your `.z64` stay put.
 - **Auto-aim** starts off.
 - **B** covers switches, plant, and activate. **Menu** also opens the pause watch.
 - **Tank:** stand on the chassis and you auto-mount. Stick pitch aims the shells. Empty mag auto-loads the next shell.
-- **Empty hand** draws a cube.
+- **Empty hand** (old hands, **HANDS AND ARMS** Off) draws a cube.
 - **GL** is single-shot / muzzle feel OK.
-- **Not in this zip:** thermal vision, corpse freeze, Gun Drop / Arm Bounds default-on.
+- **Not in this build:** live wrist watch panel, throwing any prop, multiplayer bots, DLSS frame generation and neural upscaling.
 - **Hard crash:** look beside `goldeneye.exe` for `gevr-fault-*.txt` and attach the first lines (no ROM).
 
 ## How to report
@@ -110,6 +134,13 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 ## What to test first
 
 - Boot into VR and look around (no walk bob, no landing dip, no extra gun-hand sway)
+- Look down at your hands: one hand and sleeve per side, and a closed watch band on the left wrist. Draw a pistol with the opposite hand from the chest and a rifle from over the shoulder
+- Walk over a gun on the floor (AUTO PICKUP): empty hands put it in your right hand, a gun already in hand sends it to your inventory. Turn AUTO PICKUP off and the gun should stay on the floor
+- Force-pull a gun and keep holding: it should land in your hand. Pull and let go mid-flight: it should land in your inventory. Click a stick with a gun in hand and look in your inventory. With a gun in each hand, bring your hands together and squeeze both grips to swap them
+- Bring your eye toward the sniper scope: the picture should grow as you get close
+- GEVR Settings > WEATHER: set Enhanced, Apply, load Dam, and look for rain out across the yard. Tell us if everything turns blue near your face
+- Leave ENEMY AI on Classic unless you want to try Tactical or Tactical+ (not headset-tested)
+- Train: do the brakes objective; the two key guards should leave their posts
 - Aim and shoot (auto-aim starts off); **left trigger** fires a left-hand gun on its own
 - Dual-wield with two guns (each trigger fires its hand)
 - Reload with the magazine or chest-cross gesture. Confirm **B** is USE, not gun reload. Tank shells should auto-load. A handle grab should swap hands and not reload
@@ -125,7 +156,7 @@ Die / continue / pad reload was fixed in earlier cuts ([issue #38](https://githu
 - Rockets stay on the launcher, with a flat crosshair
 - Red and green aimers on the shot's first hit
 - Far guards / characters stay readable
-- Empty hand shows the cube; armed hand hides it
+- Empty hand shows the cube; armed hand hides it (old hands only: **HANDS AND ARMS** Off)
 - Die / continue / load another mission in the same process (should stay clean)
 - Explosions and sparks (mass blow-ups can still crash; keep the fault file)
 - Dam blue flicker is probably the convert modem (known; issue #70; labels got mixed); stuck modem scrap should be quieter; Dam water look
